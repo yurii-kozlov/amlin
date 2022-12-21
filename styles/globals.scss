@@ -1,0 +1,33 @@
+@import './utils/mixins.scss';
+@import './utils/variables.scss';
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 10px;
+
+  margin: 0;
+  padding: 0; 
+  height: 100%;
+  background-color: #ffffff54;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+  a {
+    text-decoration:none;
+    color: inherit;
+  }

@@ -1,0 +1,112 @@
+@import './utils/variables.scss';
+@import './utils/mixins.scss';
+@import './utils/placeholders.scss';
+
+
+.section {
+  background-color: $colorWhite1;
+  margin-bottom: 2.6rem;
+
+  @include onMobile {
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 2.7rem;
+  }
+
+  @include onTablet {
+    padding-top: 3.4rem;
+    padding-left: 1.9rem;
+    padding-right: 4.2rem;
+    padding-bottom: 3.7rem;
+  }
+
+  @include onDesktop {
+    padding-top: 5rem;
+    padding-left: 17rem;
+    padding-right: 9rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.review {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  max-width: 84rem;
+  margin-bottom: 1.2rem;
+
+  @include onDesktop {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
+
+.name {
+  text-align: right;
+  margin-right: 0;
+  margin-bottom: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $colorBlack;
+
+
+  @include onDesktop {
+    margin-right: 8rem;
+    margin-bottom: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.lowerPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0;
+
+  @include onDesktop {
+    margin-right: 8rem;
+  }
+}
+
+.reviewButton {
+  @extend %smooth-transition;
+  @extend %buttonBlue;
+  display: inline-block;
+  width: 20rem;
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: $colorBlue3;
+  background-color: $colorWhite;
+  border: 0.3rem solid $colorBlue3;
+}
+
+.subpages {
+  display: flex;
+  gap: 1rem;
+}
+
+.subpage {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: $colorGrey2;
+  border-radius: 50%;
+}
+
+.subpage:first-child {
+  background-color: $colorBlue3;
+}

@@ -1,0 +1,200 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+@import '../utils/placeholders.scss';
+
+.section {
+  padding-top: 0.7rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  padding-bottom: 1rem;
+  max-width: 22rem;
+  @include onMobile {
+    min-width: 20rem;
+  }
+}
+
+.productLink {
+  display: inline-block;
+  @extend %smooth-transition;
+}
+
+.productLink:hover {
+  transform: scale(1.04);
+}
+
+.image {
+  width: 18rem;
+  height: 13rem;
+  text-align: center;
+
+  @include onMobile {
+    width: 11rem;
+    height: 8rem;
+  }
+
+  @include onTablet {
+    width: 15rem;
+    height: 12rem;
+  }
+
+  @include onDesktop {
+    width: 18rem;
+    height: 13rem;
+  }
+}
+
+.title {
+  margin-bottom: 1.4rem;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: $colorBlack;
+  
+  @include onDesktop {
+    font-size: 2.2rem;
+     line-height: 3.3rem;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.reviewSection {
+  display: flex;
+  margin-bottom: 0.7rem;
+  align-items: center;
+
+  @include onMobile {
+    justify-content: start;
+  }
+}
+
+.reviewInfo {
+  color: $colorGrey1;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 210%;
+
+  @include onMobile {
+    line-height: 2.1rem;
+    font-size: 1rem;
+  }
+}
+
+.stars {
+  margin-right: 1rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.productName {
+  color: $colorBlack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  min-height: 6rem;
+
+  @include onMobile {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  @include onTablet {
+    margin-bottom: 1rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 1.5rem;
+  };
+}
+
+.previousPrice {
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: $colorGrey3;
+  text-decoration-line: line-through;
+
+  @include onMobile {
+    font-size: 1.2rem;
+  }
+}
+
+.currentPrice {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 140%; 
+  color: $colorBlack;
+
+  @include onMobile {
+    font-style: 1.6rem;
+  }
+}
+
+.stockStatus {
+  margin-bottom: 2rem;
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 210%;
+  color: #78A962;
+  display: inline-block;
+}
+
+
+.stockStatusSuccess {
+  color: #78A962;
+}
+
+.stockStatusFailure {
+  color: #C94D3F
+}
+
+.stockStatus::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transform: translate(-40%, 15%);
+}
+
+.stockStatusSuccess::before {
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1671709653/techstore/inStock1_ophhae.svg);
+}
+
+.stockStatusFailure::before {
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1671709695/techstore/check_yzet7t.svg);
+}
+
+.upperPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: normal;
+}
+
+.allProductsLink {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 115%;
+  text-decoration-line: underline;
+  color: $colorBlack;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}

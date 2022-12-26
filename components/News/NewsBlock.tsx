@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import styles from '../../styles/NewsBlock.module.scss';
-import { texts } from '../../api/texts';
+import styles from 'styles/layout/News/NewsBlock.module.scss';
+import { texts } from 'api/texts';
 
 type Props = {
   link: string,

@@ -1,0 +1,24 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+@import '../utils/placeholders.scss';
+
+.star {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stars {
+  margin-right: 1rem;
+}
+
+.starActive {
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1671716982/techstore/Star_9_lp2cen.svg);
+}
+
+.starEmpty {
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1671717006/techstore/starEmpty_qdbfrb.svg);
+}

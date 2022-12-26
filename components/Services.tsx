@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react'
-import styles from '../styles/Services.module.scss';
-import classes from '../styles/container.module.scss';
+import styles from 'styles/layout/Services.module.scss';
+import classes from 'styles/base/container.module.scss';
 
 export const Services: React.FC = (): ReactElement => (
   <div className={classes.container} >
-    <div className={styles.section} >
+    <section className={styles.section} >
 
       <div className={styles.block}>
         <div className={styles.iconBlock}>
@@ -29,6 +29,6 @@ export const Services: React.FC = (): ReactElement => (
         <h3 className={styles.title}>Amazing Savings</h3>
         <p className={styles.description} >Up to 70% off new Products, you can be sure of the best price.</p>
       </div>
-    </div>
+    </section>
   </div>
 )

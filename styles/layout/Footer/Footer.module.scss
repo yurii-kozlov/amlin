@@ -1,0 +1,219 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+@import '../../utils/placeholders.scss';
+
+.section {
+  padding-top: 3.5rem;
+
+  @include onTablet {
+    padding-top: 4rem;
+  }
+
+  @include onDesktop {
+    padding-top: 5rem;
+  }
+
+  background-color: $colorBlackFooterBackground;
+  @extend %smooth-transition;
+}
+
+.upperPart {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.6rem;
+
+  @include onDesktop {
+    margin-bottom: 4.5rem;
+  }
+
+  @include onMobile {
+    display: block;
+    text-align: center;
+  }
+}
+
+.titles {
+  @include onMobile {
+    margin-bottom: 1.6rem;
+  };
+}
+
+.titlesMain {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 132.5%;
+  color: $colorWhite;
+  margin-bottom: 0.5rem;
+  @include onDesktop {
+    margin-bottom: 0.9rem;
+  }
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 3.8rem;
+  }
+}
+
+.titlesSubtitle{
+  color: $colorWhite;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 132.5%;
+  font-style: normal;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.6rem;
+  }
+}
+
+.input {
+  min-width: 18rem;
+  min-height: 4rem;
+
+  @include onDesktop {
+    min-width: 35rem;
+    min-height: 5rem;
+  }
+
+  background-color: $colorBlack;
+  border: 0.2rem solid $colorWhite;
+  outline: none;
+  border-radius: 0.4rem;
+  margin-right: 2.3rem;
+  @extend %smooth-transition;
+  padding-left: 1rem;
+
+  color: $colorWhite;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+  }
+
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+
+}
+
+.input:focus {
+  border: 0.2rem solid $colorBlue3;
+}
+
+.input::placeholder {
+  color: $colorWhite;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  opacity: 0.6;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+  }
+}
+
+.subscriptionButton {
+  @extend %buttonBlue;
+  
+}
+
+.subscriptionButton:hover {
+  background-color: $colorBlueHover;
+}
+
+.subscriptionButton:active {
+  background-color: $colorBlueActive;
+}
+
+.error {
+  color: $colorDanger;
+  position: absolute;
+  font-size: 1.1rem;
+
+  @include onDesktop {
+    font-size: 1.5rem;
+  }
+}
+
+.inputBlock {
+  display: inline-block;
+  position: relative;
+}
+
+.middlePart {
+  display: block;
+
+  @include onDesktop {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding-bottom: 3.6rem;
+    border-bottom: 0.1rem solid $colorWhite3;
+  }
+}
+
+.lowerPart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 2.7rem;
+  padding-bottom: 3.5rem;
+
+  @include onMobile {
+    flex-wrap: wrap;
+  }
+
+  @include onTablet {
+    padding-bottom: 4.5rem;
+  }
+
+  @include onDesktop {
+    padding: 1.8rem 0;
+  }
+}
+
+.copyright {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 132.5%;
+  color: $colorWhite;
+  opacity: 0.6;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.2rem;
+  }
+}
+
+.paymentSystemsLink:not(:last-child) {
+  margin-right: 1rem;
+
+  @include onDesktop {
+    margin-right: 1.5rem;
+  }
+}
+
+.socialNetworkLink:not(:last-child) {
+  margin-right: 1rem;
+
+  @include onDesktop {
+    margin-right: 1.5rem;
+  }
+}
+
+.socialNetworkLink {
+  filter: brightness(50%);
+}
+
+.paymentSystems {
+  @include onMobile {
+    order: 1;
+    margin: 1.5rem auto 0;
+  }
+}

@@ -35,8 +35,3 @@ export const logosLinksImages = [
     alt: 'GIGABYTE Logo'
   }
 ]
-
-export const arrows = {
-  arrowTop: 'https://res.cloudinary.com/docve4syp/image/upload/v1671205024/techstore/arrowBottom_eaqshe.svg',
-  arrowBottom: 'https://res.cloudinary.com/docve4syp/image/upload/v1671204395/techstore/arrowTop_e5ndxn.svg'
-}

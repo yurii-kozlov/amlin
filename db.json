@@ -1,0 +1,1727 @@
+{
+  "main": {
+    "banners": [
+      {"url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612461812/banners/big-banner-4_cxycmf.png",
+        "id": 301
+      },
+      {"url": "https://res.cloudinary.com/docve4syp/image/upload/c_scale,h_328,w_1398/v1670924341/techstore/banner2_lmghir.png",
+      "id": 302
+      },
+      {"url": "https://res.cloudinary.com/docve4syp/image/upload/c_scale,h_328,w_1398/v1670925885/techstore/banner3_teeand.png",
+      "id": 303
+      }
+    ],
+    "newProducts": {
+      "list": [
+        {
+          "inStock": true,
+          "slug": "mi-lite-15",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/1_hw0qj0.jpg",
+          "name": "Laptop Mi Notebook Lite 15 I5/8/512/MX110/W (JYU4139CN)",
+          "reviewsCount": 10,
+          "previousPrice": 29999,
+          "rating": 4.3,
+          "price": 21499
+        },
+        {
+          "inStock": true,
+          "slug": "redmi-13",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/3_m1wlqn.jpg",
+          "name": "Laptop Mi RedmiBook 13 i5/8/512/MX250/W (JYU4214CN)",
+          "reviewsCount": 110,
+          "previousPrice": 24999,
+          "rating": 2.3,
+          "price": 21999
+        },
+        {
+          "inStock": true,
+          "slug": "idea-pad",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/4_waavpt.jpg",
+          "name": "Laptop Lenovo IdeaPad S145-15IKB (81VD007TRA)",
+          "reviewsCount": 22,
+          "previousPrice": 29999,
+          "price": 15999,
+          "rating": 4.7
+        },
+        {
+          "inStock": true,
+          "slug": "M17950",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/5_v3lrta.jpg",
+          "name": "Laptop ASUS E410MA-EB009 (90NB0Q11-M17950)",
+          "reviewsCount": 42,
+          "previousPrice": 15999,
+          "price": 10999,
+          "rating": 3.3
+        },
+        {
+          "inStock": true,
+          "slug": "17UA42",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/6_maxcmy.jpg",
+          "name": "Laptop Dream Machines G1650Ti-17 (G1650Ti-17UA42)",
+          "reviewsCount": 13,
+          "previousPrice": 28499,
+          "price": 26499,
+          "rating": 4.8
+        },
+        {
+          "inStock": true,
+          "slug": "redmi-14",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/2_rdzq8f.jpg",
+          "name": "Laptop Laptop Mi RedmiBook 14 R7/16/512/W (JYU4209CN)",
+          "reviewsCount": 3,
+          "previousPrice": 22999,
+          "price": 19499,
+          "rating": 2.3
+        },
+        {
+          "inStock": false,
+          "slug": "MGN63",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/7_uwswwk.jpg",
+          "name": "Laptop Apple MacBook Air 13 M1 (MGN63) Space Grey",
+          "reviewsCount": 11,
+          "previousPrice": 39999,
+          "price": 33999,
+          "rating": 1.8
+        },
+        {
+          "inStock": false,
+          "slug": "82AU0087RA",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/8_ciacab.jpg",
+          "name": "Laptop Lenovo Legion 5 15IMH05 (82AU0087RA)",
+          "reviewsCount": 3,
+          "previousPrice": 33933,
+          "price": 31499,
+          "rating": 3.8
+        },
+        {
+          "inStock": true,
+          "slug": "X65v12",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/9_uhvi0t.jpg",
+          "name": "Computer  ARTLINE Gaming X65 (X65v12)",
+          "reviewsCount": 32,
+          "previousPrice": 23933,
+          "price": 17856,
+          "rating": 5
+        },
+        {
+          "inStock": true,
+          "slug": "X35v17",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/10_wvgebo.jpg",
+          "name": "Computer  ARTLINE Gaming X35 (X35v17)",
+          "reviewsCount": 3,
+          "previousPrice": 15333,
+          "price": 13229,
+          "rating": 3.1
+        },
+        {
+          "inStock": false,
+          "slug": "X39v45",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/12_eqpvhu.jpg",
+          "name": "Computer  ARTLINE Gaming X39 (X39v45)",
+          "reviewsCount": 223,
+          "previousPrice": 22933,
+          "price": 19499,
+          "rating": 5
+        },
+        {
+          "inStock": true,
+          "slug": "Overlord",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/11_txl0vq.jpg",
+          "name": "Computer  ARTLINE Overlord X56 (X56v10)",
+          "reviewsCount": 3,
+          "previousPrice": 33933,
+          "price": 28499,
+          "rating": 2.3
+        },
+        {
+          "inStock": false,
+          "slug": "mi34",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/13_qzykzl.jpg",
+          "name": "Monitor Xiaomi Mi Display 34",
+          "reviewsCount": 74,
+          "previousPrice": 14933,
+          "price": 12499,
+          "rating": 3.5
+        },
+        {
+          "inStock": true,
+          "slug": "LS24R350FHIXCI2",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/14_dhc9d6.jpg",
+          "name": "Monitor 23.8 \"Samsung S24R350F (LS24R350FHIXCI) Black",
+          "reviewsCount": 11,
+          "previousPrice": 5933,
+          "price": 4499,
+          "rating": 3.6
+        },
+        {
+          "inStock": true,
+          "slug": "25UM58",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/15_kjcc9d.jpg",
+          "name": "Monitor 25 \"LG 25UM58-P Black",
+          "reviewsCount": 3,
+          "previousPrice": 6933,
+          "price": 4499,
+          "rating": 2.3
+        }
+      ],
+      "id": "new"
+    },
+    "products": {
+      "list": [
+        {
+          "inStock": true,
+          "slug": "243V7QDAB",
+          "firm": "Philips",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/6_betpxe.jpg",
+          "name": "Monitor 23.8\" Philips (243V7QDAB/00) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 13,
+          "previousPrice": 4499,
+          "rating": 4.3,
+          "price": 2553
+        },
+        {
+          "inStock": false,
+          "firm": "Hunter",
+          "slug": "hunter",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/1_ajlaze.jpg",
+          "name": "Computer  Hunter Xeon",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 23,
+          "previousPrice": 14999,
+          "rating": 2.3,
+          "price": 12999
+        },
+        {
+          "inStock": true,
+          "firm": "Razen",
+          "slug": "razen",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529830/pc/2_kyfzdr.jpg",
+          "name": "Computer  Razen Red Pro",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 7,
+          "previousPrice": 27029,
+          "rating": 3.3,
+          "price": 18999
+        },
+        {
+          "inStock": false,
+          "slug": "1FH46AA",
+          "firm": "HP",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/12_rbrfj5.jpg",
+          "name": "Monitor 23\" HP E233 (1FH46AA) Gray",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 5,
+          "previousPrice": 6330,
+          "price": 4219,
+          "rating": 3.6
+        },
+        {
+          "inStock": true,
+          "slug": "90NB0LE3",
+          "firm": "Asus",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/2_hiphwz.jpg",
+          "name": "Laptop Asus S533FA-BQ007 (90NB0LE3-M01380)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 7,
+          "previousPrice": 27029,
+          "price": 22999,
+          "rating": 5
+        },
+        {
+          "inStock": false,
+          "slug": "1JS06A43",
+          "firm": "HP",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/13_lprnjf.jpg",
+          "name": "Monitor 23\" HP Z23N G2 (1JS06A4) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 5,
+          "previousPrice": 11000,
+          "price": 8339,
+          "rating": 3.5
+        },
+        {
+          "inStock": true,
+          "slug": "81YK00R2RA",
+          "firm": "Lenovo",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/3_ilhqu4.jpg",
+          "name": "Laptop Lenovo IdeaPad 5 15IIL05 (81YK00R2RA)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 13,
+          "previousPrice": 24999,
+          "price": 22999,
+          "rating": 4.1
+        },
+        {
+          "inStock": true,
+          "slug": "81VD007TRA",
+          "firm": "Lenovo",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/4_waavpt.jpg",
+          "name": "Laptop Lenovo IdeaPad S145-15IKB (81VD007TRA)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 22,
+          "previousPrice": 29999,
+          "price": 15999,
+          "rating": 3.5
+        },
+        {
+          "inStock": true,
+          "slug": "H42v01",
+          "firm": "Artline",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/4_c3atlw.jpg",
+          "name": "Computer  ARTLINE Home H42 (H42v01)",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 22,
+          "previousPrice": 13999,
+          "price": 10999,
+          "rating": 3.2
+        },
+        {
+          "inStock": true,
+          "slug": "UX301LA",
+          "firm": "Asus",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527242/laptops/15_le0p6a.jpg",
+          "name": "Laptop Asus UX301 (UX301LA-DH71T.) \"Refurbished\"",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 25,
+          "previousPrice": 23000,
+          "price": 17799,
+          "rating": 3.3
+        },
+        {
+          "inStock": false,
+          "slug": "LS24F350FHIXCI",
+          "firm": "Samsung",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/1_w7xbm8.jpg",
+          "name": "Monitor 23.5 \"Samsung S24F350F (LS24F350FHIXCI) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 23,
+          "previousPrice": 3000,
+          "price": 2200,
+          "rating": 2.3
+        },
+        {
+          "inStock": true,
+          "slug": "X93v19",
+          "firm": "Artline",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529830/pc/5_oqy7yc.jpg",
+          "name": "Computer  ARTLINE Gaming X93 (X93v19)",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 42,
+          "previousPrice": 66999,
+          "price": 62999,
+          "rating": 4.8
+        },
+        {
+          "inStock": true,
+          "slug": "9400F",
+          "firm": "IT-block",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/6_iiolzf.jpg",
+          "name": "Computer  IT-Blok Best gaming PC i5 9400F",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 13,
+          "previousPrice": 22499,
+          "price": 18553,
+          "rating": 3.9
+        },
+        {
+          "inStock": true,
+          "slug": "A4134G",
+          "firm": "A-brand",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/8_urbyv6.jpg",
+          "name": "Computer  A-Brand Classic Game, A4134G (A4134G)",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 57,
+          "previousPrice": 11999,
+          "price": 10699,
+          "rating": 2.7
+        },
+        {
+          "inStock": false,
+          "slug": "Gaming",
+          "firm": "Gaming",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/7_oahizo.jpg",
+          "name": "Computer  Gaming Pro!",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 3,
+          "previousPrice": 22000,
+          "price": 20499,
+          "rating": 4.1
+        },
+        {
+          "inStock": true,
+          "slug": "MVVM2",
+          "firm": "Apple",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/12_n36ohc.jpg",
+          "name": "Laptop Apple MacBook Pro 2019 16\" 1Тb (MVVM2) Silver",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 3,
+          "previousPrice": 100000,
+          "price": 95499,
+          "rating": 3.6
+        },
+        {
+          "inStock": true,
+          "slug": "90NB0RN1",
+          "firm": "Asus",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527242/laptops/13_bb92mp.jpg",
+          "name": "Laptop Asus Flip 14 TM420IA-EC092T (90NB0RN1-M02940)\nКредит\nОплата частями\nFishka",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 42,
+          "previousPrice": 23000,
+          "price": 20499,
+          "rating": 2.7
+        },
+        {
+          "inStock": true,
+          "slug": "JYU4119CN",
+          "firm": "Mi",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/14_kaicvm.jpg",
+          "name": "Laptop Mi Notebook Pro 15 i5/8/256/MX250 (JYU4119CN)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 39,
+          "previousPrice": 22000,
+          "price": 20799,
+          "rating": 4.3
+        },
+        {
+          "inStock": true,
+          "slug": "276E9QDSB",
+          "firm": "Philips",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/2_kghocn.jpg",
+          "name": "Monitor 27\" Philips (276E9QDSB/00) Black Grey",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 7,
+          "previousPrice": 6000,
+          "rating": 2.3,
+          "price": 4999
+        },
+        {
+          "inStock": true,
+          "slug": "MGN93",
+          "firm": "Apple",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/4_g3smut.jpg",
+          "name": "Laptop Apple MacBook Air 13 M1 (MGN93) Silver",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 42,
+          "previousPrice": 15999,
+          "rating": 1.6,
+          "price": 10999
+        },
+        {
+          "inStock": true,
+          "slug": "JYU4232CN",
+          "firm": "Mi",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/5_vlmotz.jpg",
+          "name": "Laptop Mi RedmiBook 14 II R5/8/512/W (JYU4232CN)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 13,
+          "rating": 4.3,
+          "previousPrice": 38499,
+          "price": 33999
+        },
+        {
+          "inStock": false,
+          "slug": "241B7QPJEBqq",
+          "firm": "Philips",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/8_runmit.jpg",
+          "name": "Monitor 23.8\" Philips (241B7QPJEB/00) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 3,
+          "previousPrice": 7000,
+          "rating": 3.3,
+          "price": 5499
+        },
+        {
+          "inStock": true,
+          "slug": "MSI",
+          "firm": "MSI",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/9_lcfog6.jpg",
+          "name": "Computer  MSI RX Pro 2",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 83,
+          "previousPrice": 14000,
+          "rating": 2.7,
+          "price": 12499
+        },
+        {
+          "inStock": true,
+          "slug": "9400",
+          "firm": "IT-block",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/10_sdqylm.jpg",
+          "name": "Computer  IT-Blok i5-9400 GTX 1060 R2",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 92,
+          "previousPrice": 24000,
+          "rating": 3.6,
+          "price": 22225
+        },
+        {
+          "inStock": false,
+          "slug": "82C700AKRA",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/1_wfh2qm.jpg",
+          "name": "Laptop Lenovo V15 (82C700AKRA)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "firm": "Lenovo",
+          "reviewsCount": 13,
+          "rating": 3.3,
+          "previousPrice": 20999,
+          "price": 16999
+        },
+        {
+          "inStock": true,
+          "slug": "223S7EJwMB",
+          "firm": "Philips",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/9_t2y4wr.jpg",
+          "name": "Monitor 21.5\" Philips (223S7EJMB/00) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 83,
+          "previousPrice": 14000,
+          "price": 12499,
+          "rating": 4.3
+        },
+        {
+          "inStock": true,
+          "slug": "2XN60AA2",
+          "firm": "HP",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/10_xlliqh.jpg",
+          "name": "Monitor 24\" HP 24F (2XN60AA) Gray2",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 92,
+          "previousPrice": 4000,
+          "price": 3225,
+          "rating": 4.6
+        },
+        {
+          "inStock": true,
+          "slug": "82EY00GNRA",
+          "firm": "Lenovo",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/6_hcyrls.jpg",
+          "name": "НLaptop Lenovo Gaming 3 15ARH05 (82EY00GNRA)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 57,
+          "previousPrice": 26999,
+          "price": 25699,
+          "rating": 5
+        },
+        {
+          "inStock": false,
+          "slug": "S3DNAN",
+          "firm": "Asus",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/7_iqnk9s.jpg",
+          "name": "Laptop Asus K53U (K53U-E350-S3DNAN) \"Refurbished\")",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 3,
+          "previousPrice": 22000,
+          "price": 20499,
+          "rating": 3.9
+        },
+        {
+          "inStock": true,
+          "slug": "P508256G",
+          "firm": "Vinga",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/8_vvcf4m.jpg",
+          "name": "Laptop Vinga Iron S140 (S140-P508256G)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 83,
+          "previousPrice": 14000,
+          "price": 12499,
+          "rating": 2.9
+        },
+        {
+          "inStock": true,
+          "slug": "G241VC",
+          "firm": "MSI",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/4_zw31li.jpg",
+          "name": "Monitor 24\" MSI G241VC Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 22,
+          "previousPrice": 4999,
+          "price": 3999,
+          "rating": 4
+        },
+        {
+          "inStock": true,
+          "slug": "SW2700PT",
+          "firm": "BenQ",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/5_cnv8f4.jpg",
+          "name": "Monitor 27\" BenQ SW2700PT (9H.LDKLB.QB) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 42,
+          "previousPrice": 22999,
+          "price": 17999,
+          "rating": 2.2
+        },
+        {
+          "inStock": true,
+          "slug": "Q50EU",
+          "firm": "Acer",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/9_kjeyv1.jpg",
+          "name": "Laptop Acer Predator Triton 500 PT515-51-542F (NH.Q50EU.017)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 92,
+          "previousPrice": 24000,
+          "price": 22225,
+          "rating": 4
+        },
+        {
+          "inStock": true,
+          "slug": "AN515",
+          "firm": "Acer",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/10_dzfyuu.jpg",
+          "name": "Laptop Acer Nitro 5 AN515-54 (NH.Q59EU.045)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 12,
+          "previousPrice": 33000,
+          "price": 30499,
+          "rating": 3.8
+        },
+        {
+          "inStock": false,
+          "slug": "8NF64EA",
+          "firm": "HP",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/11_ryxahx.jpg",
+          "name": "Laptop HP Pavilion Gaming 15 (8NF64EA)",
+          "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life",
+          "reviewsCount": 5,
+          "previousPrice": 26000,
+          "price": 23339,
+          "rating": 2.8
+        },
+        {
+          "inStock": true,
+          "firm": "RX",
+          "slug": "Maximus",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/3_hzmus3.jpg",
+          "name": "Computer  RX Maximus",
+          "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel",
+          "reviewsCount": 13,
+          "previousPrice": 17999,
+          "price": 15222,
+          "rating": 4.1
+        },
+        {
+          "inStock": true,
+          "slug": "LS27F358FWIXCI",
+          "firm": "Samsung",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/3_dtueoc.jpg",
+          "name": "Monitor 27 \"Samsung S27F358F (LS27F358FWIXCI) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 13,
+          "previousPrice": 6999,
+          "price": 4222,
+          "rating": 3.5
+        },
+        {
+          "inStock": true,
+          "slug": "272B8QJEB",
+          "firm": "Philips",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/7_l43jgn.jpg",
+          "name": "Monitor 27\" Philips (272B8QJEB/00) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 57,
+          "previousPrice": 11999,
+          "price": 10699,
+          "rating": 5
+        },
+        {
+          "inStock": false,
+          "slug": "243V7QDSBdd",
+          "firm": "Philips",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/11_ww5jf7.jpg",
+          "name": "Monitor 23.8\" Philips (243V7QDSB/00) Black",
+          "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree",
+          "reviewsCount": 5,
+          "previousPrice": 6000,
+          "price": 4339,
+          "rating": 4
+        }
+      ],
+      "firms": [
+        { "name": "Lenovo", "id": 1 },
+        {
+          "name": "Asus",
+          "id": 2
+        },
+        {
+          "name": "Apple",
+          "id": 3
+        },
+        {
+          "name": "Mi",
+          "id": 4
+        },
+        {
+          "name": "Vinga",
+          "id": 5
+        },
+        {
+          "name": "Acer",
+          "id": 6
+        },
+        {
+          "name": "HP",
+          "id": 7
+        },
+        {
+          "name": "Hunter",
+          "id": 9
+        },
+        {
+          "name": "Razen",
+          "id": 10
+        },
+        {
+          "name": "RX",
+          "id": 11
+        },
+        {
+          "name": "Artline",
+          "id": 12
+        },
+        {
+          "name": "IT-block",
+          "id": 13
+        },
+        {
+          "name": "A-brand",
+          "id": 14
+        },
+        {
+          "name": "Gaming",
+          "id": 15
+        },
+        {
+          "name": "MSI",
+          "id": 16
+        },
+        {
+          "name": "Samsung",
+          "id": 20
+        },
+        {
+          "name": "Philips",
+          "id": 21
+        },
+        {
+          "name": "BenQ",
+          "id": 23
+        },
+        {
+          "name": "All",
+          "id": 25
+        }
+      ],
+      "id": "products"
+    },
+    "news": [
+      {
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629196/news/image_29_1_zkln3f.png",
+        "text": "You might not suspect it, but the best budget gaming PCs are just as capable of tackling the best PC games as more expensive rigs. And, so long as you’re not expecting Ultra settings or 4K performance, a gaming PC that doesn’t come with an outrageous price tag should still be just as competent when it comes to the latest AAA games.\n\nYou may not get all the bells and whistles of the most expensive gaming rigs but the best budget gaming PCs are worth a look. A fantastic, immersive gaming experience really doesn’t require a pricey, maxed out desktop. There are plenty of less expensive, yet capable components available such as Intel’s Coffee Lake Refresh, AMD’s Ryzen 3nd Generation, not to mention the AMD Navi GPUs, that allow less expensive PCs the ability to provide that quality gaming experience. \n\nBasically, you’ll be able to fulfill all your gaming desires with the best budget gaming PCs. Whether you don’t care about gaming at the highest settings or are on a limited budget, these machines will do you justice. And, your bank account won’t be hurting either.",
+        "date": "04.04.2021",
+        "title": "Gaming PCs",
+        "slug": "one"
+      },
+      {
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629196/news/image_29_q3ki0o.png",
+        "text": "In a blog post flagged up by C-Net, Microsoft confirmed that official support for Edge is ending on March 9, and that: “To replace this out of support application, we are announcing that the new Microsoft Edge will be available as part of the Windows 10 cumulative monthly security update – otherwise referred to as the Update Tuesday (or “B”) release – on April 13, 2021.\n\n“When you apply this update to your devices, the out of support Microsoft Edge Legacy desktop application will be removed and the new Microsoft Edge will be installed.”\n\nThe same thing will also happen for those who install the preview cumulative update (or “C” release) for March, which is an optional update.\n\nDon’t worry if you’ve already installed the new Edge – the patch won’t mess with your current browser installation, or reinstall Chromium-based Edge; it will only remove the legacy Edge from Windows 10, freeing up a bit of drive space and getting rid of some system clutter.\n\n",
+        "date": "06.04.2021",
+        "title": "Microsoft",
+        "slug": "two"
+      },
+      {
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_7_i0pk5w.png",
+        "text": "Intel took back processor market share from AMD in the final quarter of 2020 not just in terms of mobile CPUs for laptops, but also on the desktop, very much against the grain of recent times, according to a new report.\n\nMercury Research has shared its stats on the PC processor market for Q4 of 2020, during which AMD may have lost overall market share to Intel, but it still made strong gains – thanks to the major growth spurred on by the spike in sales due to the ongoing pandemic (and more folks buying hardware as a result, with working from home becoming a much more common thing).\n\nHere are the best gaming PCs\nWe’ve picked out all the best processors\nAnd check out the best motherboards\nAccording to Mercury Research, the x86 CPU market grew by a massive 20.1% in Q4. AMD, however, dropped to a 19.3% market share on the desktop, down on the previous quarter (where it stood at 20.1%). Even so, AMD was still up year-on-year, compared to its 18.3% tally for the final quarter of 2019.\n\nAnd of course, given the huge traction in the overall market, AMD was still making a lot more money, and as we saw with the company’s own figures, it made a killing in Q4 (with revenue up over 50% compared to the same quarter in 2019, making Q4 2020 the best quarter AMD has ever had, in fact).\n\nSo there’s nothing bad about AMD’s performance here – far from it – but nonetheless it’s a bit of a shock to see Intel gain market share in desktop chips for the first time in three years.",
+        "date": "10.04.2021",
+        "title": "Intel took back processor market",
+        "slug": "three"
+      },
+      {
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_4_p6gmag.png",
+        "text": "Round out your photo editing arsenal with the best monitor for photo editing. Such a monitor is built specifically for photo, video and graphic work, and specialise in displaying colors as accurately as possible, often with resolutions of 4K, 5K or 8K. So, whether you’re a hobbyist, amateur or a professional photographer, investing in one is a matter of necessity.\n\nThe best monitor for photo editing that your budget can stretch to can really help with your creative process as well as your workflow. While many modern monitors do a good job at displaying images and reproducing colors, they just can't compete with a monitor that’s professionally-calibrated for photo editing. That’s because it offers a wider color gamut and delivers great color reproduction, bright, vibrant displays, and enough real estate for multitasking. \n\nWe gathered the best monitors for photo editing right here, from displays that might set you back a great deal to the more affordable options. While it’s true that many of these monitors are pricey, there are some affordable ones, giving photographers with different budgets a variety of options.",
+        "date": "13.04.2021",
+        "title": "Round out your photo editing arsenal",
+        "slug": "four"
+      },
+      {
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_2_w38c5a.png",
+        "text": "Choosing between the best business computers is no small feat and there are many factors to consider. To give you a helping hand, this guide offers a rundown of the best business desktop PCs money can buy.\n\nLaptops and smartphones are essential business tools, and are becoming more powerful and feature-rich every year, but while they are good for people who travel a lot for work, they cannot compete with the best business computers for certain tasks.\n\nFor a start, desktop PCs are much more powerful than the best business laptops, and they are cheaper as well. Also, unless you're buying an all-in-one computer, these business computers are also relatively easy to open up and upgrade, making them far more future-proof than laptops or smartphones, which can sometimes start to feel rather outdated after only a few years.\n\nThis makes the best business computers a wise financial decision when kitting out your office. And, while traditional desktop PCs are excellent devices to have in an office, we've also listed some of the best all-in-one PCs as well. These devices, like Apple's iconic iMac, have the computing components built into a screen. While this means they are less easily upgradable than traditional PCs, they are easier to set up, take up less space on a desk, and look fantastic as well. Aesthetics might not be your primary concern when buying a business computer, but they will make almost any office or studio look clean and modern.\n\nWe've also included our exclusive price comparison tool, which will search the web for the best deals, so once you’ve found the best business computer for your needs, you can buy in confidence knowing you’re getting the best price.",
+        "date": "19.04.2021",
+        "title": "The best business computers",
+        "slug": "five"
+      },
+      {
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_3_feqr7d.png",
+        "text": "AMD is making impressive strides when it comes to gaming on Linux, both in terms of adoption of its processors and graphics cards with desktop PCs, according to a new report.\n\nThe AMD versus Intel or Nvidia battles are well-documented in general, of course, but it’s certainly interesting to see a snapshot of the Linux world, as brought to us by Boiling Steam, with stats compiled using data from ProtonDB.\n\nBest free-to-play Steam games\nBest Linux distros for gaming\nWe'll show you how to build a PC\nAs Boiling Steam notes, the Steam hardware report doesn’t provide enough depth to drill-down into PC configurations, but ProtonDB – a site that tracks the compatibility of games with Valve’s Proton (the runtime for playing Steam games on Linux) – is more useful in this respect, if more limited in terms of sample size.\n\nAt any rate, going with a sample of over 110,000 Linux gamers drawn from ProtonDB, when it comes to graphics cards, Nvidia is clearly in the lead – but not nearly as dominant as it is in the broader PC gaming arena.\n\nAs of January 2021, 37.5% of Linux gamers have thrown their lot in with AMD, meaning Nvidia owns a 62.5% market share, Boiling Steam observes. That is, of course, still very much the majority, but compare that to recent figures from analytics firm Jon Peddie Research (JPR) for the overall discrete GPU market, where Nvidia has been seen to own an 80% market share.\n\nWhat’s even more telling here is that if you look at the Boiling Steam stats for January 2019, the picture was similar to JPR with a 25% share for AMD – so that has leapt by a 50% increase over the course of two years. Impressive growth for AMD on Linux, indeed.\n\n",
+        "date": "22.04.2021",
+        "title": "AMD is making impressive strides",
+        "slug": "six"
+      },
+
+      {
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_6_eqlqtq.png",
+        "text": "The new Apple MacBook Air (M1, 2020) isn't just the best laptop Apple has ever made, it's the best laptop money can buy right now. This is the first time a MacBook has topped our best laptops list, but the MacBook Air (M1, 2020) is worthy of this spot. Thanks to the revolutionary ARM-based Apple M1 chip that powers the new MacBook Air (Apple has ditched Intel for these new laptops), this is a stunning achievement: a thin and light laptop that offers great performance, even with 4K video editing, while also offering incredible battery life. Easily managing over 11 hours on a single charge, this is a laptop you can easily carry around with you at work or school, and its price is incredibly competitive compared to Windows 10 rivals like the Dell XPS 15 (below). Running both new and old Mac apps, the new MacBook Air can now also run iOS apps for iPhone and iPads, giving it access to hundreds of brilliant mobile applications and games as well.\\n\\nEven if you've only ever used Windows laptops before, the MacBook Air (M1, 2020) is well worth getting and making the jump to macOS. Yes, it really is that good.\n",
+        "date": "26.04.2021",
+        "title": "The new Apple MacBook Air",
+        "slug": "seven"
+      },
+      {
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_5_wteiau.png",
+        "text": "Issues with saving edits to ProRAW format images in the Photos app have been solved, too, and iCloud Drive sync flaws as well, plus Apple has resolved a problem whereby System Preferences would fail to unlock when entering the correct admin password.\n\nSpeaking of System Preferences, head here and click on Software Update to grab version 11.2 for yourself. Those with affected MacBook or Mac mini M1 machines will doubtless want to do so quickly if they are suffering at the hands of that Bluetooth bug.\n\nUnfortunately, there’s no mention of a solution for the other annoying bug we’ve seen reported by some users in recent times, namely the screensaver randomly popping up on M1-powered Macs. So presumably that’s a fix for another day, even though from what we heard on the grapevine, the 11.2 beta supposedly provided a cure.",
+        "date": "29.04.2021",
+        "title": "ProRAW format images",
+        "slug": "eight"
+      }
+    ],
+    "reviews": [
+      {
+        "slug": "one",
+        "name": "- Tama Brown",
+        "text": "My first order arrived today in perfect condition.  From the time I sent a question about the item to making the purchase, to the shipping and now the delivery, your company, Tecs, has stayed in touch.  Such great service.  I look forward to shopping on your site in the future and would highly recommend it."
+      },
+      {
+        "slug": "two",
+        "name": "- Ashot Oganisyan",
+        "text": "If your piggybank has $2,000 or more, you can choose almost any combination of features you want. Even the most powerful laptop that money can buy, though, must still obey the laws of physics. Powerful hardware generates heat, and the cooling mechanisms that such components require take up space."
+      },
+      {
+        "slug": "three",
+        "name": "- Adolf Bin",
+        "text": "Starting from unpacking, the laptop is packaged in a beautiful rog. The box itself was already a little shabby and then pasted over with foil. Delivery by courier took 1 day. The delivery set is minimal - the laptop itself, charging, a few pieces of paper. Half of the compartments remain empty in the box. And now about the laptop itself. "
+      },
+      {
+        "slug": "four",
+        "name": "- Bruce Nolan",
+        "text": "After some time of use, I want to say that the laptop is quite good. A good screen, a video card, a good percentage. Of the shortcomings, it can be distinguished that the percentage does not pull this vidyuhu to the end: I have never seen a video card loaded more than 70-75% in games, while the percentage is straining."
+      }
+    ],
+
+    "time": "9:00 AM - 5:30 PM",
+    "address": "Kyiv, Nahimova street, 147",
+    "phone": "380957737777",
+    "social": {
+      "fb": "www.facebook.com",
+      "instagram": "https://www.instagram.com"
+    }
+  },
+  "profile": {
+    "name": "Vladislav Ruchko",
+    "mail": "vladislav@gmail.com",
+    "offers": [
+      {
+        "title": "Delivery:",
+        "text": "You can pick up your order at any branch of our store.\n You can pick up your goods at the new post office.\n You can also use courier delivery."
+      },
+      {
+        "title": "Insurance:",
+        "text": " This is an opportunity to receive compensation in the amount of up\n  to UAH 3000 for buyers whose orders were paid, but not sent by the seller."
+      },
+      {
+        "title": "Track purchase statuses:",
+        "text": "Track your orders in the \"Orders\" section. You will also find your purchase history here."
+      }
+    ]
+  },
+  "terms": {
+    "heading": "Shop Terms & Conditions",
+    "title": "GENERAL TERMS AND CONDITIONS FOR SALE OF PRODUCTS AND SERVICES",
+    "articles": [
+      {
+        "subtitle": "Definitions & Interpretation",
+        "text": "In the following Terms n and Conditions of sale, unless the context requires otherwise\n\n(a) \"Shop\" means Shop Pty Ltd ABN 11 222 333 444;\n(b) \"Customer\" means the person or corporation placing an order for the purchase of goods or services from Shop;\n(c) \"Products\" means any goods, materials, equipment or services provided to the Customer by Shop;\n(d) if the Customer comprises more than one person, each of those person’s liability is joint and several;\n(e) references to a party or a person includes any form of entity and their respective successors, assigns and representatives; \n(f) for all periods and times specified in clauses 5 and 11, time is of the essence; and\n(g) all references to currency are references to Australian dollars. \n"
+      },
+      {
+        "subtitle": "General",
+        "text": "By ordering the Products and/or accepting delivery of the Products from Shop, the Customer agrees that it is bound by these Terms and Conditions of sale. Customer orders, including orders placed via the internet, are subject to acceptance by Shop. The acceptance of the Customer's order by Shop is expressly made conditional upon the Customer's assent to these Terms and Conditions which will prevail notwithstanding anything that may be stated to the contrary on the Customer's order. Shop reserves the right to vary any of these terms at any time and any subsequent orders placed by the Customer will constitute an acceptance of the terms as varied. Once a Customer order has been placed and accepted by Shop, the Customer agrees that the Customer has no right to cancel or vary the order at any time, unless agreed upon in writing by both parties.\n"
+      },
+      {
+        "subtitle": "Quotations",
+        "text": "Any quotation by Shop to the Customer will be open for acceptance by the Customer within the period stated in the quotation or, where no period is stated, within seven (7) days from the date of the quotation. Thereafter, prices stated in the quotation may be varied by Shop without notice to the Customer.\n"
+      },
+      {
+        "subtitle": "Prices / Taxes",
+        "text": "The prices charged by and payable to Shop will be the ruling prices applicable at the time of order placement, provided that the Products are accepted for delivery within a reasonable time. Prices are subject to change without notice. Recommended retail prices are provided for indicative purposes only and there is no obligation for Shop to comply with that recommendation. It as agreed that should the Customer fail for any reason to acquire the quantity of Products sold then without limiting Shop' other rights and remedies the unit price charged for the goods sold may be amended to take into account any variation in the total quantity purchased by the Customer. Prices include GST, but do not include any other tax or duty, which is in addition to the price and is to be paid by the Customer at the time of payment for the Products."
+      },
+      {
+        "subtitle": "Terms of Payment",
+        "text": "Credit Card Payments may attract a surcharge, and Shop will inform the Customer if this is to be the case before processing the transaction.\n\nUnless otherwise agreed in writing by Shop, where Shop has not agreed in writing to provide commercial credit to the Customer, the total purchase price for Products supplied will be due for payment in cash prior to delivery.\n\nWhere Shop has agreed in writing to provide commercial credit to the Customer, the Customer must make payments in accordance with the payment terms provided by Shop.\n\nWhere Shop has approved the provision of a commercial credit arrangement with the Customer but has not provided notice of the payment terms to the Customer, the Customer must pay the total purchase price for Products supplied within seven days of the statement date.\n\nCredit Card Payment at an Invoice or transaction level may also be offered to the Customer as a stand-alone payment method, or in conjunction with Credit Card Direct Debit Authorisation."
+      },
+      {
+        "subtitle": "Credit Accounts",
+        "text": "Any commercial credit arrangements that are provided to the Customer by Shop will continue until terminated by Shop at it sole discretion. In the event that Shop terminates the Customer's commercial credit arrangement, the Customer will be notified in writing and termination will take effect upon receipt of that notification by the Customer."
+      },
+      {
+        "subtitle": "Change of Ownership",
+        "text": "Trading accounts are approved by Shop based on the information supplied and the representations made by the Customer. In the event that there is a change in ownership of the Customer, whether total or partial, the Customer must immediately provide written notice to Shop informing Shop of these changes. Until Shop receives written notice from the Customer of a change in ownership, the Customer (including where it is a company or trustee, each of the Directors thereof) holds Shop indemnified against any and all losses, unpaid accounts, interest, damages, costs, charges, fees and expenses incurred or suffered by Shop in trading with any person, company (including the same company but with a different shareholder or shareholders) or other entity (including a trust) which may have purchased the Customer's business or any interest in the Customer's business or any of the shares in the Customer and used the Customer's previously approved account for trading.\n\nWhere a Customer has been authorised by Shop to make payments through Credit Card Direct Debit, the Customer must provide notice in writing at least five (5) days prior to any change in ownership of the business to allow Shop sufficient time to contact the new owner to obtain and confirm new Credit Card information if applicable.\n"
+      },
+      {
+        "subtitle": " Information on the Products supplied",
+        "text": "All descriptive specifications, illustrations, drawings, data, dimensions and weights furnished by Shop or otherwise contained in catalogues or other advertising material are approximate only and are intended to be merely a general description of the goods, are not incorporated within this agreement and no not form part of the description of the goods sold under this or any other agreement unless otherwise agreed to in writing by Shop in which case such information will be subject to recognised trade tolerances."
+      },
+      {
+        "subtitle": "Delivery\n",
+        "text": "\nThe means of delivering the Products to the Customer will be at Shop' discretion. Shop reserves the right to deliver Products in part deliveries. In the event that Shop incurs additional costs for meeting special (i.e. Tasmania / Northern Territory Deliveries) or urgent delivery arrangements, these additional costs may be charged to the Customer and may include the cost of airfreight where it is not the normal method of delivery. The Customer agrees to accept delivery of the Products sold at any time during normal business hours.\n\nShop will not be liable for any loss or damage resulting from any late delivery of the Products and late delivery will not entitle the Customer to rescind or repudiate the Customer's order for the Products."
+      }
+    ]
+  },
+  "about-us": [
+    {
+      "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613170386/about/Rectangle_54_mlxq4j.png",
+      "title": "A Family That Keeps On Growing",
+      "text": "We always aim to please the home market, supplying great computers and hardware at great prices to non-corporate customers, through our large Melbourne CBD showroom and our online store.\n\nShop management approach fosters a strong customer service focus in our staff. We prefer to cultivate long-term client relationships rather than achieve quick sales, demonstrated in the measure of our long-term success."
+    },
+    {
+      "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613170385/about/Rectangle_11_laekoj.png",
+      "title": "shop.com",
+      "text": "Shop is a proudly Australian owned, Melbourne based supplier of I.T. goods and services, operating since 1991. Our client base encompasses individuals, small business, corporate and government organisations. We provide complete business IT solutions, centred on high quality hardware and exceptional customer service."
+    },
+    {
+      "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613172186/about/Mask_Group_1_csjavi.png",
+      "title": "You're In Safe Hands",
+      "text": "Experience a 40% boost in computing from last generation. MSI Desktop equips the 10th Gen. Intel® Core™ i7 processor with the upmost computing power to bring you an unparalleled gaming experience.\n\n*Performance compared to i7-9700. Specs varies by model."
+    },
+    {
+      "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613170386/about/Rectangle_13_ylnisi.png",
+      "title": "The Highest Quality of Products",
+      "text": "We guarantee the highest quality of the products we sell. Several decades of successful operation and millions of happy customers let us feel certain about that. Besides, all items we sell pass thorough quality control, so no characteristics mismatch can escape the eye of our professionals."
+    },
+    {
+      "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613172183/about/Mask_Group_wtqdox.png",
+      "title": "Delivery to All Regions",
+      "text": "We deliver our goods all across Australia. No matter where you live, your order will be shipped in time and delivered right to your door or to any other location you have stated. The packages are handled with utmost care, so the ordered products will be handed to you safe and sound, just like you expect them to be."
+    }
+  ],
+  "new-products": {
+    "list": [
+      {
+        "inStock": true,
+        "firm": "Mi",
+        "slug": "mi-lite-15",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/1_hw0qj0.jpg",
+        "name": "Laptop Mi Notebook Lite 15 I5/8/512/MX110/W (JYU4139CN)",
+        "reviewsCount": 10,
+        "previousPrice": 29999,
+        "price": 21499,
+        "rating": 3,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "firm": "Mi",
+        "slug": "redmi-13",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/3_m1wlqn.jpg",
+        "name": "Laptop Mi RedmiBook 13 i5/8/512/MX250/W (JYU4214CN)",
+        "reviewsCount": 110,
+        "previousPrice": 24999,
+        "price": 21999,
+        "rating": 3.3,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "firm": "Lenovo",
+        "slug": "idea-pad",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/4_waavpt.jpg",
+        "name": "Laptop Lenovo IdeaPad S145-15IKB (81VD007TRA)",
+        "reviewsCount": 22,
+        "previousPrice": 29999,
+        "price": 15999,
+        "rating": 4.1,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "firm": "Asus",
+        "slug": "M17950",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/5_v3lrta.jpg",
+        "name": "Laptop ASUS E410MA-EB009 (90NB0Q11-M17950)",
+        "reviewsCount": 42,
+        "previousPrice": 15999,
+        "price": 10999,
+        "rating": 3.8,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "firm": "Dream",
+        "slug": "17UA42",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/6_maxcmy.jpg",
+        "name": "Laptop Dream Machines G1650Ti-17 (G1650Ti-17UA42)",
+        "reviewsCount": 13,
+        "previousPrice": 28499,
+        "price": 26499,
+        "rating": 4.2,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "redmi-14",
+        "firm": "Mi",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/2_rdzq8f.jpg",
+        "name": "Laptop Laptop Mi RedmiBook 14 R7/16/512/W (JYU4209CN)",
+        "reviewsCount": 3,
+        "previousPrice": 22999,
+        "price": 19499,
+        "rating": 5,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": false,
+        "slug": "MGN63",
+        "firm": "Apple",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/7_uwswwk.jpg",
+        "name": "Laptop Apple MacBook Air 13 M1 (MGN63) Space Grey",
+        "reviewsCount": 11,
+        "previousPrice": 39999,
+        "price": 33999,
+        "rating": 3.1,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": false,
+        "slug": "82AU0087RA",
+        "firm": "Lenovo",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/8_ciacab.jpg",
+        "name": "Laptop Lenovo Legion 5 15IMH05 (82AU0087RA)",
+        "reviewsCount": 3,
+        "previousPrice": 33933,
+        "price": 31499,
+        "rating": 2.7,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "X65v12",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/9_uhvi0t.jpg",
+        "name": "Computer  ARTLINE Gaming X65 (X65v12)",
+        "reviewsCount": 32,
+        "previousPrice": 23933,
+        "price": 17856,
+        "rating": 3.3,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "X35v17",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/10_wvgebo.jpg",
+        "name": "Computer  ARTLINE Gaming X35 (X35v17)",
+        "reviewsCount": 3,
+        "previousPrice": 15333,
+        "price": 13229,
+        "rating": 3.9,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": false,
+        "slug": "X39v45",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/12_eqpvhu.jpg",
+        "name": "Computer  ARTLINE Gaming X39 (X39v45)",
+        "reviewsCount": 223,
+        "previousPrice": 22933,
+        "price": 19499,
+        "rating": 2.5,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "Overlord",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/11_txl0vq.jpg",
+        "name": "Computer  ARTLINE Overlord X56 (X56v10)",
+        "reviewsCount": 3,
+        "previousPrice": 33933,
+        "price": 28499,
+        "rating": 3.3,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": false,
+        "slug": "mi34",
+        "firm": "Mi",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/13_qzykzl.jpg",
+        "name": "Monitor Xiaomi Mi Display 34",
+        "reviewsCount": 74,
+        "previousPrice": 14933,
+        "price": 12499,
+        "rating": 4.7,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "LS24R350FHIXCI2",
+        "firm": "Samsung",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/14_dhc9d6.jpg",
+        "name": "Monitor 23.8 \"Samsung S24R350F (LS24R350FHIXCI) Black",
+        "reviewsCount": 11,
+        "previousPrice": 5933,
+        "price": 4499,
+        "rating": 2.8,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "25UM58",
+        "firm": "LG",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/15_kjcc9d.jpg",
+        "name": "Monitor 25 \"LG 25UM58-P Black",
+        "reviewsCount": 3,
+        "previousPrice": 6933,
+        "price": 4499,
+        "rating": 5,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      }
+    ],
+    "id": "new-products",
+    "firms": [
+      "Lenovo",
+      "Asus",
+      "Apple",
+      "Mi",
+      "Dream",
+      "Artline",
+      "Samsung",
+      "LG",
+      "All"
+    ]
+  },
+  "laptops": {
+    "list": [
+      {
+        "inStock": false,
+        "slug": "82C700AKRA",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/1_wfh2qm.jpg",
+        "name": "Laptop Lenovo V15 (82C700AKRA)",
+        "firm": "Lenovo",
+        "reviewsCount": 13,
+        "previousPrice": 20999,
+        "price": 16999,
+        "rating": 3.3,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "90NB0LE3",
+        "firm": "Asus",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/2_hiphwz.jpg",
+        "name": "Laptop Asus S533FA-BQ007 (90NB0LE3-M01380)",
+        "reviewsCount": 7,
+        "previousPrice": 27029,
+        "price": 22999,
+        "rating": 4.4,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "81YK00R2RA",
+        "firm": "Lenovo",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/3_ilhqu4.jpg",
+        "name": "Laptop Lenovo IdeaPad 5 15IIL05 (81YK00R2RA)",
+        "reviewsCount": 13,
+        "previousPrice": 24999,
+        "price": 22999,
+        "rating": 3.9,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "81VD007TRA",
+        "firm": "Lenovo",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/4_waavpt.jpg",
+        "name": "Laptop Lenovo IdeaPad S145-15IKB (81VD007TRA)",
+        "reviewsCount": 22,
+        "previousPrice": 29999,
+        "price": 15999,
+        "rating": 4.2,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "MGN93",
+        "firm": "Apple",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/4_g3smut.jpg",
+        "name": "Laptop Apple MacBook Air 13 M1 (MGN93) Silver",
+        "reviewsCount": 42,
+        "previousPrice": 15999,
+        "price": 10999,
+        "rating": 3.8,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "JYU4232CN",
+        "firm": "Mi",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/5_vlmotz.jpg",
+        "name": "Laptop Mi RedmiBook 14 II R5/8/512/W (JYU4232CN)",
+        "reviewsCount": 13,
+        "previousPrice": 38499,
+        "price": 33999,
+        "rating": 4.8,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "82EY00GNRA",
+        "firm": "Lenovo",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/6_hcyrls.jpg",
+        "name": "НLaptop Lenovo Gaming 3 15ARH05 (82EY00GNRA)",
+        "reviewsCount": 57,
+        "previousPrice": 26999,
+        "price": 25699,
+        "rating": 2.5,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": false,
+        "slug": "S3DNAN",
+        "firm": "Asus",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/7_iqnk9s.jpg",
+        "name": "Laptop Asus K53U (K53U-E350-S3DNAN) \"Refurbished\")",
+        "reviewsCount": 3,
+        "previousPrice": 22000,
+        "price": 20499,
+        "rating": 3.3,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "P508256G",
+        "firm": "Vinga",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/8_vvcf4m.jpg",
+        "name": "Laptop Vinga Iron S140 (S140-P508256G)",
+        "reviewsCount": 83,
+        "previousPrice": 14000,
+        "price": 12499,
+        "rating": 4.2,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "Q50EU",
+        "firm": "Acer",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/9_kjeyv1.jpg",
+        "name": "Laptop Acer Predator Triton 500 PT515-51-542F (NH.Q50EU.017)",
+        "reviewsCount": 92,
+        "previousPrice": 24000,
+        "price": 22225,
+        "rating": 3.8,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "AN515",
+        "firm": "Acer",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/10_dzfyuu.jpg",
+        "name": "Laptop Acer Nitro 5 AN515-54 (NH.Q59EU.045)",
+        "reviewsCount": 12,
+        "previousPrice": 33000,
+        "price": 30499,
+        "rating": 4.2,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": false,
+        "slug": "8NF64EA",
+        "firm": "HP",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/11_ryxahx.jpg",
+        "name": "Laptop HP Pavilion Gaming 15 (8NF64EA)",
+        "reviewsCount": 5,
+        "previousPrice": 26000,
+        "price": 23339,
+        "rating": 2.1,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "MVVM2",
+        "firm": "Apple",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/12_n36ohc.jpg",
+        "name": "Laptop Apple MacBook Pro 2019 16\" 1Тb (MVVM2) Silver",
+        "reviewsCount": 3,
+        "previousPrice": 100000,
+        "price": 95499,
+        "rating": 3.3,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "90NB0RN1",
+        "firm": "Asus",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527242/laptops/13_bb92mp.jpg",
+        "name": "Laptop Asus Flip 14 TM420IA-EC092T (90NB0RN1-M02940)\nКредит\nОплата частями\nFishka",
+        "reviewsCount": 42,
+        "previousPrice": 23000,
+        "price": 20499,
+        "rating": 4.6,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "JYU4119CN",
+        "firm": "Mi",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527241/laptops/14_kaicvm.jpg",
+        "name": "Laptop Mi Notebook Pro 15 i5/8/256/MX250 (JYU4119CN)",
+        "reviewsCount": 39,
+        "previousPrice": 22000,
+        "price": 20799,
+        "rating": 2.4,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      },
+      {
+        "inStock": true,
+        "slug": "UX301LA",
+        "firm": "Asus",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527242/laptops/15_le0p6a.jpg",
+        "name": "Laptop Asus UX301 (UX301LA-DH71T.) \"Refurbished\"",
+        "reviewsCount": 25,
+        "previousPrice": 23000,
+        "price": 17799,
+        "rating": 3.3,
+        "description": "AMD Ryzen 3 3200U Dual Core Processor (Up to 3.5GHz); 4GB DDR4 Memory; 128GB PCIe NVMe SSD\n15.6 inches full HD (1920 x 1080) widescreen LED backlit IPS display; AMD Radeon Vega 3 Mobile Graphics\n1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life"
+      }
+    ],
+    "firms": [
+      { "name": "Lenovo", "id": 1 },
+      {
+        "name": "Asus",
+        "id": 2
+      },
+      {
+        "name": "Apple",
+        "id": 3
+      },
+      {
+        "name": "Mi",
+        "id": 4
+      },
+      {
+        "name": "Vinga",
+        "id": 5
+      },
+      {
+        "name": "Acer",
+        "id": 6
+      },
+      {
+        "name": "HP",
+        "id": 7
+      },
+      {
+        "name": "All",
+        "id": 8
+      }
+    ],
+    "id": "laptops"
+  },
+  "computers": {
+    "list": [
+      {
+        "inStock": false,
+        "firm": "Hunter",
+        "slug": "hunter",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/1_ajlaze.jpg",
+        "name": "Computer  Hunter Xeon",
+        "reviewsCount": 23,
+        "previousPrice": 14999,
+        "price": 12999,
+        "rating": 3.3,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": true,
+        "firm": "Razen",
+        "slug": "razen",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529830/pc/2_kyfzdr.jpg",
+        "name": "Computer  Razen Red Pro",
+        "reviewsCount": 7,
+        "previousPrice": 27029,
+        "price": 18999,
+        "rating": 2.7,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": true,
+        "firm": "RX",
+        "slug": "Maximus",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/3_hzmus3.jpg",
+        "name": "Computer  RX Maximus",
+        "reviewsCount": 13,
+        "previousPrice": 17999,
+        "price": 15222,
+        "rating": 4.3,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": true,
+        "slug": "H42v01",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/4_c3atlw.jpg",
+        "name": "Computer  ARTLINE Home H42 (H42v01)",
+        "reviewsCount": 22,
+        "previousPrice": 13999,
+        "price": 10999,
+        "rating": 2.3,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": true,
+        "slug": "X93v19",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529830/pc/5_oqy7yc.jpg",
+        "name": "Computer  ARTLINE Gaming X93 (X93v19)",
+        "reviewsCount": 42,
+        "previousPrice": 66999,
+        "price": 62999,
+        "rating": 4.8,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": true,
+        "slug": "9400F",
+        "firm": "IT-block",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/6_iiolzf.jpg",
+        "name": "Computer  IT-Blok Best gaming PC i5 9400F",
+        "reviewsCount": 13,
+        "previousPrice": 22499,
+        "price": 18553,
+        "rating": 2.3,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": true,
+        "slug": "A4134G",
+        "firm": "A-brand",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/8_urbyv6.jpg",
+        "name": "Computer  A-Brand Classic Game, A4134G (A4134G)",
+        "reviewsCount": 57,
+        "previousPrice": 11999,
+        "price": 10699,
+        "rating": 5,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": false,
+        "slug": "Gaming",
+        "firm": "Gaming",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/7_oahizo.jpg",
+        "name": "Computer  Gaming Pro!",
+        "reviewsCount": 3,
+        "previousPrice": 22000,
+        "price": 20499,
+        "rating": 2.3,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": true,
+        "slug": "MSI",
+        "firm": "MSI",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/9_lcfog6.jpg",
+        "name": "Computer  MSI RX Pro 2",
+        "reviewsCount": 83,
+        "previousPrice": 14000,
+        "price": 12499,
+        "rating": 4.8,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      },
+      {
+        "inStock": true,
+        "slug": "9400",
+        "firm": "IT-block",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612529831/pc/10_sdqylm.jpg",
+        "name": "Computer  IT-Blok i5-9400 GTX 1060 R2",
+        "reviewsCount": 92,
+        "previousPrice": 24000,
+        "price": 22225,
+        "rating": 3.8,
+        "description": "System: Intel i7-10700F 2.9GHz (4.8GHz Max Turbo) | 16GB DDR4 RAM | 480GB SSD | 2TB HDD | Genuine Windows 10 Home 64-bit\nGraphics: NVIDIA GeForce RTX 2060 6GB Dedicated Gaming Video Card | VR Ready | 1x DVI | 1x HDMI | 1x Display Port\nConnectivity: 4 x USB 3.0 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | Audio: 7.1 Channel"
+      }
+    ],
+    "firms": [
+      {
+        "name": "Hunter",
+        "id": 9
+      },
+      {
+        "name": "Razen",
+        "id": 10
+      },
+      {
+        "name": "RX",
+        "id": 11
+      },
+      {
+        "name": "Artline",
+        "id": 12
+      },
+      {
+        "name": "IT-block",
+        "id": 13
+      },
+      {
+        "name": "A-brand",
+        "id": 14
+      },
+      {
+        "name": "Gaming",
+        "id": 15
+      },
+      {
+        "name": "MSI",
+        "id": 16
+      },
+      {
+        "name": "All",
+        "id": 17
+      }
+    ],
+    "id": "computers"
+  },
+  "monitors": {
+    "list": [
+      {
+        "inStock": false,
+        "slug": "LS24F350FHIXCI",
+        "firm": "Samsung",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/1_w7xbm8.jpg",
+        "name": "Monitor 23.5 \"Samsung S24F350F (LS24F350FHIXCI) Black",
+        "reviewsCount": 23,
+        "previousPrice": 3000,
+        "price": 2200,
+        "rating": 3.3,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": true,
+        "slug": "276E9QDSB",
+        "firm": "Philips",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/2_kghocn.jpg",
+        "name": "Monitor 27\" Philips (276E9QDSB/00) Black Grey",
+        "reviewsCount": 7,
+        "previousPrice": 6000,
+        "price": 4999,
+        "rating": 4.3,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": true,
+        "slug": "LS27F358FWIXCI",
+        "firm": "Samsung",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/3_dtueoc.jpg",
+        "name": "Monitor 27 \"Samsung S27F358F (LS27F358FWIXCI) Black",
+        "reviewsCount": 13,
+        "previousPrice": 6999,
+        "price": 4222,
+        "rating": 4.1,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": true,
+        "slug": "G241VC",
+        "firm": "MSI",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/4_zw31li.jpg",
+        "name": "Monitor 24\" MSI G241VC Black",
+        "reviewsCount": 22,
+        "previousPrice": 4999,
+        "price": 3999,
+        "rating": 4.3,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": true,
+        "slug": "SW2700PT",
+        "firm": "BenQ",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/5_cnv8f4.jpg",
+        "name": "Monitor 27\" BenQ SW2700PT (9H.LDKLB.QB) Black",
+        "reviewsCount": 42,
+        "previousPrice": 22999,
+        "price": 17999,
+        "rating": 2.3,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": true,
+        "slug": "243V7QDAB",
+        "firm": "Philips",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/6_betpxe.jpg",
+        "name": "Monitor 23.8\" Philips (243V7QDAB/00) Black",
+        "reviewsCount": 13,
+        "previousPrice": 4499,
+        "price": 2553,
+        "rating": 4.3,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": true,
+        "slug": "272B8QJEB",
+        "firm": "Philips",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/7_l43jgn.jpg",
+        "name": "Monitor 27\" Philips (272B8QJEB/00) Black",
+        "reviewsCount": 57,
+        "previousPrice": 11999,
+        "price": 10699,
+        "rating": 3.9,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": false,
+        "slug": "241B7QPJEBqq",
+        "firm": "Philips",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530525/monitors/8_runmit.jpg",
+        "name": "Monitor 23.8\" Philips (241B7QPJEB/00) Black",
+        "reviewsCount": 3,
+        "previousPrice": 7000,
+        "price": 5499,
+        "rating": 4.7,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": true,
+        "slug": "223S7EJwMB",
+        "firm": "Philips",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/9_t2y4wr.jpg",
+        "name": "Monitor 21.5\" Philips (223S7EJMB/00) Black",
+        "reviewsCount": 83,
+        "previousPrice": 14000,
+        "price": 12499,
+        "rating": 2.9,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": true,
+        "slug": "2XN60AA2",
+        "firm": "HP",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/10_xlliqh.jpg",
+        "name": "Monitor 24\" HP 24F (2XN60AA) Gray2",
+        "reviewsCount": 92,
+        "previousPrice": 4000,
+        "price": 3225,
+        "rating": 4.1,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": false,
+        "slug": "243V7QDSBdd",
+        "firm": "Philips",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/11_ww5jf7.jpg",
+        "name": "Monitor 23.8\" Philips (243V7QDSB/00) Black",
+        "reviewsCount": 5,
+        "previousPrice": 6000,
+        "price": 4339,
+        "rating": 3.3,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": false,
+        "slug": "1FH46AA",
+        "firm": "HP",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/12_rbrfj5.jpg",
+        "name": "Monitor 23\" HP E233 (1FH46AA) Gray",
+        "reviewsCount": 5,
+        "previousPrice": 6330,
+        "price": 4219,
+        "rating": 5.0,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      },
+      {
+        "inStock": false,
+        "slug": "1JS06A43",
+        "firm": "HP",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612530526/monitors/13_lprnjf.jpg",
+        "name": "Monitor 23\" HP Z23N G2 (1JS06A4) Black",
+        "reviewsCount": 5,
+        "previousPrice": 11000,
+        "price": 8339,
+        "rating": 3.3,
+        "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display\nAnd Radeon free sync technology. No compatibility for VESA Mount\nRefresh rate: 75 hertz - Using HDMI port\nZero-frame design | ultra-thin | 4ms response time | IPS panel\nPorts: 1 x HDMI & 1 x VGA\nAspect ratio - 16:9. Color supported - 16.7 million colors. Brightness - 250 nit\nTilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree"
+      }
+    ],
+    "firms": [
+      {
+        "name": "Samsung",
+        "id": 20
+      },
+      {
+        "name": "Philips",
+        "id": 21
+      },
+      {
+        "name": "MSI",
+        "id": 22
+      },
+      {
+        "name": "BenQ",
+        "id": 23
+      },
+      {
+        "name": "HP",
+        "id": 24
+      },
+      {
+        "name": "All",
+        "id": 25
+      }
+    ],
+    "id": "monitors"
+  },
+  "news": [
+    {
+      "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629196/news/image_29_1_zkln3f.png",
+      "text": "You might not suspect it, but the best budget gaming PCs are just as capable of tackling the best PC games as more expensive rigs. And, so long as you’re not expecting Ultra settings or 4K performance, a gaming PC that doesn’t come with an outrageous price tag should still be just as competent when it comes to the latest AAA games.\n\nYou may not get all the bells and whistles of the most expensive gaming rigs but the best budget gaming PCs are worth a look. A fantastic, immersive gaming experience really doesn’t require a pricey, maxed out desktop. There are plenty of less expensive, yet capable components available such as Intel’s Coffee Lake Refresh, AMD’s Ryzen 3nd Generation, not to mention the AMD Navi GPUs, that allow less expensive PCs the ability to provide that quality gaming experience. \n\nBasically, you’ll be able to fulfill all your gaming desires with the best budget gaming PCs. Whether you don’t care about gaming at the highest settings or are on a limited budget, these machines will do you justice. And, your bank account won’t be hurting either.",
+      "date": "04.04.2021",
+      "title": "Gaming PCs",
+      "slug": "one"
+    },
+    {
+      "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629196/news/image_29_q3ki0o.png",
+      "text": "In a blog post flagged up by C-Net, Microsoft confirmed that official support for Edge is ending on March 9, and that: “To replace this out of support application, we are announcing that the new Microsoft Edge will be available as part of the Windows 10 cumulative monthly security update – otherwise referred to as the Update Tuesday (or “B”) release – on April 13, 2021.\n\n“When you apply this update to your devices, the out of support Microsoft Edge Legacy desktop application will be removed and the new Microsoft Edge will be installed.”\n\nThe same thing will also happen for those who install the preview cumulative update (or “C” release) for March, which is an optional update.\n\nDon’t worry if you’ve already installed the new Edge – the patch won’t mess with your current browser installation, or reinstall Chromium-based Edge; it will only remove the legacy Edge from Windows 10, freeing up a bit of drive space and getting rid of some system clutter.\n\n",
+      "date": "06.04.2021",
+      "title": "Microsoft",
+      "slug": "two"
+    },
+    {
+      "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_7_i0pk5w.png",
+      "text": "Intel took back processor market share from AMD in the final quarter of 2020 not just in terms of mobile CPUs for laptops, but also on the desktop, very much against the grain of recent times, according to a new report.\n\nMercury Research has shared its stats on the PC processor market for Q4 of 2020, during which AMD may have lost overall market share to Intel, but it still made strong gains – thanks to the major growth spurred on by the spike in sales due to the ongoing pandemic (and more folks buying hardware as a result, with working from home becoming a much more common thing).\n\nHere are the best gaming PCs\nWe’ve picked out all the best processors\nAnd check out the best motherboards\nAccording to Mercury Research, the x86 CPU market grew by a massive 20.1% in Q4. AMD, however, dropped to a 19.3% market share on the desktop, down on the previous quarter (where it stood at 20.1%). Even so, AMD was still up year-on-year, compared to its 18.3% tally for the final quarter of 2019.\n\nAnd of course, given the huge traction in the overall market, AMD was still making a lot more money, and as we saw with the company’s own figures, it made a killing in Q4 (with revenue up over 50% compared to the same quarter in 2019, making Q4 2020 the best quarter AMD has ever had, in fact).\n\nSo there’s nothing bad about AMD’s performance here – far from it – but nonetheless it’s a bit of a shock to see Intel gain market share in desktop chips for the first time in three years.",
+      "date": "10.04.2021",
+      "title": "Intel took back processor market",
+      "slug": "three"
+    },
+    {
+      "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_4_p6gmag.png",
+      "text": "Round out your photo editing arsenal with the best monitor for photo editing. Such a monitor is built specifically for photo, video and graphic work, and specialise in displaying colors as accurately as possible, often with resolutions of 4K, 5K or 8K. So, whether you’re a hobbyist, amateur or a professional photographer, investing in one is a matter of necessity.\n\nThe best monitor for photo editing that your budget can stretch to can really help with your creative process as well as your workflow. While many modern monitors do a good job at displaying images and reproducing colors, they just can't compete with a monitor that’s professionally-calibrated for photo editing. That’s because it offers a wider color gamut and delivers great color reproduction, bright, vibrant displays, and enough real estate for multitasking. \n\nWe gathered the best monitors for photo editing right here, from displays that might set you back a great deal to the more affordable options. While it’s true that many of these monitors are pricey, there are some affordable ones, giving photographers with different budgets a variety of options.",
+      "date": "13.04.2021",
+      "title": "Round out your photo editing arsenal",
+      "slug": "four"
+    },
+    {
+      "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_2_w38c5a.png",
+      "text": "Choosing between the best business computers is no small feat and there are many factors to consider. To give you a helping hand, this guide offers a rundown of the best business desktop PCs money can buy.\n\nLaptops and smartphones are essential business tools, and are becoming more powerful and feature-rich every year, but while they are good for people who travel a lot for work, they cannot compete with the best business computers for certain tasks.\n\nFor a start, desktop PCs are much more powerful than the best business laptops, and they are cheaper as well. Also, unless you're buying an all-in-one computer, these business computers are also relatively easy to open up and upgrade, making them far more future-proof than laptops or smartphones, which can sometimes start to feel rather outdated after only a few years.\n\nThis makes the best business computers a wise financial decision when kitting out your office. And, while traditional desktop PCs are excellent devices to have in an office, we've also listed some of the best all-in-one PCs as well. These devices, like Apple's iconic iMac, have the computing components built into a screen. While this means they are less easily upgradable than traditional PCs, they are easier to set up, take up less space on a desk, and look fantastic as well. Aesthetics might not be your primary concern when buying a business computer, but they will make almost any office or studio look clean and modern.\n\nWe've also included our exclusive price comparison tool, which will search the web for the best deals, so once you’ve found the best business computer for your needs, you can buy in confidence knowing you’re getting the best price.",
+      "date": "19.04.2021",
+      "title": "The best business computers",
+      "slug": "five"
+    },
+    {
+      "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_3_feqr7d.png",
+      "text": "AMD is making impressive strides when it comes to gaming on Linux, both in terms of adoption of its processors and graphics cards with desktop PCs, according to a new report.\n\nThe AMD versus Intel or Nvidia battles are well-documented in general, of course, but it’s certainly interesting to see a snapshot of the Linux world, as brought to us by Boiling Steam, with stats compiled using data from ProtonDB.\n\nBest free-to-play Steam games\nBest Linux distros for gaming\nWe'll show you how to build a PC\nAs Boiling Steam notes, the Steam hardware report doesn’t provide enough depth to drill-down into PC configurations, but ProtonDB – a site that tracks the compatibility of games with Valve’s Proton (the runtime for playing Steam games on Linux) – is more useful in this respect, if more limited in terms of sample size.\n\nAt any rate, going with a sample of over 110,000 Linux gamers drawn from ProtonDB, when it comes to graphics cards, Nvidia is clearly in the lead – but not nearly as dominant as it is in the broader PC gaming arena.\n\nAs of January 2021, 37.5% of Linux gamers have thrown their lot in with AMD, meaning Nvidia owns a 62.5% market share, Boiling Steam observes. That is, of course, still very much the majority, but compare that to recent figures from analytics firm Jon Peddie Research (JPR) for the overall discrete GPU market, where Nvidia has been seen to own an 80% market share.\n\nWhat’s even more telling here is that if you look at the Boiling Steam stats for January 2019, the picture was similar to JPR with a 25% share for AMD – so that has leapt by a 50% increase over the course of two years. Impressive growth for AMD on Linux, indeed.\n\n",
+      "date": "22.04.2021",
+      "title": "AMD is making impressive strides",
+      "slug": "six"
+    },
+
+    {
+      "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_6_eqlqtq.png",
+      "text": "The new Apple MacBook Air (M1, 2020) isn't just the best laptop Apple has ever made, it's the best laptop money can buy right now. This is the first time a MacBook has topped our best laptops list, but the MacBook Air (M1, 2020) is worthy of this spot. Thanks to the revolutionary ARM-based Apple M1 chip that powers the new MacBook Air (Apple has ditched Intel for these new laptops), this is a stunning achievement: a thin and light laptop that offers great performance, even with 4K video editing, while also offering incredible battery life. Easily managing over 11 hours on a single charge, this is a laptop you can easily carry around with you at work or school, and its price is incredibly competitive compared to Windows 10 rivals like the Dell XPS 15 (below). Running both new and old Mac apps, the new MacBook Air can now also run iOS apps for iPhone and iPads, giving it access to hundreds of brilliant mobile applications and games as well.\\n\\nEven if you've only ever used Windows laptops before, the MacBook Air (M1, 2020) is well worth getting and making the jump to macOS. Yes, it really is that good.\n",
+      "date": "26.04.2021",
+      "title": "The new Apple MacBook Air",
+      "slug": "seven"
+    },
+    {
+      "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612629195/news/image_29_5_wteiau.png",
+      "text": "Issues with saving edits to ProRAW format images in the Photos app have been solved, too, and iCloud Drive sync flaws as well, plus Apple has resolved a problem whereby System Preferences would fail to unlock when entering the correct admin password.\n\nSpeaking of System Preferences, head here and click on Software Update to grab version 11.2 for yourself. Those with affected MacBook or Mac mini M1 machines will doubtless want to do so quickly if they are suffering at the hands of that Bluetooth bug.\n\nUnfortunately, there’s no mention of a solution for the other annoying bug we’ve seen reported by some users in recent times, namely the screensaver randomly popping up on M1-powered Macs. So presumably that’s a fix for another day, even though from what we heard on the grapevine, the 11.2 beta supposedly provided a cure.",
+      "date": "29.04.2021",
+      "title": "ProRAW format images",
+      "slug": "eight"
+    }
+  ]
+}

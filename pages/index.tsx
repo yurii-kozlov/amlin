@@ -11,6 +11,7 @@ import { NewProducts } from 'components/NewProducts';
 import { Main } from 'types/main/Main';
 import { CarouselMain } from 'components/CarouselMain';
 import { BonusSection } from 'components/BonusSection';
+import { ProductsScroll } from 'components/ProductsScroll/ProductsScroll';
 import axios from 'axios';
 
 type Props = {
@@ -27,6 +28,7 @@ export const Home: React.FC<Props> = ({ mainData }): ReactElement => {
       <CarouselMain banners={banners} />
       <NewProducts newGoods={newProducts} />
       <BonusSection />
+      <ProductsScroll />
       <Logos />
       <News />
       <Reviews reviews={reviews} />

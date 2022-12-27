@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import classes from 'styles/base/container.module.scss';
 import styles from 'styles/layout/NewProducts.module.scss';
 import { NewGoods } from 'types/main/NewProducts';
-import { NewsProduct } from 'components/NewProducts/NewsProduct';
+import { NewsProduct } from 'components/NewProducts/NewProduct';
 import Slider, { CustomArrowProps } from 'react-slick';
 import styles1 from 'styles/layout/Carousel/CarouselMain.module.scss';
 import Link from 'next/link';

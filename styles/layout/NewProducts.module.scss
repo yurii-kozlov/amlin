@@ -3,14 +3,20 @@
 @import '../utils/placeholders.scss';
 
 .section {
+  @extend %smooth-transition;
   padding-top: 0.7rem;
   padding-left: 2.2rem;
   padding-right: 2.2rem;
   padding-bottom: 1rem;
   max-width: 22rem;
   @include onMobile {
-    min-width: 20rem;
+    max-width: 20rem;
   }
+}
+
+.section:hover {
+  transform: scale(1.04);
+  cursor: pointer;
 }
 
 .productLink {
@@ -19,7 +25,7 @@
 }
 
 .productLink:hover {
-  transform: scale(1.04);
+  text-decoration: underline;
 }
 
 .image {

@@ -140,3 +140,17 @@
   }
 }
 
+
+%butttonWhite {
+  @extend %smooth-transition;
+  background-color: $colorWhite;
+  cursor: pointer;
+  border-radius: 5rem;
+  color: $colorBlue3;
+  border: 0.2rem solid $colorBlue3;
+  outline: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}

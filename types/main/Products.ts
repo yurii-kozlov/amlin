@@ -8,6 +8,6 @@ export interface Products {
 }
 
 export interface Product extends NewProduct {
-  firm: string,
-  description: string
+  firm?: string,
+  description?: string
 };

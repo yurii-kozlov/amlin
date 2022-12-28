@@ -74,7 +74,6 @@
 }
 
 .basket {
-  position: relative;
 
   &Block {
     display: flex;
@@ -116,4 +115,12 @@
   @extend %iconSizes;
 
   background-image: url(../../images/icons/profilePhoto.svg);
+}
+
+.basketLink {
+  position: relative;
+}
+
+.basket {
+  position: relative;
 }

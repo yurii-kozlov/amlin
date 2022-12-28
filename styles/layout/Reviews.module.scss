@@ -78,10 +78,10 @@
 
 .reviewButton {
   @extend %smooth-transition;
-  @extend %buttonBlue;
-  display: inline-block;
   width: 20rem;
   height: 2rem;
+  @extend %buttonBlue;
+  display: inline-block;
   text-align: center;
   display: flex;
   justify-content: center;

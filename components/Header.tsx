@@ -7,8 +7,10 @@ import styles from 'styles/layout/Header.module.scss';
 import Link from 'next/link';
 import faceBookIcon from 'images/icons/facebook.svg';
 import instagramIcon from 'images/icons/instagram.svg';
+import personalAccount from 'store/personalAccount';
+import { observer } from 'mobx-react';
 
-export const Header:React.FC = (): ReactElement => {
+export const Header:React.FC = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
 
   const handleMenuVisibility = (): void => setIsMenuVisible(!isMenuVisible);
@@ -82,7 +84,7 @@ export const Header:React.FC = (): ReactElement => {
 
         <div className={styles.basket}>
           <div className={styles.basketBlock}>
-            2
+            {personalAccount.cart.length}
           </div>
           <a
             className={styles.basketLink}
@@ -101,4 +103,4 @@ export const Header:React.FC = (): ReactElement => {
       </div>
     </header>
     );
-}
+});

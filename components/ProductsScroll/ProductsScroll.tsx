@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { ReactElement, useEffect, useState } from 'react';
 import classes from 'styles/base/container.module.scss';
 import styles from 'styles/layout/ProductsScroll.module.scss';
@@ -7,19 +6,12 @@ import { Computers } from 'components/ProductsScroll/Computers/Computers';
 import { Monitors } from 'components/ProductsScroll/Monitors/Monitors';
 
 export const ProductsScroll: React.FC = (): ReactElement => {
-  //* in separate components
-  // const [laptops, setLaptops] = useState<Product[]>([]);
-  // const [currentPage, setCurrentPage] = useState(1);
-
-  //* We will send fetching as a prop to separate components
   const [fetching, setFetching] = useState(true);
 
-  //* This part will stay here
   const [areLaptopsVisible, setAreLaptopsVisible] = useState(true);
   const [areComputersVisible, setAreComputersVisible] = useState(false);
   const [areMonitorsVisible, setAreMonitorsVisible] = useState(false);
 
-  //* This will stay here too
   const handleLaptopsVisibility = (): void => {
     setAreLaptopsVisible(true);
     setAreComputersVisible(false);
@@ -39,24 +31,6 @@ export const ProductsScroll: React.FC = (): ReactElement => {
     setAreComputersVisible(false);
   }
 
-
-//* in separate components
-  // useEffect(() => {
-
-  //   if (fetching && laptops.length < 60 && areLaptopsVisible) {
-  //     axios.get(`http://localhost:3001/laptops?_limit=10&_page=${currentPage}`)
-  //     .then(response => {
-  //       setLaptops([...laptops, ...response.data.list])
-  //       setCurrentPage(prevState => prevState + 1)
-  //       setTotalCount(Number(response.headers['x-total-count']))
-  //     })
-  //     .finally(() => setFetching(false));
-  //   }
-
-  // }, [fetching])
-
-
-  // *This will stay here
   useEffect(() => {
     document.addEventListener('scroll', scrollHandler);
 
@@ -65,11 +39,8 @@ export const ProductsScroll: React.FC = (): ReactElement => {
     }
   }, [])
 
-    // *This will stay here
-  const scrollHandler = (e:any):void => {
+  const scrollHandler = (e: any):void => {
     if (e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 3500) {
-      console.log(e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight));
-      console.log(fetching);
       setFetching(true);
     }
   }

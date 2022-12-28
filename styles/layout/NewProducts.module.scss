@@ -9,14 +9,34 @@
   padding-right: 2.2rem;
   padding-bottom: 1rem;
   max-width: 22rem;
+  position: relative;
+
   @include onMobile {
     max-width: 20rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
+
+  @include onDesktop {
+    min-height: 40rem;
   }
 }
 
 .section:hover {
   transform: scale(1.04);
   cursor: pointer;
+
+  .buttonAddToCard {
+    @include onDesktop {
+      display: inline-block;
+    }
+  }
+
+  .upperBottoms {
+    @include onDesktop {
+      display: inline-block;
+    }
+  }
 }
 
 .productLink {
@@ -118,7 +138,7 @@
   }
 
   @include onDesktop {
-    margin-bottom: 1.5rem;
+    // margin-bottom: 1.5rem;
   };
 }
 
@@ -141,6 +161,10 @@
   font-size: 1.8rem;
   line-height: 140%; 
   color: $colorBlack;
+
+  @include onDesktop {
+    margin-bottom: 1rem;
+  }
 
   @include onMobile {
     font-style: 1.6rem;
@@ -203,4 +227,86 @@
   @include onDesktop {
     font-size: 1.3rem;
   }
+}
+
+.buttonBlock {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonAddToCard {
+  @extend %smooth-transition;
+  width: 14rem;
+  height: 3.2rem;
+  @extend %butttonWhite;
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.buttonAddToCard:hover {
+  background-color: $colorGrey2;
+}
+
+.buttonAddToCard::before {
+  content: '';
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.6rem;
+  background-image: url('../../images/icons/basketCart.svg');
+  @extend %iconSizes;
+  position: relative;
+  top: 0.3rem;
+  right: 0.7rem;
+}
+
+.upperBottoms {
+  width: 2.7rem;
+  height: 2.7rem;
+  position: absolute;
+  right: 0.1rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+
+  @extend %smooth-transition;
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.upperBottoms:hover {
+  filter: brightness(80%);
+}
+
+.addToWishListBottom {
+  background-image: url('../../images/icons/addToWishList.svg');
+  top: 2.5rem;
+  @extend %iconSizes;
+}
+
+.statisticsBottom {
+  top: 6rem;
+  background-image: url('../../images/icons/statistics.svg');
+  @extend %iconSizes;
 }

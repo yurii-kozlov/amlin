@@ -2,12 +2,17 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { ReactElement, useState } from 'react';
 import { Menu } from 'components/Menu';
+import { observer } from 'mobx-react'
 import styles from 'styles/layout/Navbar.module.scss';
+import personalAccount from 'store/personalAccount';
+import { Minicart } from './Minicart';
 
-export const Navbar = (): ReactElement => {
+export const Navbar = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
+  const [isMinicartVisible, setIsMinicartVisible] = useState<boolean>(false);
 
   const handleMenuVisibility = (): void => setIsMenuVisible(!isMenuVisible);
+  const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
   return (
     <nav className={styles.block}>
@@ -69,8 +74,13 @@ export const Navbar = (): ReactElement => {
           <a className={styles.searchLink} href="#search" />
         </div>
         <div className={styles.basket}>
-          <div className={styles.basketBlock}>2</div>
-          <a className={styles.basketLink} href="#bakset" />
+          <Minicart isMinicartVisible={isMinicartVisible} />
+          <div className={styles.basketBlock}>{personalAccount.cart.length}</div>
+          <a
+            className={styles.basketLink}
+            href="#bakset"
+            onClick={handleMinicartVisibility}
+            />
         </div>
         <div className={styles.profile}>
           <Menu isMenuVisible={isMenuVisible} />
@@ -83,4 +93,4 @@ export const Navbar = (): ReactElement => {
       </div>
     </nav>
   );
-};
+});

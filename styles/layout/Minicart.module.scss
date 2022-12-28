@@ -1,0 +1,141 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+@import '../utils/placeholders.scss';
+
+.block {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 1.5rem;
+  right: 0.1rem;
+  background-color: $colorWhite;
+  z-index: 10;
+  min-width: 30rem;
+  overflow: hidden;
+  transform: scale(0);
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  // padding-left: 2.3rem;
+  // padding-right: 2.3rem;
+
+  @extend %smooth-transition;
+}
+
+.blockVisible {
+  min-height: max-content;
+  max-height: max-content;
+  transform: scale(1);
+}
+
+.upperPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+}
+
+.title {
+  color: $colorBlack;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 0.4rem;
+}
+
+.itemsCount {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $colorGrey1;
+  margin-bottom: 1.4rem;
+}
+
+.countOfProduct {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 140%;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItemBlock {
+  width: 100%;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  border-top: 1px solid $colorGrey2;
+  border-bottom: 1px solid $colorGrey2;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+}
+
+.productName {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: $colorBlack;
+}
+
+.symbol {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  color: $colorBlack;
+  margin-left: 0.4rem;
+}
+
+.imageCountContainer {
+  display: flex;
+  align-items: center;
+}
+
+.lowerPart {
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+}
+
+.buttonEdit {
+  @extend %smooth-transition;
+  width: 95%;
+  height: 3.7rem;
+  @extend%butttonWhite;
+  margin-bottom: 2rem;
+}
+
+.buttonEdit:hover {
+  background-color: $colorGrey2;
+}
+
+.productImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.productName {
+  min-height: 6rem;
+}
+
+.buttonEdit {
+  // display: inline-block;
+}
+
+.itemsCount {
+  display: block;
+}
+
+.listItemBlock {
+  display: flex;
+}
+
+.lowerPart {
+  display: flex;
+  flex-direction: column;
+}

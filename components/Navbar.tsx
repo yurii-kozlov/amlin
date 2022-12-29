@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { ReactElement, useState } from 'react'
-import { Menu } from './Menu';
-import styles from '../styles/Navbar.module.scss';
+import { Menu } from 'components/Menu';
+import styles from 'styles/Navbar.module.scss';
 
 export const Navbar = (): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);

@@ -154,4 +154,4 @@ export const Footer: React.FC = (): ReactElement => {
       </div>
     </section>
   );
-}
+};

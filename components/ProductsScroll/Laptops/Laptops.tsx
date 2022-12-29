@@ -31,4 +31,4 @@ export const Laptops: React.FC<Props> = ({ fetching, areLaptopsVisible, setFetch
       <ProductScroll key={laptop.slug} product={laptop}/>
     ))}
   </>
-}
+};

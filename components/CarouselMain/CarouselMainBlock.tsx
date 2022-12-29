@@ -14,4 +14,4 @@ export const CarouselMainBlock: React.FC<Props> = ({ banner }): ReactElement => 
       <img alt={`banner-${id}`} className={styles.image} src={url}/>
     </div>
   )
-}
+};

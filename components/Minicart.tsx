@@ -59,4 +59,4 @@ export const Minicart: React.FC<Props> = ({ isMinicartVisible }): ReactElement =
       <button className={styles.buttonCheckoutPaypal} type="button">Checkout with Paypal</button>
     </div>
   </div>
-)
+);

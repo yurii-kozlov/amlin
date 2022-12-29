@@ -39,4 +39,4 @@ export const Monitors: React.FC<Props> = ({
       <ProductScroll key={monitor.slug} product={monitor}/>
     ))}
   </>
-}
+};

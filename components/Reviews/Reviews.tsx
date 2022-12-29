@@ -41,4 +41,4 @@ export const Reviews: React.FC<Props> = ({ reviews }): ReactElement => (
     ))}
     </Slider>
   </div>
-)
+);

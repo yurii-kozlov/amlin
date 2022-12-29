@@ -60,5 +60,3 @@ export const CarouselMain: React.FC<Props> = ({ banners }):ReactElement => {
     </div>
   );
 }
-
-

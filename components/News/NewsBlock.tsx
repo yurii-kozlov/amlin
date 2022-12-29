@@ -18,4 +18,4 @@ export const NewsBlock: React.FC<Props> = ({ link }):ReactElement => (
     </p>
     <p className={styles.date}>01.09.2020</p>
   </div>
-)
+);

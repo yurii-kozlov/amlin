@@ -16,4 +16,4 @@ export const Logos: React.FC = (): ReactElement => (
 
     </div>
   </section>
-)
+);

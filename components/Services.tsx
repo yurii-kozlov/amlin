@@ -31,4 +31,4 @@ export const Services: React.FC = (): ReactElement => (
       </div>
     </section>
   </div>
-)
+);

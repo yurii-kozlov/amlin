@@ -17,4 +17,4 @@ export const News: React.FC = (): ReactElement => (
       </div>
     </div>
   </section>
-)
+);

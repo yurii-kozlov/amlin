@@ -1,0 +1,112 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+@import '../utils/placeholders.scss';
+
+.section {
+  background-color: $colorWhite5;
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include onMobile {
+    flex-direction: column;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+
+  }
+
+  @include onTablet {
+    padding-top: 2.1rem;
+    padding-bottom: 2.1rem;
+  }
+
+  @include onDesktop {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.description {
+  color: $colorPurple;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 120.5%;
+  position: relative;
+
+  @include onMobile {
+    margin-bottom: 1.1rem;
+  }
+
+  @include onTablet {
+    font-size: 1.4rem;
+  }
+
+  @include onDesktop {
+    font-size: 1.8rem;
+  }
+}
+
+.description::before {
+  content: '';
+  display: inline-block;
+  background-color: $colorBlue7;
+  width: 0.2rem;
+  position: absolute;
+  left: -3.5%;
+
+  @include onTablet {
+    height: 1.7rem;
+  }
+
+  @include onDesktop {
+    height: 2.6rem;
+  }
+
+  @include onMobile {
+    display: none;
+  }
+}
+
+.logo {
+  background-image: url(../../images/icons/zipLogo.svg);
+  @extend %iconSizes;
+  @extend %smooth-transition;
+
+  @include onMobile {
+    width: 3.6rem;
+    height: 1.3rem;
+    margin-bottom: 1.7rem;
+  }
+
+  @include onTablet {
+    margin-right: 2.3rem;
+    width: 4.7rem;
+    height: 1.6rem;
+  }
+
+  @include onDesktop {
+    margin-right: 2.6rem;
+    width: 7.6rem;
+    height: 2.7rem;
+  }
+}
+
+.moreInfoLink {
+  font-size: 1.4rem;
+  text-decoration: underline;
+
+
+  @include onMobile {
+    margin-left: 0;
+  };
+
+  @include onTablet {
+    margin-left: 0.7rem;
+  }
+
+  @include onDesktop {
+    margin-left: 1rem;
+  }
+}

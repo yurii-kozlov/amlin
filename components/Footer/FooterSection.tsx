@@ -1,8 +1,10 @@
 import React, { ReactElement, useState } from 'react';
-import styles from '../../styles/FooterSection.module.scss';
-import { footerBlock } from '../../types/footerBlock';
-import { arrows } from '../../api/logosLinksImages';
+import styles from 'styles/layout/Footer/FooterSection.module.scss';
+import { footerBlock } from 'types/footerBlock';
 import Link from 'next/link';
+import arrowTop from 'images/icons/arrowTop.svg';
+import arrowDown from 'images/icons/arrowDown.svg';
+import Image from 'next/image';
 
 type Props = {
   section: footerBlock
@@ -23,9 +25,9 @@ export const FooterSection:React.FC<Props> = ({ section }):ReactElement => {
         >
         <h5 className={styles.blockTitle}>{title}</h5>
         {areListsVisible ? (
-          <img alt="arrowTop" className={styles.arrow} src={arrows.arrowTop} />
+          <Image alt="arrowTop" className={styles.arrow} src={arrowTop} />
         ): (
-          <img alt="arrowBottom" className={styles.arrow} src={arrows.arrowBottom} />
+          <Image alt="arrowBottom" className={styles.arrow} src={arrowDown} />
         )}
 
 

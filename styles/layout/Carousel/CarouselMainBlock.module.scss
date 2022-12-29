@@ -1,0 +1,14 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+@import '../../utils/placeholders.scss';
+
+.image {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  @extend %smooth-transition;
+  object-fit: cover;
+  object-position: bottom;
+}

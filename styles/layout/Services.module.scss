@@ -1,0 +1,109 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+@import '../utils/placeholders.scss';
+
+.section {
+  @extend %smooth-transition;
+  background-color: $colorWhite1;
+  padding-top: 3.7rem;
+  padding-bottom: 3.7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+
+  @include onDesktop {
+    padding-top: 6rem;
+    padding-bottom: 4.8rem;
+    background-color: $colorWhite;
+  }
+
+  @include onMobile {
+    display: block;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include onMobile {
+    margin-bottom: 2rem;
+  }
+}
+
+.block:last-child {
+  @include onMobile {
+    margin-bottom: 0;
+  }
+}
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  @extend %iconSizes;
+
+
+  &Support {
+    background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1670930938/techstore/earphones_dcsuug.svg);
+  }
+
+  &Account {
+    background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1670940619/techstore/profile1_nj6hch.svg);
+  }
+
+  &Savings {
+    background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1670940618/techstore/savings_vghcau.svg);
+  }
+}
+
+.iconBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorBlue3;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  @extend %smooth-transition;
+  margin-bottom: 0.7rem;
+
+
+  @include onDesktop {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.title {
+  margin-bottom: 1.3rem;
+  @extend %servicesTitle;
+}
+
+.description {
+  @extend %servicesDescription;
+  max-width: 20rem;
+  text-align: center;
+
+  @include onMobile {
+    max-width: 24rem;
+  }
+
+  @include onDesktop {
+    max-width: 24rem;
+  }
+
+
+}

@@ -1,14 +1,14 @@
 /* eslint-disable no-console */
 import Link from 'next/link';
 import React, { ReactElement } from 'react';
-import { MainContainer } from '../components/MainContainer';
+import { MainContainer } from 'components/MainContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faMobile, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { schema } from '../helpers/schema';
-import { formInputs } from '../types/formInputs';
+import { schema } from 'helpers/schema';
+import { formInputs } from 'types/formInputs';
 import { yupResolver } from '@hookform/resolvers/yup';
-import styles from '../styles/contactUs.module.scss';
-import classes from '../styles/container.module.scss';
+import styles from 'styles/layout/contactUs.module.scss';
+import classes from 'styles/base/container.module.scss';
 import { useForm } from 'react-hook-form';
 
 const ContactUs = (): ReactElement => {
@@ -57,9 +57,9 @@ const onSubmit = (data: formInputs): void => {
                         placeholder='Your Name'
                         type="text"
                       />
-                      {errors.name ? (
+                      {errors.name && (
                         <p className={styles.error}>{errors.name?.message}</p>
-                      ): ''}
+                      )}
                     </label>
                   </div>
                   <div className={styles.inputBlock} >
@@ -73,9 +73,9 @@ const onSubmit = (data: formInputs): void => {
                         name='email'
                         type="email"
                       />
-                      {errors.email? (
+                      {errors.email && (
                         <p className={styles.error}> {errors.email?.message} </p>
-                      ):''}
+                      )}
                     </label>
                   </div>
                   <div className={styles.inputBlock} >
@@ -89,9 +89,9 @@ const onSubmit = (data: formInputs): void => {
                         placeholder='Your Phone'
                         type="tel"
                       />
-                      {errors.phoneNumber ? (
+                      {errors.phoneNumber && (
                         <p className={styles.error}>{errors.phoneNumber?.message}</p>
-                      ):''}
+                      )}
                     </label>
                   </div>
                   <div className={styles.inputBlock} >
@@ -106,9 +106,9 @@ const onSubmit = (data: formInputs): void => {
                         placeholder='Jot us a note and we’ll get back to you as quickly as possible'
                         rows={7}
                       />
-                      {errors.contactMessage ? (
+                      {errors.contactMessage && (
                         <p className={styles.error}>{errors.contactMessage?.message}</p>
-                      ):''}
+                      )}
                     </label>
                   </div>
                   <button className={styles.buttonSubmit} type="submit">Submit</button>

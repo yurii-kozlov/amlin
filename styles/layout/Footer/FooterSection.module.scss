@@ -1,0 +1,138 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+@import '../../utils/placeholders.scss';
+
+.blockTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 100%;
+  margin-bottom: 1.2rem;
+  color: $colorWhite4;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    color: $colorWhite2;
+  }
+}
+
+.block {
+  position: relative;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem;
+  min-height: 3.6rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
+
+.block::after {
+  content:'';
+  display: inline-block;
+  position: absolute;
+  height: 0.1rem;
+  width: 100%;
+  background-color: $colorGrey1;
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.list {
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 1.3rem;
+  transition: all 1s ease-in-out;
+  
+  @include onDesktop {
+    padding-left: 0;
+    overflow: visible;
+    max-height: fit-content;
+  }
+
+  &Item {
+    color: $colorWhite;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 170%;
+    margin-bottom: 0.3rem;
+
+    @include onDesktop {
+      font-size: 1.4rem;
+      line-height: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &Item:last-child {
+    margin-bottom: 1rem;
+
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.openingLink {
+  @extend %smooth-transition;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  @include onDesktop {
+    pointer-events: none;
+    display: inline-block;
+  }
+}
+
+.listsVisible {
+  display: block;
+  max-height: 300px;
+}
+
+.openingLink:hover {
+  opacity: 0.5;
+}
+
+.additionalInfo {
+  color: $colorBlue4;
+  @extend %smooth-transition;
+}
+
+.additionalInfo:hover {
+  color: $colorBlue6;
+}
+
+.link {
+  display: inline-block;
+  @extend %smooth-transition;
+}
+
+.link:hover {
+  color: $colorBlue5;
+  transform: scale(1.05);
+}
+
+.arrow {
+  display: inline-block;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    display: none;
+  }
+}

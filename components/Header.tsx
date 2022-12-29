@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable max-len */
 import React, { ReactElement, useState } from 'react';
-import { Menu } from './Menu';
+import { Menu } from 'components/Menu';
 import Image from 'next/image'
-import styles from '../styles/Header.module.scss';
+import styles from 'styles/layout/Header.module.scss';
 import Link from 'next/link';
+import faceBookIcon from 'images/icons/facebook.svg';
+import instagramIcon from 'images/icons/instagram.svg';
 
 export const Header:React.FC = (): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -43,7 +44,7 @@ export const Header:React.FC = (): ReactElement => {
               <Image
                 alt='facebook'
                 height={15}
-                src='https://res.cloudinary.com/docve4syp/image/upload/v1670596201/techstore/facebook_nssaki.webp'
+                src={faceBookIcon}
                 width={15}
               />
             </a>
@@ -51,9 +52,9 @@ export const Header:React.FC = (): ReactElement => {
               className={styles.link}
               href="#">
               <Image
-                alt='facebook'
+                alt='instagram'
                 height={15}
-                src='https://res.cloudinary.com/docve4syp/image/upload/v1670593105/techstore/instagram_uli9xn.webp'
+                src={instagramIcon}
                 width={15}
               />
             </a>

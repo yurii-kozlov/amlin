@@ -1,0 +1,21 @@
+@import '../utils/mixins.scss';
+
+.container {
+  margin: 0 auto;
+  max-width: 1900px;
+  padding: 0 1.5rem;
+  height: 100%;
+  box-sizing: border-box;
+
+  @include onTablet {
+    padding: 0 2rem;
+  }
+
+  @include onDesktop {
+    padding: 0 4rem;
+  }
+}
+
+.height {
+  height: 100%;
+}

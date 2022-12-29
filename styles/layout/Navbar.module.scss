@@ -1,0 +1,119 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+@import '../utils/placeholders.scss';
+
+.block {
+  border-bottom: 0.1rem solid $colorGrey2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 9rem;
+  display: none;
+
+  @include onDesktop {
+    display: flex;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+
+  &Item {
+    display: inline-block;
+    @extend %navbarText;
+    border: 0.2rem solid transparent;
+    border-radius: 5rem;
+    @extend %smooth-transition;
+
+    &Link {
+      display: inline-block;
+      padding: 0.8rem 1rem;
+    }
+  }
+}
+
+
+.listItem:hover {
+  border: 0.2rem solid $colorBlue3;
+}
+
+.listItemLink {
+  @extend %smooth-transition;
+}
+
+.listItemLink:hover {
+  color: $colorBlue3;
+}
+
+.personalSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menuLink {
+  display: inline-block;
+  width: 3rem;
+  height: 4rem;
+  @extend %iconSizes;
+
+  background-image: url(../../images/icons/menuDesktop.svg);
+}
+
+.searchLink {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  @extend %iconSizes;
+
+  background-image: url(../../images/icons/searchDesktop.svg);
+}
+
+.basket {
+  position: relative;
+
+  &Block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    color: $colorWhite;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color:$colorBlue3;
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+    text-align: center;
+    transform: translate(55%, -65%);
+  }
+
+  &Link {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    @extend %iconSizes;
+  
+    background-image: url(../../images/icons/basketDesktop.svg);
+  }
+}
+
+.profile {
+  position: relative;
+}
+
+.profileLink {
+  display: inline-block;
+  width: 3.6rem;
+  height: 3.6rem;
+  @extend %iconSizes;
+
+  background-image: url(../../images/icons/profilePhoto.svg);
+}

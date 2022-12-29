@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
-import { NewsBlock } from './NewsBlock';
-import classes from '../../styles/container.module.scss';
-import styles from '../../styles/News.module.scss';
-import { newsLinksImages } from '../../api/newsLinksImages';
+import { NewsBlock } from 'components/News/NewsBlock';
+import classes from 'styles/base/container.module.scss';
+import styles from 'styles/layout/News/News.module.scss';
+import { newsLinksImages } from 'api/newsLinksImages';
 
 export const News: React.FC = (): ReactElement => (
   <section className={styles.section}>

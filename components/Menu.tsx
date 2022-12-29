@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { ReactElement } from 'react';
-import styles from '../styles/Menu.module.scss';
+import styles from 'styles/layout/Menu.module.scss';
 
 type Props = {
   isMenuVisible: boolean

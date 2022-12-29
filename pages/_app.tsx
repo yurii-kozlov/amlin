@@ -1,14 +1,12 @@
-/* eslint-disable global-require */
-import 'bootstrap/dist/css/bootstrap.css';
-import '../styles/globals.scss';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'styles/base/globals.scss';
+
 
 import type { AppProps } from 'next/app';
-import { ReactNode, useEffect } from 'react';
+import { ReactNode } from 'react';
 
 export default function App({ Component, pageProps }: AppProps): ReactNode {
-  useEffect(() => typeof document !== 'undefined'
-    ? require('bootstrap/dist/js/bootstrap')
-    : null, [])
 
   return <Component {...pageProps} />
 }

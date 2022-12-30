@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable max-len */
 import React, { ReactElement, useState } from 'react';
-import { Menu } from './Menu';
+import { Menu } from 'components/Menu';
 import Image from 'next/image'
-import styles from '../styles/Header.module.scss';
+import styles from 'styles/Header.module.scss';
 import Link from 'next/link';
 
 export const Header:React.FC = (): ReactElement => {

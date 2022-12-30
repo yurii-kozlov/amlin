@@ -1,13 +1,13 @@
 /* eslint-disable max-len */
 import React, { ReactElement, useState } from 'react';
 import Image from 'next/image'
-import styles from '../../styles/Footer.module.scss';
-import classes from '../../styles/container.module.scss';
-import footerSectionStyles from '../../styles/FooterSection.module.scss';
-import { footerBlocks } from '../../api/footerBlocks';
-import { FooterSection } from './FooterSection';
-import { paymentSystemsImages } from '../../api/paymentSystemsImages';
-import { arrows } from '../../api/logosLinksImages';
+import styles from 'styles/Footer.module.scss';
+import classes from 'styles/container.module.scss';
+import footerSectionStyles from 'styles/FooterSection.module.scss';
+import { footerBlocks } from 'api/footerBlocks';
+import { FooterSection } from 'components/Footer/FooterSection';
+import { paymentSystemsImages } from 'api/paymentSystemsImages';
+import { arrows } from 'api/logosLinksImages';
 
 export const Footer: React.FC = (): ReactElement => {
   const [emailInput, setEmailInput] = useState<string>('');

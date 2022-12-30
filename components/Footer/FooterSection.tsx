@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from 'react';
-import styles from '../../styles/FooterSection.module.scss';
-import { footerBlock } from '../../types/footerBlock';
-import { arrows } from '../../api/logosLinksImages';
+import styles from 'styles/FooterSection.module.scss';
+import { footerBlock } from 'types/footerBlock';
+import { arrows } from 'api/logosLinksImages';
 import Link from 'next/link';
 
 type Props = {

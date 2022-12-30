@@ -8,7 +8,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier",
+    "eslint": "eslint"
   },
   "dependencies": {
     "@cloudinary/url-gen": "^1.8.7",

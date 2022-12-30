@@ -7,8 +7,6 @@ type Props = {
   isMenuVisible: boolean
 }
 
-
-
 export const Menu: React.FC<Props> = ({ isMenuVisible }): ReactElement => (
   <div className={cn(styles.section, {[styles.visible]: isMenuVisible})} >
     <ul className={styles.list} >

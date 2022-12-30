@@ -11,3 +11,8 @@ export interface Product extends NewProduct {
   firm?: string,
   description?: string
 };
+
+export interface MinicartBlock {
+  productItem: Product
+  count: number
+}

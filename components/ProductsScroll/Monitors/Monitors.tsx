@@ -2,6 +2,7 @@ import React, { ReactElement, useEffect, useState } from 'react';
 import { Product } from 'types/main/Products';
 import { ProductScroll } from 'components/ProductsScroll/ProductScroll';
 import { getMonitors } from 'api/api';
+import { uuid } from 'uuidv4';
 
 type Props = {
   fetching: boolean,
@@ -36,7 +37,7 @@ export const Monitors: React.FC<Props> = ({
 
   return <>
     {monitors.map((monitor) => (
-      <ProductScroll key={monitor.slug} product={monitor}/>
+      <ProductScroll key={uuid()} product={monitor}/>
     ))}
   </>
 };

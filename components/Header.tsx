@@ -9,11 +9,14 @@ import faceBookIcon from 'images/icons/facebook.svg';
 import instagramIcon from 'images/icons/instagram.svg';
 import personalAccount from 'store/personalAccount';
 import { observer } from 'mobx-react';
+import { Minicart } from 'components/Minicart/Minicart';
 
 export const Header:React.FC = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
+  const [isMinicartVisible, setIsMinicartVisible] = useState<boolean>(false);
 
   const handleMenuVisibility = (): void => setIsMenuVisible(!isMenuVisible);
+  const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
   return (
     <header className={`${styles.page} ${styles.pageMarginBottom}`}>
@@ -83,12 +86,15 @@ export const Header:React.FC = observer((): ReactElement => {
         </div>
 
         <div className={styles.basket}>
+          <Minicart isMinicartVisible={isMinicartVisible} />
           <div className={styles.basketBlock}>
             {personalAccount.cart.length}
           </div>
           <a
             className={styles.basketLink}
-            href="#" />
+            href="#"
+            onClick={handleMinicartVisibility}
+          />
         </div>
 
         <div className={styles.profile}>

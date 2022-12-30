@@ -7,16 +7,19 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 1.5rem;
-  right: 0.1rem;
+  top: 3.3rem;
+  right: -2rem;
   background-color: $colorWhite;
   z-index: 10;
   min-width: 30rem;
-  overflow: hidden;
   transform: scale(0);
   padding-top: 2.2rem;
   padding-bottom: 2.2rem;
 
+  @include onDesktop {
+    top: 1.5rem;
+    right: 0.1rem;
+  }
   @extend %smooth-transition;
 }
 
@@ -90,6 +93,7 @@
   line-height: 2.6rem;
   color: $colorBlack;
   margin-left: 0.4rem;
+  margin-right: 1rem;
 }
 
 .imageCountContainer {
@@ -110,21 +114,19 @@
   margin-bottom: 2rem;
 }
 
-.buttonEdit:hover {
+.buttonEditView:hover {
   background-color: $colorGrey2;
 }
 
 .productImage {
   width: 6rem;
   height: 6rem;
+  margin-right: 1rem;
 }
 
 .productName {
   min-height: 6rem;
-}
-
-.buttonEdit {
-  // display: inline-block;
+  max-width: 50%;
 }
 
 .itemsCount {
@@ -225,6 +227,22 @@
   @extend %iconSizes;
   background-image: url('../../images/icons/buttonEdit.svg')
 }
+.block::before {
+  content: '';
+  display: inline-block;
+  border-radius: 0.3rem;
+  position: absolute;
+  transform: translateY(-90%);
+  right: 9%;
+  top: 0;
+  transform: translateY(-100%);
+  width: 0; 
+  height: 0; 
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid $colorWhite;
+  z-index: 100;
 
-
+  @extend %smooth-transition;
+}
 

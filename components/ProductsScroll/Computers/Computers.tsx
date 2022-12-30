@@ -2,6 +2,7 @@ import React, { ReactElement, useEffect, useState } from 'react';
 import { Product } from 'types/main/Products';
 import { ProductScroll } from 'components/ProductsScroll/ProductScroll';
 import { getComputers } from 'api/api';
+import { uuid } from 'uuidv4';
 
 type Props = {
   fetching: boolean,
@@ -36,7 +37,7 @@ export const Computers: React.FC<Props> = ({
 
   return <>
     {computers.map((computer) => (
-      <ProductScroll key={computer.slug} product={computer}/>
+      <ProductScroll key={uuid()} product={computer}/>
     ))}
   </>
 }

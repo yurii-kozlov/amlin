@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
-import classes from '../styles/container.module.scss';
-import styles from '../styles/Reviews.module.scss';
-import { texts } from '../api/texts';
+import classes from 'styles/container.module.scss';
+import styles from 'styles/Reviews.module.scss';
+import { texts } from 'api/texts';
 import Link from 'next/link';
 
 export const Reviews: React.FC = (): ReactElement => (
@@ -20,4 +20,4 @@ export const Reviews: React.FC = (): ReactElement => (
       </div>
     </section>
   </div>
-)
+);

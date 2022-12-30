@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
-import styles from '../styles/Services.module.scss';
-import classes from '../styles/container.module.scss';
+import styles from 'styles/Services.module.scss';
+import classes from 'styles/container.module.scss';
 
 export const Services: React.FC = (): ReactElement => (
   <div className={classes.container} >
@@ -31,4 +31,4 @@ export const Services: React.FC = (): ReactElement => (
       </div>
     </div>
   </div>
-)
+);

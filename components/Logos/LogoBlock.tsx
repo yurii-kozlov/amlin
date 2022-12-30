@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { logoBlock } from '../../types/logo';
+import { logoBlock } from 'types/logo';
 
 type Props = {
   logo: logoBlock

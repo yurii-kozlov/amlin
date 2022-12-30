@@ -16,4 +16,4 @@ export const MainContainer:React.FC<Props> = ({children}): ReactElement => (
     <Services />
     <Footer />
   </>
-)
+);

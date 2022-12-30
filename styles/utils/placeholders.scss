@@ -153,4 +153,25 @@
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 2.1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%buttonBlueNew {
+  @extend %butttonWhite;
+  color : $colorWhite;
+  background-color: $colorBlue3;
+  border: none;
+}
+
+%buttonYellow {
+  @extend %butttonWhite;
+  color : $colorBlack;
+  background-color: $colorYellow;
+  border: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }

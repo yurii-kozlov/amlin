@@ -5,7 +5,7 @@ import { Menu } from 'components/Menu';
 import { observer } from 'mobx-react'
 import styles from 'styles/layout/Navbar.module.scss';
 import personalAccount from 'store/personalAccount';
-import { Minicart } from './Minicart';
+import { Minicart } from './Minicart/Minicart';
 
 export const Navbar = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);

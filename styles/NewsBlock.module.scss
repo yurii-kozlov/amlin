@@ -1,7 +1,3 @@
-@import './utils/variables.scss';
-@import './utils/mixins.scss';
-@import './utils/placeholders.scss';
-
 .block {
   display: flex;
   flex-direction: column;
@@ -31,5 +27,4 @@
   font-size: 1rem;
   line-height: 1.5rem;
   color: $colorGrey1;
-
 }

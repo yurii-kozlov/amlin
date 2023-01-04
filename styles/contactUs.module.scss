@@ -1,7 +1,3 @@
-@import './utils/variables.scss';
-@import './utils/mixins.scss';
-@import './utils/placeholders.scss';
-
 .mainBlock {
   display: grid;
   @include onMobile {

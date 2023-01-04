@@ -29,7 +29,11 @@ export const Laptops: React.FC<Props> = ({ fetching, areLaptopsVisible, setFetch
 
   return <>
     {laptops.map((laptop) => (
-      <ProductScroll key={uuid()} product={laptop}/>
+      <ProductScroll
+        key={uuid()}
+        product={laptop}
+        productType='laptops'
+      />
     ))}
   </>
 };

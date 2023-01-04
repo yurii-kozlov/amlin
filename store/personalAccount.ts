@@ -1,14 +1,12 @@
-/* eslint-disable no-unused-expressions */
 import { makeObservable, observable, action, computed } from 'mobx'
 import { MinicartBlock, Product } from 'types/main/Products';
 
 class PersonalAccount {
   cart: MinicartBlock[] = []
   get totalPrice(): number {
-    return +(
-      (this.cart
+    return (
+      this.cart
         .reduce(( sum, productBlock ) => sum + productBlock.productItem.price * productBlock.count, 0)
-      ).toFixed(2)
     )
   }
 

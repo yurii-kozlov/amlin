@@ -37,7 +37,11 @@ export const Monitors: React.FC<Props> = ({
 
   return <>
     {monitors.map((monitor) => (
-      <ProductScroll key={uuid()} product={monitor}/>
+      <ProductScroll
+        key={uuid()}
+        product={monitor}
+        productType='monitors'
+      />
     ))}
   </>
 };

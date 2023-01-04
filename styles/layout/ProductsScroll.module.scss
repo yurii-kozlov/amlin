@@ -2,10 +2,6 @@
 @import '../utils/mixins.scss';
 @import '../utils/placeholders.scss';
 
-.section {
-
-}
-
 .block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -36,8 +32,10 @@
   display: none;
 }
 
-.buttons {
+.buttonsList {
   margin-bottom: 2.3rem;
+  list-style: none;
+  display: flex;
 
   @include onMobile {
     margin-bottom: 1.4rem;
@@ -57,6 +55,7 @@
   font-size: 1.4rem;
   line-height: 140%;
   color: $colorGrey4;
+  border-bottom: 0.2rem solid transparent;
 
   @include onDesktop {
     font-size: 1.6rem;
@@ -64,13 +63,14 @@
   }
 }
 
-.button:not(:last-child) {
+.buttonsListItem:not(:last-child) {
   margin-right: 1.8rem;
 
   @include onMobile {
     margin-right: 1.6rem;
   }
 }
+
 
 .button:hover {
   transform: scale(1.05);

@@ -4,12 +4,14 @@ import React, { ReactElement, useState } from 'react';
 import { Menu } from 'components/Menu';
 import Image from 'next/image'
 import styles from 'styles/layout/Header.module.scss';
+import classes from 'styles/base/container.module.scss';
 import Link from 'next/link';
 import faceBookIcon from 'images/icons/facebook.svg';
 import instagramIcon from 'images/icons/instagram.svg';
 import personalAccount from 'store/personalAccount';
 import { observer } from 'mobx-react';
 import { Minicart } from 'components/Minicart/Minicart';
+import cn from 'classnames';
 
 export const Header:React.FC = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -19,50 +21,52 @@ export const Header:React.FC = observer((): ReactElement => {
   const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
   return (
-    <header className={`${styles.page} ${styles.pageMarginBottom}`}>
+    <header className={cn(styles.page, styles.pageMarginBottom)}>
       <div className={styles.menu}>
         <div className={styles.menuIcon1} />
       </div>
       <div className={styles.background_black}>
-        <div className={styles.content} >
-          <div className={styles.workingSchedule}>
-            <span className={styles.workingDays}>Mon-Thu:{' '}</span>
-            <span className={styles.workingHours}>9:00 AM - 5:30 PM</span>
-            <i className={styles.arrow} />
-          </div>
-          <div className={styles.address}>
-            <span className={styles.addressDetailed}>
-              Visit our showroom in 1234 Street Adress City Address, 1234
-              {' '}
-            </span>
-            <Link className={styles.contactUsLink} href="/contactUs">
-              Contact Us
-            </Link>
-          </div>
-          <div className={styles.contact}>
-            <span className={styles.phoneNumber}>
-              Call Us: (00) 1234 5678
-            </span>
-            <a
-              className={styles.link}
-              href="#">
-              <Image
-                alt='facebook'
-                height={15}
-                src={faceBookIcon}
-                width={15}
-              />
-            </a>
-            <a
-              className={styles.link}
-              href="#">
-              <Image
-                alt='instagram'
-                height={15}
-                src={instagramIcon}
-                width={15}
-              />
-            </a>
+        <div className={classes.container} >
+          <div className={styles.content} >
+            <div className={styles.workingSchedule}>
+              <span className={styles.workingDays}>Mon-Thu:{' '}</span>
+              <span className={styles.workingHours}>9:00 AM - 5:30 PM</span>
+              <i className={styles.arrow} />
+            </div>
+            <div className={styles.address}>
+              <span className={styles.addressDetailed}>
+                Visit our showroom in 1234 Street Adress City Address, 1234
+                {' '}
+              </span>
+              <Link className={styles.contactUsLink} href="/contactUs">
+                Contact Us
+              </Link>
+            </div>
+            <div className={styles.contact}>
+              <span className={styles.phoneNumber}>
+                Call Us: (00) 1234 5678
+              </span>
+              <a
+                className={styles.link}
+                href="#">
+                <Image
+                  alt='facebook'
+                  height={15}
+                  src={faceBookIcon}
+                  width={15}
+                />
+              </a>
+              <a
+                className={styles.link}
+                href="#">
+                <Image
+                  alt='instagram'
+                  height={15}
+                  src={instagramIcon}
+                  width={15}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

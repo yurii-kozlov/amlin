@@ -6,28 +6,30 @@ import { starRating } from 'helpers/starRating';
 import { Product } from 'types/main/Products';
 import personalAccount from 'store/personalAccount';
 import { observer } from 'mobx-react';
+import cn from 'classnames';
 
-type Props = {
-  product: Product
+type addToCardProps = {
+  product: Product,
+  productType: string
 }
 
 export const addToCard = (product: Product): void => {
   personalAccount.addProduct(product);
 }
 
-export const ProductScroll:React.FC<Props> = observer (({ product }): ReactElement => {
+export const ProductScroll:React.FC<addToCardProps> = observer (({ product, productType }): ReactElement => {
   const {
     inStock, slug, url, name, reviewsCount, previousPrice, rating, price
   } = product;
 
   return  (
     <div className={styles.section} >
-      <button className={`${styles.upperBottoms} ${styles.addToWishListBottom}`} type="button" />
-      <button className={`${styles.upperBottoms} ${styles.statisticsBottom}`} type="button" />
+      <button className={cn(styles.upperBottoms, styles.addToWishListBottom)} type="button" />
+      <button className={cn(styles.upperBottoms, styles.statisticsBottom)} type="button" />
       {inStock ? (
-        <span className={`${styles.stockStatusSuccess} ${styles.stockStatus}`}>in stock</span>
+        <span className={cn(styles.stockStatusSuccess, styles.stockStatus)}>in stock</span>
         ): (
-          <span className={`${styles.stockStatusFailure} ${styles.stockStatus}`}> check availability</span>
+          <span className={cn(styles.stockStatusFailure, styles.stockStatus)}> check availability</span>
         ) }
 
       <div className={styles.imageContainer} >
@@ -39,7 +41,7 @@ export const ProductScroll:React.FC<Props> = observer (({ product }): ReactEleme
           Reviews ({reviewsCount})
         </p>
       </div>
-      <Link className={styles.productLink} href="#" >
+      <Link className={styles.productLink} href={`/${productType}/${name}`} >
         <p className={styles.productName}>{name}</p>
       </Link>
       <p className={styles.previousPrice}>${previousPrice}</p>

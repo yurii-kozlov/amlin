@@ -110,11 +110,6 @@
 }
 
 %smallNavigation {
-  margin-top: 2.1rem;
-  margin-bottom: 1.2rem;
-  @include onDesktop {
-    margin-bottom: 1.8rem;
-  }
   display: flex;
   gap: 1.5rem;
   color: $colorBlack;

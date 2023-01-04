@@ -28,10 +28,10 @@ const onSubmit = (data: formInputs): void => {
     <MainContainer>
       <div className={classes.container}>
         <section className={styles.section}>
-          <div className={styles.navigation} >
+          <nav className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/contactUs">Contact Us</Link>
-          </div>
+          </nav>
           <h1 className={styles.title}>Contact Us</h1>
           <p className={styles.description} >We love hearing from you, our Shop customers. <br />
             Please contact us and we will make sure to get back to you as soon as we possibly can.

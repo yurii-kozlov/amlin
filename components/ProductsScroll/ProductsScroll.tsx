@@ -4,6 +4,7 @@ import styles from 'styles/layout/ProductsScroll.module.scss';
 import { Laptops } from 'components/ProductsScroll/Laptops/Laptops';
 import { Computers } from 'components/ProductsScroll/Computers/Computers';
 import { Monitors } from 'components/ProductsScroll/Monitors/Monitors';
+import cn from 'classnames';
 
 export const ProductsScroll: React.FC = (): ReactElement => {
   const [fetching, setFetching] = useState(true);
@@ -48,31 +49,37 @@ export const ProductsScroll: React.FC = (): ReactElement => {
   return (
     <div className={classes.container}>
       <section className={styles.section} >
-        <div className={styles.buttons} >
-          <button
-            className={`${styles.button} ${areLaptopsVisible && styles.buttonActive}`}
-            onClick={handleLaptopsVisibility}
-            type="submit"
+        <ul className={styles.buttonsList} >
+          <li className={styles.buttonsListItem}>
+            <button
+              className={cn(styles.button, {[styles.buttonActive]:areLaptopsVisible})}
+              onClick={handleLaptopsVisibility}
+              type="submit"
           >
-            Laptops
-          </button>
-          <button
-            className={`${styles.button} ${areComputersVisible && styles.buttonActive}`}
-            onClick={handleComputersVisibility}
-            type="submit"
+              Laptops
+            </button>
+          </li>
+          <li className={styles.buttonsListItem}>
+            <button
+              className={cn(styles.button, {[styles.buttonActive]: areComputersVisible})}
+              onClick={handleComputersVisibility}
+              type="submit"
           >
-            Computers
-          </button>
-          <button
-            className={`${styles.button} ${areMonitorsVisible && styles.buttonActive}`}
-            onClick={handleMonitorsVisibility}
-            type="submit"
+              Computers
+            </button>
+          </li>
+          <li className={styles.buttonsListItem}>
+            <button
+              className={cn(styles.button, {[styles.buttonActive]: areMonitorsVisible})}
+              onClick={handleMonitorsVisibility}
+              type="submit"
           >
-            Monitors
-          </button>
-        </div>
+              Monitors
+            </button>
+          </li>
+        </ul>
         <div
-          className={`${styles.block} ${styles.photos} ${!areLaptopsVisible && styles.invisibleLaptops} `}
+          className={cn(styles.block, styles.photos, {[styles.invisibleLaptops]: !areLaptopsVisible})}
         >
           <Laptops
             areLaptopsVisible={areLaptopsVisible}
@@ -81,7 +88,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
           />
         </div>
         <div
-          className={`${styles.block} ${styles.comments} ${!areComputersVisible && styles.invisibleComputers} `}
+          className={cn(styles.block, styles.comments, {[styles.invisibleComputers]:!areComputersVisible })}
         >
           <Computers
             areComputersVisible={areComputersVisible}
@@ -90,7 +97,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
           />
         </div>
         <div
-          className={`${styles.block} ${styles.comments} ${!areMonitorsVisible && styles.invisibleMonitors} `}
+          className={cn(styles.block, styles.comments, {[styles.invisibleMonitors]: !areMonitorsVisible})}
         >
           <Monitors
             areMonitorsVisible={areMonitorsVisible}

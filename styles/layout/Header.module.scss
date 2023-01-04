@@ -35,21 +35,14 @@
 .content {
   display: flex;
   min-height: 4rem;
-  justify-content: space-evenly;
-
-
-  @include onDesktop {
-    min-height: 4.5rem;
-  }
-  
-  @include onTablet {
-    justify-content: space-between;
-    padding: 0 3rem;
-  }
+  justify-content: space-between;
 
   @include onMobile {
     gap: 2rem;
-    padding: 0 1.3rem;
+  }
+
+  @include onDesktop {
+    min-height: 4.5rem;
   }
 
   align-items: center;
@@ -61,20 +54,19 @@
     align-items: center;
     gap: 0.5rem;
 
-    @include onTablet {
-      margin-left: 9rem;
-    }
-
-    @include onMobile {
-      margin-left: 8.2rem;
-    }
-
-
-  
     @include onMobile {
       padding: 0.3rem 1rem;
       border: 0.1rem solid $colorGrey1;
       border-radius: 1.5rem;
+      margin-left: 8.2rem;
+    }
+
+    @include onTablet {
+      margin-left: 9rem;
+    }
+
+    @include onDesktop {
+      margin-left: 0;
     }
   }
 

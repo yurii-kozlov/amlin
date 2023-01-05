@@ -54,7 +54,7 @@
   background-color: $colorBlue7;
   width: 0.2rem;
   position: absolute;
-  left: -3.5%;
+  left: -4.5%;
 
   @include onTablet {
     height: 1.7rem;
@@ -70,7 +70,6 @@
 }
 
 .logo {
-  background-image: url(../../images/icons/zipLogo.svg);
   @extend %iconSizes;
   @extend %smooth-transition;
 
@@ -96,7 +95,6 @@
 .moreInfoLink {
   font-size: 1.4rem;
   text-decoration: underline;
-
 
   @include onMobile {
     margin-left: 0;

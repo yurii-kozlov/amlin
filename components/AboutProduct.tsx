@@ -15,7 +15,7 @@ type AboutProductProps = {
 
 
 export const AboutProduct: React.FC<AboutProductProps> = ({ product }): ReactElement => {
-  const {name, description, price} = product || {};
+  const {name, price, description, slug } = product || {};
 
   const [chosenColor, setChosenColor] = useState<Colors>(Colors.darkGrey);
   const [visibleAboutProductSection, setVisibleAboutProductSection] =
@@ -132,61 +132,77 @@ export const AboutProduct: React.FC<AboutProductProps> = ({ product }): ReactEle
       <div className={styles.productSection} >
         <div className={styles.description} >
           <div className={classes.container} >
-            <nav className={styles.navigation} >
-              <Link className={styles.navigationLink} href="/">Home</Link>
-              <Link className={styles.navigationLink} href="/laptops">Contact Us</Link>
-              <Link className={styles.navigationLink} href={`/laptops/${name}`}>{name}</Link>
-            </nav>
-            <h2 className={styles.name}>{name}</h2>
-            <Link className={styles.reviewLink} href="#">Be the first to review this product</Link>
-            <p className={styles.descriptionText}>
-              {description}
-            </p>
-            <ul className={styles.colorsList}>
-              <li className={styles.colorsListItem}>
-                <div className={cn
-                  (styles.buttonChooseColorContainer, {
-                    [styles.buttonChosenColorActive]: chosenColor === Colors.darkGrey
-                  }
-                )}
-                >
-                  <button
-                    aria-label="colorDarkGrey"
-                    className={cn(styles.buttonChooseColor, styles.buttonDarkGreyColor)}
-                    onClick={setDarkGreyColor}
-                    type="button"
-                   />
-                </div>
-              </li>
-              <li className={styles.colorsListItem}>
-                <div className={cn
-                  (styles.buttonChooseColorContainer, {[styles.buttonChosenColorActive]: chosenColor === Colors.white}
-                )}
-                >
-                  <button
-                    aria-label="colorWhite"
-                    className={cn(styles.buttonChooseColor, styles.buttonWhiteColor)}
-                    onClick={setWhiteColor}
-                    type="button"
-                   />
-                </div>
-              </li>
-              <li className={styles.colorsListItem}>
-                <div className={cn
-                  (styles.buttonChooseColorContainer, {[styles.buttonChosenColorActive]: chosenColor === Colors.grey}
-                )}
-                >
-                  <button
-                    aria-label="colorGrey"
-                    className={cn(styles.buttonChooseColor, styles.buttonGreyColor)}
-                    onClick={setGreyColor}
-                    type="button"
-                   />
-                </div>
-              </li>
-            </ul>
+            <div className={styles.descriptionAdditionalContainerOnDesktop}>
+              <nav className={styles.navigation} >
+                <Link className={styles.navigationLink} href="/">Home</Link>
+                <Link className={styles.navigationLink} href="/laptops">Contact Us</Link>
+                <Link className={styles.navigationLink} href={`/laptops/${name}`}>{name}</Link>
+              </nav>
+              <h2 className={styles.name}>{name}</h2>
+              <Link className={styles.reviewLink} href="#">Be the first to review this product</Link>
+              <p className={styles.descriptionText}>
+                {description}
+              </p>
+              <ul className={styles.colorsList}>
+                <li className={styles.colorsListItem}>
+                  <div className={cn
+                    (styles.buttonChooseColorContainer, {
+                      [styles.buttonChosenColorActive]: chosenColor === Colors.darkGrey
+                    }
+                  )}
+                  >
+                    <button
+                      aria-label="colorDarkGrey"
+                      className={cn(styles.buttonChooseColor, styles.buttonDarkGreyColor)}
+                      onClick={setDarkGreyColor}
+                      type="button"
+                     />
+                  </div>
+                </li>
+                <li className={styles.colorsListItem}>
+                  <div className={cn
+                    (styles.buttonChooseColorContainer, {[styles.buttonChosenColorActive]: chosenColor === Colors.white}
+                  )}
+                  >
+                    <button
+                      aria-label="colorWhite"
+                      className={cn(styles.buttonChooseColor, styles.buttonWhiteColor)}
+                      onClick={setWhiteColor}
+                      type="button"
+                     />
+                  </div>
+                </li>
+                <li className={styles.colorsListItem}>
+                  <div className={cn
+                    (styles.buttonChooseColorContainer, {[styles.buttonChosenColorActive]: chosenColor === Colors.grey}
+                  )}
+                  >
+                    <button
+                      aria-label="colorGrey"
+                      className={cn(styles.buttonChooseColor, styles.buttonGreyColor)}
+                      onClick={setGreyColor}
+                      type="button"
+                     />
+                  </div>
+                </li>
+              </ul>
+              <div className={styles.bottomPart} >
+                <span className={styles.feedbackBlock} >
+                  <strong>Have a Question? </strong>
+                  <Link className={styles.feedbackBlockLink} href="/contactUs">Contact Us</Link>
+                </span>
+                <span className={styles.slug}>{slug}</span>
+              </div>
+            </div>
+            <Link className={styles.moreInformationLink} href="#">
+              <strong>
+                + More information
+              </strong>
+            </Link>
           </div>
+
         </div>
+
         <div className={classes.container} >
           <div className={styles.imageSection}>
             hello everyone

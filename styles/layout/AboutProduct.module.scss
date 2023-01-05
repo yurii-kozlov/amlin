@@ -151,7 +151,16 @@
   background-color: $colorWhite1;
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 60%;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+  
+}
+
+.descriptionAdditionalContainerOnDesktop {
+  @include onDesktop {
+    padding: 0 5rem;
+  }
 }
 
 .productSection {
@@ -159,7 +168,6 @@
 }
 
 .navigation {
-  margin-top: 5.5rem;
   margin-bottom: 2.5rem;
   @extend %smallNavigation;
 }
@@ -219,6 +227,7 @@
 .colorsList {
   list-style: none;
   display: flex;
+  margin-bottom: 3rem;
 }
 
 .buttonChooseColor {
@@ -257,4 +266,49 @@
   background-color: $colorGrey6;
 }
 
+.bottomPart {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14rem;
+}
 
+.slug {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $colorBlack;
+}
+
+.feedbackBlock {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $colorBlack;
+  @extend %smooth-transition;
+
+  &Link {
+    color: $colorBlue3;
+    text-decoration: underline;
+    font-weight: 400;
+    @extend %smooth-transition;
+  }
+
+  &Link:hover {
+    color: $colorBlue2;
+  }
+}
+
+.moreInformationLink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+
+.imageSection {
+  // padding: 0 5rem;
+  // background-color: aqua;
+}

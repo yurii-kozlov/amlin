@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import React, { ReactElement, useState } from 'react';
 import Image from 'next/image'
-import styles from 'styles/Footer.module.scss';
-import footerSectionStyles from 'styles/FooterSection.module.scss';
+import styles from 'styles/layout/Footer/Footer.module.scss';
+import footerSectionStyles from 'styles/layout/Footer/FooterSection.module.scss';
 import { footerBlocks } from 'api/footerBlocks';
 import { FooterSection } from 'components/Footer/FooterSection';
 import { paymentSystemsImages } from 'api/paymentSystemsImages';

@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from 'react'
 import { Menu } from 'components/Menu';
-import styles from 'styles/Navbar.module.scss';
+import styles from 'styles/layout/Navbar.module.scss';
 
 export const Navbar = (): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);

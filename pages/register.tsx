@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React, { ReactElement } from 'react';
 import { MainContainer } from 'components/MainContainer';
 import { useForm } from 'react-hook-form'
-import styles from 'styles/register.module.scss';
+import styles from 'styles/pages/register.module.scss';
 import { loginInputs } from 'types/loginInputs';
 import { loginSchema } from 'helpers/loginShema';
 import { yupResolver } from '@hookform/resolvers/yup';

@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import styles from 'styles/Services.module.scss';
+import styles from 'styles/layout/Services.module.scss';
 import cn from 'classnames';
 import { Container } from 'components/Container';
 

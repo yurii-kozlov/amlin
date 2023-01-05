@@ -7,7 +7,7 @@ import { faLocationDot, faMobile, faClock, faEnvelope } from '@fortawesome/free-
 import { schema } from 'helpers/schema';
 import { formInputs } from 'types/formInputs';
 import { yupResolver } from '@hookform/resolvers/yup';
-import styles from 'styles/contactUs.module.scss';
+import styles from 'styles/pages/contactUs.module.scss';
 import { useForm } from 'react-hook-form';
 import { Container } from 'components/Container';
 

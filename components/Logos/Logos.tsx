@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import styles from 'styles/Logos.module.scss';
+import styles from 'styles/layout/Logos.module.scss';
 import { logosLinksImages } from 'api/logosLinksImages';
 import { LogoBlock } from 'components/Logos/LogoBlock';
 import { Container } from 'components/Container';

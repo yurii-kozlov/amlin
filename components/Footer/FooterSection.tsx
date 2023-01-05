@@ -3,6 +3,7 @@ import styles from 'styles/FooterSection.module.scss';
 import { footerBlock } from 'types/footerBlock';
 import { arrows } from 'api/logosLinksImages';
 import Link from 'next/link';
+import cn from 'classnames';
 
 type Props = {
   section: footerBlock
@@ -30,7 +31,7 @@ export const FooterSection:React.FC<Props> = ({ section }):ReactElement => {
 
 
       </a>
-      <ul className={`${styles.list} ${areListsVisible && styles.listsVisible}`} >
+      <ul className={cn(styles.list, {[styles.listsVisible]: areListsVisible})} >
         {sections.map((sectionInfo) => (
           <li
             className={styles.listItem}

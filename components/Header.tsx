@@ -5,6 +5,7 @@ import { Menu } from 'components/Menu';
 import Image from 'next/image'
 import styles from 'styles/Header.module.scss';
 import Link from 'next/link';
+import cn from 'classnames';
 
 export const Header:React.FC = (): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -12,7 +13,7 @@ export const Header:React.FC = (): ReactElement => {
   const handleMenuVisibility = (): void => setIsMenuVisible(!isMenuVisible);
 
   return (
-    <header className={`${styles.page} ${styles.pageMarginBottom}`}>
+    <header className={cn(styles.page, styles.pageMarginBottom)}>
       <div className={styles.menu}>
         <div className={styles.menuIcon1} />
       </div>

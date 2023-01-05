@@ -51,25 +51,31 @@
   gap: 3rem;
 }
 
-.menuLink {
+.menuButton {
   display: inline-block;
   width: 3rem;
   height: 4rem;
   @extend %iconSizes;
+  border: none;
+  outline: none;
+  background-color: transparent;
 
   background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1670852978/techstore/menuDesktop_sti9f5.svg);
 }
 
-.searchLink {
+.searchButton {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
   @extend %iconSizes;
+  border: none;
+  outline: none;
+  background-color: transparent;
 
   background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1670853757/techstore/searchDesktop_fjert4.svg);
 }
 
-.basket {
+.minicart {
   position: relative;
 
   &Block {
@@ -91,11 +97,14 @@
     transform: translate(55%, -65%);
   }
 
-  &Link {
+  &Button {
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
     @extend %iconSizes;
+    border: none;
+    outline: none;
+    background-color: transparent;
   
     background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1670854133/techstore/basketDesktop_alzsfx.svg);
   }
@@ -105,11 +114,14 @@
   position: relative;
 }
 
-.profileLink {
+.profileButton {
   display: inline-block;
   width: 3.6rem;
   height: 3.6rem;
   @extend %iconSizes;
+  border: none;
+  outline: none;
+  background-color: transparent;
 
   background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1670857392/techstore/profilePhoto1_wgyvxb.svg);
 }

@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { ReactElement, useState } from 'react'
 import { Menu } from 'components/Menu';
 import styles from 'styles/Navbar.module.scss';
@@ -12,9 +10,10 @@ export const Navbar = (): ReactElement => {
   return (
     <nav className={styles.block} >
       <div className={styles.menuIcon} >
-        <a
-          className={styles.menuLink}
-          href="#menu"
+        <button
+          aria-label='menu'
+          className={styles.menuButton}
+          type="button"
         />
       </div>
       <ul className={styles.list}>
@@ -93,26 +92,29 @@ export const Navbar = (): ReactElement => {
 
       <div className={styles.personalSection}>
         <div className={styles.search} >
-          <a
-            className={styles.searchLink}
-            href="#search"
+          <button
+            aria-label='search'
+            className={styles.searchButton}
+            type="button"
           />
         </div>
-        <div className={styles.basket} >
-          <div className={styles.basketBlock}>
+        <div className={styles.minicart} >
+          <div className={styles.minicartBlock}>
             2
           </div>
-          <a
-            className={styles.basketLink}
-            href="#bakset"
+          <button
+            aria-label='minicart'
+            className={styles.minicartButton}
+            type="button"
            />
         </div>
         <div className={styles.profile} >
           <Menu isMenuVisible={isMenuVisible} />
-          <a
-            className={styles.profileLink}
-            href="#profile"
+          <button
+            aria-label='profile'
+            className={styles.profileButton}
             onClick={handleMenuVisibility}
+            type="button"
            />
         </div>
       </div>

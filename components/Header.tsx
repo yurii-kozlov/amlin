@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { ReactElement, useState } from 'react';
 import { Menu } from 'components/Menu';
 import Image from 'next/image'
@@ -63,9 +61,10 @@ export const Header:React.FC = (): ReactElement => {
 
       <div className={styles.search}>
         <div className={styles.toggle}>
-          <a
-            className={styles.menuIcon}
-            href="#"
+          <button
+            aria-label="menu"
+            className={styles.menuButton}
+            type="button"
           />
 
         </div>
@@ -79,21 +78,24 @@ export const Header:React.FC = (): ReactElement => {
           />
         </div>
 
-        <div className={styles.basket}>
-          <div className={styles.basketBlock}>
+        <div className={styles.minicart}>
+          <div className={styles.minicartBlock}>
             2
           </div>
-          <a
-            className={styles.basketLink}
-            href="#" />
+          <button
+            aria-label="minicart"
+            className={styles.minicartButton}
+            type="button"
+          />
         </div>
 
         <div className={styles.profile}>
           <Menu isMenuVisible={isMenuVisible} />
-          <a
-            className={styles.profileLink}
-            href="#"
+          <button
+            aria-label="profile"
+            className={styles.profileButton}
             onClick={handleMenuVisibility}
+            type="button"
           />
           {isMenuVisible && <div className={styles.arrowTop} />}
         </div>

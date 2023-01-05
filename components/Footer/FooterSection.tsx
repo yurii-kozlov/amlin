@@ -4,11 +4,11 @@ import { footerBlock } from 'types/footerBlock';
 import { arrows } from 'api/logosLinksImages';
 import Link from 'next/link';
 
-type Props = {
+type FooterSectionProps = {
   section: footerBlock
 }
 
-export const FooterSection:React.FC<Props> = ({ section }):ReactElement => {
+export const FooterSection:React.FC<FooterSectionProps> = ({ section }):ReactElement => {
   const { title, sections } = section
   const [areListsVisible, setAreListsVisible ] = useState<boolean>(false);
 

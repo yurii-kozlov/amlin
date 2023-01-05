@@ -182,7 +182,7 @@
   }
 
   &Input::placeholder {
-    font-family: 'Poppins',sans-serif;
+    font-family: $mainFontFamily;
     font-style: normal;
     color: $colorGrey2;
     font-weight: 400;
@@ -224,7 +224,7 @@
     background-color: $colorWhite;
     color: $colorBlue3;
   
-    font-family: 'Poppins', sans-serif;
+    font-family: $mainFontFamily;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;

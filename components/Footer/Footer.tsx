@@ -7,6 +7,7 @@ import { footerBlocks } from 'api/footerBlocks';
 import { FooterSection } from 'components/Footer/FooterSection';
 import { paymentSystemsImages } from 'api/paymentSystemsImages';
 import { arrows } from 'api/logosLinksImages';
+import cn from 'classnames';
 import { Container } from 'components/Container';
 
 export const Footer: React.FC = (): ReactElement => {
@@ -98,9 +99,8 @@ export const Footer: React.FC = (): ReactElement => {
           <img alt="arrowBottom" className={footerSectionStyles.arrow} src={arrows.arrowBottom} />
         )}
 
-
             </a>
-            <ul className={`${footerSectionStyles.list} ${areListsVisible && footerSectionStyles.listsVisible}`}>
+            <ul className={cn(footerSectionStyles.list, {[footerSectionStyles.listsVisible]: areListsVisible})}>
               <li className={footerSectionStyles.listItem}>1234 Street Adress City Address, 1234</li>
               <li className={footerSectionStyles.listItem}>Phones:
                 <a className={footerSectionStyles.contactLink} href="tel:(00) 1234 5678">

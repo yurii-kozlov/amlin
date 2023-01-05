@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import styles from 'styles/Reviews.module.scss';
+import styles from 'styles/layout/Reviews.module.scss';
 import { texts } from 'api/texts';
 import Link from 'next/link';
 import { Container } from 'components/Container';

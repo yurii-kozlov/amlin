@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { ReactElement } from 'react';
-import styles from 'styles/container.module.scss';
+import styles from 'styles/base/container.module.scss';
 
 export const Slider = () :ReactElement => (
   <div className={styles.container} >

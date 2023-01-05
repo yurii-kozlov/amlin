@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React, { ReactElement, useState } from 'react';
 import Image from 'next/image'
 import styles from 'styles/layout/Footer/Footer.module.scss';
@@ -6,9 +5,12 @@ import footerSectionStyles from 'styles/layout/Footer/FooterSection.module.scss'
 import { footerBlocks } from 'api/footerBlocks';
 import { FooterSection } from 'components/Footer/FooterSection';
 import { paymentSystemsImages } from 'api/paymentSystemsImages';
-import { arrows } from 'api/logosLinksImages';
 import cn from 'classnames';
 import { Container } from 'components/Container';
+import faceBookIcon from 'images/icons/facebook.svg';
+import instagramIcon from 'images/icons/instagram.svg';
+import arrowTop from 'images/icons/arrowTop.svg';
+import arrowDown from 'images/icons/arrowDown.svg';
 
 export const Footer: React.FC = (): ReactElement => {
   const [emailInput, setEmailInput] = useState<string>('');
@@ -94,9 +96,9 @@ export const Footer: React.FC = (): ReactElement => {
             >
               <h5 className={footerSectionStyles.blockTitle}>Address</h5>
               {areListsVisible ? (
-                <img alt="arrowTop" className={footerSectionStyles.arrow} src={arrows.arrowTop} />
+                <Image alt="arrowTop" className={footerSectionStyles.arrow} src={arrowTop} />
         ): (
-          <img alt="arrowBottom" className={footerSectionStyles.arrow} src={arrows.arrowBottom} />
+          <Image alt="arrowBottom" className={footerSectionStyles.arrow} src={arrowDown} />
         )}
 
             </a>
@@ -125,15 +127,15 @@ export const Footer: React.FC = (): ReactElement => {
               <Image
                 alt='facebook'
                 height={15}
-                src='https://res.cloudinary.com/docve4syp/image/upload/v1671186141/techstore/facebookIcon_pbzwxd.svg'
+                src={faceBookIcon}
                 width={15}
             />
             </a>
-            <a className={styles.socialNetworkLink} href="#facebook">
+            <a className={styles.socialNetworkLink} href="#instagram">
               <Image
-                alt='facebook'
+                alt='instagram'
                 height={15}
-                src='https://res.cloudinary.com/docve4syp/image/upload/v1671186141/techstore/instagramIcon_vujhke.svg'
+                src={instagramIcon}
                 width={15}
             />
             </a>
@@ -142,7 +144,7 @@ export const Footer: React.FC = (): ReactElement => {
           <div className={styles.paymentSystems}>
             {paymentSystemsImages.map((img) => (
               <a className={styles.paymentSystemsLink} href={`#${img.alt}`} key={`paymentSystem-${img.id}`}>
-                <img alt={img.alt} className={styles.paymentSystemsIcon} src={img.imageLink} />
+                <Image alt={img.alt} className={styles.paymentSystemsIcon} src={img.imageLink} />
               </a>
               ))}
 

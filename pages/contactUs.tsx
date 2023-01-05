@@ -8,8 +8,8 @@ import { schema } from 'helpers/schema';
 import { formInputs } from 'types/formInputs';
 import { yupResolver } from '@hookform/resolvers/yup';
 import styles from 'styles/contactUs.module.scss';
-import classes from 'styles/container.module.scss';
 import { useForm } from 'react-hook-form';
+import { Container } from 'components/Container';
 
 const ContactUs = (): ReactElement => {
   const {
@@ -26,7 +26,7 @@ const onSubmit = (data: formInputs): void => {
 
   return (
     <MainContainer>
-      <div className={classes.container}>
+      <Container>
         <section className={styles.section}>
           <div className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
@@ -152,7 +152,7 @@ const onSubmit = (data: formInputs): void => {
             </div>
           </div>
         </section>
-      </div>
+      </Container>
     </MainContainer>
   );
 }

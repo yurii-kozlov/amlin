@@ -2,11 +2,11 @@ import Link from 'next/link';
 import React, { ReactElement } from 'react';
 import styles from 'styles/Menu.module.scss';
 
-type Props = {
+type MenuProps = {
   isMenuVisible: boolean
 }
 
-export const Menu: React.FC<Props> = ({ isMenuVisible }): ReactElement => (
+export const Menu: React.FC<MenuProps> = ({ isMenuVisible }): ReactElement => (
   <div className={`${styles.section} ${isMenuVisible && styles.visible}`} >
     <ul className={styles.list} >
       <li className={styles.listItem} >
@@ -36,4 +36,4 @@ export const Menu: React.FC<Props> = ({ isMenuVisible }): ReactElement => (
       </li>
     </ul>
   </div>
-)
+);

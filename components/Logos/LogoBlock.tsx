@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
 import { logoBlock } from 'types/logo';
 
-type Props = {
+type LogoBlockProps = {
   logo: logoBlock
 };
 
-export const LogoBlock: React.FC<Props> = ({ logo }): ReactElement => {
+export const LogoBlock: React.FC<LogoBlockProps> = ({ logo }): ReactElement => {
   const { alt, link } = logo;
 
   return (

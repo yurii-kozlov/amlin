@@ -36,4 +36,4 @@ export const Menu: React.FC<Props> = ({ isMenuVisible }): ReactElement => (
       </li>
     </ul>
   </div>
-)
+);

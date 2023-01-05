@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import paypal from 'images/icons/paymentSystems/paypal.svg';
 import visa from 'images/icons/paymentSystems/visa.svg';
 import maestro from 'images/icons/paymentSystems/maestro.svg';

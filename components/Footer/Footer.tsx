@@ -2,13 +2,13 @@
 import React, { ReactElement, useState } from 'react';
 import Image from 'next/image'
 import styles from 'styles/Footer.module.scss';
-import classes from 'styles/container.module.scss';
 import footerSectionStyles from 'styles/FooterSection.module.scss';
 import { footerBlocks } from 'api/footerBlocks';
 import { FooterSection } from 'components/Footer/FooterSection';
 import { paymentSystemsImages } from 'api/paymentSystemsImages';
 import { arrows } from 'api/logosLinksImages';
 import cn from 'classnames';
+import { Container } from 'components/Container';
 
 export const Footer: React.FC = (): ReactElement => {
   const [emailInput, setEmailInput] = useState<string>('');
@@ -50,7 +50,7 @@ export const Footer: React.FC = (): ReactElement => {
 
   return (
     <section className={styles.section} >
-      <div className={classes.container}>
+      <Container>
         <div className={styles.upperPart} >
           <div className={styles.titles}>
             <h1 className={styles.titlesMain} >Sign Up To Our Newsletter.</h1>
@@ -150,7 +150,7 @@ export const Footer: React.FC = (): ReactElement => {
 
           <p className={styles.copyright} >Copyright © 2020 Shop Pty. Ltd.</p>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

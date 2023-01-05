@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react'
 import styles from 'styles/Services.module.scss';
-import classes from 'styles/container.module.scss';
 import cn from 'classnames';
+import { Container } from 'components/Container';
 
 export const Services: React.FC = (): ReactElement => (
-  <div className={classes.container} >
+  <Container>
     <div className={styles.section} >
 
       <div className={styles.block}>
@@ -31,5 +31,5 @@ export const Services: React.FC = (): ReactElement => (
         <p className={styles.description} >Up to 70% off new Products, you can be sure of the best price.</p>
       </div>
     </div>
-  </div>
+  </Container>
 );

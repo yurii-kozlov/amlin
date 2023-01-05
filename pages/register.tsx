@@ -3,10 +3,10 @@ import React, { ReactElement } from 'react';
 import { MainContainer } from 'components/MainContainer';
 import { useForm } from 'react-hook-form'
 import styles from 'styles/register.module.scss';
-import classes from 'styles/container.module.scss';
 import { loginInputs } from 'types/loginInputs';
 import { loginSchema } from 'helpers/loginShema';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { Container } from 'components/Container';
 
 const Register: React.FC = ():ReactElement => {
   const {
@@ -19,7 +19,7 @@ const Register: React.FC = ():ReactElement => {
 
   return (
     <MainContainer>
-      <div className={classes.container}>
+      <Container>
         <section className={styles.section} >
           <div className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
@@ -88,7 +88,7 @@ const Register: React.FC = ():ReactElement => {
             </div>
           </div>
         </section>
-      </div>
+      </Container>
     </MainContainer>
   )
 }

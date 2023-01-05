@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
-import classes from 'styles/container.module.scss';
 import styles from 'styles/Logos.module.scss';
 import { logosLinksImages } from 'api/logosLinksImages';
 import { LogoBlock } from 'components/Logos/LogoBlock';
+import { Container } from 'components/Container';
 
 export const Logos: React.FC = (): ReactElement => (
-  <section className={classes.container} >
+  <Container>
     <div className={styles.section} >
       {logosLinksImages.map((image) => (
         <LogoBlock
@@ -15,5 +15,5 @@ export const Logos: React.FC = (): ReactElement => (
      ))}
 
     </div>
-  </section>
+  </Container>
 );

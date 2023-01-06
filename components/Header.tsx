@@ -4,6 +4,8 @@ import Image from 'next/image'
 import styles from 'styles/layout/Header.module.scss';
 import Link from 'next/link';
 import cn from 'classnames';
+import faceBookIcon from 'images/icons/facebook.svg';
+import instagramIcon from 'images/icons/instagram.svg';
 
 export const Header:React.FC = (): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -37,21 +39,21 @@ export const Header:React.FC = (): ReactElement => {
             </span>
             <a
               className={styles.link}
-              href="#">
+              href="#facebook">
               <Image
                 alt='facebook'
                 height={15}
-                src='https://res.cloudinary.com/docve4syp/image/upload/v1670596201/techstore/facebook_nssaki.webp'
+                src={faceBookIcon}
                 width={15}
               />
             </a>
             <a
               className={styles.link}
-              href="#">
+              href="#instagram">
               <Image
-                alt='facebook'
+                alt='instagram'
                 height={15}
-                src='https://res.cloudinary.com/docve4syp/image/upload/v1670593105/techstore/instagram_uli9xn.webp'
+                src={instagramIcon}
                 width={15}
               />
             </a>

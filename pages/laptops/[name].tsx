@@ -3,7 +3,7 @@ import React, { ReactElement, useEffect, useState } from 'react';
 import axios from 'axios';
 import { Products, Product } from 'types/main/Products';
 import { useRouter } from 'next/router';
-import { AboutProduct } from 'components/AboutProduct';
+import { AboutProduct } from 'components/AboutProduct/AboutProduct';
 
 type LaptopProps = {
   laptops: Products

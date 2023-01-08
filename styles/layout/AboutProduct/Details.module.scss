@@ -1,0 +1,27 @@
+.detailsList {
+  margin-bottom: 2.5rem;
+  margin-left: 1.5rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-bottom: 3.8rem;
+  }
+}
+
+.detailsListItem {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: $colorBlack;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+
+
+.detailsListItem:not(:last-child) {
+  margin-bottom: 0.5rem;
+}

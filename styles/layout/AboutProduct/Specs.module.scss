@@ -1,0 +1,51 @@
+.specsList {
+  list-style: none;
+  background-color: $colorWhite;
+  margin-bottom: 5rem;
+  border: 0.1rem solid $colorGrey2;
+  width: 32rem;
+
+  @include onDesktop {
+    width: 40rem;
+  }
+}
+
+.column {
+  margin-right: 1rem;
+}
+
+.specsListItem {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  @extend %smooth-transition;
+  position: relative;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    height: 4rem;
+  }
+}
+
+.specsListItem:hover {
+  background-color: $colorWhite1;
+  cursor: pointer;
+  width: 100%;
+}
+
+.specsListItemFeature {
+  color: $colorBlack;
+  display: inline-block;
+}
+
+.specsAvailability {
+  left: 40%;
+  color: $colorGrey3;
+  position: absolute;
+}

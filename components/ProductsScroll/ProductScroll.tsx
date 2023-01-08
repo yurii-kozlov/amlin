@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
 import Link from 'next/link';
 import React, { ReactElement } from 'react';
 import styles from 'styles/layout/NewProducts.module.scss';
@@ -22,10 +21,10 @@ export const ProductScroll:React.FC<addToCardProps> = observer (({ product, prod
     inStock, slug, url, name, reviewsCount, previousPrice, rating, price
   } = product;
 
-  return  (
+  return (
     <div className={styles.section} >
-      <button className={cn(styles.upperBottoms, styles.addToWishListBottom)} type="button" />
-      <button className={cn(styles.upperBottoms, styles.statisticsBottom)} type="button" />
+      <button aria-label='wishList' className={cn(styles.upperBottoms, styles.addToWishListBottom)} type="button" />
+      <button aria-label='statistics' className={cn(styles.upperBottoms, styles.statisticsBottom)} type="button" />
       {inStock ? (
         <span className={cn(styles.stockStatusSuccess, styles.stockStatus)}>in stock</span>
         ): (

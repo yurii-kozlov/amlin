@@ -9,6 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "mock": "json-server -w db.json -p 3002 -d 450",
     "prettier": "prettier",
     "eslint": "eslint"
   },

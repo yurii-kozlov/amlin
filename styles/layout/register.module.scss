@@ -12,6 +12,8 @@
 
 .navigation {
   @extend %smallNavigation;
+  margin-top: 2.1rem;
+  margin-bottom: 2rem;
 }
 
 .navigationLink {

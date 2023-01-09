@@ -10,6 +10,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import styles from 'styles/layout/contactUs.module.scss';
 import classes from 'styles/base/container.module.scss';
 import { useForm } from 'react-hook-form';
+import cn from 'classnames';
 
 const ContactUs = (): ReactElement => {
   const {
@@ -27,7 +28,7 @@ const onSubmit = (data: formInputs): void => {
   return (
     <MainContainer>
       <div className={classes.container}>
-        <section className={styles.section}>
+        <section className={cn(styles.section, styles.marginBottom)}>
           <nav className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/contactUs">Contact Us</Link>

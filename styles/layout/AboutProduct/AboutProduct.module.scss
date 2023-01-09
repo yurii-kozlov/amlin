@@ -1,3 +1,20 @@
+.onMobile {
+  display: none;
+  
+  @include onMobile {
+    display: block;
+    position: relative;
+  }
+}
+
+.onTabletAndDesktop {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+}
+
 
 .upperPart {
   display: flex;
@@ -42,6 +59,16 @@
   line-height: 1.8rem;
   margin-right: 1.5rem;
 
+  @extend %smooth-transition;
+
+  @include onMobile {
+    text-align: center;
+    background-color: $colorWhite1;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+
   @include onDesktop {
     font-size: 1.4rem;
     line-height: 2.1rem;
@@ -52,6 +79,10 @@
 .buttonsList {
   list-style: none;
   display: flex;
+
+  @include onMobile {
+    margin-bottom: 1.3rem;
+  }
 }
 
 .button {
@@ -237,6 +268,10 @@
   @extend %smooth-transition;
 }
 
+.smallNavigationLink::first-letter {
+  text-transform: uppercase;
+}
+
 .smallNavigationLink:hover {
   color: $colorBlue3;
 }
@@ -343,6 +378,10 @@
   border: 0.2rem solid $colorWhite5;
   border-radius: 50%;
   @extend %smooth-transition;
+
+  @include onMobile {
+    border-color: $colorWhite;
+  }
 }
 
 .buttonChosenColorActive {
@@ -366,9 +405,14 @@
   background-color: $colorGrey6;
 }
 
-.bottomPart {
+.contactPart {
   display: flex;
   justify-content: space-between;
+
+  @include onMobile {
+    margin-bottom: 3rem;
+    display: none;
+  }
 
   @include onTablet {
     margin-bottom: 0;
@@ -377,6 +421,16 @@
   @include onDesktop {
     margin-bottom: 14rem;
   }
+}
+
+.contactPartOnMobileVisible {
+  @include onMobile {
+    display: flex;
+  }
+}
+
+.contactUsWithDetailsSection {
+  display: flex;
 }
 
 .slug {
@@ -430,12 +484,15 @@
 
 
 .imageSection {
-  padding-top: 4rem;
-  padding-bottom: 4.6rem;
-  padding-left: 6rem;
   position: relative;
-  padding-right: 1.5rem;
   min-width: 40%;
+
+
+  @include onMobile {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 1.9rem;
+  }
 
   @include onTablet {
     padding-right: 2rem;
@@ -452,15 +509,9 @@
 }
 
 .image {
-  max-width: 42rem;
-  max-height: 29rem;
-  margin-bottom: 4rem;
-
-  @include onTablet {
-    max-width: 29rem;
-    max-height: 18rem;
-    margin-bottom: 2rem;
-  }
+  max-width: 29rem;
+  max-height: 18rem;
+  margin-bottom: 2rem;
 
   @include onDesktop {
     max-width: 42rem;
@@ -537,6 +588,10 @@
   top: 5rem;
   list-style: none;
   left: 2rem;
+
+  @include onMobile {
+    top: 0;
+  }
 }
 
 .userButtonsListItem {
@@ -611,4 +666,9 @@
 
 .activeSmallNavButton {
   opacity: 1;
+}
+
+.countAndPaymentBlockMobile {
+  display: flex;
+  margin-bottom: 1rem;
 }

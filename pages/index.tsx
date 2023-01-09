@@ -12,6 +12,8 @@ import { Main } from 'types/main/Main';
 import { CarouselMain } from 'components/CarouselMain/CarouselMain';
 import { BonusSection } from 'components/BonusSection';
 import { ProductsScroll } from 'components/ProductsScroll/ProductsScroll';
+import { GetStaticPropsResult } from 'next';
+
 import axios from 'axios';
 
 type Props = {
@@ -38,7 +40,11 @@ export const Home: React.FC<Props> = ({ mainData }): ReactElement => {
   )
 }
 
-export async function getStaticProps():Promise<any> {
+type getStaticPropsReturnMain = {
+  mainData: Main
+}
+
+export async function getStaticProps():Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
   const response = await axios.get('http://localhost:3001/main');
   const mainData: Main = response.data;
 

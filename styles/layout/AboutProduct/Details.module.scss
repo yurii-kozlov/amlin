@@ -1,7 +1,11 @@
 .detailsList {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   margin-left: 1.5rem;
   @extend %smooth-transition;
+
+  @include onTablet {
+    margin-bottom: 2.5rem;
+  }
 
   @include onDesktop {
     margin-bottom: 3.8rem;

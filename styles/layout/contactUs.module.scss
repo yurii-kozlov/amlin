@@ -14,6 +14,18 @@
   }
 }
 
+.marginBottom {
+  margin-bottom: 2.5rem;
+
+  @include onTablet {
+    margin-bottom: 3.4rem;
+  };
+
+  @include onDesktop {
+    margin-bottom: 5rem;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;

@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Products, Product } from 'types/main/Products';
 import { useRouter } from 'next/router';
 import { AboutProduct } from 'components/AboutProduct/AboutProduct';
+import { GetServerSidePropsResult } from 'next';
 
 type LaptopProps = {
   laptops: Products
@@ -21,13 +22,16 @@ const Laptop:React.FC<LaptopProps> = ({ laptops }): ReactElement => {
 
   return (
     <MainContainer>
-      <AboutProduct product={currentLaptop}/>
+      <AboutProduct product={currentLaptop} productType='laptops'/>
     </MainContainer>
   )
 }
 
+type getStaticPropsReturnLaptops = {
+  laptops: Products
+}
 
-export async function getServerSideProps():Promise<any> {
+export async function getServerSideProps(): Promise<GetServerSidePropsResult<getStaticPropsReturnLaptops>> {
   const response = await axios.get('http://localhost:3001/laptops');
   const laptops: Products = response.data;
 

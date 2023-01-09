@@ -639,6 +639,14 @@
   display: flex;
   bottom: 5.5rem;
   right: 5.5rem;
+
+  @include onTablet {
+    right: 35%;
+  }
+
+  @include onDesktop {
+    right: 5.5rem;
+  }
 }
 
 .activeSubsectionsButtonsListItem:not(:last-child) {

@@ -12,8 +12,10 @@ type addToCardProps = {
   productType: string
 }
 
-export const addToCard = (product: Product): void => {
-  personalAccount.addProduct(product);
+export const addToCard = (product: Product | null): void => {
+  if (product !== null) {
+    personalAccount.addProduct(product);
+  }
 }
 
 export const ProductScroll:React.FC<addToCardProps> = observer (({ product, productType }): ReactElement => {

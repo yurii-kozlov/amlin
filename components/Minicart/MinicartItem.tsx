@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { ReactElement } from 'react';
 import styles from 'styles/layout/Minicart.module.scss';
-// import { Product } from 'types/main/Products';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { MinicartBlock } from 'types/main/Products';

@@ -7,6 +7,7 @@ import { MinicartItem } from 'components/Minicart/MinicartItem';
 import personalAccount from 'store/personalAccount';
 import { uuid } from 'uuidv4';
 import { MinicartBlock } from 'types/main/Products';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
 
 type Props = {
   isMinicartVisible: boolean
@@ -26,7 +27,7 @@ export const Minicart: React.FC<Props> = observer (({ isMinicartVisible }): Reac
     </ul>
     <div className={styles.lowerPart}>
       <span className={styles.totalPrice}>Subtotal:
-        <span className={styles.priceInDigits}> ${personalAccount.totalPrice}.00</span>
+        <span className={styles.priceInDigits}> ${getTheRightPriceFormat(personalAccount.totalPrice)}.00</span>
       </span>
       <Link className={styles.buttonCheckout} href="#" type="button">Go To Checkout</Link>
       <Link className={styles.buttonCheckoutPaypal} href="#" type="button">Check out with</Link>

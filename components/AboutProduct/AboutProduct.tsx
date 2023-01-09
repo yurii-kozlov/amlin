@@ -11,15 +11,24 @@ import { Details } from 'components/AboutProduct/Details';
 import { Specs } from 'components/AboutProduct/Specs';
 import zipLogo from 'images/icons/zipLogo.svg';
 import Image from 'next/image';
+import { Goods } from 'enums/goods';
+import { observer } from 'mobx-react';
+// import { addToCard } from 'components/ProductsScroll/ProductScroll';
+import personalAccount from 'store/personalAccount';
 
 type AboutProductProps = {
   product: Product | null,
-  productType: string
+  productType: Goods
+}
+
+export const addToCard = (product: Product | null, count?: number): void => {
+  if (product !== null) {
+    personalAccount.addProduct(product, count);
+  }
 }
 
 
-
-export const AboutProduct: React.FC<AboutProductProps> = ({ product, productType }): ReactElement => {
+export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, productType }): ReactElement => {
   const {name, price, description, slug, url } = product || {};
 
   const [chosenColor, setChosenColor] = useState<Colors>(Colors.darkGrey);
@@ -65,7 +74,7 @@ export const AboutProduct: React.FC<AboutProductProps> = ({ product, productType
   }
 
   return (
-    <section className={styles.section}>
+    <section className={cn(styles.section, styles.page)}>
       <div className={styles.onTabletAndDesktop} >
         <div className={styles.upperPart}>
           <ul className={styles.buttonsList}>
@@ -127,7 +136,11 @@ export const AboutProduct: React.FC<AboutProductProps> = ({ product, productType
                     />
               </div>
             </div>
-            <button className={styles.buttonAddToCart} type="button">
+            <button
+              className={styles.buttonAddToCart}
+              onClick={(): void => addToCard(product, numberOfProduct)}
+              type="button"
+            >
               Add to Card
             </button>
             <Link className={styles.buttonPayPal} href="#" />
@@ -192,7 +205,7 @@ export const AboutProduct: React.FC<AboutProductProps> = ({ product, productType
                   </>
                 )}
                 {visibleAboutProductSection === SectionsAboutProduct.details && (
-                  <Details description={description} />
+                  <Details description={description} productType={productType} />
                 )}
                 {visibleAboutProductSection === SectionsAboutProduct.specs && (
                   <Specs />
@@ -420,7 +433,7 @@ export const AboutProduct: React.FC<AboutProductProps> = ({ product, productType
             </>
                 )}
           {visibleAboutProductSection === SectionsAboutProduct.details && (
-            <Details description={description} />
+            <Details description={description} productType={productType} />
                 )}
           {visibleAboutProductSection === SectionsAboutProduct.specs && (
             <Specs />
@@ -455,7 +468,11 @@ export const AboutProduct: React.FC<AboutProductProps> = ({ product, productType
                   />
               </div>
             </div>
-            <button className={styles.buttonAddToCart} type="button">
+            <button
+              className={styles.buttonAddToCart}
+              onClick={(): void => addToCard(product, numberOfProduct)}
+              type="button"
+            >
               Add to Card
             </button>
             <Link className={styles.buttonPayPal} href="#" />
@@ -481,4 +498,4 @@ export const AboutProduct: React.FC<AboutProductProps> = ({ product, productType
       </div>
     </section>
   );
-}
+})

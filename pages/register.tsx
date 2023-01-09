@@ -7,6 +7,7 @@ import classes from 'styles/base/container.module.scss';
 import { loginInputs } from 'types/loginInputs';
 import { loginSchema } from 'helpers/loginShema';
 import { yupResolver } from '@hookform/resolvers/yup';
+import cn from 'classnames';
 
 const Register: React.FC = ():ReactElement => {
   const {
@@ -20,7 +21,7 @@ const Register: React.FC = ():ReactElement => {
   return (
     <MainContainer>
       <div className={classes.container}>
-        <section className={styles.section} >
+        <section className={cn(styles.section, styles.page)} >
           <div className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/register">Login</Link>

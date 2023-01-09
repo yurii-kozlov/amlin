@@ -5,6 +5,7 @@ import { Products, Product } from 'types/main/Products';
 import { useRouter } from 'next/router';
 import { AboutProduct } from 'components/AboutProduct/AboutProduct';
 import { GetServerSidePropsResult } from 'next';
+import { Goods } from 'enums/goods';
 
 type MonitorProps = {
   monitors: Products
@@ -22,7 +23,7 @@ const Monitor:React.FC<MonitorProps> = ({ monitors }): ReactElement => {
 
   return (
     <MainContainer>
-      <AboutProduct product={currentMonitor} productType='monitors'/>
+      <AboutProduct product={currentMonitor} productType={Goods.laptops}/>
     </MainContainer>
   )
 }

@@ -5,6 +5,7 @@ import { Products, Product } from 'types/main/Products';
 import { useRouter } from 'next/router';
 import { AboutProduct } from 'components/AboutProduct/AboutProduct';
 import { GetServerSidePropsResult } from 'next';
+import { Goods } from 'enums/goods';
 
 type LaptopProps = {
   laptops: Products
@@ -22,7 +23,7 @@ const Laptop:React.FC<LaptopProps> = ({ laptops }): ReactElement => {
 
   return (
     <MainContainer>
-      <AboutProduct product={currentLaptop} productType='laptops'/>
+      <AboutProduct product={currentLaptop} productType={Goods.laptops}/>
     </MainContainer>
   )
 }

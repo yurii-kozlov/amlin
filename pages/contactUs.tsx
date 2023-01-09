@@ -28,7 +28,7 @@ const onSubmit = (data: formInputs): void => {
   return (
     <MainContainer>
       <div className={classes.container}>
-        <section className={cn(styles.section, styles.marginBottom)}>
+        <section className={cn(styles.section, styles.page)}>
           <nav className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/contactUs">Contact Us</Link>

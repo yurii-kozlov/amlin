@@ -20,14 +20,14 @@ class PersonalAccount {
     )
   }
 
-  addProduct(product: Product): void {
+  addProduct(product: Product, count?: number): void {
     const isProductInMinicart = this.cart
     .find((minicartProductBlock) => product.slug === minicartProductBlock.productItem.slug);
 
     if (isProductInMinicart) {
       this.cart.map((minicartProductBlock) => {
         if (product.slug === minicartProductBlock.productItem.slug) {
-          minicartProductBlock.count += 1;
+          minicartProductBlock.count += count || 1;
 
           return minicartProductBlock;
         }
@@ -38,7 +38,7 @@ class PersonalAccount {
     } else {
       const newProductBlock: MinicartBlock = {
         productItem: product,
-        count: 1
+        count: count || 1
       }
 
       this.cart.push(newProductBlock);

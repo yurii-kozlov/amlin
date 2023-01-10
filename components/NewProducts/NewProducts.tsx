@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import classes from 'styles/base/container.module.scss';
 import styles from 'styles/layout/NewProducts.module.scss';
 import { NewGoods } from 'types/main/NewProducts';
-import { NewsProduct } from 'components/NewProducts/NewProduct';
+import { NewProduct } from 'components/NewProducts/NewProduct';
 import Slider, { CustomArrowProps } from 'react-slick';
 import styles1 from 'styles/layout/Carousel/CarouselMain.module.scss';
 import Link from 'next/link';
@@ -46,7 +46,7 @@ export const NewProducts: React.FC<Props> = ({ newGoods }): ReactElement => {
     autoplay: true,
     autoplaySpeed: 10000,
     speed: 1000,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '50px',
@@ -93,21 +93,21 @@ export const NewProducts: React.FC<Props> = ({ newGoods }): ReactElement => {
         </div>
 
         <Slider {...settingsOnDesktop} >
-          {newProductsList.map((product) => <NewsProduct key={product.slug} newProduct={product} />)}
+          {newProductsList.map((product) => <NewProduct key={product.slug} newProduct={product} />)}
         </Slider>
       </div>
 
       <div className={`${styles1.section} ${styles1.onTablet}`} >
         <h1 className={styles.title} >New Products</h1>
         <Slider {...settingsOnTablet} >
-          {newProductsList.map((product) => <NewsProduct key={product.slug} newProduct={product} />)}
+          {newProductsList.map((product) => <NewProduct key={product.slug} newProduct={product} />)}
         </Slider>
       </div>
 
       <div className={`${styles1.section} ${styles1.onMobile}`} >
         <h1 className={styles.title} >New Products</h1>
         <Slider {...settingsOnMobile} >
-          {newProductsList.map((product) => <NewsProduct key={product.slug} newProduct={product} />)}
+          {newProductsList.map((product) => <NewProduct key={product.slug} newProduct={product} />)}
         </Slider>
       </div>
     </div>

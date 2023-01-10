@@ -3,19 +3,22 @@ import Link from 'next/link';
 import React, { ReactElement } from 'react';
 import styles from 'styles/layout/NewProducts.module.scss';
 import { starRating } from 'helpers/starRating';
-import { NewProduct } from 'types/main/NewProducts';
+import { NewProduct as NewGood } from 'types/main/NewProducts';
 import { addToCard } from 'components/ProductsScroll/ProductScroll';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
 
 type Props = {
-  newProduct: NewProduct
+  newProduct: NewGood
 }
 
-export const NewsProduct:React.FC<Props> = ({ newProduct }): ReactElement => {
+export const NewProduct:React.FC<Props> = ({ newProduct }): ReactElement => {
   const {
     inStock, slug, url, name, reviewsCount, previousPrice, rating, price
   } = newProduct;
 
-  return  (
+  const linkPart = `${name.split(' ')[0].toLowerCase()}s`;
+
+  return (
     <div className={styles.section} >
       <button className={`${styles.upperBottoms} ${styles.addToWishListBottom}`} type="button" />
       <button className={`${styles.upperBottoms} ${styles.statisticsBottom}`} type="button" />
@@ -34,7 +37,7 @@ export const NewsProduct:React.FC<Props> = ({ newProduct }): ReactElement => {
           Reviews ({reviewsCount})
         </p>
       </div>
-      <Link className={styles.productLink} href="#">
+      <Link className={styles.productLink} href={`/${linkPart}/${getTheRightProductNameLink(name)}`}>
         <p className={styles.productName}>{name}</p>
       </Link>
       <p className={styles.previousPrice}>${previousPrice}</p>

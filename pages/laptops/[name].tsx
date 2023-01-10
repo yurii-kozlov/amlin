@@ -17,7 +17,9 @@ const Laptop:React.FC<LaptopProps> = ({ laptops }): ReactElement => {
   const {list } = laptops;
 
   useEffect(() => {
-    const selectedLaptop:Product | undefined = list.find((laptop) => laptop.name === query.name)
+    const selectedLaptop:Product | undefined = list.find((laptop) =>
+    laptop.name === query.name || laptop.name.includes(query.name as string));
+
     setCurrentLaptop(selectedLaptop || null);
   }, [])
 

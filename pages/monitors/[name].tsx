@@ -17,13 +17,16 @@ const Monitor:React.FC<MonitorProps> = ({ monitors }): ReactElement => {
   const {list } = monitors;
 
   useEffect(() => {
-    const selectedMonitor:Product | undefined = list.find((monitor) => monitor.name === query.name)
+    const selectedMonitor:Product | undefined = list.find((monitor) =>
+      monitor.name === query.name || monitor.name.includes(query.name as string)
+    );
+
     setCurrentMonitor(selectedMonitor || null);
   }, [])
 
   return (
     <MainContainer>
-      <AboutProduct product={currentMonitor} productType={Goods.laptops}/>
+      <AboutProduct product={currentMonitor} productType={Goods.monitors}/>
     </MainContainer>
   )
 }

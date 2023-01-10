@@ -17,7 +17,9 @@ const Computer:React.FC<ComputerProps> = ({ computers }): ReactElement => {
   const {list } = computers;
 
   useEffect(() => {
-    const selectedComputer:Product | undefined = list.find((computer) => computer.name === query.name)
+    const selectedComputer:Product | undefined = list.find((computer) =>
+      computer.name === query.name || computer.name.includes(query.name as string)
+    )
     setCurrentComputer(selectedComputer || null);
   }, [])
 

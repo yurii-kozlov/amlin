@@ -205,7 +205,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                   </>
                 )}
                 {visibleAboutProductSection === SectionsAboutProduct.details && (
-                  <Details description={description} productType={productType} />
+                  <Details description={description!} productType={productType} />
                 )}
                 {visibleAboutProductSection === SectionsAboutProduct.specs && (
                   <Specs />
@@ -433,7 +433,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
             </>
                 )}
           {visibleAboutProductSection === SectionsAboutProduct.details && (
-            <Details description={description} productType={productType} />
+            <Details description={description!} productType={productType} />
                 )}
           {visibleAboutProductSection === SectionsAboutProduct.specs && (
             <Specs />

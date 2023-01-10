@@ -5,6 +5,7 @@ import { starRating } from 'helpers/starRating';
 import { Product } from 'types/main/Products';
 import personalAccount from 'store/personalAccount';
 import { observer } from 'mobx-react';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
 import cn from 'classnames';
 
 type addToCardProps = {
@@ -22,6 +23,7 @@ export const ProductScroll:React.FC<addToCardProps> = observer (({ product, prod
   const {
     inStock, slug, url, name, reviewsCount, previousPrice, rating, price
   } = product;
+
 
   return (
     <div className={styles.section} >
@@ -42,7 +44,7 @@ export const ProductScroll:React.FC<addToCardProps> = observer (({ product, prod
           Reviews ({reviewsCount})
         </p>
       </div>
-      <Link className={styles.productLink} href={`/${productType}/${name}`} >
+      <Link className={styles.productLink} href={`/${productType}/${getTheRightProductNameLink(name)}`} >
         <p className={styles.productName}>{name}</p>
       </Link>
       <p className={styles.previousPrice}>${previousPrice}</p>

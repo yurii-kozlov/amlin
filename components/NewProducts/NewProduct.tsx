@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
+
 import Link from 'next/link';
 import React, { ReactElement } from 'react';
 import styles from 'styles/layout/NewProducts.module.scss';
@@ -6,6 +6,7 @@ import { starRating } from 'helpers/starRating';
 import { NewProduct as NewGood } from 'types/main/NewProducts';
 import { addToCard } from 'components/ProductsScroll/ProductScroll';
 import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
 
 type Props = {
   newProduct: NewGood
@@ -20,8 +21,8 @@ export const NewProduct:React.FC<Props> = ({ newProduct }): ReactElement => {
 
   return (
     <div className={styles.section} >
-      <button className={`${styles.upperBottoms} ${styles.addToWishListBottom}`} type="button" />
-      <button className={`${styles.upperBottoms} ${styles.statisticsBottom}`} type="button" />
+      <button aria-label='wish-list' className={`${styles.upperBottoms} ${styles.addToWishListBottom}`} type="button" />
+      <button aria-label='wish-list' className={`${styles.upperBottoms} ${styles.statisticsBottom}`} type="button" />
       {inStock ? (
         <span className={`${styles.stockStatusSuccess} ${styles.stockStatus}`}>in stock</span>
         ): (
@@ -40,8 +41,8 @@ export const NewProduct:React.FC<Props> = ({ newProduct }): ReactElement => {
       <Link className={styles.productLink} href={`/${linkPart}/${getTheRightProductNameLink(name)}`}>
         <p className={styles.productName}>{name}</p>
       </Link>
-      <p className={styles.previousPrice}>${previousPrice}</p>
-      <p className={styles.currentPrice}>${price}</p>
+      <p className={styles.previousPrice}>${getTheRightPriceFormat(previousPrice)}.00</p>
+      <p className={styles.currentPrice}>${getTheRightPriceFormat(price)}.00</p>
       <div className={styles.buttonBlock} >
         <button
           className={styles.buttonAddToCard}

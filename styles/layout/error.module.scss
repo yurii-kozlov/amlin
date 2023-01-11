@@ -1,0 +1,42 @@
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorGrey6;
+  @extend %smooth-transition;
+}
+
+.errorDescription {
+  @extend %smooth-transition;
+  color: $colorDanger;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+
+  @include onMobile {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.instruction {
+  @extend %smooth-transition;
+  color: $colorBlack;
+  font-size: 4rem;
+  font-weight: 500;
+
+  @include onMobile {
+    font-size: 1.5rem;
+  }
+}
+
+.homePageLink {
+  color: $colorBlue5;
+  @extend %smooth-transition;
+}
+
+.homePageLink:hover {
+  color: $colorBlue2;
+}

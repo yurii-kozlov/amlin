@@ -7,6 +7,7 @@ import personalAccount from 'store/personalAccount';
 import { observer } from 'mobx-react';
 import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
 import cn from 'classnames';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
 
 type addToCardProps = {
   product: Product,
@@ -47,8 +48,8 @@ export const ProductScroll:React.FC<addToCardProps> = observer (({ product, prod
       <Link className={styles.productLink} href={`/${productType}/${getTheRightProductNameLink(name)}`} >
         <p className={styles.productName}>{name}</p>
       </Link>
-      <p className={styles.previousPrice}>${previousPrice}</p>
-      <p className={styles.currentPrice}>${price}</p>
+      <p className={styles.previousPrice}>${getTheRightPriceFormat(previousPrice)}.00</p>
+      <p className={styles.currentPrice}>${getTheRightPriceFormat(price)}.00</p>
       <div className={styles.buttonBlock} >
         <button
           className={styles.buttonAddToCard}

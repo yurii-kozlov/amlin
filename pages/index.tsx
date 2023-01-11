@@ -23,6 +23,8 @@ type Props = {
 export const Home: React.FC<Props> = ({ mainData }): ReactElement => {
   const { newProducts, banners, reviews } = mainData;
 
+  console.log(process.env.BASE_URL);
+
   return (
     <>
       <Header />
@@ -45,7 +47,7 @@ type getStaticPropsReturnMain = {
 }
 
 export async function getStaticProps():Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
-  const response = await axios.get('http://localhost:3001/main');
+  const response = await axios.get(`${process.env.BASE_URL}/main`);
   const mainData: Main = response.data;
 
   return {

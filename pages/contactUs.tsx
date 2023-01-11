@@ -12,7 +12,6 @@ import { useForm } from 'react-hook-form';
 import { Container } from 'components/Container';
 
 const ContactUs = (): ReactElement => {
-  console.log(process.env.BASE_URL);
   const {
     register, reset, handleSubmit, formState: {errors}
   } = useForm<formInputs>({

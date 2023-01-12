@@ -169,14 +169,14 @@
     padding: 0;
     border: none;
     padding-left: 3.5rem;
-    font-weight: 400;
+    font-weight: $fontWeightRegular;
   }
 
   &Input::placeholder {
     font-family: $mainFontFamily;
     font-style: normal;
     color: $colorGrey2;
-    font-weight: 400;
+    font-weight: $fontWeightRegular;
     font-size: 1.2rem;
     line-height: 1.8rem;
     letter-spacing: 0.08rem;
@@ -217,7 +217,7 @@
   
     font-family: $mainFontFamily;
     font-style: normal;
-    font-weight: 700;
+    font-weight: $fontWeightBold;
     font-size: 1rem;
     line-height: 1.8rem;
     text-align: center;

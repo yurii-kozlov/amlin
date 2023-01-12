@@ -6,6 +6,7 @@ import Link from 'next/link';
 import cn from 'classnames';
 import faceBookIcon from 'images/icons/facebook.svg';
 import instagramIcon from 'images/icons/instagram.svg';
+import { Container } from 'components/Container';
 
 export const Header:React.FC = (): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -18,47 +19,49 @@ export const Header:React.FC = (): ReactElement => {
         <div className={styles.menuIcon1} />
       </div>
       <div className={styles.background_black}>
-        <div className={styles.content} >
-          <div className={styles.workingSchedule}>
-            <span className={styles.workingDays}>Mon-Thu:{' '}</span>
-            <span className={styles.workingHours}>9:00 AM - 5:30 PM</span>
-            <i className={styles.arrow} />
-          </div>
-          <div className={styles.address}>
-            <span className={styles.addressDetailed}>
-              Visit our showroom in 1234 Street Adress City Address, 1234
-              {' '}
-            </span>
-            <Link className={styles.contactUsLink} href="/contactUs">
-              Contact Us
-            </Link>
-          </div>
-          <div className={styles.contact}>
-            <span className={styles.phoneNumber}>
-              Call Us: (00) 1234 5678
-            </span>
-            <a
-              className={styles.link}
-              href="#facebook">
-              <Image
-                alt='facebook'
-                height={15}
-                src={faceBookIcon}
-                width={15}
+        <Container>
+          <div className={styles.content} >
+            <div className={styles.workingSchedule}>
+              <span className={styles.workingDays}>Mon-Thu:{' '}</span>
+              <span className={styles.workingHours}>9:00 AM - 5:30 PM</span>
+              <i className={styles.arrow} />
+            </div>
+            <div className={styles.address}>
+              <span className={styles.addressDetailed}>
+                Visit our showroom in 1234 Street Adress City Address, 1234
+                {' '}
+              </span>
+              <Link className={styles.contactUsLink} href="/contactUs">
+                Contact Us
+              </Link>
+            </div>
+            <div className={styles.contact}>
+              <span className={styles.phoneNumber}>
+                Call Us: (00) 1234 5678
+              </span>
+              <a
+                className={styles.link}
+                href="#facebook">
+                <Image
+                  alt='facebook'
+                  height={15}
+                  src={faceBookIcon}
+                  width={15}
               />
-            </a>
-            <a
-              className={styles.link}
-              href="#instagram">
-              <Image
-                alt='instagram'
-                height={15}
-                src={instagramIcon}
-                width={15}
+              </a>
+              <a
+                className={styles.link}
+                href="#instagram">
+                <Image
+                  alt='instagram'
+                  height={15}
+                  src={instagramIcon}
+                  width={15}
               />
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
+        </Container>
       </div>
 
       <div className={styles.search}>

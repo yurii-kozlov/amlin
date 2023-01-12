@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { ReactElement } from 'react';
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
@@ -22,8 +21,6 @@ type Props = {
 
 export const Home: React.FC<Props> = ({ mainData }): ReactElement => {
   const { newProducts, banners, reviews } = mainData;
-
-  console.log(process.env.BASE_URL);
 
   return (
     <>

@@ -7,6 +7,7 @@ import { News } from 'components/News/News';
 import { Logos } from 'components/Logos/Logos';
 import { Footer } from 'components/Footer/Footer';
 import { Reviews } from 'components/Reviews';
+import { BonusSection } from 'components/BonusSection';
 
 export default function Home(): ReactElement {
   return (
@@ -14,6 +15,7 @@ export default function Home(): ReactElement {
       <Header />
       <Navbar />
       <Slider />
+      <BonusSection />
       <Logos />
       <News />
       <Reviews />

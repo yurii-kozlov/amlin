@@ -52,16 +52,16 @@
   position: absolute;
   left: -4.5%;
 
+  @include onMobile {
+    display: none;
+  }
+
   @include onTablet {
     height: 1.7rem;
   }
 
   @include onDesktop {
     height: 2.6rem;
-  }
-
-  @include onMobile {
-    display: none;
   }
 }
 

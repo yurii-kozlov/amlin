@@ -1,4 +1,5 @@
-import { ReactElement } from 'react';
+/* eslint-disable no-console */
+import React, { ReactElement } from 'react';
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
 import { Slider } from 'components/Slider';
@@ -8,8 +9,18 @@ import { Logos } from 'components/Logos/Logos';
 import { Footer } from 'components/Footer/Footer';
 import { Reviews } from 'components/Reviews';
 import { BonusSection } from 'components/BonusSection';
+import { Main } from 'types/main/Main';
+import { GetStaticPropsResult } from 'next';
+import axios from 'axios';
 
-export default function Home(): ReactElement {
+type HomeProps = {
+  mainData: Main
+}
+
+export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
+
+  console.log(mainData);
+
   return (
     <>
       <Header />
@@ -24,3 +35,18 @@ export default function Home(): ReactElement {
     </>
   )
 }
+
+type getStaticPropsReturnMain = {
+  mainData: Main
+}
+
+export async function getStaticProps():Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
+  const response = await axios.get(`${process.env.BASE_URL}/main`);
+  const mainData: Main = response.data;
+
+  return {
+    props: {mainData},
+  }
+}
+
+export default Home;

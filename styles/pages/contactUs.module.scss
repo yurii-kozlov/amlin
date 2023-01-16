@@ -31,7 +31,7 @@
     @extend %smooth-transition;
     color: $colorBlack;
     font-style: normal;
-    font-weight: 300;
+    font-weight: $fontWeightLight;
     font-size: 1.2rem;
     line-height: 2rem;
 
@@ -45,7 +45,7 @@
     @extend %smooth-transition;
     color: $colorGrey1;
     font-style: normal;
-    font-weight: 300;
+    font-weight: $fontWeightLight;
     font-size: 1.2rem;
     line-height: 2rem;
 
@@ -89,7 +89,7 @@
 
   color: $colorBlack;
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 2rem;
 
@@ -102,7 +102,7 @@
   @extend %smooth-transition;
   color: $colorGrey1;
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 2rem;
 
@@ -161,7 +161,7 @@
 
 .description {
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 2.2rem;
   margin-bottom: 1.4rem;
@@ -175,7 +175,7 @@
 }
 
 .inputTitle {
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.1rem;
   line-height: 210%;
   color: $colorBlack;
@@ -206,7 +206,7 @@
 
       &Item {
         font-style: normal;
-        font-weight: 400;
+        font-weight: $fontWeightRegular;
         font-size: 1.1rem;
         line-height: 1.6rem;
         color: $colorBlack;
@@ -225,7 +225,7 @@
 
     &Title {
       font-style: normal;
-      font-weight: 600;
+      font-weight: $fontWeightSemiBold;
       font-size: 1.4rem;
       line-height: 2.1rem;
       color: $colorBlack;

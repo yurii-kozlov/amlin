@@ -90,7 +90,7 @@
 
 .subtitle {
   font-style: normal;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: $colorBlack;
@@ -106,7 +106,7 @@
 
 .additionalInfo {
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 2.2rem;
   color: $colorBlack;
@@ -124,7 +124,7 @@
 .benefitsTitle {
   @extend %smooth-transition;
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 2.2rem;
   color: $colorBlack;
@@ -147,7 +147,7 @@
   &Item {
     @extend %smooth-transition;
     font-style: normal;
-    font-weight: 300;
+    font-weight: $fontWeightLight;
     font-size: 1.2rem;
     line-height: 2.2rem;
     color: $colorBlack;
@@ -170,7 +170,7 @@
   justify-content: center;
   align-items: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.3rem;
   line-height: 2rem;
   color: $colorWhite;
@@ -193,7 +193,7 @@
 }
 
 .inputTitle {
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.1rem;
   line-height: 210%;
   color: $colorBlack;
@@ -222,7 +222,7 @@
   @extend %smooth-transition;
   color: $colorBlack;
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 2rem;
 
@@ -240,7 +240,7 @@
   @extend %smooth-transition;
   color: $colorGrey1;
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 2rem;
 
@@ -278,7 +278,7 @@
 
 .forgetPassword {
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.1rem;
   line-height: 2rem;
   color: $colorBlue3;

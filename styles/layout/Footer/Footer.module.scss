@@ -36,7 +36,7 @@
 
 .titlesMain {
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontWeightMedium;
   font-size: 1.8rem;
   line-height: 132.5%;
   color: $colorWhite;
@@ -53,7 +53,7 @@
 
 .titlesSubtitle{
   color: $colorWhite;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 132.5%;
   font-style: normal;
@@ -83,7 +83,7 @@
 
   color: $colorWhite;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.1rem;
 
   @include onDesktop {
@@ -102,7 +102,7 @@
 .input::placeholder {
   color: $colorWhite;
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.1rem;
   line-height: 2rem;
   opacity: 0.6;
@@ -173,7 +173,7 @@
 
 .copyright {
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontWeightMedium;
   font-size: 1rem;
   line-height: 132.5%;
   color: $colorWhite;

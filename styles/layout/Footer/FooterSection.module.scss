@@ -1,6 +1,6 @@
 .blockTitle {
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontWeightBold;
   font-size: 1.2rem;
   line-height: 100%;
   margin-bottom: 1.2rem;
@@ -61,7 +61,7 @@
 
   &Item {
     color: $colorWhite;
-    font-weight: 300;
+    font-weight: $fontWeightLight;
     font-size: 1.2rem;
     line-height: 170%;
     margin-bottom: 0.3rem;

@@ -9,7 +9,7 @@ type Props = {
 export const CarouselMainBlock: React.FC<Props> = ({ banner }): ReactElement => {
   const { url, id } = banner;
 
-  return  (
+  return (
     <div className={styles.imageContainer} >
       <img alt={`banner-${id}`} className={styles.image} src={url}/>
     </div>

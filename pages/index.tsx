@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { ReactElement } from 'react';
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
@@ -27,7 +26,7 @@ export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
     <>
       <Header />
       <Navbar />
-      <Slider />
+      {/* <Slider /> */}
       <CarouselMain banners={banners}/>
       <BonusSection />
       <Logos />

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import Slider, { CustomArrowProps } from 'react-slick';
 import styles from 'styles/layout/Carousel/CarouselMain.module.scss';
-import classes from 'styles/base/container.module.scss';
+import { Container } from 'components/Container';
 import { CarouselMainBlock } from 'components/CarouselMain/CarouselMainBlock';
 import { Banner } from 'types/main/Banner';
 
@@ -51,12 +51,12 @@ export const CarouselMain: React.FC<Props> = ({ banners }):ReactElement => {
   };
 
   return (
-    <div className={classes.container} >
+    <Container>
       <div className={`${styles.section} ${styles.bigBanner}`} >
         <Slider {...settings}>
           {banners.map((banner) => (<CarouselMainBlock banner={banner} key={banner.id} />))}
         </Slider>
       </div>
-    </div>
+    </Container>
   );
 }

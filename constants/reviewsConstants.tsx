@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import styles from 'styles/layout/Reviews/ReviewsDots.module.scss';
 import Link from 'next/link';
+import styles from 'styles/layout/Reviews/ReviewsDots.module.scss';
 
 export const reviewsSettings = {
   arrows: false,

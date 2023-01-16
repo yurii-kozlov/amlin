@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import { Review } from 'types/main/Review';
-import styles from 'styles/layout/Reviews/Reviews.module.scss';
+import styles from 'styles/layout/Reviews/ReviewsSection.module.scss';
 
 type ReviewBlockProps = {
   review: Review

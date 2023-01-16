@@ -1,10 +1,8 @@
 .image {
-  display: block;
   box-sizing: border-box;
-  width: 100%;
   max-width: 100%;
   height: auto;
   @extend %smooth-transition;
-  object-fit: cover;
-  object-position: bottom;
+  object-fit: contain;
+  object-position: center;
 }

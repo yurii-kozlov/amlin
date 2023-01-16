@@ -1,0 +1,42 @@
+.dots {
+  display: flex;
+  gap: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: $colorGrey2;
+  border-radius: 50%;
+}
+
+.dot:active {
+  background-color: $colorBlue3;
+}
+
+.dot:focus {
+  background-color: $colorBlue3;
+}
+
+.dotsList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+
+  @include onMobile {
+    right: 3%;
+    bottom: 7rem;
+  }
+
+  @include onTablet {
+    bottom: 6rem;
+    right: 6%;
+  }
+
+  @include onDesktop {
+    bottom: 10rem;
+    right: 15%;
+  }
+}

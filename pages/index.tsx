@@ -1,15 +1,15 @@
 import React, { ReactElement } from 'react';
+import { Main } from 'types/main/Main';
+import { GetStaticPropsResult } from 'next';
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
 import { Services } from 'components/Services';
 import { News } from 'components/News/News';
 import { Logos } from 'components/Logos/Logos';
 import { Footer } from 'components/Footer/Footer';
-import { Reviews } from 'components/Reviews';
 import { BonusSection } from 'components/BonusSection';
-import { Main } from 'types/main/Main';
-import { GetStaticPropsResult } from 'next';
 import { CarouselMain } from 'components/CarouselMain/CarouselMain';
+import { Reviews } from 'components/Reviews/Reviews';
 
 import axios from 'axios';
 
@@ -19,7 +19,7 @@ type HomeProps = {
 
 export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
 
-  const {banners} = mainData;
+  const {banners, reviews} = mainData;
 
   return (
     <>
@@ -29,7 +29,7 @@ export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
       <BonusSection />
       <Logos />
       <News />
-      <Reviews />
+      <Reviews reviews={reviews} />
       <Services />
       <Footer />
     </>

@@ -3,11 +3,12 @@ import { MainContainer } from 'components/MainContainer';
 import styles from 'styles/layout/shoppingCart.module.scss';
 import classes from 'styles/base/container.module.scss';
 import Link from 'next/link';
-import { ShoppingCartItemBlock } from 'components/ShoppingCartItemBlock';
+import { ShoppingCartItemBlock } from 'components/ShoppingCart/ShoppingCartItemBlock';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { uuid } from 'uuidv4';
 import cn from 'classnames';
+import { Summary } from 'components/ShoppingCart/Summary';
 
 const ShoppingCart: React.FC = observer((): ReactElement => (
   <MainContainer>
@@ -42,9 +43,7 @@ const ShoppingCart: React.FC = observer((): ReactElement => (
                 </button>
               </div>
             </div>
-            <div className={styles.summary}>
-              <h1>hi, summary will wait for you here</h1>
-            </div>
+            <Summary/>
           </div>
         )}
       </div>

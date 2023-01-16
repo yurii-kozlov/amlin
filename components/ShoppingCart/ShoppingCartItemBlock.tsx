@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import styles from 'styles/layout/ShoppingCartItemBlock.module.scss';
+import styles from 'styles/layout/ShoppingCart/ShoppingCartItemBlock.module.scss';
 import cn from 'classnames';
 import { MinicartBlock } from 'types/main/Products';
 import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';

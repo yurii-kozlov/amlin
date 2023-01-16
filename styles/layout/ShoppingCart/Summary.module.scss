@@ -1,0 +1,108 @@
+.summary {
+  background-color: $colorWhite7;
+  padding-top: 1.7rem;
+  padding-bottom: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 30%;
+}
+
+.summaryTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.smallArrow {
+  filter: brightness(0);
+}
+
+.shippingAndTaxBlock {
+  // position: relative;
+}
+
+.shippingAndTaxHint {
+  // position: absolute;
+}
+
+.discountCode {
+  position: relative;
+}
+
+.discountCode::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: $colorGrey2;
+  left: 0;
+  top: 4rem;
+}
+
+
+.bonusSection {
+  background-color: $colorWhite5;
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include onMobile {
+    flex-direction: column;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+
+  }
+
+  @include onTablet {
+    padding-top: 2.1rem;
+    padding-bottom: 2.1rem;
+  }
+
+  @include onDesktop {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.bonusDescription {
+  color: $colorPurple;
+
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 120.5%;
+}
+
+.bonusDescription::before {
+  content: '';
+  display: inline-block;
+  background-color: $colorBlue7;
+  width: 0.2rem;
+  position: absolute;
+  left: -0.6rem;
+
+  @include onDesktop {
+    height: 1.8rem;
+  }
+
+  @include onMobile {
+    display: none;
+  }
+}
+
+.logo {
+  @extend %iconSizes;
+  @extend %smooth-transition;
+  width: 5.5rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.moreInfoLink {
+  text-decoration: underline;
+  margin-left: 0.5rem;
+}

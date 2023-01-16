@@ -155,11 +155,11 @@
 
 .arrowUp {
   margin-bottom: 1rem;
-  background-image: url(../../images/icons/countUp.svg);
+  background-image: url(../../../images/icons/countUp.svg);
 }
 
 .arrowDown {
-  background-image: url(../../images/icons/countDown.svg);
+  background-image: url(../../../images/icons/countDown.svg);
 }
 
 
@@ -183,13 +183,13 @@
 
 .buttonRemove {
   @extend %iconSizes;
-  background-image: url('../../images/icons/buttonRemove.svg');
+  background-image: url('../../../images/icons/buttonRemove.svg');
   margin-bottom: 0.6rem;
 }
 
 .buttonEdit {
   @extend %iconSizes;
-  background-image: url('../../images/icons/buttonEdit.svg')
+  background-image: url('../../../images/icons/buttonEdit.svg')
 }
 
 .userButtons {

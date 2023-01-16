@@ -25,7 +25,7 @@ const settings = {
     <div
       className={styles.subpages}
     >
-      <ul className={styles.list} style={{ margin: '0px' }}> {dots} </ul>
+      <ul className={styles.list}> {dots} </ul>
     </div>
   ),
   customPaging: (i: number): ReactElement =>  (

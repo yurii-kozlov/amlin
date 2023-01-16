@@ -1,0 +1,19 @@
+.section {
+  margin-bottom: 1.7rem;
+
+  @include onMobile {
+    margin-bottom: 1.3rem;
+  }
+}
+
+.bigBanner {
+  margin-bottom: 1.9rem;
+
+  @include onTablet {
+    margin-bottom: 1.6rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 3.5rem;
+  }
+}

@@ -1,6 +1,4 @@
 import React, { ReactElement, useState } from 'react';
-import Image from 'next/image'
-import styles from 'styles/layout/Footer/Footer.module.scss';
 import footerSectionStyles from 'styles/layout/Footer/FooterSection.module.scss';
 import { footerBlocks } from 'api/footerBlocks';
 import { FooterSection } from 'components/Footer/FooterSection';
@@ -11,6 +9,8 @@ import faceBookIcon from 'images/icons/facebook.svg';
 import instagramIcon from 'images/icons/instagram.svg';
 import arrowTop from 'images/icons/arrowTop.svg';
 import arrowDown from 'images/icons/arrowDown.svg';
+import Image from 'next/image'
+import styles from 'styles/layout/Footer/Footer.module.scss';
 
 export const Footer: React.FC = (): ReactElement => {
   const [emailInput, setEmailInput] = useState<string>('');

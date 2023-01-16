@@ -1,11 +1,11 @@
 import React, { ReactElement, useState } from 'react';
-import styles from 'styles/layout/Footer/FooterSection.module.scss';
 import Image from 'next/image';
 import { footerBlock } from 'types/footerBlock';
 import Link from 'next/link';
 import cn from 'classnames';
 import arrowTop from 'images/icons/arrowTop.svg';
 import arrowDown from 'images/icons/arrowDown.svg';
+import styles from 'styles/layout/Footer/FooterSection.module.scss';
 
 type FooterSectionProps = {
   section: footerBlock

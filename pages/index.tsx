@@ -1,8 +1,6 @@
-/* eslint-disable no-console */
 import React, { ReactElement } from 'react';
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
-import { Slider } from 'components/Slider';
 import { Services } from 'components/Services';
 import { News } from 'components/News/News';
 import { Logos } from 'components/Logos/Logos';
@@ -11,6 +9,8 @@ import { Reviews } from 'components/Reviews';
 import { BonusSection } from 'components/BonusSection';
 import { Main } from 'types/main/Main';
 import { GetStaticPropsResult } from 'next';
+import { CarouselMain } from 'components/CarouselMain/CarouselMain';
+
 import axios from 'axios';
 
 type HomeProps = {
@@ -19,13 +19,13 @@ type HomeProps = {
 
 export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
 
-  console.log(mainData);
+  const {banners} = mainData;
 
   return (
     <>
       <Header />
       <Navbar />
-      <Slider />
+      <CarouselMain banners={banners}/>
       <BonusSection />
       <Logos />
       <News />

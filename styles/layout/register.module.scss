@@ -13,7 +13,15 @@
 .navigation {
   @extend %smallNavigation;
   margin-top: 2.1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+
+  @include onTablet {
+    margin-bottom: 1.3rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 1.9rem;
+  }
 }
 
 .navigationLink {

@@ -1,0 +1,198 @@
+.cartProductListItem {
+  padding: 2.5rem 0;
+  border-top: 1px solid $colorGrey2;
+  border-bottom: 1px solid $colorGrey2;
+}
+
+.cartProductListItem:not(:first-child) {
+  overflow: hidden;
+}
+
+.subSectionTitle {
+  position: absolute;
+  top: -5rem;
+  font-style: normal;
+  font-weight: 600;
+  color: $colorBlack;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.cartProductBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartProductDescriptionAndImage {
+  display: flex;
+  margin-right: 2.5rem;
+  position: relative;
+}
+
+
+.cartProductDescription {
+  max-width: 26rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $colorBlack;
+
+  @extend %smooth-transition;
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.cartProductImage {
+  max-width: 7rem;
+  max-height: 7rem;
+  margin-right: 2.5rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    max-width: 12rem;
+    max-height: 11rem;
+  }
+}
+
+.cartProductPriceBlock {
+  margin-right: 5rem;
+  position: relative;
+}
+
+.cartProductPrice {
+  display: inline-block;
+  min-width: 8rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.quantityBlock {
+  display: flex;
+  background-color: $colorWhite4;
+  align-items: center;
+  height: 4.2rem;
+  width: 5.6rem;
+  justify-content: center;
+  margin-right: 1.4rem;
+  border-radius: 0.6rem;
+  margin-right: 5rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    height: 4.5rem;
+    width: 6.5rem;
+  }
+}
+
+.quantityBlockWrapper {
+  position: relative;
+}
+
+.quantity {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 210%;
+  color: $colorBlack;
+  margin-right: 1.5rem;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.subtotalBlock {
+  margin-right: 6rem;
+  position: relative;
+}
+
+.subtotal {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  display: inline-block;
+  min-width: 10rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow {
+  cursor: pointer;
+  @extend %smooth-transition;
+  outline: none;
+  width: 0.5rem;
+  height: 0.8rem;
+  @extend %iconSizes;
+  border: none;
+}
+
+.arrowUp {
+  margin-bottom: 1rem;
+  background-image: url(../../images/icons/countUp.svg);
+}
+
+.arrowDown {
+  background-image: url(../../images/icons/countDown.svg);
+}
+
+
+.buttons {
+  width: 2.6rem;
+  height: 2.6rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  background-color: $colorWhite;
+
+  @extend %smooth-transition;
+  overflow: hidden;
+}
+
+.buttons:hover {
+  filter: brightness(80%);
+}
+
+.buttonRemove {
+  @extend %iconSizes;
+  background-image: url('../../images/icons/buttonRemove.svg');
+  margin-bottom: 0.6rem;
+}
+
+.buttonEdit {
+  @extend %iconSizes;
+  background-image: url('../../images/icons/buttonEdit.svg')
+}
+
+.userButtons {
+  display: flex;
+  flex-direction: column;
+}

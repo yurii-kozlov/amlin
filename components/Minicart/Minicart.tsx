@@ -27,7 +27,7 @@ export const Minicart: React.FC<Props> = observer (({ isMinicartVisible }): Reac
     </ul>
     <div className={styles.lowerPart}>
       <span className={styles.totalPrice}>Subtotal:
-        <span className={styles.priceInDigits}> ${getTheRightPriceFormat(personalAccount.totalPrice)}.00</span>
+        <span className={styles.priceInDigits}> ${getTheRightPriceFormat(personalAccount.totalMinicartSum)}.00</span>
       </span>
       <Link className={styles.buttonCheckout} href="#" type="button">Go To Checkout</Link>
       <Link className={styles.buttonCheckoutPaypal} href="#" type="button">Check out with</Link>

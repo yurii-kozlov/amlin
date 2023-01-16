@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { ReactElement } from 'react';
 import styles from 'styles/layout/NewProducts.module.scss';
 import { starRating } from 'helpers/starRating';
-import { NewProduct as NewGood } from 'types/main/NewProducts';
+import { Product as NewGood } from 'types/main/Products';
 import { addToCard } from 'components/ProductsScroll/ProductScroll';
 import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
 import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
@@ -14,7 +14,7 @@ type Props = {
 
 export const NewProduct:React.FC<Props> = ({ newProduct }): ReactElement => {
   const {
-    inStock, slug, url, name, reviewsCount, previousPrice, rating, price
+    inStock, slug, url, name, reviewsCount, previousPrice, rating, price,
   } = newProduct;
 
   const linkPart = `${name.split(' ')[0].toLowerCase()}s`;

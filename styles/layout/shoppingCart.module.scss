@@ -1,3 +1,150 @@
 .section {
-  background-color: aqua;
+  overflow: hidden;
 }
+
+.navigation {
+  @extend %smallNavigation;
+  margin-bottom: 1rem;
+
+  @include onMobile {
+    padding-top: 0.4rem;
+  }
+
+
+  @include onDesktop {
+    margin-bottom: 1.9rem;
+    padding-top: 2.1rem
+  }
+}
+
+.navigationLink {
+  @extend %smooth-transition;
+}
+
+.navigationLink:first-child::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transform: translate(200%, 100%);
+  border-left: 0.3rem solid $colorBlue3;
+}
+
+.navigationLink:hover {
+  color: $colorBlue3;
+}
+
+.title {
+  @extend %pageTitle;
+
+  margin-bottom: 1.6rem;
+
+  @include onTablet {
+    margin-bottom: 1.3rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 2.9rem;
+  }
+}
+
+
+.cartAndSummeryWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  width: 70%;
+  margin-right: 3rem;
+}
+
+.summary {
+  background-color: green;
+  width: 30%;
+}
+
+.cartProductList {
+  list-style: none;
+
+  @include onTablet {
+    margin-bottom: 1rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.emptyTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+
+  @include onDesktop {
+    font-size: 3.2rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.cartButton {
+  @extend %smooth-transition;
+  cursor: pointer;
+  width: 29rem;
+  height: 3.7rem;
+  display: inline-block;
+  border-radius: 5rem;
+
+  @include onDesktop {
+    width: 18rem;
+  }
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.cartButtons {
+  display: flex;
+}
+
+.continueShoppingLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorGrey3;
+  border: 0.2rem solid $colorGrey3;
+
+  @include onDesktop {
+    margin-right: 0.7rem;
+  }
+}
+
+.continueShoppingLink:hover {
+  background-color: $colorGrey5;
+  color: $colorWhite;
+}
+
+.buttonClearShoppingCart {
+  color: $colorWhite;
+  background-color: $colorBlack;
+  border-color: $colorBlack;
+  outline: none;
+  border: none;
+}
+
+.buttonClearShoppingCart:hover {
+  background-color: $colorGrey5;
+  border-color: $colorGrey3;
+}
+

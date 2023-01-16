@@ -1,13 +1,55 @@
 import React, { ReactElement } from 'react';
 import { MainContainer } from 'components/MainContainer';
 import styles from 'styles/layout/shoppingCart.module.scss';
+import classes from 'styles/base/container.module.scss';
+import Link from 'next/link';
+import { ShoppingCartItemBlock } from 'components/ShoppingCartItemBlock';
+import { observer } from 'mobx-react';
+import personalAccount from 'store/personalAccount';
+import { uuid } from 'uuidv4';
+import cn from 'classnames';
 
-const ShoppingCart: React.FC = (): ReactElement => (
+const ShoppingCart: React.FC = observer((): ReactElement => (
   <MainContainer>
     <section className={styles.section} >
-      <h1>Hi, you have reached the ShoppingCart page</h1>
+      <div className={classes.container} >
+        <nav className={styles.navigation} >
+          <Link className={styles.navigationLink} href="/">Home</Link>
+          <Link className={styles.navigationLink} href="/register">Login</Link>
+        </nav>
+        <h1 className={styles.title}>Shopping Cart</h1>
+        {personalAccount.cart.length === 0 ? (
+          <h2 className={styles.emptyTitle} >Your Shopping Cart is empty</h2>
+        ) : (
+          <div className={styles.cartAndSummeryWrapper}>
+            <div className={styles.cart}>
+
+              <ul className={styles.cartProductList}>
+                {personalAccount.cart.map((minicartBlock) => (
+                  <ShoppingCartItemBlock key={uuid()} minicartBlock={minicartBlock} />
+                ))}
+
+              </ul>
+              <div className={styles.cartButtons} >
+                <Link className={cn(styles.cartButton, styles.continueShoppingLink)} href="/">Continue Shopping</Link>
+                <button
+                  aria-label='clear-cart'
+                  className={cn(styles.cartButton,styles.buttonClearShoppingCart)}
+                  onClick={(): void => personalAccount.clearCart()}
+                  type='button'
+                >
+                  Clear Shopping Cart
+                </button>
+              </div>
+            </div>
+            <div className={styles.summary}>
+              <h1>hi, summary will wait for you here</h1>
+            </div>
+          </div>
+        )}
+      </div>
     </section>
   </MainContainer>
-);
+  ))
 
 export default ShoppingCart;

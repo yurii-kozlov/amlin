@@ -1,0 +1,102 @@
+.section {
+  margin-bottom: 1.7rem;
+
+  @include onMobile {
+    margin-bottom: 1.3rem;
+  }
+}
+
+.arrows {
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  @extend %smooth-transition;
+  overflow: hidden;
+
+  @include onDesktop {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.prevArrow {
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 5;
+  left: 2%;
+  top: 50%;
+  border-color: $colorGrey3;
+}
+
+.nextArrow {
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  transform: rotate(-135deg);
+  top: 50%;
+  right: 2%;
+  position: absolute;
+  z-index: 5;
+  border-color: $colorGrey3;
+}
+
+.image {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  @extend %smooth-transition;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.arrows:hover {
+  border-color: $colorWhite;
+}
+
+
+.onTablet {
+  @include onDesktop {
+    display: none;
+  }
+
+  @include onMobile {
+    display: none;
+  }
+}
+
+.onDesktop {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.onMobile {
+  @include onMobile {
+    display: block;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.bigBanner {
+  margin-bottom: 1.9rem;
+
+  @include onTablet {
+    margin-bottom: 1.6rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 3.5rem;
+  }
+}

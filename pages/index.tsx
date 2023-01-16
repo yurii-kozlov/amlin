@@ -11,6 +11,8 @@ import { Reviews } from 'components/Reviews';
 import { BonusSection } from 'components/BonusSection';
 import { Main } from 'types/main/Main';
 import { GetStaticPropsResult } from 'next';
+import { CarouselMain } from 'components/CarouselMain/CarouselMain';
+
 import axios from 'axios';
 
 type HomeProps = {
@@ -19,13 +21,14 @@ type HomeProps = {
 
 export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
 
-  console.log(mainData);
+  const {banners} = mainData;
 
   return (
     <>
       <Header />
       <Navbar />
       <Slider />
+      <CarouselMain banners={banners}/>
       <BonusSection />
       <Logos />
       <News />

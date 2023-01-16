@@ -25,7 +25,6 @@ export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
     <>
       <Header />
       <Navbar />
-      {/* <Slider /> */}
       <CarouselMain banners={banners}/>
       <BonusSection />
       <Logos />

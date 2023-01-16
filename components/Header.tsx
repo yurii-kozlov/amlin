@@ -1,12 +1,12 @@
 import React, { ReactElement, useState } from 'react';
-import { Menu } from 'components/Menu';
 import Image from 'next/image'
-import styles from 'styles/layout/Header.module.scss';
 import Link from 'next/link';
 import cn from 'classnames';
+import { Menu } from 'components/Menu';
+import { Container } from 'components/Container';
 import faceBookIcon from 'images/icons/facebook.svg';
 import instagramIcon from 'images/icons/instagram.svg';
-import { Container } from 'components/Container';
+import styles from 'styles/layout/Header.module.scss';
 
 export const Header:React.FC = (): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);

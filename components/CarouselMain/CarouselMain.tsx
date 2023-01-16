@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
+import cn from 'classnames';
 import Slider from 'react-slick';
-import styles from 'styles/layout/Carousel/CarouselMain.module.scss';
 import { Container } from 'components/Container';
 import { CarouselMainBlock } from 'components/CarouselMain/CarouselMainBlock';
 import { Banner } from 'types/main/Banner';
-import cn from 'classnames';
 import { carouselMainSettings } from 'constants/carouselMainConstants';
+import styles from 'styles/layout/Carousel/CarouselMain.module.scss';
 
 
 type CarouselMainProps = {

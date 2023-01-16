@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import React, { ReactElement } from 'react';
-import styles from 'styles/layout/BonusSection.module.scss';
 import Image from 'next/image';
-import zipLogo from 'images/icons/zipLogo.svg';
 import { Container } from 'components/Container';
+import zipLogo from 'images/icons/zipLogo.svg';
+import styles from 'styles/layout/BonusSection.module.scss';
 
 export const BonusSection: React.FC = (): ReactElement => (
   <Container >

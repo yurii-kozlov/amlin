@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { CustomArrowProps } from 'react-slick';
-import styles from 'styles/layout/Carousel/Arrows.module.scss';
 import cn from 'classnames';
+import styles from 'styles/layout/Carousel/Arrows.module.scss';
 
 export const SampleNextArrow = (props:CustomArrowProps): ReactElement => {
   const { onClick } = props;

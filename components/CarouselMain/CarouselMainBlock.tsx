@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import styles from 'styles/layout/Carousel/CarouselMainBlock.module.scss';
 import { Banner } from 'types/main/Banner';
+import styles from 'styles/layout/Carousel/CarouselMainBlock.module.scss';
 
 type Props = {
   banner: Banner

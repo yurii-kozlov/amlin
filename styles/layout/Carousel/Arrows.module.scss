@@ -12,8 +12,8 @@
 }
 
 .prevArrow {
-  border-bottom: 3px solid;
-  border-left: 3px solid;
+  border-bottom: 0.3rem solid;
+  border-left: 0.3rem solid;
   transform: rotate(45deg);
   position: absolute;
   z-index: 5;
@@ -23,8 +23,8 @@
 }
 
 .nextArrow {
-  border-bottom: 3px solid;
-  border-left: 3px solid;
+  border-bottom: 0.3rem solid;
+  border-left: 0.3rem solid;
   transform: rotate(-135deg);
   top: 50%;
   right: 2%;

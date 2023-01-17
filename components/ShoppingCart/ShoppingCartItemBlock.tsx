@@ -19,7 +19,7 @@ export const ShoppingCartItemBlock: React.FC<ShoppingCartItemBlockProps> = obser
     <li className={styles.cartProductListItem}>
       <div className={styles.cartProductBlock}>
         <div className={styles.cartProductDescriptionAndImage}>
-          <h3 className={styles.subSectionTitle }>Item</h3>
+          <h3 className={cn(styles.subSectionTitle, styles.hiddenOnMobileAndTablet)}>Item</h3>
           <img alt={slug} className={styles.cartProductImage} src={url} />
           <p className={styles.cartProductDescription} >
             {description.split(' ').slice(0, 25).join(' ')}
@@ -30,7 +30,7 @@ export const ShoppingCartItemBlock: React.FC<ShoppingCartItemBlockProps> = obser
           <span className={styles.cartProductPrice}>${getTheRightPriceFormat(price)}.00</span>
         </div>
         <div className={styles.quantityBlockWrapper}>
-          <h3 className={styles.subSectionTitle }>Qty</h3>
+          <h3 className={styles.subSectionTitle}>Qty</h3>
           <div className={styles.quantityBlock}>
             <span className={styles.quantity}>{minicartBlock.count}</span>
             <div className={styles.arrows}>

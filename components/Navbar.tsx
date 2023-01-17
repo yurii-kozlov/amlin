@@ -6,6 +6,7 @@ import { observer } from 'mobx-react'
 import styles from 'styles/layout/Navbar.module.scss';
 import personalAccount from 'store/personalAccount';
 import { Minicart } from './Minicart/Minicart';
+import Link from 'next/link';
 
 export const Navbar = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -17,7 +18,7 @@ export const Navbar = observer((): ReactElement => {
   return (
     <nav className={styles.block}>
       <div className={styles.menuIcon}>
-        <a className={styles.menuLink} href="#menu" />
+        <Link className={styles.menuLink} href="/" />
       </div>
       <ul className={styles.list}>
         <li className={styles.listItem}>

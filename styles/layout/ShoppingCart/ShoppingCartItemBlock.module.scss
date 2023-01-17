@@ -1,7 +1,22 @@
 .cartProductListItem {
-  padding: 2.5rem 0;
-  border-top: 1px solid $colorGrey2;
-  border-bottom: 1px solid $colorGrey2;
+  border-top: 0.1rem solid $colorGrey2;
+  border-bottom: 0.1rem solid $colorGrey2;
+  padding-bottom: 1.4rem;
+  padding-top: 1.6rem;
+
+  @include onDesktop {
+    padding: 2.5rem 0;
+  }
+}
+
+.cartProductListItem:first-child {
+  border-top: none;
+  padding-top: 0;
+
+  @include onDesktop {
+    border-top: 0.1rem solid $colorGrey2;
+    padding-top: 2.5rem;
+  };
 }
 
 .cartProductListItem:not(:first-child) {
@@ -10,7 +25,7 @@
 
 .subSectionTitle {
   position: absolute;
-  top: -5rem;
+  top: -2rem;
   font-style: normal;
   font-weight: 600;
   color: $colorBlack;
@@ -21,23 +36,44 @@
   @include onDesktop {
     font-size: 1.4rem;
     line-height: 2.1rem;
+    top: -5rem;
+  }
+}
+
+.hiddenOnMobileAndTablet {
+  display: none;
+
+  @include onDesktop {
+    display: inline-block;
   }
 }
 
 .cartProductBlock {
   display: flex;
+  flex-wrap: wrap;
+  @extend %smooth-transition;
   justify-content: space-between;
+
+  @include onDesktop {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .cartProductDescriptionAndImage {
   display: flex;
-  margin-right: 2.5rem;
+  margin-bottom: 3.7rem;
   position: relative;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-right: 2.5rem;
+  }
 }
 
 
 .cartProductDescription {
-  max-width: 26rem;
+  max-width: 75%;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -48,24 +84,30 @@
   @include onDesktop {
     font-size: 1.4rem;
     line-height: 2.1rem;
+    max-width: 26rem;
   }
 }
 
 .cartProductImage {
   max-width: 7rem;
   max-height: 7rem;
-  margin-right: 2.5rem;
+  margin-right: 1.8rem;
   @extend %smooth-transition;
 
   @include onDesktop {
-    max-width: 12rem;
-    max-height: 11rem;
+    max-width: 14rem;
+    max-height: 10rem;
+    margin-right: 2.5rem;
   }
 }
 
 .cartProductPriceBlock {
-  margin-right: 5rem;
   position: relative;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-right: 5rem;
+  }
 }
 
 .cartProductPrice {
@@ -90,14 +132,13 @@
   height: 4.2rem;
   width: 5.6rem;
   justify-content: center;
-  margin-right: 1.4rem;
   border-radius: 0.6rem;
-  margin-right: 5rem;
   @extend %smooth-transition;
 
   @include onDesktop {
     height: 4.5rem;
     width: 6.5rem;
+    margin-right: 5rem;
   }
 }
 
@@ -119,8 +160,11 @@
 }
 
 .subtotalBlock {
-  margin-right: 6rem;
   position: relative;
+
+  @include onDesktop {
+    margin-right: 6rem;
+  }
 }
 
 .subtotal {
@@ -195,4 +239,10 @@
 .userButtons {
   display: flex;
   flex-direction: column;
+  position: relative;
+  bottom: 1.8rem;
+
+  @include onDesktop {
+    position: static;
+  }
 }

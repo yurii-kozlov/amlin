@@ -2,6 +2,18 @@
   overflow: hidden;
 }
 
+.sectionPage {
+  margin-bottom: 3.9rem;
+
+  @include onTablet {
+    margin-bottom: 3.3rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 6rem;
+  }
+}
+
 .navigation {
   @extend %smallNavigation;
   margin-bottom: 1rem;
@@ -47,26 +59,43 @@
   }
 
   @include onDesktop {
-    margin-bottom: 2.9rem;
+    margin-bottom: 3.5rem;
   }
 }
 
 
 .cartAndSummeryWrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+
+  @include onTablet {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .cart {
-  width: 70%;
+  width: 100%;
   margin-right: 3rem;
+
+  @include onTablet {
+    width: 55%;
+  }
+
+  @include onDesktop {
+    width: 70%;
+  }
 }
 
 .cartProductList {
   list-style: none;
 
+  @include onMobile {
+    margin-bottom: 1.7rem;
+  }
+
   @include onTablet {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   @include onDesktop {
@@ -88,7 +117,7 @@
 .cartButton {
   @extend %smooth-transition;
   cursor: pointer;
-  width: 29rem;
+  width: 85%;
   height: 3.7rem;
   display: inline-block;
   border-radius: 5rem;
@@ -98,7 +127,7 @@
   }
 
   font-style: normal;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.3rem;
   line-height: 2rem;
   @extend %smooth-transition;
@@ -109,8 +138,23 @@
   }
 }
 
+.cartButton:first-child {
+  margin-bottom: 1rem;
+
+  @include onDesktop {
+    margin-bottom: 0;
+  }
+}
+
 .cartButtons {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .continueShoppingLink {

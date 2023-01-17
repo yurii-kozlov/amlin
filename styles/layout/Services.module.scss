@@ -15,12 +15,15 @@
   @include onDesktop {
     padding-top: 6rem;
     padding-bottom: 4.8rem;
-    background-color: $colorWhite;
   }
 
   @include onMobile {
     display: block;
   }
+}
+
+.sectionBackgroundColor {
+  background-color: $colorWhite1;
 }
 
 .block {

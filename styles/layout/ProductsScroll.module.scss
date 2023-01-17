@@ -2,6 +2,14 @@
 @import '../utils/mixins.scss';
 @import '../utils/placeholders.scss';
 
+.sectionPage {
+  margin-bottom: 4rem;
+
+  @include onTablet {
+    margin-bottom: 5rem;
+  }
+}
+
 .block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

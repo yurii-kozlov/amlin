@@ -48,7 +48,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
 
   return (
     <div className={classes.container}>
-      <section className={styles.section} >
+      <section className={cn(styles.section, styles.sectionPage)} >
         <ul className={styles.buttonsList} >
           <li className={styles.buttonsListItem}>
             <button

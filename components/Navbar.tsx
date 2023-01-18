@@ -1,5 +1,6 @@
 import React, { ReactElement, useState } from 'react'
 import { Menu } from 'components/Menu';
+import Link from 'next/link';
 import styles from 'styles/layout/Navbar.module.scss';
 
 export const Navbar = (): ReactElement => {
@@ -10,10 +11,10 @@ export const Navbar = (): ReactElement => {
   return (
     <nav className={styles.block} >
       <div className={styles.menuIcon} >
-        <button
+        <Link
           aria-label='menu'
-          className={styles.menuButton}
-          type="button"
+          className={styles.menuLink}
+          href="/"
         />
       </div>
       <ul className={styles.list}>

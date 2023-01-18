@@ -29,12 +29,13 @@
   font-weight: $fontWeightRegular;
   font-size: 1.3rem;
   line-height: 2rem;
-  max-width: 84rem;
+  max-width: 90rem;
   margin-bottom: 1.2rem;
 
   @include onDesktop {
     font-size: 1.8rem;
     line-height: 2.7rem;
+    max-width: 110rem;
   }
 }
 
@@ -50,9 +51,10 @@
 
 
   @include onDesktop {
-    margin-right: 8rem;
+    margin-right: 10%;
     margin-bottom: 3rem;
     font-style: normal;
+    font-weight: $fontWeightRegular;
     font-size: 1.4rem;
     line-height: 2.1rem;
   }
@@ -71,10 +73,10 @@
 
 .reviewButton {
   @extend %smooth-transition;
-  @extend %buttonBlue;
-  display: inline-block;
   width: 20rem;
   height: 2rem;
+  @extend %buttonBlue;
+  display: inline-block;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -88,19 +90,6 @@
   border: 0.3rem solid $colorBlue3;
 }
 
-.subpages {
-  display: flex;
-  gap: 1rem;
-}
-
-.subpage {
-  display: inline-block;
-  width: 1.1rem;
-  height: 1.1rem;
+.reviewButton:hover {
   background-color: $colorGrey2;
-  border-radius: 50%;
-}
-
-.subpage:first-child {
-  background-color: $colorBlue3;
 }

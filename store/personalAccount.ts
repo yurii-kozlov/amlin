@@ -1,89 +1,87 @@
 import { makeObservable, observable, action, computed } from 'mobx'
 import { Product } from 'types/main/Products';
-import { MinicartBlock } from 'types/store/MinicartBlock';
+
+type ProductsSumAndQuantity = {
+  [slug: string] : number
+}
 
 class PersonalAccount {
-  cart: MinicartBlock[] = []
-  get totalMinicartSum(): number {
-    return (
-      this.cart
-        .reduce(( sum, productBlock ) => sum + productBlock.productItem.price * productBlock.count, 0)
-    )
+  cart: Product[] = [];
+  wishList: Product[] = [];
+  productsQuantities: ProductsSumAndQuantity = {};
+  productsSums: ProductsSumAndQuantity = {};
+
+
+  get totalOrderSum(): number {
+    return this.cart.reduce(( sum, product) => sum + product.price * this.productsQuantities[product.slug], 0)
   }
 
   constructor() {
     makeObservable(this, {
       cart: observable,
-      addProduct: action,
-      removeProduct: action,
-      totalMinicartSum: computed,
+      wishList: observable,
+      productsQuantities: observable,
+      productsSums: observable,
+      totalOrderSum: computed,
+      addProductToCart: action,
+      removeProductFromCart: action,
+      clearCart: action,
       addProductQuantity: action,
-      subtractProductQuantity: action
+      subtractProductQuantity: action,
+      addProductToWishList: action,
+      removeProductFromWishList: action,
+      clearWishList: action
       }, {deep: true}
     )
   }
 
-  addProduct(product: Product, quantity?: number): void {
-    const isProductInMinicart = this.cart
-    .find((minicartProductBlock) => product.slug === minicartProductBlock.productItem.slug);
+  addProductToCart(product: Product, quantity?: number): void {
+    const isProductInMinicart = this.cart.find((cartProduct) => cartProduct.slug === product.slug);
 
     if (isProductInMinicart) {
-      this.cart.map((minicartProductBlock) => {
-        if (product.slug === minicartProductBlock.productItem.slug) {
-          minicartProductBlock.count += quantity || 1;
-          minicartProductBlock.subtotal *= minicartProductBlock.count;
-
-          return minicartProductBlock;
-        }
-
-          return minicartProductBlock;
-
-      } )
+      this.productsQuantities[product.slug] += quantity || 1;
+      this.productsSums[product.slug] = product.price * this.productsQuantities[product.slug];
     } else {
-      const newProductBlock: MinicartBlock = {
-        productItem: product,
-        count: quantity || 1,
-        subtotal: product.price * (quantity || 1)
-      }
-
-      this.cart.push(newProductBlock);
+      this.cart.push(product);
+      this.productsQuantities[product.slug] = quantity || 1;
+      this.productsSums[product.slug] = product.price * (quantity || 1);
     }
   }
 
-  removeProduct(slug: string):void {
-    this.cart = this.cart.filter((productBlock) => productBlock.productItem.slug !== slug)
+  removeProductFromCart(slug: string):void {
+    this.cart = this.cart.filter((product) => product.slug !== slug)
   }
 
   clearCart(): void {
     this.cart = [];
   }
 
-  addProductQuantity(slug: string): void {
-    this.cart = this.cart.map((productBlock) => {
-      if (productBlock.productItem.slug === slug) {
-        productBlock.count += 1;
-        productBlock.subtotal += productBlock.productItem.price;
-
-        return productBlock;
-      }
-
-      return productBlock;
-    } )
+  addProductQuantity(slug: string, price: number): void {
+    this.productsQuantities[slug] += 1;
+    this.productsSums[slug] += price;
   }
 
-  subtractProductQuantity(slug: string): void {
-    this.cart = this.cart.map((productBlock) => {
-      if (productBlock.productItem.slug === slug) {
-        if (productBlock.count > 1) {
-          productBlock.count -= 1;
-          productBlock.subtotal -= productBlock.productItem.price;
-        }
+  subtractProductQuantity(slug: string, price: number): void {
+    if (this.productsQuantities[slug] > 1) {
+      this.productsQuantities[slug] -= 1;
+      this.productsSums[slug] -= price;
+    }
+  }
 
-        return productBlock;
-      }
+  addProductToWishList(product: Product): void {
+    const isProductInWishList = this.wishList.find((wishListProduct) => wishListProduct.slug === product.slug);
 
-      return productBlock;
-    } )
+    if (!isProductInWishList) {
+      this.wishList.push(product);
+    }
+  }
+
+  removeProductFromWishList(slug: string): void {
+    this.wishList.filter((wishListProduct) => wishListProduct.slug !== slug);
+  }
+
+  clearWishList(): void {
+    this.wishList = [];
   }
 }
 

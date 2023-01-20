@@ -1,0 +1,158 @@
+
+.block {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 3.3rem;
+  right: -2rem;
+  background-color: $colorWhite;
+  z-index: 10;
+  min-width: 30rem;
+  transform: scale(0);
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+
+  @include onDesktop {
+    top: 1.5rem;
+    right: 0.1rem;
+  }
+  @extend %smooth-transition;
+}
+
+.blockVisible {
+  max-height: max-content;
+  transform: scale(1);
+}
+
+.upperPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+}
+
+.title {
+  color: $colorBlack;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.itemsCount {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $colorGrey1;
+  margin-bottom: 1.4rem;
+}
+
+.list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.lowerPart {
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+}
+
+.buttonEditView {
+  @extend %smooth-transition;
+  width: 95%;
+  height: 3.7rem;
+  @extend%butttonWhite;
+  margin-bottom: 2rem;
+}
+
+.buttonEditView:hover {
+  background-color: $colorGrey2;
+}
+
+.itemsCount {
+  display: block;
+}
+
+.listItemBlock {
+  display: flex;
+}
+
+.lowerPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totalPrice {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  color: $colorGrey1;
+  margin-bottom: 1.3rem;
+}
+
+.priceInDigits {
+  color: $colorBlack;
+  font-size: 1.8rem
+}
+
+.buttonCheckout {
+  @extend %buttonBlueNew;
+  width: 100%;
+  height: 3.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.buttonCheckout:hover {
+  background-color: $colorBlue1;
+}
+
+.buttonCheckout:active {
+  background-color: $colorBlue2;
+}
+
+.buttonCheckoutPaypal {
+  @extend %buttonYellow;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.buttonCheckoutPaypal::after {
+  content: '';
+  width: 7rem;
+  height: 1.8rem;
+  background-image: url(../../../images/icons/PayPalButton.svg);
+  @extend %iconSizes;
+  display: inline-block;
+  position: relative;
+  left: 1rem;
+}
+
+.buttonCheckoutPaypal:hover {
+  background-color: $colorYellow1;
+}
+
+.buttonCheckoutPaypal:active {
+  background-color: $colorYellow2;
+}
+
+.block::before {
+  content: '';
+  display: inline-block;
+  border-radius: 0.3rem;
+  position: absolute;
+  transform: translateY(-90%);
+  right: 9%;
+  top: 0;
+  transform: translateY(-100%);
+  width: 0; 
+  height: 0; 
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid $colorWhite;
+  z-index: 11;
+
+  @extend %smooth-transition;
+}

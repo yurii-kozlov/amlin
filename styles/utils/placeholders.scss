@@ -136,3 +136,53 @@
   }
 }
 
+%butttonWhite {
+  @extend %smooth-transition;
+  background-color: $colorWhite;
+  cursor: pointer;
+  border-radius: 5rem;
+  color: $colorBlue3;
+  border: 0.2rem solid $colorBlue3;
+  outline: none;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%buttonBlueNew {
+  @extend %butttonWhite;
+  color : $colorWhite;
+  background-color: $colorBlue3;
+  border: none;
+}
+
+%buttonYellow {
+  @extend %butttonWhite;
+  color : $colorBlack;
+  background-color: $colorYellow;
+  border: none;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+
+%checkoutInput {
+  background-color: $colorWhite;
+  border-radius: 0.4rem;
+  border: 0.1rem solid $colorGrey1;
+  padding-left: 1.5rem;
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  @extend %smooth-transition;
+  outline: transparent;
+}
+

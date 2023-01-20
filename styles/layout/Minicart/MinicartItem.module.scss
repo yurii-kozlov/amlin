@@ -1,0 +1,84 @@
+.listItemBlock {
+  width: 100%;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  border-top: 1px solid $colorGrey2;
+  border-bottom: 1px solid $colorGrey2;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+  position: relative;
+  display: flex;
+}
+
+.buttons {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  background-color: $colorWhite;
+
+  @extend %smooth-transition;
+  overflow: hidden;
+}
+
+.buttons:hover {
+  filter: brightness(80%);
+}
+
+.buttonRemove {
+  @extend %iconSizes;
+  background-image: url('../../../images/icons/buttonRemove.svg')
+}
+
+.buttonEdit {
+  top: 5rem;
+  @extend %iconSizes;
+  background-image: url('../../../images/icons/buttonEdit.svg')
+}
+
+.imageCountContainer {
+  display: flex;
+  align-items: center;
+}
+
+.countOfProduct {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.8rem;
+}
+
+.symbol {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  color: $colorBlack;
+  margin-left: 0.4rem;
+  margin-right: 1rem;
+}
+
+.productImage {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
+}
+
+.productName {
+  min-height: 6rem;
+  max-width: 50%;
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: $colorBlack;
+  @extend %smooth-transition;
+}
+
+.productName:hover {
+  text-decoration: underline;
+}

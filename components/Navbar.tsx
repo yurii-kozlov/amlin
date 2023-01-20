@@ -1,12 +1,17 @@
 import React, { ReactElement, useState } from 'react'
+import { observer } from 'mobx-react';
+import personalAccount from 'store/personalAccount';
 import { Menu } from 'components/Menu';
+import { Minicart } from 'components/Minicart/Minicart';
 import Link from 'next/link';
 import styles from 'styles/layout/Navbar.module.scss';
 
-export const Navbar = (): ReactElement => {
+export const Navbar = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
+  const [isMinicartVisible, setIsMinicartVisible] = useState<boolean>(false);
 
   const handleMenuVisibility = (): void => setIsMenuVisible(!isMenuVisible);
+  const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
   return (
     <nav className={styles.block} >
@@ -100,12 +105,14 @@ export const Navbar = (): ReactElement => {
           />
         </div>
         <div className={styles.minicart} >
+          <Minicart isMinicartVisible={isMinicartVisible} />
           <div className={styles.minicartBlock}>
-            2
+            {personalAccount.cart.length}
           </div>
           <button
             aria-label='minicart'
             className={styles.minicartButton}
+            onClick={handleMinicartVisibility}
             type="button"
            />
         </div>
@@ -121,4 +128,4 @@ export const Navbar = (): ReactElement => {
       </div>
     </nav>
     );
-}
+});

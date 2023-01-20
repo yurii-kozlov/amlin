@@ -21,7 +21,6 @@ export const NewProducts: React.FC<NewProductsProps> = ({ newGoods }): ReactElem
           <h1 className={styles.title} >New Products</h1>
           <Link className={styles.allProductsLink} href="#">See All New Products</Link>
         </div>
-
         <Slider {...settingsOnDesktop} >
           {newProductsList.map((product) => <ProductCard key={product.slug} product={product} />)}
         </Slider>

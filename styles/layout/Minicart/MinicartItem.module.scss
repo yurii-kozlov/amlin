@@ -48,14 +48,14 @@
 
 .countOfProduct {
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.8rem;
   line-height: 140%;
 }
 
 .symbol {
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.3rem;
   line-height: 2.6rem;
   color: $colorBlack;
@@ -73,7 +73,7 @@
   min-height: 6rem;
   max-width: 50%;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.3rem;
   line-height: 2rem;
   color: $colorBlack;

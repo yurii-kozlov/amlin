@@ -5,6 +5,7 @@ import React, { ReactElement } from 'react';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { uuid } from 'uuidv4';
+import cn from 'classnames';
 import { Product } from 'types/main/Products';
 import styles from 'styles/layout/Minicart/Minicart.module.scss';
 
@@ -13,7 +14,7 @@ type MinicartProps = {
 }
 
 export const Minicart: React.FC<MinicartProps> = observer (({ isMinicartVisible }): ReactElement => (
-  <div className={`${styles.block} ${isMinicartVisible && styles.blockVisible}`} >
+  <div className={cn(styles.block, {[styles.blockVisible]: isMinicartVisible})} >
     <div className={styles.upperPart} >
       <h5 className={styles.title}>My Cart</h5>
       <span className={styles.itemsCount} >{personalAccount.cart.length} items in cart</span>

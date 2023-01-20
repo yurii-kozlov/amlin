@@ -35,15 +35,15 @@
 .title {
   color: $colorBlack;
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.8rem;
   line-height: 140%;
   margin-bottom: 0.4rem;
 }
 
 .itemsCount {
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: $colorGrey1;
@@ -88,7 +88,7 @@
 
 .totalPrice {
   font-style: normal;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.4rem;
   line-height: 140%;
   color: $colorGrey1;
@@ -154,7 +154,7 @@
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
   border-bottom: 0.5rem solid $colorWhite;
-  z-index: 100;
+  z-index: 11;
 
   @extend %smooth-transition;
 }

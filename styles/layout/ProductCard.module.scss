@@ -1,0 +1,268 @@
+.section {
+  @extend %smooth-transition;
+  padding-top: 0.7rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  padding-bottom: 1rem;
+  max-width: 22rem;
+  position: relative;
+
+  @include onMobile {
+    max-width: 20rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
+
+  @include onDesktop {
+    min-height: 40rem;
+  }
+}
+
+.section:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+
+  .buttonAddToCard {
+    @include onDesktop {
+      display: inline-block;
+    }
+  }
+
+  .upperButtons {
+    @include onDesktop {
+      display: inline-block;
+    }
+  }
+}
+
+.upperButtons {
+  width: 2.7rem;
+  height: 2.7rem;
+  position: absolute;
+  right: 0.1rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+
+  @extend %smooth-transition;
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.upperButtons:hover {
+  filter: brightness(80%);
+}
+
+.addToWishListButton {
+  background-image: url('../../images/icons/addToWishList.svg');
+  top: 2.5rem;
+  @extend %iconSizes;
+}
+
+.statisticsButton {
+  top: 6rem;
+  background-image: url('../../images/icons/statistics.svg');
+  @extend %iconSizes;
+}
+
+.stockStatus {
+  margin-bottom: 2rem;
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 210%;
+  color: #78A962;
+  display: inline-block;
+}
+
+.stockStatusSuccess {
+  color: #78A962;
+}
+
+.stockStatusFailure {
+  color: #C94D3F
+}
+
+.stockStatus::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transform: translate(-40%, 15%);
+}
+
+.stockStatusSuccess::before {
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1671709653/techstore/inStock1_ophhae.svg);
+}
+
+.stockStatusFailure::before {
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1671709695/techstore/check_yzet7t.svg);
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.image {
+  width: 18rem;
+  height: 13rem;
+  text-align: center;
+
+  @include onMobile {
+    width: 11rem;
+    height: 8rem;
+  }
+
+  @include onTablet {
+    width: 15rem;
+    height: 12rem;
+  }
+
+  @include onDesktop {
+    width: 18rem;
+    height: 13rem;
+  }
+}
+
+.reviewSection {
+  display: flex;
+  margin-bottom: 0.7rem;
+  align-items: center;
+
+  @include onMobile {
+    justify-content: start;
+  }
+}
+
+.starsWrapper {
+  margin-right: 1rem;
+}
+
+.reviewInfo {
+  color: $colorGrey1;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 210%;
+
+  @include onMobile {
+    line-height: 2.1rem;
+    font-size: 1rem;
+  }
+}
+
+.productLink {
+  display: inline-block;
+  @extend %smooth-transition;
+}
+
+.productLink:hover {
+  text-decoration: underline;
+}
+
+.productName {
+  color: $colorBlack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  min-height: 6rem;
+
+  @include onMobile {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  @include onTablet {
+    margin-bottom: 1rem;
+  }
+}
+
+.previousPrice {
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: $colorGrey3;
+  text-decoration-line: line-through;
+
+  @include onMobile {
+    font-size: 1.2rem;
+  }
+}
+
+.currentPrice {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 140%; 
+  color: $colorBlack;
+
+  @include onDesktop {
+    margin-bottom: 1rem;
+  }
+
+  @include onMobile {
+    font-style: 1.6rem;
+  }
+}
+
+.buttonBlock {
+  display: flex;
+  justify-content: center;
+}
+
+
+.buttonAddToCard {
+  @extend %smooth-transition;
+  width: 14rem;
+  height: 3.2rem;
+  @extend %butttonWhite;
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.buttonAddToCard:hover {
+  background-color: $colorGrey2;
+}
+
+.buttonAddToCard::before {
+  content: '';
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.6rem;
+  background-image: url('../../images/icons/basketCart.svg');
+  @extend %iconSizes;
+  position: relative;
+  top: 0.3rem;
+  right: 0.7rem;
+}

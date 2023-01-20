@@ -1,15 +1,6 @@
-export interface NewProduct {
-  inStock: boolean,
-  slug: string,
-  url: string,
-  name: string,
-  reviewsCount: number,
-  previousPrice: number,
-  rating: number,
-  price: number
-}
+import { Product } from 'types/main/Products';
 
 export interface NewProducts {
-  list: NewProduct[],
+  list: Product[],
   id: string
 }

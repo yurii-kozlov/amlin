@@ -1,4 +1,3 @@
-import { NewProduct } from 'types/main/NewProducts';
 import { Firm } from 'types/main/Firm';
 
 export interface Products {
@@ -7,7 +6,15 @@ export interface Products {
   firms: Firm[]
 }
 
-export interface Product extends NewProduct {
-  firm?: string,
-  description?: string
+export interface Product {
+  inStock: boolean,
+  slug: string,
+  url: string,
+  name: string,
+  reviewsCount: number,
+  previousPrice: number,
+  rating: number,
+  price: number
+  firm: string,
+  description: string
 };

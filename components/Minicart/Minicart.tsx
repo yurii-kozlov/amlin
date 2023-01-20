@@ -1,12 +1,12 @@
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
-import { MinicartItem } from 'components/Minicart/MinicartItem';
-import Link from 'next/link';
 import React, { ReactElement } from 'react';
+import Link from 'next/link';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { uuid } from 'uuidv4';
 import cn from 'classnames';
 import { Product } from 'types/main/Products';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { MinicartItem } from 'components/Minicart/MinicartItem';
 import styles from 'styles/layout/Minicart/Minicart.module.scss';
 
 type MinicartProps = {

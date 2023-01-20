@@ -1,10 +1,10 @@
-import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import { observer } from 'mobx-react';
-import personalAccount from 'store/personalAccount';
+import personalAccount from 'store/personalAccount'
 import { Product} from 'types/main/Products';
 import cn from 'classnames';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
 import styles from 'styles/layout/Minicart/MinicartItem.module.scss';
 
 

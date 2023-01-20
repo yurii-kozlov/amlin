@@ -16,25 +16,24 @@ export const NewProducts: React.FC<NewProductsProps> = ({ newGoods }): ReactElem
 
   return (
     <Container >
+      <div className={styles.upperPart} >
+        <h1 className={styles.title} >New Products</h1>
+        <Link className={styles.allProductsLink} href="#">See All New Products</Link>
+      </div>
+
       <div className={cn(styles.section, styles.onDesktop)} >
-        <div className={styles.upperPart} >
-          <h1 className={styles.title} >New Products</h1>
-          <Link className={styles.allProductsLink} href="#">See All New Products</Link>
-        </div>
         <Slider {...settingsOnDesktop} >
           {newProductsList.map((product) => <ProductCard key={product.slug} product={product} />)}
         </Slider>
       </div>
 
       <div className={cn(styles.section, styles.onTablet)} >
-        <h1 className={styles.title}>New Products</h1>
         <Slider {...settingsOnTablet} >
           {newProductsList.map((product) => <ProductCard key={product.slug} product={product} />)}
         </Slider>
       </div>
 
       <div className={cn(styles.section, styles.onMobile)}>
-        <h1 className={styles.title} >New Products</h1>
         <Slider {...settingsOnMobile} >
           {newProductsList.map((product) => <ProductCard key={product.slug} product={product} />)}
         </Slider>

@@ -7,8 +7,6 @@
 }
 
 .title {
-  margin-bottom: 1.4rem;
-
   font-style: normal;
   font-weight: $fontWeightSemiBold;
   font-size: 1.8rem;
@@ -33,6 +31,8 @@
   align-items: center;
   justify-content: space-between;
   font-style: normal;
+
+  margin-bottom: 1.4rem;
 }
 
 .allProductsLink {

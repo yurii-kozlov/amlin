@@ -1,4 +1,7 @@
 import React, { ReactElement, useState } from 'react';
+import { observer } from 'mobx-react';
+import { Minicart } from 'components/Minicart/Minicart';
+import personalAccount from 'store/personalAccount';
 import Image from 'next/image'
 import Link from 'next/link';
 import cn from 'classnames';
@@ -8,10 +11,12 @@ import faceBookIcon from 'images/icons/facebook.svg';
 import instagramIcon from 'images/icons/instagram.svg';
 import styles from 'styles/layout/Header.module.scss';
 
-export const Header:React.FC = (): ReactElement => {
+export const Header:React.FC = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
+  const [isMinicartVisible, setIsMinicartVisible] = useState<boolean>(false);
 
   const handleMenuVisibility = (): void => setIsMenuVisible(!isMenuVisible);
+  const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
   return (
     <header className={cn(styles.page, styles.pageMarginBottom)}>
@@ -84,12 +89,14 @@ export const Header:React.FC = (): ReactElement => {
         </div>
 
         <div className={styles.minicart}>
+          <Minicart isMinicartVisible={isMinicartVisible} />
           <div className={styles.minicartBlock}>
-            2
+            {personalAccount.cart.length}
           </div>
           <button
             aria-label="minicart"
             className={styles.minicartButton}
+            onClick={handleMinicartVisibility}
             type="button"
           />
         </div>
@@ -107,4 +114,4 @@ export const Header:React.FC = (): ReactElement => {
       </div>
     </header>
     );
-}
+});

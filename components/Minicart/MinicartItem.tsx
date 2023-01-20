@@ -1,12 +1,12 @@
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
 import React, { ReactElement } from 'react';
-import styles from 'styles/layout/Minicart/MinicartItem.module.scss';
+import Link from 'next/link';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { Product} from 'types/main/Products';
 import cn from 'classnames';
+import styles from 'styles/layout/Minicart/MinicartItem.module.scss';
 
-import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
-import Link from 'next/link';
 
 type MinicartItemProps = {
   productItem: Product

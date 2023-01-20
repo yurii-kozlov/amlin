@@ -10,7 +10,7 @@
   margin-bottom: 1.4rem;
 
   font-style: normal;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.8rem;
   line-height: 2.7rem;
   color: $colorBlack;
@@ -36,9 +36,9 @@
 }
 
 .allProductsLink {
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1rem;
-  line-height: 115%;
+  line-height: 1.1rem;
   text-decoration-line: underline;
   color: $colorBlack;
 
@@ -54,5 +54,21 @@
 
   @include onMobile {
     display: none;
+  }
+}
+
+.onDesktop {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.onMobile {
+  display: none;
+
+  @include onMobile {
+    display: block;
   }
 }

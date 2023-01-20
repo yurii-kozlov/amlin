@@ -1,21 +1,21 @@
-import Link from 'next/link';
 import React, { ReactElement } from 'react';
-import styles from 'styles/layout/ProductCard.module.scss';
-import { Product } from 'types/main/Products';
-import personalAccount from 'store/personalAccount';
-import { observer } from 'mobx-react';
-import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
+import Link from 'next/link';
 import cn from 'classnames';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
 import StarRatings from 'react-star-ratings';
+import { observer } from 'mobx-react';
+import personalAccount from 'store/personalAccount';
+import { Product } from 'types/main/Products';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
+import styles from 'styles/layout/ProductCard.module.scss';
 
 type addToCartProps = {
   product: Product,
-  productType?: string
 }
 
 export const addToCart = (product: Product): void => {
-  if (product !== null) {
+  if (product) {
     personalAccount.addProductToCart(product);
   }
 }
@@ -24,13 +24,12 @@ const addToWishList = (product: Product): void => {
   personalAccount.addProductToWishList(product);
 }
 
-export const ProductCard:React.FC<addToCartProps> = observer (({ product, productType }): ReactElement => {
+export const ProductCard:React.FC<addToCartProps> = observer (({ product}): ReactElement => {
   const {
     inStock, slug, url, name, reviewsCount, previousPrice, rating, price
   } = product;
 
   const colorYellow = '#E9A426';
-  const linkPart = productType || `${name.split(' ')[0].toLowerCase()}s`;
 
   return (
     <div className={styles.section} >
@@ -58,14 +57,17 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product, produc
             rating={rating}
             starDimension="12px"
             starRatedColor={colorYellow}
-            starSpacing="1px"
+            starSpacing="0"
           />
         </div>
         <p className={styles.reviewInfo}>
           Reviews ({reviewsCount})
         </p>
       </div>
-      <Link className={styles.productLink} href={`/${linkPart}/${getTheRightProductNameLink(name)}`} >
+      <Link
+        className={styles.productLink}
+        href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
+      >
         <p className={styles.productName}>{name}</p>
       </Link>
       <p className={styles.previousPrice}>${getTheRightPriceFormat(previousPrice)}.00</p>

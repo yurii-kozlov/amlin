@@ -81,19 +81,19 @@
   margin-bottom: 2rem;
   display: inline-block;
 
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 210%;
-  color: #78A962;
+  font-weight: $fontWeightRegular;
+  font-size: 1rem;
+  line-height: 2.1rem;
+  color: $colorGreen;
   display: inline-block;
 }
 
 .stockStatusSuccess {
-  color: #78A962;
+  color: $colorGreen;
 }
 
 .stockStatusFailure {
-  color: #C94D3F
+  color: $colorRed2;
 }
 
 .stockStatus::before {
@@ -125,6 +125,7 @@
   width: 18rem;
   height: 13rem;
   text-align: center;
+  @extend %smooth-transition;
 
   @include onMobile {
     width: 11rem;
@@ -158,9 +159,10 @@
 
 .reviewInfo {
   color: $colorGrey1;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.2rem;
-  line-height: 210%;
+
+  line-height: 2.3rem;
 
   @include onMobile {
     line-height: 2.1rem;
@@ -178,9 +180,10 @@
 }
 
 .productName {
+  @extend %smooth-transition;
   color: $colorBlack;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.3rem;
   line-height: 2rem;
   text-transform: uppercase;
@@ -200,9 +203,9 @@
 .previousPrice {
   margin-bottom: 0.5rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.4rem;
-  line-height: 140%;
+  line-height: 2rem;
   color: $colorGrey3;
   text-decoration-line: line-through;
 
@@ -214,7 +217,7 @@
 .currentPrice {
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 140%; 
+  line-height: 2.5rem; 
   color: $colorBlack;
 
   @include onDesktop {

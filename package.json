@@ -30,6 +30,8 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "13.0.6",
     "gh-pages": "^4.0.0",
+    "mobx": "^6.7.0",
+    "mobx-react": "^7.6.0",
     "next": "13.0.6",
     "owl.carousel": "^2.3.4",
     "prettier": "^2.8.1",

@@ -11,8 +11,6 @@ export const ProductsScroll: React.FC = (): ReactElement => {
   const [fetching, setFetching] = useState(true);
   const [visibleProductSection, setVisibleProductSection] = useState<Goods>(Goods.laptops);
 
-
-
   const handleLaptopsVisibility = (): void => setVisibleProductSection(Goods.laptops);
   const handleComputersVisibility = (): void => setVisibleProductSection(Goods.computers);
   const handleMonitorsVisibility = (): void => setVisibleProductSection(Goods.monitors);

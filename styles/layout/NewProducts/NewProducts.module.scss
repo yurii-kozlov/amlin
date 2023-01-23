@@ -1,0 +1,74 @@
+.section {
+  margin-bottom: 1.7rem;
+
+  @include onMobile {
+    margin-bottom: 1.3rem;
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: $colorBlack;
+  
+  @include onDesktop {
+    font-size: 2.2rem;
+     line-height: 3.3rem;
+  }
+}
+
+
+.stars {
+  margin-right: 1rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.upperPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: normal;
+
+  margin-bottom: 1.4rem;
+}
+
+.allProductsLink {
+  font-weight: $fontWeightRegular;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  text-decoration-line: underline;
+  color: $colorBlack;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.onTablet {
+  @include onDesktop {
+    display: none;
+  }
+
+  @include onMobile {
+    display: none;
+  }
+}
+
+.onDesktop {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.onMobile {
+  display: none;
+
+  @include onMobile {
+    display: block;
+  }
+}

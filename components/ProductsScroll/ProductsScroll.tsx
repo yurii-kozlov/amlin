@@ -47,7 +47,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
               className={cn(styles.button, {[styles.buttonActive]: visibleProductSection === Goods.computers})}
               onClick={handleComputersVisibility}
               type="submit"
-          >
+            >
               Computers
             </button>
           </li>
@@ -56,7 +56,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
               className={cn(styles.button, {[styles.buttonActive]: visibleProductSection === Goods.monitors})}
               onClick={handleMonitorsVisibility}
               type="submit"
-          >
+            >
               Monitors
             </button>
           </li>

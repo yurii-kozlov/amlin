@@ -12,6 +12,7 @@ import { BonusSection } from 'components/BonusSection';
 import { CarouselMain } from 'components/CarouselMain/CarouselMain';
 import { Reviews } from 'components/Reviews/Reviews';
 import { NewProducts } from 'components/NewProducts/NewProducts';
+import { ProductsScroll } from 'components/ProductsScroll/ProductsScroll';
 
 
 
@@ -29,6 +30,7 @@ export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
       <Navbar />
       <CarouselMain banners={banners}/>
       <NewProducts newGoods={newProducts}/>
+      <ProductsScroll />
       <BonusSection />
       <Logos />
       <News />

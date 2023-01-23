@@ -1,7 +1,9 @@
 import axios, {AxiosResponse} from 'axios';
 
+const BASE_URL = 'http://localhost:3002';
+
 function get<T>(url:string):Promise<T> {
-  const fullURL = process.env.BASE_URL + url;
+  const fullURL = BASE_URL + url;
 
   return axios.get(fullURL);
 }

@@ -1,0 +1,86 @@
+.sectionPage {
+  margin-bottom: 4rem;
+
+  @include onTablet {
+    margin-bottom: 5rem;
+  }
+}
+
+.block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+
+
+
+  @include onTablet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 0;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem 0;
+  }
+}
+
+.invisibleLaptops {
+  display: none;
+}
+
+.invisibleComputers {
+  display: none;
+}
+
+.invisibleMonitors {
+  display: none;
+}
+
+.buttonsList {
+  margin-bottom: 2.3rem;
+  list-style: none;
+  display: flex;
+
+  @include onMobile {
+    margin-bottom: 1.4rem;
+  }
+}
+
+.button {
+  @extend %smooth-transition;
+  background-color: $colorWhite;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: $colorGrey4;
+  border-bottom: 0.2rem solid transparent;
+
+  @include onDesktop {
+    font-size: 1.6rem;
+    line-height: 180%;
+  }
+}
+
+.buttonsListItem:not(:last-child) {
+  margin-right: 1.8rem;
+
+  @include onMobile {
+    margin-right: 1.6rem;
+  }
+}
+
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.buttonActive {
+  color: $colorBlack;
+  border-bottom: 0.2rem solid $colorBlue3;
+}

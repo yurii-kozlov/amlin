@@ -1,11 +1,11 @@
 import React, { ReactElement, useEffect, useState } from 'react';
-import classes from 'styles/base/container.module.scss';
-import styles from 'styles/layout/ProductsScroll.module.scss';
-import { Laptops } from 'components/ProductsScroll/Laptops/Laptops';
+import cn from 'classnames';
 import { Goods } from 'enums/goods';
+import { Laptops } from 'components/ProductsScroll/Laptops/Laptops';
+import { Container } from 'components/Container';
 import { Computers } from 'components/ProductsScroll/Computers/Computers';
 import { Monitors } from 'components/ProductsScroll/Monitors/Monitors';
-import cn from 'classnames';
+import styles from 'styles/layout/ProductsScroll.module.scss';
 
 export const ProductsScroll: React.FC = (): ReactElement => {
   const [fetching, setFetching] = useState(true);
@@ -30,7 +30,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
   }
 
   return (
-    <div className={classes.container}>
+    <Container>
       <section className={cn(styles.section, styles.sectionPage)} >
         <ul className={styles.buttonsList} >
           <li className={styles.buttonsListItem}>
@@ -98,5 +98,5 @@ export const ProductsScroll: React.FC = (): ReactElement => {
           />
         </div>
       </section>
-    </div>
+    </Container>
   )};

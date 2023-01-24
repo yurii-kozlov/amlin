@@ -16,7 +16,6 @@ export const Laptops: React.FC<Props> = ({ fetching, visibleProductSection, setF
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-
     if (fetching && laptops.length < 60 && visibleProductSection === Goods.laptops) {
       getLaptops(currentPage)
         .then(response => {

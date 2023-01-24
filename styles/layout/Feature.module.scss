@@ -1,0 +1,146 @@
+.additionalContainerOnTabletAndDesktop {
+  padding: 0;
+
+  @include onTablet {
+    padding: 0 3rem;
+  }
+
+  @include onDesktop {
+    padding: 0 7rem;
+  }
+}
+
+.backgroundColorDark {
+  background-color: $colorBlack;
+}
+
+.backgroundColorLight {
+  background-color: $colorWhite;
+}
+
+.blockImage {
+  max-width: 26rem;
+  max-height: 27rem;
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onDesktop {
+    max-width: 47rem;
+    max-height: 48.5rem;
+  }
+}
+
+.block {
+  display: flex;
+  padding: 4rem 0;
+  justify-content:space-between;
+
+  @include onMobile {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+  @include onDesktop {
+    padding: 9.6rem 0;
+  }
+}
+
+.blockDark {
+  flex-direction: row;
+}
+
+.blockLight {
+  flex-direction: row-reverse;
+}
+
+.icon {
+  margin-bottom: 1.1rem;
+  max-width: 3rem;
+  max-height: 3rem;
+
+  @include onDesktop {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+}
+
+.blockDescriptionAndTitleWrapper {
+  max-width: 32.6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include onMobile {
+    min-width: 100%;
+  }
+
+  @include onDesktop {
+    max-width: 40rem;
+  }
+}
+
+.blockTitle {
+  font-style: normal;
+  font-weight: $fontWeightMedium;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+
+  margin-bottom: 1.3rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 4.4rem;
+    line-height: 5.8rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.blockTitleColorLight {
+  color: $colorBlack;
+}
+
+.blockTitleColorDark {
+  color: $colorWhite;
+}
+
+.description {
+  font-style: normal;
+  font-weight: $fontWeightLight;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  white-space: pre-line;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+
+.descriptionColorLight {
+  color: $colorBlack;
+} 
+
+.descriptionColorDark {
+  color: $colorWhite;
+}
+
+.blockImageVisibleOnMobile {
+  display: none;
+
+  @include onMobile {
+    padding-top: 2rem;
+    display: block;
+    min-width: 100vw;
+    max-height: 17rem;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.blockImageVisibleOnMobile:first-of-type {
+  margin-bottom: 1.5rem;
+}

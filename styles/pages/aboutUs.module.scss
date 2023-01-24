@@ -1,0 +1,42 @@
+.navigation {
+  @extend %smallNavigation;
+
+  margin-top: 2.1rem;
+  margin-bottom: 1rem;
+
+  @include onTablet {
+    margin-bottom: 1.3rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 1.9rem;
+  }
+}
+
+.navigationLink {
+  @extend %smooth-transition;
+}
+
+.navigationLink:first-child::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transform: translate(200%, 100%);
+  border-left: 0.3rem solid $colorBlue3;
+}
+
+.navigationLink:hover {
+  color: $colorBlue3;
+}
+
+.title {
+  @extend %pageTitle;
+}
+
+.marginBottom {
+  margin-bottom: 3.3rem;
+}

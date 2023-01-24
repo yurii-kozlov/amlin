@@ -1,13 +1,14 @@
 
 import React, { ReactElement } from 'react';
 import cn from 'classnames';
+import Image from 'next/image';
 import { getTheRightIcon } from 'helpers/getTheRightIcon';
-import { Container } from 'components/Container';
+import { Feature as FeatureBlock } from 'types/aboutUs/Feature';
 import { Icons } from 'enums/icons';
 import { FeaturesBlocks } from 'enums/featuresBlocks';
+import { Container } from 'components/Container';
 import styles from 'styles/layout/AboutUs/Feature.module.scss';
-import Image from 'next/image';
-import { Feature as FeatureBlock } from 'types/aboutUs/Feature';
+
 
 type FeatureProps = {
   featureBlock: FeatureBlock

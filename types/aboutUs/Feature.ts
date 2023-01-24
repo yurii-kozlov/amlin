@@ -2,6 +2,6 @@ export interface Feature {
   img: string,
   title: string,
   text: string,
-  background: string,
+  color: string,
   icon: string
 };

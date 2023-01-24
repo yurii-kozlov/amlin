@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import { GetStaticPropsResult } from 'next';
-import axios from 'axios';
 import { uuid } from 'uuidv4';
-import { AboutUs as AboutUsFeatures } from 'types/aboutUs/AboutUs';
+import { Feature as FeatureBlock } from 'types/aboutUs/Feature';
 import { Main } from 'types/main/Main';
+import { instance } from 'api/api';
 import { MainContainer } from 'components/MainContainer';
 import { Container } from 'components/Container';
 import { Feature } from 'components/Feature';
@@ -12,7 +12,7 @@ import { Reviews } from 'components/Reviews/Reviews';
 import styles from 'styles/pages/aboutUs.module.scss';
 
 type AboutUsProps = {
-  aboutUsFeatures: AboutUsFeatures,
+  aboutUsFeatures: FeatureBlock[],
   main: Main
 }
 
@@ -45,15 +45,15 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsFeatures, main }): ReactElemen
 export default AboutUs;
 
 type getStaticPropsReturnMain = {
-  aboutUsFeatures: AboutUsFeatures,
+  aboutUsFeatures: FeatureBlock[],
   main: Main
 }
 
 export async function getStaticProps():Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
-  const response = await axios.get(`${process.env.BASE_URL}/about-us`);
-  const aboutUsFeatures: AboutUsFeatures = response.data;
+  const response = await instance.get('/about-us');
+  const aboutUsFeatures: FeatureBlock[] = response.data;
 
-  const responseMain = await axios.get(`${process.env.BASE_URL}/main`);
+  const responseMain = await instance.get('/main');
   const main = responseMain.data;
 
   return {

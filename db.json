@@ -897,35 +897,35 @@
       "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613170386/about/Rectangle_54_mlxq4j.png",
       "title": "A Family That Keeps On Growing",
       "text": "We always aim to please the home market, supplying great computers and hardware at great prices to non-corporate customers, through our large Melbourne CBD showroom and our online store.\n\nShop management approach fosters a strong customer service focus in our staff. We prefer to cultivate long-term client relationships rather than achieve quick sales, demonstrated in the measure of our long-term success.",
-      "background": "dark",
+      "color": "Dark",
       "icon": "none"
     },
     {
       "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613170385/about/Rectangle_11_laekoj.png",
       "title": "shop.com",
       "text": "Shop is a proudly Australian owned, Melbourne based supplier of I.T. goods and services, operating since 1991. Our client base encompasses individuals, small business, corporate and government organisations. We provide complete business IT solutions, centred on high quality hardware and exceptional customer service.",
-      "background": "light",
+      "color": "Light",
       "icon": "star"
     },
     {
       "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613172186/about/Mask_Group_1_csjavi.png",
       "title": "You're In Safe Hands",
       "text": "Experience a 40% boost in computing from last generation. MSI Desktop equips the 10th Gen. Intel® Core™ i7 processor with the upmost computing power to bring you an unparalleled gaming experience.\n\n*Performance compared to i7-9700. Specs varies by model.",
-      "background": "dark",
+      "color": "Dark",
       "icon": "heart"
     },
     {
       "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613170386/about/Rectangle_13_ylnisi.png",
       "title": "The Highest Quality of Products",
       "text": "We guarantee the highest quality of the products we sell. Several decades of successful operation and millions of happy customers let us feel certain about that. Besides, all items we sell pass thorough quality control, so no characteristics mismatch can escape the eye of our professionals.",
-      "background": "light",
+      "color": "Light",
       "icon": "star"
     },
     {
       "img": "https://res.cloudinary.com/dqdonqby4/image/upload/v1613172183/about/Mask_Group_wtqdox.png",
       "title": "Delivery to All Regions",
       "text": "We deliver our goods all across Australia. No matter where you live, your order will be shipped in time and delivered right to your door or to any other location you have stated. The packages are handled with utmost care, so the ordered products will be handed to you safe and sound, just like you expect them to be.",
-      "background": "dark",
+      "color": "Dark",
       "icon": "van"
     }
   ],

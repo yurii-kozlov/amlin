@@ -2,9 +2,7 @@ import React, { ReactElement } from 'react';
 import cn from 'classnames';
 import Image from 'next/image';
 import { Feature as FeatureBlock } from 'types/aboutUs/Feature';
-import { Icons } from 'enums/icons';
-import { FeaturesBlocks } from 'enums/featuresBlocks';
-import { getTheRightIcon } from 'helpers/getTheRightIcon';
+import { icons } from 'constants/icons';
 import { Container } from 'components/Container';
 import styles from 'styles/layout/Feature.module.scss';
 
@@ -13,12 +11,11 @@ type FeatureProps = {
 }
 
 export const Feature: React.FC<FeatureProps> = ({ featureBlock }): ReactElement => {
-  const {img, title, text, background, icon } = featureBlock;
+  const {img, title, text, color, icon } = featureBlock;
 
   return (
     <div className={cn(
-      {[styles.backgroundColorDark]: background === FeaturesBlocks.dark},
-      {[styles.backgroundColorLight] : background === FeaturesBlocks.light}
+      styles[`backgroundColor${color}`],
     )}
     >
       <img
@@ -30,24 +27,21 @@ export const Feature: React.FC<FeatureProps> = ({ featureBlock }): ReactElement 
         <div className={styles.additionalContainerOnTabletAndDesktop} >
           <div className={cn(
             styles.block,
-            {[styles.darkBlock] : background === FeaturesBlocks.dark},
-            {[styles.lightBlock] : background === FeaturesBlocks.light}
+            styles[`block${color}`]
           )}
           >
             <div className={styles.blockDescriptionAndTitleWrapper} >
-              { icon !== Icons.none && <Image alt={icon} className={styles.icon} src={getTheRightIcon(icon)}/>}
+              {icon !== icons.none && <Image alt={icon} className={styles.icon} src={icons[icon]}/>}
               <h2 className={cn(
                 styles.blockTitle,
-                {[styles.blockTitleColorDark]: background === FeaturesBlocks.light},
-                {[styles.blockTitleColorLight]: background === FeaturesBlocks.dark}
+                styles[`blockTitleColor${color}`]
               )}
               >
                 {title}
               </h2>
               <p className={cn(
                 styles.description,
-                {[styles.descriptionColorDark]: background === FeaturesBlocks.light},
-                {[styles.descriptionColorLight]: background === FeaturesBlocks.dark}
+                styles[`descriptionColor${color}`]
               )}
               >
                 {text}
@@ -55,7 +49,7 @@ export const Feature: React.FC<FeatureProps> = ({ featureBlock }): ReactElement 
             </div>
             <img
               alt={title}
-              className={cn(styles.blockImage, styles.blockImageInvisibleOnMobile)}
+              className={styles.blockImage}
               src={img}
             />
           </div>

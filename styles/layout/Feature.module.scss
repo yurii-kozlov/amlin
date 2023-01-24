@@ -22,6 +22,10 @@
   max-width: 26rem;
   max-height: 27rem;
 
+  @include onMobile {
+    display: none;
+  }
+
   @include onDesktop {
     max-width: 47rem;
     max-height: 48.5rem;
@@ -42,11 +46,11 @@
   }
 }
 
-.darkBlock {
+.blockDark {
   flex-direction: row;
 }
 
-.lightBlock {
+.blockLight {
   flex-direction: row-reverse;
 }
 
@@ -94,11 +98,11 @@
 }
 
 .blockTitleColorLight {
-  color: $colorWhite;
+  color: $colorBlack;
 }
 
 .blockTitleColorDark {
-  color: $colorBlack;
+  color: $colorWhite;
 }
 
 .description {
@@ -117,17 +121,11 @@
 }
 
 .descriptionColorLight {
-  color: $colorWhite;
-}
+  color: $colorBlack;
+} 
 
 .descriptionColorDark {
-  color: $colorBlack;
-}
-
-.blockImageInvisibleOnMobile {
-  @include onMobile {
-    display: none;
-  }
+  color: $colorWhite;
 }
 
 .blockImageVisibleOnMobile {

@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react';
 import cn from 'classnames';
 import Image from 'next/image';
-import { getTheRightIcon } from 'helpers/getTheRightIcon';
 import { Feature as FeatureBlock } from 'types/aboutUs/Feature';
 import { Icons } from 'enums/icons';
 import { FeaturesBlocks } from 'enums/featuresBlocks';
+import { getTheRightIcon } from 'helpers/getTheRightIcon';
 import { Container } from 'components/Container';
 import styles from 'styles/layout/Feature.module.scss';
 

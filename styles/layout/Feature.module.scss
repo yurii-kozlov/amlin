@@ -124,7 +124,6 @@
   color: $colorBlack;
 }
 
-
 .blockImageInvisibleOnMobile {
   @include onMobile {
     display: none;
@@ -141,10 +140,8 @@
     max-height: 17rem;
     object-fit: contain;
     object-position: center;
-    // margin-bottom: 1.5rem;
   }
 }
-
 
 .blockImageVisibleOnMobile:first-of-type {
   margin-bottom: 1.5rem;

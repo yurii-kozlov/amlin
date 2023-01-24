@@ -4,7 +4,7 @@ export const footerBlocks = [
     title: 'Information',
     sections: [{
         name: 'About Us',
-        link: '#About Us',
+        link: '/aboutUs',
         id: 11
       }, {
         name: 'About Zip',

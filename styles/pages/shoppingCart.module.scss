@@ -1,0 +1,187 @@
+.section {
+  overflow: hidden;
+}
+
+.sectionPage {
+  margin-bottom: 3.9rem;
+
+  @include onTablet {
+    margin-bottom: 3.3rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 6rem;
+  }
+}
+
+.navigation {
+  @extend %smallNavigation;
+  margin-bottom: 1rem;
+
+  @include onMobile {
+    padding-top: 0.4rem;
+  }
+
+
+  @include onDesktop {
+    margin-bottom: 1.9rem;
+    padding-top: 2.1rem
+  }
+}
+
+.navigationLink {
+  @extend %smooth-transition;
+}
+
+.navigationLink:first-child::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transform: translate(200%, 100%);
+  border-left: 0.3rem solid $colorBlue3;
+}
+
+.navigationLink:hover {
+  color: $colorBlue3;
+}
+
+.title {
+  @extend %pageTitle;
+
+  margin-bottom: 1.6rem;
+
+  @include onTablet {
+    margin-bottom: 1.3rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.emptyCartTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+
+  @include onDesktop {
+    font-size: 3.2rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.cartAndSummeryWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include onTablet {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.cart {
+  width: 100%;
+  margin-right: 3rem;
+
+  @include onTablet {
+    width: 55%;
+  }
+
+  @include onDesktop {
+    width: 70%;
+  }
+}
+
+.cartProductList {
+  list-style: none;
+
+  @include onMobile {
+    margin-bottom: 1.7rem;
+  }
+
+  @include onTablet {
+    margin-bottom: 2rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.cartButton {
+  @extend %smooth-transition;
+  cursor: pointer;
+  width: 85%;
+  height: 3.7rem;
+  display: inline-block;
+  border-radius: 5rem;
+
+  @include onDesktop {
+    width: 18rem;
+  }
+
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.cartButton:first-child {
+  margin-bottom: 1rem;
+
+  @include onDesktop {
+    margin-bottom: 0;
+  }
+}
+
+.cartButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.continueShoppingLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorGrey3;
+  border: 0.2rem solid $colorGrey3;
+
+  @include onDesktop {
+    margin-right: 0.7rem;
+  }
+}
+
+.continueShoppingLink:hover {
+  background-color: $colorGrey5;
+  color: $colorWhite;
+}
+
+.buttonClearShoppingCart {
+  color: $colorWhite;
+  background-color: $colorBlack;
+  border-color: $colorBlack;
+  outline: transparent;
+  border: none;
+}
+
+.buttonClearShoppingCart:hover {
+  background-color: $colorGrey5;
+  border-color: $colorGrey3;
+}

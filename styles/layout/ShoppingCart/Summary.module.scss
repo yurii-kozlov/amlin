@@ -1,0 +1,490 @@
+.summary {
+  background-color: $colorWhite7;
+  padding-top: 1.7rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  width: 100%;
+
+  @include onTablet {
+    width: 45%;
+  }
+
+  @include onDesktop {
+    width: 30%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.cart {
+  @include onMobile {
+    margin-bottom: 2rem;
+  }
+}
+
+.summaryTitle {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  margin-bottom: 1.3rem;
+  color: $colorBlack;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+.arrowAndButtonWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-bottom: 0.7rem;
+  }
+}
+
+.shippingAndTaxBlock {
+  margin-bottom: 1.5rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-bottom: 2rem;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $colorBlack;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
+
+.shippingAndTaxHint {
+  color: $colorGrey3;
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.destinationBlock {
+  @extend %smooth-transition;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.destinationBlockVisible {
+  @extend %smooth-transition;
+  max-height: 75rem;
+  margin-top: 1.2rem;
+}
+
+.discountBlock {
+  display: flex;
+  flex-direction: column;
+  @extend %smooth-transition;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.discountBlockVisible {
+  @extend %smooth-transition;
+  max-height: 20rem;
+  margin-top: 1rem;
+}
+
+.smallArrow {
+  filter: brightness(0);
+}
+
+.discountCode {
+  position: relative;
+  margin-bottom: 3rem;
+
+  @include onDesktop {
+    border-bottom: 0.2rem solid $colorGrey2;
+    margin-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.subsectionTitleAndSumWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailedOrderInfo {
+  margin-bottom: 1rem;
+}
+
+.detailedOrderSubsectionInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.detailedOrderSubsectionInfo:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.subsectionInfoTitle {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 2.3rem;
+  color: $colorBlack;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.additionalRateInfo {
+  color: $colorGrey1;
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  max-width: 31rem;
+}
+
+.subsectionSum {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 2.3rem;
+  color: $colorBlack;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.shippingPrice {
+  min-width: 2.6rem;
+  text-align: right;
+}
+
+.orderTotal {
+  font-size: 1.1rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.8rem;
+  }
+}
+
+.bonusSection {
+  background-color: $colorWhite5;
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bonusDescription {
+  color: $colorPurple;
+
+  position: relative;
+  font-style: normal;
+  font-weight: $fontWeightMedium;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.bonusDescription::before {
+  content: '';
+  display: inline-block;
+  background-color: $colorBlue7;
+  width: 0.2rem;
+  position: absolute;
+  left: -0.8rem;
+  bottom: 0.5rem;
+
+  @include onDesktop {
+    height: 2rem;
+  }
+
+  @include onMobile {
+    display: none;
+  }
+}
+
+.logo {
+  @extend %iconSizes;
+  @extend %smooth-transition;
+  width: 5.5rem;
+  height: 2rem;
+  margin-right: 1.5rem;
+}
+
+.moreInfoLink {
+  text-decoration: underline;
+  margin-left: 0.5rem;
+}
+
+.checkoutLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+.linkCheckout {
+  height: 3.8rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    height: 4.5rem;
+  }
+}
+
+.linkCheckoutMain {
+  @extend %buttonBlueNew;
+  width: 100%;
+}
+
+.linkCheckoutMain:hover {
+  background-color: $colorBlue1;
+}
+
+.linkCheckoutMain:active {
+  background-color: $colorBlue2;
+}
+
+.linkCheckoutPaypal {
+  @extend %buttonYellow;
+  width: 100%;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: $colorPurple;
+}
+
+.linkCheckoutPaypal::after {
+  content: '';
+  background-image: url(../../../images/icons/PayPalButton.svg);
+  width: 7.2rem;
+  height: 1.8rem;
+  display: inline-block;
+  @extend %iconSizes;
+  position: relative;
+  left: 1rem;
+}
+
+.linkCheckoutPaypal:hover {
+  background-color: $colorYellow1;
+}
+
+.linkCheckoutPaypal:active {
+  background-color: $colorYellow2;
+}
+
+.linkCheckoutMultipleAddress {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorGrey3;
+  border: 0.2rem solid $colorGrey3;
+  border-radius: 5rem;
+  width: 100%;
+  font-weight: $fontWeightSemiBold;
+  @extend %smooth-transition;
+
+  @include onTablet {
+    border: none;
+  }
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    border: 0.2rem solid $colorGrey3;
+  }
+}
+
+.linkCheckoutMultipleAddress:hover {
+  background-color: $colorGrey5;
+  color: $colorWhite;
+}
+
+.linkCheckout:not(:last-child) {
+  margin-bottom: 1rem;
+
+  @include onDesktop {
+    margin-bottom: 1.4rem;
+  }
+}
+
+.destinationBlockListItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.deliveryDestination {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.deliveryDestinationRaddioButton {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  display: flex;
+  align-items: start;
+  color: $colorBlack;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+  }
+}
+
+.subtitleRate {
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 2rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.destinationBlockListItem:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.destinationBlockInput {
+  display: block;
+  width: 100%;
+  height: 3.8rem;
+  background-color: $colorWhite;
+  border-radius: 0.4rem;
+  border: 0.1rem solid $colorGrey1;
+  padding-left: 1.5rem;
+  font-style: normal;
+  font-weight: $fontWeightLight;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  outline: transparent;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-weight: $fontWeightRegular;
+    font-size: 1.4rem;
+    line-height: 2.9rem;
+    height: 4.5rem;
+  }
+}
+
+.destinationBlockInput:focus {
+  border-color: $colorBlue5;
+}
+
+.label {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 2.3rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.discountInput {
+  margin-bottom: 1.9rem;
+}
+
+.buttonDiscount {
+  @extend %buttonBlueNew;
+  color: $colorBlue3;
+  background-color: $colorWhite;
+  border: 0.2rem solid $colorBlue3;
+  width: 100%;
+  height: 4.5rem;
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.buttonDiscount:hover {
+  background-color: $colorGrey2;
+}
+
+.checkOutMultipleAddresses {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: $colorBlue3;
+  text-align: center;
+
+  @extend %smooth-transition;
+
+  @include onMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid $colorBlue3;
+    border-radius: 5rem;
+    height: 3.8rem;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.checkOutMultipleAddresses:hover {
+  color: $colorBlue1;
+}
+
+.checkOutMultipleAddresses:active {
+  @include onMobile {
+    background-color: $colorGrey2;
+  }
+}

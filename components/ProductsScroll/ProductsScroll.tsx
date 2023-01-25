@@ -8,7 +8,7 @@ import { Monitors } from 'components/ProductsScroll/Monitors/Monitors';
 import styles from 'styles/layout/ProductsScroll.module.scss';
 
 export const ProductsScroll: React.FC = (): ReactElement => {
-  const [fetching, setFetching] = useState(true);
+  const [fetching, setFetching] = useState<boolean>(true);
   const [visibleProductSection, setVisibleProductSection] = useState<Goods>(Goods.laptops);
 
   const handleLaptopsVisibility = (): void => setVisibleProductSection(Goods.laptops);

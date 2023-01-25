@@ -46,7 +46,7 @@ type getStaticPropsReturnMain = {
 }
 
 export async function getStaticProps(): Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
-  const response = await axios.get(`${process.env.BASE_URL}/main`);
+  const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/main`);
   const mainData: Main = response.data;
 
   return {

@@ -1,0 +1,99 @@
+.block {
+  display: flex;
+  margin-right: 0;
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onDesktop {
+    margin-right: 6rem;
+  }
+}
+
+.shippingStage {
+  width: 16rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stageIcon {
+  @extend %smooth-transition;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 5rem;
+  position: relative;
+  z-index: 1;
+  background-color: $colorWhite;
+
+  @include onDesktop{
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+.stageIconCompleted {
+  border: 2.5px solid  $colorBlue3;
+  background-image: url(../../../images/icons/checkMark.svg);
+
+  @extend %iconSizes;
+  background-size: 1.3rem 1.1rem;
+}
+
+.stageIconIncompleted {
+  @extend %smooth-transition;
+  border: 2.5px solid $colorGrey2;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+
+  @include onDesktop {
+    font-size: 1.5rem;
+  }
+}
+
+
+.stageLine {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 0.25rem;
+  z-index: 0;
+}
+
+.stageLineCompleted {
+  background-color: $colorBlue3;
+}
+
+.stageLineIncompleted {
+  background-color: $colorGrey2;
+}
+
+.stageDescription {
+  @extend %smooth-transition;
+  position: absolute;
+  top: 4rem;
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+  @include onDesktop {
+    font-size: 1.6rem;
+  }
+}
+
+.stageIncompletedDescription {
+  color: $colorGrey7;
+}
+
+.stageCompletedDescription {
+  color: $colorBlack;
+}

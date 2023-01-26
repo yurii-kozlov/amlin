@@ -4,7 +4,7 @@ import React, { ReactElement } from 'react';
 import { MainContainer } from 'components/MainContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faMobile, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { schema } from 'helpers/schema';
+import { schema } from 'constants/validationSchemas/schema';
 import { formInputs } from 'types/formInputs';
 import { yupResolver } from '@hookform/resolvers/yup';
 import styles from 'styles/pages/contactUs.module.scss';

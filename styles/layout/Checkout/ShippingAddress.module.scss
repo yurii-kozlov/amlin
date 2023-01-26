@@ -1,0 +1,211 @@
+.section {
+  width: 100%;
+  border-top: 0.1rem solid $colorGrey2;
+  margin-right: 4rem;
+  padding-top: 1.5rem;
+
+  @include onMobile {
+    margin-bottom: 1.9rem;
+  }
+
+  @include onTablet {
+    width: 50%;
+  }
+
+  @include onDesktop {
+    width: 65%;
+    padding-top: 2.5rem;
+  }
+}
+
+.input {
+  @extend %smooth-transition;
+  @extend %checkoutInput;
+  display: block;
+  width: 100%;
+  height: 3.8rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+
+  @include onDesktop {
+    width: 60%;
+    height: 4.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.4rem;
+  }
+}
+
+.input:focus {
+  border: 0.1rem solid $colorBlue3;
+}
+
+.inputEmail {
+  margin-bottom: 0.7rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-bottom: 1.1rem;
+  }
+}
+
+.createAccountHint {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.1rem;
+  line-height: 210%;
+  color: $colorGrey3;
+  padding-bottom: 1.8rem;
+  border-bottom: 0.1rem solid $colorGrey2;
+  width: 100%;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+    width: 60%;
+    padding-bottom: 2rem;
+  }
+}
+
+.inputWrapper {
+  margin-bottom: 1.2rem;
+
+}
+
+.emailInputWrapper {
+  margin-bottom: 2rem;
+}
+
+.phoneNumberInputWrapper {
+  @extend %smooth-transition;
+  padding-bottom: 2.8rem;
+  border-bottom: 0.1rem solid $colorGrey2;
+  margin-bottom: 0.8rem;
+
+  @include onDesktop {
+    padding-bottom: 3.2rem;
+  }
+}
+
+.inputTitle {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 210%;
+  color: $colorBlack;
+
+  @extend %smooth-transition;
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.title {
+  @extend %pageTitle;
+}
+
+.subtitleRate {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 210%;
+  color: $colorBlack;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.deliveryDestinationRaddioButtonLabel {
+  display: flex;
+  align-items: start;
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+  max-width: 30rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    max-width: fit-content;
+  }
+}
+
+.shippingRateWrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  @include onDesktop {
+    align-items: end;
+  }
+}
+
+.shippingRateWrapper:not(:last-child) {
+  margin-bottom: 1.5rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.shippingPrice {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.shippingRateInputs {
+  margin-bottom: 2rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-bottom: 3rem;
+  }
+}
+
+.streetInputWrapper {
+  @extend %smooth-transition;
+  margin-bottom: 0.8rem;
+  @include onDesktop {
+    margin-bottom: 1.1rem;
+  }
+}
+
+
+.buttonNext {
+  @extend %buttonBlueNew;
+  width: 13rem;
+  height: 3.8rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+
+  @include onDesktop {
+    width: 21rem;
+    height: 4.5rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.buttonNext:hover {
+  background-color: $colorBlue1;
+}
+
+.buttonNext:active {
+  background-color: $colorBlue2;
+}
+
+.error {
+  color: $colorDanger;
+  font-size: 1.1rem;
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}

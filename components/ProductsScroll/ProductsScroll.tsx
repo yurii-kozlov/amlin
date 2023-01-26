@@ -54,7 +54,6 @@ export const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): Rea
     setIsLoadingNewProducts(true);
   };
 
-
   return (
     <Container>
       <section className={cn(styles.section, styles.sectionPage)} >

@@ -203,8 +203,6 @@ const PersonalAccount: React.FC<PersonalAccountProps> = observer(({ profileInfo 
 
 export default PersonalAccount;
 
-
-
 type getStaticPropsReturnMain = {
   profileInfo: Profile
 }

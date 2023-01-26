@@ -21,7 +21,6 @@ export const ShippingAddress: React.FC = (): ReactElement => {
   const handleDeliveryAddress = (event: React.ChangeEvent<HTMLInputElement>): void =>
   setShippingAddress(event.target.value);
 
-
   return (
     <div className={styles.section}>
       <form

@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import axios from 'axios';
 import { GetStaticPropsResult } from 'next';
+import { instance } from 'api/api';
 import { Main } from 'types/main/Main';
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
@@ -44,7 +44,7 @@ type getStaticPropsReturnMain = {
 }
 
 export async function getStaticProps(): Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
-  const response = await axios.get(`${process.env.BASE_URL}/main`);
+  const response = await instance.get('/main');
   const mainData: Main = response.data;
 
   return {

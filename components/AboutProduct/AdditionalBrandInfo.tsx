@@ -1,21 +1,21 @@
 import React, { ReactElement } from 'react';
-import styles from 'styles/layout/AboutProduct/AdditionalBrandInfo.module.scss';
-import classes from 'styles/base/container.module.scss';
-import { additionalBrandInfo } from 'api/additionalBrandInfo';
-import cn from 'classnames';
+import Image from 'next/image';
 import Link from 'next/link';
+import cn from 'classnames';
+import { additionalBrandInfo } from 'api/additionalBrandInfo';
+import { Container } from 'components/Container';
 import intel from 'images/icons/productFeatures/intel.svg';
 import geforceRTX from 'images/icons/productFeatures/geforceRTX.svg';
 import gen3SSD from 'images/icons/productFeatures/gen3SSD.svg';
 import ddr4Processor from 'images/icons/productFeatures/ddr4Processor.svg';
-import Image from 'next/image';
+import styles from 'styles/layout/AboutProduct/AdditionalBrandInfo.module.scss';
 
-const { mainDescription, additionalDescription} = additionalBrandInfo.spec
+const { mainDescription, additionalDescription} = additionalBrandInfo.spec;
 
 export const AdditionalBrandInfo: React.FC = (): ReactElement => (
   <section className={styles.section}>
     <div className={styles.specs}>
-      <div className={cn(classes.container)}>
+      <Container>
         <div className={styles.AdditionalContainerOnDesktop} >
           <div className={styles.specsDescription} >
             <h1 className={styles.title}>Outplay the<br />
@@ -25,10 +25,10 @@ export const AdditionalBrandInfo: React.FC = (): ReactElement => (
             <p className={cn(styles.descriptionText, styles.additionalDescription)}>{additionalDescription}</p>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
     <div className={styles.additionalServices}>
-      <div className={classes.container} >
+      <Container>
         <ul className={styles.linkList} >
           <li className={styles.listListItem}>
             <Link className={styles.additionalServicesLink} href="#">
@@ -50,10 +50,10 @@ export const AdditionalBrandInfo: React.FC = (): ReactElement => (
             </Link>
           </li>
         </ul>
-      </div>
+      </Container>
     </div>
     <div className={styles.features}>
-      <div className={classes.container} >
+      <Container>
         <h1 className={styles.featuresTitle}>Features</h1>
         <p className={styles.brandDescription}>
           The MPG series brings out the best in gamers by allowing full expression in color with advanced
@@ -97,7 +97,7 @@ export const AdditionalBrandInfo: React.FC = (): ReactElement => (
             </div>
           </li>
         </ul>
-      </div>
+      </Container>
     </div>
   </section>
 );

@@ -1,30 +1,24 @@
-import { Product } from 'types/main/Products';
 import React, { ReactElement, useState } from 'react';
-import classes from 'styles/base/container.module.scss';
-import styles from 'styles/layout/AboutProduct/AboutProduct.module.scss';
-import cn from 'classnames';
 import Link from 'next/link';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import Image from 'next/image';
+import { observer } from 'mobx-react';
+import cn from 'classnames';
+import { Product } from 'types/main/Products';
+import { Goods } from 'enums/goods';
 import { Colors } from 'enums/colors';
 import { SectionsAboutProduct } from 'enums/sectionsAboutProduct';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import personalAccount from 'store/personalAccount';
 import { Details } from 'components/AboutProduct/Details';
 import { Specs } from 'components/AboutProduct/Specs';
+import { Container } from 'components/Container';
+import { AdditionalBrandInfo } from 'components/AboutProduct/AdditionalBrandInfo';
 import zipLogo from 'images/icons/zipLogo.svg';
-import Image from 'next/image';
-import { Goods } from 'enums/goods';
-import { observer } from 'mobx-react';
-import personalAccount from 'store/personalAccount';
-import { AdditionalBrandInfo } from './AdditionalBrandInfo';
+import styles from 'styles/layout/AboutProduct/AboutProduct.module.scss';
 
 type AboutProductProps = {
   product: Product | null,
   productType: Goods
-}
-
-export const addToCard = (product: Product | null, count?: number): void => {
-  if (product !== null) {
-    personalAccount.addProductToCart(product, count);
-  }
 }
 
 export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, productType }): ReactElement => {
@@ -36,18 +30,22 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
 
   const [quantityOfProducts, setQuantityOfProducts] = useState<number>(1);
 
-  const setDarkGreyColor = (): void => {
-    setChosenColor(Colors.darkGrey);
+  const setDarkGreyColor = (): void =>setChosenColor(Colors.darkGrey)
+  const setWhiteColor = (): void => setChosenColor(Colors.white);
+  const setGreyColor = (): void => setChosenColor(Colors.grey);
+
+
+  const addToCart = (productBlock: Product, productQuantity: number): void => {
+    if (productBlock) {
+      personalAccount.addProductToCart(productBlock, productQuantity);
+    }
   }
 
-  const setWhiteColor = (): void => {
-    setChosenColor(Colors.white);
+  const addToWishList = (productBlock: Product): void => {
+    if (productBlock) {
+      personalAccount.addProductToWishList(productBlock);
+    }
   }
-
-  const setGreyColor = (): void => {
-    setChosenColor(Colors.grey);
-  }
-
 
   const addProductCount = (): void => setQuantityOfProducts(prevCount => prevCount + 1);
   const subtractProductCount = (): void => setQuantityOfProducts(prevCount => {
@@ -138,7 +136,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
               </div>
               <button
                 className={styles.buttonAddToCart}
-                onClick={(): void => addToCard(product, quantityOfProducts)}
+                onClick={(): void => addToCart(product!, quantityOfProducts)}
                 type="button"
               >
                 Add to Card
@@ -148,7 +146,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
           </div>
           <div className={styles.productSection} >
             <div className={styles.description} >
-              <div className={classes.container} >
+              <Container >
                 <div className={styles.descriptionAdditionalContainerOnDesktop}>
                   <nav className={styles.smallNavigation} >
                     <Link className={styles.smallNavigationLink} href="/">Home</Link>
@@ -223,7 +221,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                     + More information
                   </strong>
                 </Link>
-              </div>
+              </Container>
             </div>
             <div className={styles.imageSection}>
               <div className={styles.imageContainer}>
@@ -232,6 +230,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                     <button
                       aria-label='wishList'
                       className={cn(styles.userButtons, styles.addToWishListButton)}
+                      onClick={(): void => addToWishList(product!)}
                       type="button"
                   />
                   </li>
@@ -304,7 +303,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
         </div>
 
         <div className={styles.onMobile}>
-          <div className={classes.container} >
+          <Container>
             <div className={styles.imageSection}>
               <div className={styles.imageContainer}>
                 <ul className={styles.userButtonsList}>
@@ -470,7 +469,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
               </div>
               <button
                 className={styles.buttonAddToCart}
-                onClick={(): void => addToCard(product, quantityOfProducts)}
+                onClick={(): void => addToCart(product!, quantityOfProducts)}
                 type="button"
             >
                 Add to Card
@@ -494,7 +493,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
               </span>
               <span className={styles.slug}>{slug}</span>
             </div>
-          </div>
+          </Container>
         </div>
       </section>
       <AdditionalBrandInfo />

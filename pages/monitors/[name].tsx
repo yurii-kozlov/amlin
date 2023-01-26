@@ -1,11 +1,11 @@
-import { MainContainer } from 'components/MainContainer';
 import React, { ReactElement, useEffect, useState } from 'react';
-import axios from 'axios';
-import { Products, Product } from 'types/main/Products';
 import { useRouter } from 'next/router';
-import { AboutProduct } from 'components/AboutProduct/AboutProduct';
 import { GetServerSidePropsResult } from 'next';
+import { instance } from 'api/api';
+import { Products, Product } from 'types/main/Products';
 import { Goods } from 'enums/goods';
+import { MainContainer } from 'components/MainContainer';
+import { AboutProduct } from 'components/AboutProduct/AboutProduct';
 
 type MonitorProps = {
   monitors: Products
@@ -14,7 +14,7 @@ type MonitorProps = {
 const Monitor:React.FC<MonitorProps> = ({ monitors }): ReactElement => {
   const [ currentMonitor, setCurrentMonitor ] = useState<Product | null>(null)
   const { query } = useRouter();
-  const {list } = monitors;
+  const { list } = monitors;
 
   useEffect(() => {
     const selectedMonitor:Product | undefined = list.find((monitor) =>
@@ -36,7 +36,7 @@ type getStaticPropsReturnMonitors = {
 }
 
 export async function getServerSideProps(): Promise<GetServerSidePropsResult<getStaticPropsReturnMonitors>> {
-  const response = await axios.get('http://localhost:3001/monitors');
+  const response = await instance.get('/monitors');
   const monitors: Products = response.data;
 
   return {

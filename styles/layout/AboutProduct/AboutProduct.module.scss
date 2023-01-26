@@ -54,7 +54,7 @@
 .price {
   color: $colorBlack;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin-right: 1.5rem;
@@ -94,7 +94,7 @@
   position: relative;
 
   font-style: normal;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: $colorGrey4;
@@ -130,7 +130,7 @@
   height: 3.8rem;
   width: 13rem;
   margin-right: 0.7rem;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.3rem;
   line-height: 2rem;
 
@@ -187,7 +187,6 @@
   margin-right: 1.4rem;
   border-radius: 0.6rem;
 
-
   @include onDesktop {
     height: 4.5rem;
     width: 6.5rem;
@@ -197,9 +196,9 @@
 
 .countNumber {
   font-style: normal;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1.1rem;
-  line-height: 210%;
+  line-height: 2.2rem;
   color: $colorBlack;
   margin-right: 1.5rem;
 
@@ -292,11 +291,12 @@
   opacity: 0.6;
 }
 
+
 .name {
   margin-bottom: 0.6rem;
   color: $colorBlack;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontWeightMedium;
   font-size: 2.2rem;
   line-height: 3.3rem;
   @extend %smooth-transition;
@@ -312,7 +312,7 @@
   display: inline-block;
   margin-bottom: 1.4rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 1rem;
   line-height: 1.5rem;
   color: $colorBlue3;
@@ -327,7 +327,7 @@
 
 .descriptionText {
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 2rem;
   color: $colorBlack;
@@ -339,7 +339,6 @@
     line-height: 3rem;
     margin-bottom: 4rem;
   }
-
 }
 
 .colorsList {
@@ -435,7 +434,7 @@
 
 .slug {
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: $colorBlack;
@@ -443,7 +442,7 @@
 
 .feedbackBlock {
   font-style: normal;
-  font-weight: 600;
+  font-weight: $fontWeightSemiBold;
   font-size: 1rem;
   line-height: 1.5rem;
   color: $colorBlack;
@@ -457,7 +456,7 @@
   &Link {
     color: $colorBlue3;
     text-decoration: underline;
-    font-weight: 400;
+    font-weight: $fontWeightRegular;
     @extend %smooth-transition;
   }
 
@@ -468,7 +467,7 @@
 
 .moreInformationLink {
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontWeightBold;
   font-size: 1.4rem;
   line-height: 2.1rem;
   text-transform: uppercase;
@@ -526,9 +525,9 @@
 
 .bonusDescription {
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fontWeightLight;
   font-size: 1rem ;
-  line-height: 120.5%;
+  line-height: 1.2rem;
   color: $colorBlack;
   position: relative;
 
@@ -555,7 +554,6 @@
     top: 0;
     left: -10%;
   }
-
 }
 
 .logoBonus {

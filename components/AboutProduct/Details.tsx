@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import styles from 'styles/layout/AboutProduct/Details.module.scss';
 import { Goods } from 'enums/goods';
+import styles from 'styles/layout/AboutProduct/Details.module.scss';
 
 type DetailsProps = {
   description: string

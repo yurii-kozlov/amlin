@@ -73,7 +73,7 @@
   font-style: normal;
   font-weight: $fontWeightRegular;
   font-size: 1.1rem;
-  line-height: 210%;
+  line-height: 2.2rem;
   color: $colorGrey3;
   outline: transparent;
   border: none;
@@ -92,7 +92,10 @@
   filter: brightness(0);
 }
 
+.emptyShoppingCartDescription {
+  font-size: 1.2rem;
 
-.emptyShoppingCard {
-  font-size: 2rem;
+  @include onDesktop {
+    font-size: 1.5rem;
+  }
 }

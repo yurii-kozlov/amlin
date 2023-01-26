@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
+import cn from 'classnames';
+import Link from 'next/link';
 import { MainContainer } from 'components/MainContainer';
 import { Container } from 'components/Container';
 import { ShippingAddress } from 'components/Checkout/ShippingAddress';
 import { OrderSummary } from 'components/Checkout/OrderSummary';
 import { OrderStage } from 'components/Checkout/OrderStage';
-import cn from 'classnames';
-import Link from 'next/link';
 import styles from 'styles/pages/checkout.module.scss';
 
 const Checkout: React.FC = (): ReactElement => (

@@ -6,7 +6,6 @@ import { checkoutPageFormInputs, schemaCheckoutPage } from 'constants/validation
 import { CountryPicker } from 'components/ShoppingCart/CountryPicker';
 import styles from 'styles/layout/Checkout/ShippingAddress.module.scss';
 
-
 export const ShippingAddress: React.FC = (): ReactElement => {
   const [selectedCountry, setSelectedCountry] = useState<string>('');
   const [shippingAddress, setShippingAddress] = useState<string>('store address');

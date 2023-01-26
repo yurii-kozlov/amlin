@@ -52,7 +52,7 @@
   font-style: normal;
   font-weight: $fontWeightRegular;
   font-size: 1.1rem;
-  line-height: 210%;
+  line-height: 2.2rem;
   color: $colorGrey3;
   padding-bottom: 1.8rem;
   border-bottom: 0.1rem solid $colorGrey2;
@@ -90,7 +90,7 @@
   font-style: normal;
   font-weight: $fontWeightSemiBold;
   font-size: 1.1rem;
-  line-height: 210%;
+  line-height: 2.2rem;
   color: $colorBlack;
 
   @extend %smooth-transition;
@@ -107,7 +107,7 @@
   font-style: normal;
   font-weight: $fontWeightSemiBold;
   font-size: 1.1rem;
-  line-height: 210%;
+  line-height: 2.2rem;
   color: $colorBlack;
 
   @include onDesktop {
@@ -177,7 +177,6 @@
     margin-bottom: 1.1rem;
   }
 }
-
 
 .buttonNext {
   @extend %buttonBlueNew;

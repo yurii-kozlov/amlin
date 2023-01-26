@@ -39,7 +39,7 @@
 }
 
 .stageIconCompleted {
-  border: 2.5px solid  $colorBlue3;
+  border: 2.5px solid $colorBlue3;
   background-image: url(../../../images/icons/checkMark.svg);
 
   @extend %iconSizes;

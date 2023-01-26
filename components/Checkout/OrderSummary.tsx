@@ -1,12 +1,12 @@
 import React, { ReactElement, useState } from 'react';
-import { OrderItem } from 'components/Checkout/OrderItem';
-import { observer } from 'mobx-react';
-import personalAccount from 'store/personalAccount';
+import Image from 'next/image';
 import { uuid } from 'uuidv4';
 import cn from 'classnames';
+import { observer } from 'mobx-react';
+import personalAccount from 'store/personalAccount';
+import { OrderItem } from 'components/Checkout/OrderItem';
 import arrowTop from 'images/icons/arrowTop.svg';
 import arrowDown from 'images/icons/arrowDown.svg';
-import Image from 'next/image';
 import styles from 'styles/layout/Checkout/OrderSummary.module.scss';
 
 export const OrderSummary: React.FC = observer((): ReactElement => {
@@ -39,7 +39,7 @@ export const OrderSummary: React.FC = observer((): ReactElement => {
               <OrderItem key={uuid()} product={product}/>
             ))
           ) : (
-            <p className={styles.emptyShoppingCard} >Your Shopping Cart is Empty</p>
+            <p className={styles.emptyShoppingCartDescription}>Your Shopping Cart is Empty</p>
           )}
         </ul>
       </div>

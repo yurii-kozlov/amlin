@@ -1,19 +1,19 @@
 import React, { ReactElement } from 'react';
+import Link from 'next/link';
+import { observer } from 'mobx-react';
+import personalAccount from 'store/personalAccount';
 import { Product } from 'types/main/Products';
 import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
 import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
 import styles from 'styles/layout/Checkout/OrderItem.module.scss';
-import personalAccount from 'store/personalAccount';
-import Link from 'next/link';
 
 type OrderItemProps = {
   product: Product
 }
 
-export const OrderItem: React.FC<OrderItemProps> = ({ product }): ReactElement => {
-  const {url, price, name, slug } = product;
-
-  const linkPart = `${name.split(' ')[0].toLowerCase()}s`;
+export const OrderItem: React.FC<OrderItemProps> = observer (({ product }): ReactElement => {
+  const { url, price, name, slug } = product;
 
   return (
     <li className={styles.block} >
@@ -25,7 +25,7 @@ export const OrderItem: React.FC<OrderItemProps> = ({ product }): ReactElement =
       <div className={styles.detailedInfo}>
         <Link
           className={styles.name}
-          href={`/${linkPart}/${getTheRightProductNameLink(name)}`}
+          href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
         >
           {name}
         </Link>
@@ -38,4 +38,4 @@ export const OrderItem: React.FC<OrderItemProps> = ({ product }): ReactElement =
       </div>
     </li>
   );
-}
+});

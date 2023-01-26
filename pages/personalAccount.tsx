@@ -8,7 +8,7 @@ import { MainContainer } from 'components/MainContainer';
 import { Container } from 'components/Container';
 import { AccountDashboard } from 'components/PersonalAccount/AccountDashboard';
 import { AccountSubsections } from 'enums/accountSubsections';
-import styles from 'styles/layout/personalAccount.module.scss';
+import styles from 'styles/pages/personalAccount.module.scss';
 import Link from 'next/link';
 import cn from 'classnames';
 import arrowTop from 'images/icons/arrowTop.svg';

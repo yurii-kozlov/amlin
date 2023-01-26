@@ -7,7 +7,6 @@ type AccountDashboardProps = {
   profileInfo: Profile
 }
 
-
 export const AccountDashboard: React.FC<AccountDashboardProps> = ({ profileInfo }): ReactElement => {
   const {name, mail } = profileInfo;
 

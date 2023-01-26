@@ -1,19 +1,19 @@
 import React, { ReactElement, useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { GetStaticPropsResult } from 'next';
+import cn from 'classnames';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
-import axios from 'axios';
+import { instance } from 'api/api';
 import { Profile } from 'types/profile/Profile';
-import { GetStaticPropsResult } from 'next';
+import { AccountSubsections } from 'enums/accountSubsections';
 import { MainContainer } from 'components/MainContainer';
 import { Container } from 'components/Container';
 import { AccountDashboard } from 'components/PersonalAccount/AccountDashboard';
-import { AccountSubsections } from 'enums/accountSubsections';
-import styles from 'styles/pages/personalAccount.module.scss';
-import Link from 'next/link';
-import cn from 'classnames';
 import arrowTop from 'images/icons/arrowTop.svg';
 import arrowDown from 'images/icons/arrowDown.svg';
-import Image from 'next/image';
+import styles from 'styles/pages/personalAccount.module.scss';
 
 type PersonalAccountProps = {
   profileInfo: Profile
@@ -180,7 +180,7 @@ const PersonalAccount: React.FC<PersonalAccountProps> = observer(({ profileInfo 
             </div>
             <div className={styles.subsectionDetailedInfo} >
               <h1 className={styles.titleOnMobile}>My Dashboard</h1>
-              <AccountDashboard  profileInfo={profileInfo} />
+              <AccountDashboard profileInfo={profileInfo} />
             </div>
             <div className={cn(styles.subsection, styles.subsectionOnMobile)}>
               <button className={styles.subsectionButton} type="button">Compare Products</button>
@@ -210,7 +210,7 @@ type getStaticPropsReturnMain = {
 }
 
 export async function getStaticProps():Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
-  const response = await axios.get(`${process.env.BASE_URL}/profile`);
+  const response = await instance.get('/profile');
   const profileInfo: Profile = response.data;
 
   return {

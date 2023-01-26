@@ -1,0 +1,95 @@
+.nav {
+  background-color: $colorWhite7;
+  padding: 2.4rem 1.5rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    padding: 2.4rem;
+  }
+}
+
+.blockMarginBottom {
+  margin-bottom: 1.6rem;
+
+  @include onTablet {
+    margin-bottom: 0;
+  }
+}
+
+.navOnMobile {
+  @include onMobile {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+.navVisibleOnMobile {
+  height: 29rem;
+  padding-top: 0;
+  padding-bottom: 2.4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.anchorLink {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: $colorBlack;
+  display: inline-block;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+
+.anchorLink:hover {
+  transform: scale(1.05);
+}
+
+.anchorLinkActive {
+  font-weight: $fontWeightSemiBold;
+  @extend %smooth-transition;
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 1.2rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+.buttonOnMobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  background-color: $colorWhite7;
+  outline: transparent;
+  border: none;
+
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+.arrow {
+  filter: brightness(0);
+}

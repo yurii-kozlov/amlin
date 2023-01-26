@@ -1,0 +1,27 @@
+.loader {
+  border: 0.8rem solid $colorWhite6;
+  border-top: 0.8rem solid $colorBlue8;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+
+  @extend %smooth-transition;
+
+  @include onTablet {
+    width: 8rem;
+    height: 8rem;
+    border: 1rem solid $colorWhite6;
+    border-top: 1rem solid $colorBlue8;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

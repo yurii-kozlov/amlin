@@ -1,33 +1,59 @@
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement, useState } from 'react';
 import cn from 'classnames';
+import InfiniteScroll from 'react-infinite-scroll-component';
+import { AxiosResponse } from 'axios';
+import { uuid } from 'uuidv4';
+import { Product, Products } from 'types/main/Products';
 import { Goods } from 'enums/goods';
-import { Laptops } from 'components/ProductsScroll/Laptops/Laptops';
+import { instance } from 'api/api';
+import { getTheRightGoods } from 'helpers/getTheRightGoods';
 import { Container } from 'components/Container';
-import { Computers } from 'components/ProductsScroll/Computers/Computers';
-import { Monitors } from 'components/ProductsScroll/Monitors/Monitors';
+import { ProductCard } from 'components/ProductCard';
+import { Loader } from 'components/Loader';
 import styles from 'styles/layout/ProductsScroll.module.scss';
 
-export const ProductsScroll: React.FC = (): ReactElement => {
-  const [fetching, setFetching] = useState<boolean>(true);
-  const [visibleProductSection, setVisibleProductSection] = useState<Goods>(Goods.laptops);
+type ProductsScrollProps = {
+  products: Product[]
+}
 
-  const handleLaptopsVisibility = (): void => setVisibleProductSection(Goods.laptops);
-  const handleComputersVisibility = (): void => setVisibleProductSection(Goods.computers);
-  const handleMonitorsVisibility = (): void => setVisibleProductSection(Goods.monitors);
+export const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): ReactElement => {
+  const [allGoods, setAllGoods] = useState<Product[]>(products);
+  const [visibleProductType, setVisibleProductType] = useState<Goods>(Goods.laptops);
 
-  useEffect(() => {
-    document.addEventListener('scroll', scrollHandler);
+  const [visibleGoods, setVisibleGoods] = useState<Product[]>(getTheRightGoods(Goods.laptops, products));
+  const [isLoadingNewProducts, setIsLoadingNewProducts] = useState(true);
 
-    return () => {
-      document.removeEventListener('scroll', scrollHandler);
+  const getMoreProducts = async (): Promise<void> => {
+    const response: AxiosResponse<Products> = await instance
+      .get(`/${visibleProductType}?_start=${visibleGoods.length}&_limit=10`);
+
+    const newProducts: Products = response.data;
+    setVisibleGoods((oldVisibleGoods: Product[]) => [...oldVisibleGoods, ...newProducts.list]);
+    setAllGoods((oldGoods: Product[]) => [...oldGoods, ...newProducts.list])
+
+    if (visibleGoods.length >= 100) {
+      setIsLoadingNewProducts(false)
     }
-  }, [])
+  };
 
-  const scrollHandler = (e: any):void => {
-    if (e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 3500) {
-      setFetching(true);
-    }
-  }
+  const handleLaptopsVisibility = (): void => {
+    setVisibleProductType(Goods.laptops);
+    setVisibleGoods(getTheRightGoods(Goods.laptops, allGoods));
+    setIsLoadingNewProducts(true);
+  };
+
+  const handleComputersVisibility = (): void => {
+    setVisibleProductType(Goods.computers);
+    setVisibleGoods(getTheRightGoods(Goods.computers, allGoods));
+    setIsLoadingNewProducts(true);
+  };
+
+  const handleMonitorsVisibility = (): void => {
+    setVisibleProductType(Goods.monitors);
+    setVisibleGoods(getTheRightGoods(Goods.monitors, allGoods));
+    setIsLoadingNewProducts(true);
+  };
+
 
   return (
     <Container>
@@ -35,7 +61,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
         <ul className={styles.buttonsList} >
           <li className={styles.buttonsListItem}>
             <button
-              className={cn(styles.button, {[styles.buttonActive]: visibleProductSection === Goods.laptops})}
+              className={cn(styles.button, {[styles.buttonActive]: visibleProductType === Goods.laptops})}
               onClick={handleLaptopsVisibility}
               type="submit"
             >
@@ -44,7 +70,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
           </li>
           <li className={styles.buttonsListItem}>
             <button
-              className={cn(styles.button, {[styles.buttonActive]: visibleProductSection === Goods.computers})}
+              className={cn(styles.button, {[styles.buttonActive]: visibleProductType === Goods.computers})}
               onClick={handleComputersVisibility}
               type="submit"
             >
@@ -53,7 +79,7 @@ export const ProductsScroll: React.FC = (): ReactElement => {
           </li>
           <li className={styles.buttonsListItem}>
             <button
-              className={cn(styles.button, {[styles.buttonActive]: visibleProductSection === Goods.monitors})}
+              className={cn(styles.button, {[styles.buttonActive]: visibleProductType === Goods.monitors})}
               onClick={handleMonitorsVisibility}
               type="submit"
             >
@@ -61,42 +87,23 @@ export const ProductsScroll: React.FC = (): ReactElement => {
             </button>
           </li>
         </ul>
-        <div
-          className={cn(
-            styles.block, styles.photos,
-            {[styles.invisibleLaptops]: visibleProductSection !== Goods.laptops}
-          )}
-          >
-          <Laptops
-            fetching={fetching}
-            setFetching={setFetching}
-            visibleProductSection={visibleProductSection}
-          />
-        </div>
-        <div
-          className={cn(
-            styles.block,
-            styles.comments,
-            {[styles.invisibleComputers]: visibleProductSection !== Goods.computers })}
+        <InfiniteScroll
+          className={styles.loaderBlock}
+          dataLength={visibleGoods.length}
+          endMessage={<p className={styles.endOfSectionText} >You&apos;ve watched all products in this section</p>}
+          hasMore={isLoadingNewProducts}
+          loader={<Loader />}
+          next={getMoreProducts}
+          scrollThreshold={0.3}
+          style={{overflow: 'hidden'}}
         >
-          <Computers
-            fetching={fetching}
-            setFetching={setFetching}
-            visibleProductSection={visibleProductSection}
-          />
-        </div>
-        <div
-          className={cn(
-            styles.block,
-            styles.comments,
-            {[styles.invisibleMonitors]: visibleProductSection !== Goods.monitors })}
-        >
-          <Monitors
-            fetching={fetching}
-            setFetching={setFetching}
-            visibleProductSection={visibleProductSection}
-          />
-        </div>
+          <div className={styles.block}>
+            {visibleGoods.map((post: Product) => (
+              <ProductCard key={uuid()} product={post}/>
+            ))}
+          </div>
+        </InfiniteScroll>
       </section>
     </Container>
   )};
+

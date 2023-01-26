@@ -81,3 +81,12 @@
   color: $colorBlack;
   border-bottom: 0.2rem solid $colorBlue3;
 }
+
+.endOfSectionText {
+  font-size: 1.8rem;
+  text-align: center;
+
+  @include onTablet {
+    font-size: 3rem;
+  }
+} 

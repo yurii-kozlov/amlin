@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
-import axios from 'axios';
 import { GetStaticPropsResult } from 'next';
 import { Main } from 'types/main/Main';
+import { Products, Product } from 'types/main/Products';
+import { instance } from 'api/api';
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
 import { Services } from 'components/Services';
@@ -15,12 +16,12 @@ import { NewProducts } from 'components/NewProducts/NewProducts';
 import { ProductsScroll } from 'components/ProductsScroll/ProductsScroll';
 
 
-
 type HomeProps = {
   mainData: Main
+  products: Product[]
 }
 
-export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
+export const Home: React.FC<HomeProps> = ({ mainData, products }): ReactElement => {
 
   const {banners, reviews, newProducts} = mainData;
 
@@ -30,7 +31,7 @@ export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
       <Navbar />
       <CarouselMain banners={banners}/>
       <NewProducts newGoods={newProducts}/>
-      <ProductsScroll />
+      <ProductsScroll products={products}/>
       <BonusSection />
       <Logos />
       <News />
@@ -42,15 +43,27 @@ export const Home: React.FC<HomeProps> = ({ mainData }): ReactElement => {
 }
 
 type getStaticPropsReturnMain = {
-  mainData: Main
+  mainData: Main,
+  products: Product[]
 }
 
 export async function getStaticProps(): Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
-  const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/main`);
-  const mainData: Main = response.data;
+  const responseMain = await instance.get('/main');
+  const mainData: Main = responseMain.data;
+
+  const responseLaptops = await instance.get('/laptops?_limit=10');
+  const laptops: Products = responseLaptops.data;
+
+  const responseComputers = await instance.get('/computers?_limit=10');
+  const computers: Products = responseComputers.data;
+
+  const responseMonitors = await instance.get('/monitors?_limit=10');
+  const monitors: Products = responseMonitors.data;
+
+  const products: Product[] = [...laptops.list, ...computers.list, ...monitors.list];
 
   return {
-    props: {mainData},
+    props: {mainData, products},
   }
 }
 

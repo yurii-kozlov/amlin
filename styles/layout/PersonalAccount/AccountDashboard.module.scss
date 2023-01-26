@@ -1,0 +1,145 @@
+.blockTitle {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: $colorBlack3;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: $fontWeightBold;
+  }
+}
+
+.accountInformationSubtitle {
+  padding-bottom: 0.6rem;
+  border-bottom: 0.1rem solid $colorGrey2;
+  margin-bottom: 1.7rem;
+  width: 100%;
+
+  @include onTablet {
+    width: 80%;
+  }
+
+  @include onDesktop {
+    padding-bottom: 1.4rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+  }
+}
+
+.addressBookSubtitle {
+  margin-right: 1.8rem;
+}
+
+.subBlocksWrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include onDesktop {
+    flex-direction: row;
+  }
+}
+
+.subBlocksWrapper:first-of-type {
+  margin-bottom: 2.2rem;
+
+  @include onDesktop {
+    margin-bottom: 5.4rem;
+  }
+}
+
+.subBlock {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+
+.subBlock:first-child {
+  margin-bottom: 2.3rem;
+
+  @include onDesktop {
+    margin-bottom: 0;
+    margin-right: 10rem;
+  }
+}
+
+.subBlockTitle {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  color: $colorBlack;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.subBlockDescription {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: $colorBlack;
+  margin-bottom: 1.5rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-weight: $fontWeightLight;
+    font-size: 1.6rem;
+    margin-bottom: 3.4rem;
+    color: $colorGrey3;
+  }
+}
+
+.subtitleButton {
+  font-style: normal;
+  font-weight: $fontWeightLight;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-decoration-line: underline;
+  color: $colorBlue3;
+  width: fit-content;
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  padding: 0;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 2rem;
+
+  @include onDesktop {
+    gap: 2.4rem;
+  }
+}
+
+.subtitleAndButtonWrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.7rem;
+  border-bottom: 0.1rem solid $colorGrey2;
+  margin-bottom: 1.7rem;
+  width: 100%;
+  @extend %smooth-transition;
+
+  @include onTablet {
+    width: 80%;
+  }
+
+  @include onDesktop {
+    padding-bottom: 1.2rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+  }
+}

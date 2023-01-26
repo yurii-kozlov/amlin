@@ -1,0 +1,271 @@
+.pageSection {
+  margin-bottom: 4.5rem;
+
+  @include onMobile {
+    margin-bottom: 1.1rem;
+  }
+}
+
+.buttonAccountDashboardOnMobile {
+  display: none;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  border-top: 0.1rem solid $colorGrey2;
+  border-bottom: 0.1rem solid $colorGrey2;
+  width: 100%;
+  padding: 1.3rem 0;
+
+  @include onMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+.arrow {
+  filter: brightness(0);
+}
+
+.navigation {
+  @extend %smallNavigation;
+
+  margin-top: 2.1rem;
+  margin-bottom: 1rem;
+
+  @include onTablet {
+    margin-bottom: 1.3rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 1.9rem;
+  }
+}
+
+.navigationLink {
+  @extend %smooth-transition;
+}
+
+.navigationLink:first-child::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transform: translate(200%, 100%);
+  border-left: 0.3rem solid $colorBlue3;
+}
+
+.navigationLink:hover {
+  color: $colorBlue3;
+}
+
+.title {
+  @extend %pageTitle;
+
+  @include onMobile {
+    display: none;
+  }
+}
+
+.titleOnMobile {
+  display: none;
+  @extend %pageTitle;
+
+  @include onMobile {
+    display: block;
+  }
+}
+
+.subsectionsAndDetailedSubsectionInfoWrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include onTablet {
+    flex-direction: row;
+  }
+}
+
+.subsectionsListBlock {
+  margin-right: 8rem;
+  width: 100%;
+
+  @include onMobile {
+    margin-bottom: 2.6rem;
+  }
+
+  @include onTablet {
+    margin-right: 3.2rem;
+    width: 40%;
+  }
+
+  @include onDesktop {
+    margin-right: 8rem;
+    width: 30%;
+  }
+}
+
+.subsectionDetailedInfo {
+  width: 100%;
+
+  @include onTablet {
+    width: 60%;
+  }
+
+  @include onDesktop {
+    width: 70%;
+  }
+}
+
+.subsectionsList {
+  list-style: none;
+  background-color: $colorWhite5;
+  padding: 1.5rem 2rem;
+  margin-bottom: 0.7rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    padding: 2rem;
+  }
+}
+
+.subsectionsListOnMobile {
+  @include onMobile {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+}
+
+.subsectionsListVisibleOnMobile {
+  height: 42rem;
+  padding: 1.5rem 2rem;
+}
+
+.subsectionsListItem {
+  position: relative;
+}
+
+.subsectionsListItem:not(:last-child) {
+  margin-bottom: 0.9rem;
+
+  @include onDesktop {
+    margin-bottom: 1.4rem;
+  };
+}
+
+.subsectionsListItemButton {
+  width: fit-content;
+  height: 100%;
+  text-align: left;
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  color: $colorGrey3;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+}
+
+.subsectionsListItemButton:hover {
+  transform: scale(1.03);
+
+  @include onMobile {
+    transform: scale(1);
+  }
+}
+
+.subsectionSeparator {
+  padding-bottom: 1.4rem;
+  border-bottom: 0.1rem solid $colorGrey2;
+}
+
+.activeSubsection {
+  @extend %smooth-transition;
+  font-weight: $fontWeightSemiBold;
+  color: $colorBlack;
+}
+
+.activeSubsection::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0.3rem;
+  height: 3rem;
+  background-color: $colorBlue8;
+  left: -2rem;
+  top: -0.4rem;
+}
+
+.subsection {
+  background-color: $colorWhite5;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    padding: 2rem 3.5rem;
+  }
+}
+
+.subsection:first-of-type {
+  margin-bottom: 0.7rem;
+}
+
+.subsectionOnTabletAndDesktop {
+  @include onMobile {
+    display: none;
+  }
+}
+
+.subsectionOnMobile {
+  margin-bottom: 0.7rem;
+  @include onTablet {
+    display: none;
+  }
+}
+
+.subsectionOnMobile:last-child {
+  margin-bottom: 0;
+}
+
+.subsectionButton {
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: $fontWeightBold;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: fit-content;
+}
+
+.compareItemsText {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.3rem;
+  color: $colorBlack;
+}

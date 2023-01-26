@@ -1,0 +1,118 @@
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.8rem;
+  background-color: $colorWhite;
+  border-radius: 0.4rem;
+  border: 0.1rem solid $colorGrey1;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-style: normal;
+  font-weight: $fontWeightLight;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: $colorBlack;
+
+  font-family: $mainFontFamily;
+
+  @include onDesktop {
+    font-weight: $fontWeightRegular;
+    font-size: 1.4rem;
+    height: 4.5rem;
+  }
+
+  @extend %smooth-transition;
+}
+
+.buttonAtCheckoutPage {
+  @include onDesktop {
+    width: 60%;
+  }
+}
+
+.button:hover {
+  background-color: $colorGrey6;
+}
+
+.arrow {
+  filter: brightness(0);
+}
+
+.list {
+  width: 100%;
+  max-height: 0;
+  background-color: $colorWhite;
+  overflow-y: scroll;
+  @extend %smooth-transition;
+}
+
+.listIAtCheckoutPage {
+  @include onDesktop {
+    width: 60%;
+  }
+}
+
+.listVisible {
+  max-height: 25rem;
+}
+
+.listItem {
+  width: 100%;
+  height: 3.8rem;
+  background-color: $colorWhite;
+  border-radius: 0.4rem;
+  border: 0.1rem solid $colorGrey1;
+  display: flex;
+  align-items: center;
+
+  @include onDesktop {
+    height: 4.5rem;
+  }
+
+  cursor: pointer;
+  @extend %smooth-transition;
+}
+
+.listItem:hover {
+  background-color: $colorGrey6;
+}
+
+.buttonChooseCountry {
+  padding-left: 1.5rem;
+  font-family: $mainFontFamily;
+  cursor: pointer;
+  @extend %smooth-transition;
+  outline: transparent;
+  border: none;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: $fontWeightLight;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: $colorBlack;
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+
+  @include onDesktop {
+    font-weight: $fontWeightRegular;
+    font-size: 1.4rem;
+  }
+}
+
+.label {
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 2.3rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+  }
+}

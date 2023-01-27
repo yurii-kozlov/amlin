@@ -6,7 +6,6 @@ import { Article } from 'types/terms/Article';
 import { Terms } from 'enums/term';
 import arrowTop from 'images/icons/arrowTop.svg';
 import arrowDown from 'images/icons/arrowDown.svg';
-
 import styles from 'styles/layout/Terms/TermsNavigation.module.scss';
 
 type TermsNavigationProps = {
@@ -56,5 +55,4 @@ export const TermsNavigation: React.FC<TermsNavigationProps> = ({ articles }): R
       </nav>
     </div>
   );
-
 }

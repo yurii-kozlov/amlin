@@ -1,15 +1,15 @@
 import React, { ReactElement } from 'react';
+import Link from 'next/link';
+import { GetStaticPropsResult } from 'next';
 import { uuid } from 'uuidv4';
 import cn from 'classnames';
+import { instance } from 'api/api';
 import { Terms as TermsAndConditions } from 'types/terms/Terms';
 import { MainContainer } from 'components/MainContainer';
 import { Container } from 'components/Container';
 import { TermsBlock } from 'components/Terms/TermsBlock';
 import { TermsNavigation } from 'components/Terms/TermsNavigation';
 import styles from 'styles/pages/terms.module.scss';
-import Link from 'next/link';
-import { GetStaticPropsResult } from 'next';
-import { instance } from 'api/api';
 
 type TermsProps = {
   terms: TermsAndConditions

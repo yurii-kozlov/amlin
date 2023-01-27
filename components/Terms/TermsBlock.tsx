@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import { Article } from 'types/terms/Article';
 import cn from 'classnames';
+import { Article } from 'types/terms/Article';
 import styles from 'styles/layout/Terms/TermsBlock.module.scss';
 
 type TermsBlockProps = {
@@ -16,5 +16,4 @@ export const TermsBlock: React.FC<TermsBlockProps> = ({ article }): ReactElement
       <p className={styles.text}>{text}</p>
     </article>
   );
-
 }

@@ -1,0 +1,264 @@
+.specs {
+  @extend %smooth-transition;
+  background-color: $colorBlack;
+  padding: 5.5rem 0;
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1673359361/techstore/aboutProductSpec_lr4vob.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+
+  @include onMobile {
+    background-position: top center;
+    padding-bottom: 3rem;
+    padding-top: 23rem;
+    background-size: contain;
+  }
+  
+  @include onDesktop {
+    padding: 13rem 0;
+  }
+}
+
+.AdditionalContainerOnDesktop {
+  @include onDesktop {
+    padding: 0 5rem;
+  }
+}
+
+.specsImage {
+  max-width: 70rem;
+  max-height: 40rem;
+}
+
+.title {
+  @extend %smooth-transition;
+  color: $colorWhite;
+  font-style: normal;
+  font-weight: $fontWeightMedium;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  margin-bottom: 1.3rem;
+
+  @include onDesktop {
+    font-size: 4.4rem;
+    line-height: 5.8rem;
+    margin-bottom: 6rem;
+  }
+}
+
+.mainDescription {
+  margin-bottom: 2rem;
+}
+
+.descriptionText {
+  @extend %smooth-transition;
+  color: $colorWhite;
+  font-weight: $fontWeightLight;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  max-width: 40rem;
+  opacity: 0.9;
+
+  @include onDesktop {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+
+.additionalServices {
+  padding-top: 3.7rem;
+  padding-bottom: 12rem;
+  background-color: $colorWhite;
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1673359165/techstore/aboutProductAdditionalInfo_q7qxjq.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  @include onMobile {
+    background-size: cover;
+    background-position: 0;
+  }
+
+  @include onTablet {
+    padding: 6rem 0;
+  }
+
+  @include onDesktop {
+    background-position: 60%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 15%;
+  }
+}
+
+.linkList {
+  list-style: none;
+}
+
+.listListItem:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.listListItem {
+  max-width: 24rem;
+  height: 4rem;
+
+  @include onDesktop {
+    max-width: 33rem;
+    height: 5rem;
+  }
+}
+
+.additionalServicesLink {
+  @extend %smooth-transition;
+  display: flex;
+  align-items: center;
+  background-color: $colorWhite1;
+  border: 0.1rem solid $colorGrey2;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: 100%;
+  padding-left: 2.3rem;
+
+  font-style: normal;
+  font-weight: $fontWeightMedium;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $colorBlack1;
+  position: relative;
+
+  @include onDesktop {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.additionalServicesLink:hover {
+  background-color: $colorGrey6;
+}
+
+.arrowRight {
+  background-image: url(../../../images/icons/arrowRight.svg);
+  @extend %iconSizes;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  right: 2rem;
+}
+
+.featuresListItem {
+  display: block;
+}
+
+.featuresList {
+  @extend %smooth-transition;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem 0;
+
+  @include onTablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.3rem 0;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+}
+
+.features {
+  @extend %smooth-transition;
+  background: $colorBlack2;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+
+  @include onMobile {
+    padding-top: 3.1rem;
+    padding-bottom: 4.3rem;
+  }
+  
+  @include onTablet {
+    padding-top: 3.1rem;
+    padding-bottom: 4.8rem;
+  }
+
+  @include onDesktop {
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.featuresTitle {
+  @extend %smooth-transition;
+  text-align: center;
+  font-style: normal;
+  font-weight: $fontWeightMedium;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: $colorWhite;
+
+  margin-bottom: 1.4rem;
+
+  @include onDesktop {
+    font-size: 3.8rem;
+    line-height: 5.7rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+.featureImage {
+  @extend %smooth-transition;
+  margin-bottom: 1rem;
+
+  @include onDesktop {
+    margin-bottom: 2.8rem;
+  }
+}
+
+.featureDescription {
+  font-style: normal;
+  font-weight: $fontWeightLight;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: $colorWhite;
+  max-width: 23rem;
+  text-align: center;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+  }
+}
+
+.brandDescription {
+  text-align: center;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: $fontWeightLight;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: $colorWhite;
+  max-width: 40rem;
+
+
+  @include onMobile {
+    margin-bottom: 2.8rem;
+  }
+
+  @include onTablet {
+    margin-bottom: 4.1rem;
+  }
+
+  @include onDesktop {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin-bottom: 5.5rem;
+  }
+}
+
+.featureBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

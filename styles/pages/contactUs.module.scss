@@ -1,12 +1,25 @@
 .mainBlock {
   display: grid;
+
   @include onMobile {
     display: block;
   }
+
   grid-template-columns: 1fr 1fr;
   color: $colorBlack;
   @include onDesktop {
     justify-items: center;
+  }
+}
+.marginBottom {
+  margin-bottom: 2.8rem;
+
+  @include onTablet {
+    margin-bottom: 3.4rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 12.3rem;
   }
 }
 

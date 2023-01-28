@@ -1,0 +1,138 @@
+.pageSection {
+  margin-bottom: 3.1rem;
+  @extend %smooth-transition;
+
+  @include onTablet {
+    margin-bottom: 3.4rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 8rem;
+  }
+}
+
+.titleAndOrderStageWrapper {
+  display: block;
+
+  @include onTablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include onDesktop {
+    align-items: start;
+  }
+}
+
+.navigation {
+  @extend %smallNavigation;
+  margin-bottom: 1rem;
+
+  @include onMobile {
+    padding-top: 0.4rem;
+  }
+
+
+  @include onDesktop {
+    margin-bottom: 1.9rem;
+    padding-top: 2.1rem
+  }
+}
+
+.navigationLink {
+  @extend %smooth-transition;
+}
+
+.navigationLink:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transform: translate(200%, 100%);
+  border-left: 0.3rem solid $colorBlue3;
+}
+
+.navigationLink:hover {
+  color: $colorBlue3;
+}
+
+
+.summaryAndShippingInfoWrapper {
+  display: block;
+
+  @include onTablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.titleAndSignInButtonWrapper {
+  display: flex;
+  flex-direction: column;
+
+
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+
+.title {
+  @extend %pageTitle;
+
+  @include onMobile {
+    margin-bottom: 1rem;
+  }
+
+  @include onTablet {
+    margin-bottom: 1.3rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 3rem;
+    margin-right: 2.5rem;
+  }
+}
+
+
+.signInLink {
+  @extend %buttonBlueNew;
+  color: $colorBlue3;
+  background-color: $colorWhite;
+  border: 0.2rem solid $colorBlue3;
+  width: 14rem;
+  height: 3.8rem;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  font-size: 1.3rem;
+
+  @include onDesktop {
+    width: 20rem;
+    height: 4.5rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+}
+
+.signInLink:hover {
+  background-color: $colorGrey2;
+}
+
+.subtitle {
+  @extend %smooth-transition;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-bottom: 1.2rem;
+
+  @include onDesktop {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin-bottom: 1.4rem;
+  }
+}

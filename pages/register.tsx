@@ -4,7 +4,7 @@ import { MainContainer } from 'components/MainContainer';
 import { useForm } from 'react-hook-form'
 import styles from 'styles/pages/register.module.scss';
 import { loginInputs } from 'types/loginInputs';
-import { loginSchema } from 'helpers/loginShema';
+import { loginSchema } from 'constants/validationSchemas/loginShema';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Container } from 'components/Container';
 

@@ -1,0 +1,101 @@
+.section {
+  width: 100%;
+
+  @include onTablet {
+    width: 50%;
+  }
+
+  @include onDesktop {
+    width: 35%;
+  }
+}
+
+.list {
+  list-style: none;
+  @extend %smooth-transition;
+  max-height: 0;
+  opacity: 0;
+}
+
+.listVisible {
+  max-height: fit-content;
+  opacity: 1;
+}
+
+.summaryBlock {
+  background-color: $colorWhite1;
+  padding-top: 2rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    padding-top: 1.8rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.title {
+  @extend %smooth-transition;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  @include onDesktop {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+}
+
+.titleWrapper {
+  padding-bottom: 1.8rem;
+  border-bottom: 0.1rem solid $colorGrey2;
+  margin-bottom: 1.2rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    margin-bottom: 1.6rem;
+    padding-bottom: 2.2rem;
+  }
+}
+
+.itemsQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  color: $colorGrey3;
+  outline: transparent;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  padding: 0;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+.arrow {
+  filter: brightness(0);
+}
+
+.emptyShoppingCartDescription {
+  font-size: 1.2rem;
+
+  @include onDesktop {
+    font-size: 1.5rem;
+  }
+}

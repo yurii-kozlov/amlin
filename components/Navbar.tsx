@@ -33,12 +33,12 @@ export const Navbar = observer((): ReactElement => {
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#desktopPCs"
+            href="/desktopPCs"
           >
             Desktop PCs
-          </a>
+          </Link>
         </li>
 
         <li className={styles.listItem}>

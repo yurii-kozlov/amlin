@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import { MainContainer } from 'components/MainContainer';
 import { Product } from 'types/main/Products';
-import axios from 'axios';
+import { instance } from 'api/api';
 import { Container } from 'components/Container';
 import { Laptops as LaptopsData } from 'types/laptops/laptops';
 import { GetStaticPropsResult } from 'next';
@@ -40,7 +40,7 @@ type getStaticPropsReturnMain = {
 }
 
 export async function getStaticProps():Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
-      const res = await axios.get('http://localhost:3001/laptops');
+      const res = await instance.get('/laptops');
       const laptopsData: LaptopsData = res.data;
 
   return {

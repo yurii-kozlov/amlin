@@ -12,7 +12,7 @@ export const Menu: React.FC<MenuProps> = observer(({ isMenuVisible }): ReactElem
   <div className={`${styles.section} ${isMenuVisible && styles.visible}`} >
     <ul className={styles.list} >
       <li className={styles.listItem} >
-        <Link className={styles.menuLink} href="#" >
+        <Link className={styles.menuLink} href="/personalAccount" >
           My Account
         </Link>
       </li>

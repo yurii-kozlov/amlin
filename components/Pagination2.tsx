@@ -24,7 +24,7 @@ export const PaginatedItems: React.FC<PaginatedItemsProps> = ({ itemsPerPage, pr
 
   return (
     <>
-      <Products loading={false} products={currentItems} />
+      <Products products={currentItems} />
       <ReactPaginate
         activeLinkClassName={styles.activeButton}
         breakClassName={styles.button}

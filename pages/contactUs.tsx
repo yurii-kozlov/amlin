@@ -1,15 +1,16 @@
 /* eslint-disable no-console */
-import Link from 'next/link';
 import React, { ReactElement } from 'react';
-import { MainContainer } from 'components/MainContainer';
+import Link from 'next/link';
+import cn from 'classnames';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { formInputs } from 'types/formInputs';
+import { schema } from 'helpers/schema';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faMobile, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { schema } from 'constants/validationSchemas/schema';
-import { formInputs } from 'types/formInputs';
-import { yupResolver } from '@hookform/resolvers/yup';
-import styles from 'styles/pages/contactUs.module.scss';
-import { useForm } from 'react-hook-form';
 import { Container } from 'components/Container';
+import { MainContainer } from 'components/MainContainer';
+import styles from 'styles/pages/contactUs.module.scss';
 
 const ContactUs = (): ReactElement => {
   const {
@@ -27,7 +28,7 @@ const onSubmit = (data: formInputs): void => {
   return (
     <MainContainer>
       <Container>
-        <section className={styles.section}>
+        <section className={cn(styles.section, styles.marginBottom)}>
           <div className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/contactUs">Contact Us</Link>

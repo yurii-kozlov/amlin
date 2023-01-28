@@ -11,7 +11,7 @@ import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
 import styles from 'styles/layout/ProductCard.module.scss';
 
 type addToCartProps = {
-  product: Product,
+  product: Product
 }
 
 export const addToCart = (product: Product): void => {

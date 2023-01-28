@@ -1,6 +1,5 @@
 .section {
   @extend %smooth-transition;
-  background-color: $colorWhite1;
   padding-top: 3.7rem;
   padding-bottom: 3.7rem;
   display: grid;
@@ -11,12 +10,15 @@
   @include onDesktop {
     padding-top: 6rem;
     padding-bottom: 4.8rem;
-    background-color: $colorWhite;
   }
 
   @include onMobile {
     display: block;
   }
+}
+
+.backgroundColor {
+  background-color: $colorWhite1;
 }
 
 .block {
@@ -74,7 +76,6 @@
   border-radius: 50%;
   @extend %smooth-transition;
   margin-bottom: 0.7rem;
-
 
   @include onDesktop {
     width: 6.5rem;

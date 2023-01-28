@@ -1,0 +1,56 @@
+.list {
+  list-style: none;
+  background-color: $colorWhite;
+  margin-bottom: 5rem;
+  border: 0.1rem solid $colorGrey2;
+  max-width: 32rem;
+
+  @include onMobile {
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  @include onDesktop {
+    width: 40rem;
+  }
+}
+
+.column {
+  margin-right: 1rem;
+}
+
+.listItem {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  @extend %smooth-transition;
+  position: relative;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    height: 4rem;
+  }
+}
+
+.listItem:hover {
+  background-color: $colorWhite1;
+  cursor: pointer;
+  width: 100%;
+}
+
+.listItemFeature {
+  color: $colorBlack;
+  display: inline-block;
+}
+
+.availability {
+  left: 40%;
+  color: $colorGrey3;
+  position: absolute;
+}

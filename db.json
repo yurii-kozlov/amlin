@@ -1128,6 +1128,102 @@
   "laptops": {
     "list": [
       {
+        "inStock": true,
+        "firm": "Mi",
+        "slug": "mi-lite-15",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/1_hw0qj0.jpg",
+        "name": "Laptop Mi Notebook Lite 15 I5/8/512/MX110/W (JYU4139CN)",
+        "reviewsCount": 10,
+        "previousPrice": 29999,
+        "price": 21499,
+        "rating": 3,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "firm": "Mi",
+        "slug": "redmi-13",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/3_m1wlqn.jpg",
+        "name": "Laptop Mi RedmiBook 13 i5/8/512/MX250/W (JYU4214CN)",
+        "reviewsCount": 110,
+        "previousPrice": 24999,
+        "price": 21999,
+        "rating": 3.3,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "firm": "Lenovo",
+        "slug": "idea-pad",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/4_waavpt.jpg",
+        "name": "Laptop Lenovo IdeaPad S145-15IKB (81VD007TRA)",
+        "reviewsCount": 22,
+        "previousPrice": 29999,
+        "price": 15999,
+        "rating": 4.1,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "firm": "Asus",
+        "slug": "M17950",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/5_v3lrta.jpg",
+        "name": "Laptop ASUS E410MA-EB009 (90NB0Q11-M17950)",
+        "reviewsCount": 42,
+        "previousPrice": 15999,
+        "price": 10999,
+        "rating": 3.8,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "firm": "Dream",
+        "slug": "17UA42",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/6_maxcmy.jpg",
+        "name": "Laptop Dream Machines G1650Ti-17 (G1650Ti-17UA42)",
+        "reviewsCount": 13,
+        "previousPrice": 28499,
+        "price": 26499,
+        "rating": 4.2,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "redmi-14",
+        "firm": "Mi",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/2_rdzq8f.jpg",
+        "name": "Laptop Laptop Mi RedmiBook 14 R7/16/512/W (JYU4209CN)",
+        "reviewsCount": 3,
+        "previousPrice": 22999,
+        "price": 19499,
+        "rating": 5,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": false,
+        "slug": "MGN63",
+        "firm": "Apple",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/7_uwswwk.jpg",
+        "name": "Laptop Apple MacBook Air 13 M1 (MGN63) Space Grey",
+        "reviewsCount": 11,
+        "previousPrice": 39999,
+        "price": 33999,
+        "rating": 3.1,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": false,
+        "slug": "82AU0087RA",
+        "firm": "Lenovo",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612476949/new-products/8_ciacab.jpg",
+        "name": "Laptop Lenovo Legion 5 15IMH05 (82AU0087RA)",
+        "reviewsCount": 3,
+        "previousPrice": 33933,
+        "price": 31499,
+        "rating": 2.7,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
         "inStock": false,
         "slug": "82C700AKRA",
         "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612527240/laptops/1_wfh2qm.jpg",
@@ -1356,6 +1452,54 @@
   "computers": {
     "list": [
       {
+        "inStock": true,
+        "slug": "X65v12",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/9_uhvi0t.jpg",
+        "name": "Computer  ARTLINE Gaming X65 (X65v12)",
+        "reviewsCount": 32,
+        "previousPrice": 23933,
+        "price": 17856,
+        "rating": 3.3,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "X35v17",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/10_wvgebo.jpg",
+        "name": "Computer  ARTLINE Gaming X35 (X35v17)",
+        "reviewsCount": 3,
+        "previousPrice": 15333,
+        "price": 13229,
+        "rating": 3.9,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": false,
+        "slug": "X39v45",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528866/new-products/12_eqpvhu.jpg",
+        "name": "Computer  ARTLINE Gaming X39 (X39v45)",
+        "reviewsCount": 223,
+        "previousPrice": 22933,
+        "price": 19499,
+        "rating": 2.5,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "Overlord",
+        "firm": "Artline",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/11_txl0vq.jpg",
+        "name": "Computer  ARTLINE Overlord X56 (X56v10)",
+        "reviewsCount": 3,
+        "previousPrice": 33933,
+        "price": 28499,
+        "rating": 3.3,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
         "inStock": false,
         "firm": "Hunter",
         "slug": "hunter",
@@ -1516,8 +1660,45 @@
     ],
     "id": "computers"
   },
+
   "monitors": {
     "list": [
+      {
+        "inStock": false,
+        "slug": "mi34",
+        "firm": "Mi",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/13_qzykzl.jpg",
+        "name": "Monitor Xiaomi Mi Display 34",
+        "reviewsCount": 74,
+        "previousPrice": 14933,
+        "price": 12499,
+        "rating": 4.7,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "LS24R350FHIXCI2",
+        "firm": "Samsung",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/14_dhc9d6.jpg",
+        "name": "Monitor 23.8 \"Samsung S24R350F (LS24R350FHIXCI) Black",
+        "reviewsCount": 11,
+        "previousPrice": 5933,
+        "price": 4499,
+        "rating": 2.8,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
+      {
+        "inStock": true,
+        "slug": "25UM58",
+        "firm": "LG",
+        "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/15_kjcc9d.jpg",
+        "name": "Monitor 25 \"LG 25UM58-P Black",
+        "reviewsCount": 3,
+        "previousPrice": 6933,
+        "price": 4499,
+        "rating": 5,
+        "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio\nPowerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)\nAMD Radeon Vega 8 discrete graphics with Windows 10 Home\n8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD\nErgonomic backlit keyboard with fingerprint sensor activated via Windows Hello\nExclusive ErgoLift design for improved typing position"
+      },
       {
         "inStock": false,
         "slug": "LS24F350FHIXCI",

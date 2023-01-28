@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import { GetStaticPropsResult } from 'next';
+import { instance } from 'api/api';
 import { Main } from 'types/main/Main';
 import { Products, Product } from 'types/main/Products';
-import { instance } from 'api/api';
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
 import { Services } from 'components/Services';
@@ -48,6 +48,7 @@ type getStaticPropsReturnMain = {
 }
 
 export async function getStaticProps(): Promise<GetStaticPropsResult<getStaticPropsReturnMain>> {
+
   const responseMain = await instance.get('/main');
   const mainData: Main = responseMain.data;
 

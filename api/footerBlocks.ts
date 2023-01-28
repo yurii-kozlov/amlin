@@ -20,7 +20,7 @@ export const footerBlocks = [
         id: 14
       },{
         name: 'Terms',
-        link: '#Terms',
+        link: '/terms',
         id: 15
       },{
         name: 'Orders and Returns',

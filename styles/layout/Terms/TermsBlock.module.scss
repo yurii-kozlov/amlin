@@ -1,0 +1,33 @@
+.article {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.6rem;
+  }
+}
+
+.marginBottom {
+  margin-bottom: 2rem;
+
+  @include onDesktop {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.subtitle {
+  font-weight: $fontWeightSemiBold;
+  margin-bottom: 2rem;
+
+  @include onDesktop {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.text {
+  font-weight: $fontWeightMedium;
+  white-space: pre-line;
+}

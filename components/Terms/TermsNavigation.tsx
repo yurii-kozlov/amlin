@@ -32,7 +32,7 @@ export const TermsNavigation: React.FC<TermsNavigationProps> = ({ articles }): R
           <Image alt="arrow-down" className={styles.arrow} src={arrowDown} />
         )}
       </button>
-      <nav className={cn(styles.nav,styles.navOnMobile, {[styles.navVisibleOnMobile]: isNavigationVisible})} >
+      <nav className={cn(styles.nav, styles.navOnMobile, {[styles.navVisibleOnMobile]: isNavigationVisible})} >
         <ul className={styles.list}>
           {articles.map((article) => (
             <li className={styles.listItem} key={uuid()}>

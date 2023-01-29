@@ -1,0 +1,333 @@
+.block {
+  display: flex;
+  padding-left: 2.8rem;
+  padding-right: 2rem;
+  padding-top: 2.7rem;
+  padding-bottom: 2.3rem;
+  justify-content: space-between;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    padding-left: 4.5rem;
+    padding-right: 3.6rem;
+    padding-top: 2.1rem;
+    padding-bottom: 3.6rem;
+    box-shadow: $colorBlack4;
+  }
+}
+
+.imageAndReviewsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image {
+  max-width: 20rem;
+  max-height: 13rem;
+
+  @include onDesktop {
+    max-width: 25rem;
+    max-height: 18rem;
+  }
+}
+
+.reviewSection {
+  display: flex;
+  align-items: center;
+}
+
+.starsWrapper {
+  margin-right: 1rem;
+}
+
+.detailedInfoAndFeaturesWrapper {
+  display: flex;
+}
+
+.detailedInfo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
+}
+
+.reviewInfo {
+  font-weight: $fontWeightRegular;
+  font-size: 1rem;
+  line-height: 2.2rem;
+  color: $colorGrey1;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+}
+
+.name {
+  font-style: normal;
+  font-weight: $fontWeightLight;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $colorBlack;
+  margin-bottom: 1.2rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2.1rem;
+  }
+}
+
+.name:hover {
+  text-decoration: underline;
+}
+
+.description {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  max-width: 25rem;
+  margin-bottom: 0.9rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 1.8rem;
+    margin-right: 2rem;
+  }
+}
+
+.priceblock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.1rem;
+
+  @include onDesktop {
+    margin-bottom: 4.7rem;
+  }
+}
+
+.previousPrice {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  color: $colorGrey3;
+  text-decoration: line-through;
+  margin-right: 0.8rem;
+  opacity: 0.9;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    margin-right: 1rem;
+  }
+}
+
+.currentPrice {
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+  }
+}
+
+.buttonAddToCard {
+  width: 13rem;
+  height: 3.3rem;
+  @extend %butttonWhite;
+  font-weight: $fontWeightSemiBold;
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+  
+  @include onDesktop {
+    width: 16rem;
+    height: 3.7rem;
+    line-height: 2.1rem;
+    font-size: 1.4rem;
+  }
+}
+
+.buttonAddToCard:hover {
+  background-color: $colorGrey2;
+}
+
+.buttonAddToCard::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.3rem;
+  background-image: url('../../images/icons/basketCart.svg');
+  @extend %iconSizes;
+  position: relative;
+  top: 0;
+  right: 0.7rem;
+
+  @include onDesktop {
+    width: 1.8rem;
+    height: 1.6rem;
+  }
+}
+
+.featuresAndDescriptionWrapper {
+  display: flex;
+}
+
+.features {
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  background-color: $colorWhite;
+  width: 21rem;
+  align-self: flex-start;
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.column {
+  margin-right: 1rem;
+}
+
+.listItem {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  height: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @extend %smooth-transition;
+  position: relative;
+
+  @include onDesktop {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    height: 4rem;
+  }
+}
+
+.listItem:hover {
+  background-color: $colorWhite1;
+  cursor: pointer;
+  width: 100%;
+}
+
+.listItemFeature {
+  color: $colorBlack;
+  display: inline-block;
+}
+
+.availability {
+  color: $colorGrey3;
+}
+
+.stockStatus {
+  display: inline-block;
+  font-weight: $fontWeightRegular;
+  font-size: 1rem;
+  line-height: 2.1rem;
+  color: $colorGreen;
+  display: inline-block;
+  min-width: 7rem;
+  text-align: right;
+}
+
+.stockStatusSuccess {
+  color: $colorGreen;
+}
+
+.stockStatusFailure {
+  color: $colorRed2;
+}
+
+.stockStatus::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transform: translate(-40%, 15%);
+}
+
+.stockStatusSuccess::before {
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1671709653/techstore/inStock1_ophhae.svg);
+}
+
+.stockStatusFailure::before {
+  background-image: url(https://res.cloudinary.com/docve4syp/image/upload/v1671709695/techstore/check_yzet7t.svg);
+}
+
+.buttonsAndInStockWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.userButtonsList {
+  list-style: none;
+  display: flex;
+}
+
+.userButtonsListItem:not(:last-child) {
+  margin-right: 0.6rem;
+}
+
+.userButtons {
+  width: 2.7rem;
+  height: 2.7rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  background-color: $colorWhite;
+
+  @extend %smooth-transition;
+}
+
+.userButtons:hover {
+  filter: brightness(80%);
+}
+
+.addToWishListButton {
+  background-image: url('../../images/icons/addToWishList.svg');
+  top: 2.5rem;
+  @extend %iconSizes;
+}
+
+.statisticsButton {
+  top: 6rem;
+  background-image: url('../../images/icons/statistics.svg');
+  @extend %iconSizes;
+}
+
+.emailButton {
+  top: 6rem;
+  background-image: url('../../images/icons/email.svg');
+  @extend %iconSizes;
+}

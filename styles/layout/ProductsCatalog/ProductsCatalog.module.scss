@@ -1,13 +1,505 @@
 .filteringAndCatalogWrapper {
   display: flex;
-  // justify-content: space-between;
+  position: relative;
+
+  @include onMobile {
+    display: block;
+  }
 }
 
 .filterSection {
-  width: 20%;
-  background-color: aqua;
+  @include onMobile {
+    width: 100%;
+  }
+
+  @include onTablet {
+    width: 30%;
+  }
+
+  @include onDesktop {
+    width: 20%;
+  }
+}
+
+.filteringSectionMarginBottom {
+  margin-bottom: 1rem;
+}
+
+.filterSectionMarginBottom {
+  @include onMobile {
+    margin-bottom: 3rem;
+  }
+}
+
+.filteringSettingsSection {
+  background-color: $colorWhite1;
+  padding: 2rem 1.6rem;
+}
+
+.sectionMarginBottom {
+  margin-bottom: 5rem;
+
+  @include onDesktop {
+    margin-bottom: 10rem;
+  }
 }
 
 .catalog {
-  width: 80%;
+  width: 100%;
+
+  @include onTablet {
+    width: 70%;
+  }
+
+  @include onDesktop {
+    width: 80%;
+  }
+}
+
+.priceFilteringList {
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+
+  @extend %smooth-transition;
+}
+
+.priceFilteringListVisible {
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+
+.priceFilteringButton {
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.priceFilteringlistItem:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.filterSectionTitle {
+  font-style: normal;
+  font-weight: $fontWeightBold;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.clearFilterButton {
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 3.7rem;
+  border: 0.2rem solid $colorGrey3;
+  border-radius: 5rem;
+
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: $colorGrey3;
+  background-color: transparent;
+  @extend %smooth-transition;
+}
+
+.clearFilterButton:hover {
+  background-color: $colorGrey2;
+}
+
+.titleEmptyCatalog {
+  font-size: 2.7rem;
+  text-align: center;
+}
+
+.colorsList {
+  list-style: none;
+  display: flex;
+  height: 0;
+  overflow: hidden;
+
+  @extend %smooth-transition;
+}
+
+.colorsListVisible {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.colorButton {
+  border: none;
+  width: 2.3rem;
+  height: 2.3rem;
+  @extend %smooth-transition;
+}
+
+.activeColorButton {
+  border: 0.3rem solid $colorGrey7;
+}
+
+.buttonColorBlack {
+  background-color: $colorBlack;
+}
+
+.buttonColorRed {
+  background-color: $colorRed3;
+}
+
+.colorsListItem:first-child {
+  margin-right: 1rem;
+}
+
+.buttonPrice {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.nameFilteringMenu {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  @extend %smooth-transition;
+}
+
+.nameFilteringMenuVisible {
+  height: 11rem;
+}
+
+.nameInput {
+  width: 100%;
+  height: 4rem;
+  outline: transparent;
+  @extend %smooth-transition;
+  border: 0.1rem solid $colorGrey3;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.nameInput:focus {
+  border: 0.1rem solid $colorBlue3;
+}
+
+.emptyInputError {
+  font-size: 1.4rem;
+  color: $colorDanger;
+  margin-bottom: 0.5rem;
+}
+
+.applyFilteringByNameButton {
+  @extend %buttonBlueNew;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.applyFilteringByNameButton:hover {
+  background-color: $colorBlue1;
+}
+
+.buttonsAndItemsPerPageWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include onMobile {
+    flex-wrap: wrap;
+  }
+
+  @include onTablet {
+    margin-bottom: 1.6rem;
+  }
+
+  @include onDesktop {
+    margin-bottom: 3rem; 
+  }
+}
+
+.allItemsIndicator {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.3rem;
+  line-height: 2.7rem;
+  align-self: flex-end;
+  color: $colorGrey1;
+  min-width: fit-content;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+
+  @include onMobile {
+    flex-wrap: wrap;
+  }
+}
+
+.priceRangesIndicator {
+  margin-right: 1.5rem;
+  min-width: 17rem;
+  text-align: center;
+
+  @include onMobile {
+    display: none
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  border-radius: 0.2rem;
+  border: 0.2rem solid $colorGrey2;
+  background-color: transparent;
+  outline: transparent;
+
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  color: $colorGrey1;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    width: 15rem;
+    height: 5rem;
+  }
+}
+
+.priceRangesIndicator:hover {
+  background-color: $colorGrey6;
+}
+
+.viewTypeButton {
+  @extend %iconSizes;
+  border: none;
+  background-color: transparent;
+
+  @include onMobile {
+    display: none;
+  }
+
+  @extend %smooth-transition;
+}
+
+.viewAsCatalogButton {
+  background-image: url(../../../images/icons/catalogView.svg);
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 1.9rem;
+}
+
+.viewAsListButton {
+  background-image: url(../../../images/icons/listView.svg);
+  width: 2.1rem;
+  height: 1.5rem;
+}
+
+.catalogViewActiveButton {
+  filter: brightness(0);
+}
+
+.navigation {
+  @extend %smallNavigation;
+
+  @include onTablet {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  @include onDesktop {
+    margin-top: 2rem;
+  }
+}
+
+.navigationLink {
+  @extend %smooth-transition;
+}
+
+.navigationLink::first-letter {
+  text-transform: uppercase;
+}
+
+.navigationLink:first-child::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  transform: translate(200%, 100%);
+  border-left: 0.3rem solid $colorBlue3;
+}
+
+.navigationLink:hover {
+  color: $colorBlue3;
+}
+
+.title {
+  @extend %pageTitle;
+}
+
+.title::first-letter {
+  text-transform: uppercase;
+}
+
+.banner {
+  width: 100%;
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    max-height: 6rem;
+  }
+
+  @include onDesktop {
+    max-height: 10rem;
+  }
+}
+
+.perPageList {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 0;
+  list-style: none;
+  overflow: hidden;
+
+  @extend %smooth-transition;
+}
+
+.perPageListVisible {
+  height: 35rem;
+
+}
+
+.buttonsPerPageWrapper {
+  position: relative;
+  margin-right: 1.5rem;
+
+  @include onMobile {
+    margin-bottom: 2rem;
+  }
+}
+
+.perPageButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14rem;
+  height: 4rem;
+  border-radius: 0.2rem;
+  border: 0.2rem solid $colorGrey2;
+  background-color: transparent;
+  outline: transparent;
+
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  color: $colorGrey1;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    width: 15rem;
+    height: 5rem;
+  }
+}
+
+.perPageQuantity {
+  color: $colorBlack;
+}
+
+.perPageButton:hover {
+  background-color: $colorGrey6;
+}
+
+.perPageListIitemButton {
+  width: 100%;
+  height: 100%;
+  width: 14rem;
+  height: 4rem;
+  background-color: $colorWhite;
+  border: 0.1rem solid $colorGrey2;
+  @extend %smooth-transition;
+
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  color: $colorBlack;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    width: 15rem;
+    height: 5rem;
+  }
+}
+
+.perPageListIitemButton:hover {
+  background-color: $colorGrey6;
+}
+
+.arrow {
+  filter: brightness(0);
+}
+
+.subsection {
+  background-color: $colorWhite5;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    padding: 2rem 3.5rem;
+  }
+}
+
+.subsectionMarginBottom {
+  margin-bottom: 1rem;
+}
+
+.subsectionButton {
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: $fontWeightBold;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: fit-content;
+}
+
+.compareItemsText {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.3rem;
+  color: $colorBlack;
 }

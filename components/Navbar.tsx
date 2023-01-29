@@ -26,7 +26,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <a
             className={styles.listItemLink}
-            href="#laptops"
+            href="/laptops"
           >
             Laptops
           </a>
@@ -35,19 +35,19 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <Link
             className={styles.listItemLink}
-            href="/desktopPCs"
+            href="/computers"
           >
-            Desktop PCs
+            Computers
           </Link>
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#devices"
+            href="/monitors"
           >
-            Networking Devices
-          </a>
+            Monitors
+          </Link>
         </li>
 
         <li className={styles.listItem}>

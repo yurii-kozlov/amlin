@@ -375,7 +375,7 @@
   }
 }
 
-.perPageList {
+.sortingSettingsList {
   position: absolute;
   z-index: 4;
   width: 100%;
@@ -386,12 +386,11 @@
   @extend %smooth-transition;
 }
 
-.perPageListVisible {
+.sortingSettingsListVisible {
   height: 35rem;
-
 }
 
-.buttonsPerPageWrapper {
+.sortingMenuWrapper {
   position: relative;
   margin-right: 1.5rem;
 
@@ -400,7 +399,7 @@
   }
 }
 
-.perPageButton {
+.buttonOpeningMenu {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -431,11 +430,11 @@
   color: $colorBlack;
 }
 
-.perPageButton:hover {
+.buttonOpeningMenu:hover {
   background-color: $colorGrey6;
 }
 
-.perPageListIitemButton {
+.sortingMenuItemButton {
   width: 100%;
   height: 100%;
   width: 14rem;
@@ -457,7 +456,7 @@
   }
 }
 
-.perPageListIitemButton:hover {
+.sortingMenuItemButton:hover {
   background-color: $colorGrey6;
 }
 

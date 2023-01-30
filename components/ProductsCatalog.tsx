@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import cn from 'classnames';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
@@ -21,7 +22,6 @@ import imageProducts from 'images/imageProducts.png'
 import arrowTop from 'images/icons/arrowTop.svg';
 import arrowDown from 'images/icons/arrowDown.svg';
 import styles from 'styles/layout/ProductsCatalog/ProductsCatalog.module.scss';
-import { useRouter } from 'next/router';
 
 type ProductsCatalogProps = {
   products: Product[]
@@ -102,9 +102,9 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                   ${getTheRightPriceFormat(pricingRange[0])}.00 - ${getTheRightPriceFormat(pricingRange[1])}.00
                 </button>
               )}
-              <div className={styles.buttonsPerPageWrapper} >
+              <div className={styles.sortingMenuWrapper} >
                 <button
-                  className={styles.perPageButton}
+                  className={styles.buttonOpeningMenu}
                   onClick={(): void => handleSortingMenuVisibility()}
                   type="button"
                 >
@@ -115,11 +115,15 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                     <Image alt="arrow-top" className={styles.arrow} src={arrowTop}/>
                   )}
                 </button>
-                <ul className={cn(styles.perPageList, {[styles.perPageListVisible]: isGeneralSortingMenuVisible})} >
+                <ul className={cn(
+                  styles.sortingSettingsList,
+                  {[styles.sortingSettingsListVisible]: isGeneralSortingMenuVisible}
+                )}
+                >
                   {sortingWays.map((sortBy) =>(
-                    <li className={styles.pepPageListItem} key={uuid()} >
+                    <li className={styles.sortingMenuListItem} key={uuid()} >
                       <button
-                        className={styles.perPageListIitemButton}
+                        className={styles.sortingMenuItemButton}
                         onClick={handleSorting}
                         type="button"
                         value={sortBy}
@@ -130,9 +134,9 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                   ))}
                 </ul>
               </div>
-              <div className={styles.buttonsPerPageWrapper} >
+              <div className={styles.sortingMenuWrapper} >
                 <button
-                  className={styles.perPageButton}
+                  className={styles.buttonOpeningMenu}
                   onClick={(): void => handlePerPageSortingMenuVisibility()}
                   type="button"
                 >
@@ -143,11 +147,15 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                     <Image alt="arrow-top" className={styles.arrow} src={arrowTop}/>
                   )}
                 </button>
-                <ul className={cn(styles.perPageList, {[styles.perPageListVisible]: isPerPageSortingMenuVisible})} >
+                <ul className={cn(
+                  styles.sortingSettingsList,
+                  {[styles.sortingSettingsListVisible]: isPerPageSortingMenuVisible}
+                )}
+                >
                   {perPageProductsQuantity.map((quantity) =>(
-                    <li className={styles.pepPageListItem} key={uuid()} >
+                    <li className={styles.sortingMenuListItem} key={uuid()} >
                       <button
-                        className={styles.perPageListIitemButton}
+                        className={styles.sortingMenuItemButton}
                         onClick={handleProductsQuantityPerPage}
                         type="button"
                         value={quantity}
@@ -186,7 +194,10 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                 <h4 className={styles.filterSectionTitle}>Filters</h4>
                 <button
                   className={styles.clearFilterButton}
-                  onClick={(): void => setFilteredProducts(products)}
+                  onClick={(): void => {
+                    setFilteredProducts(products);
+                    setPricingRange([]);
+                  }}
                   type="button"
                 >
                   Clear Filter
@@ -334,7 +345,7 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                   itemsPerPage={productsPerPage}
                   products={sortProducts(filteredProducts, sortingWay)}
                   productsViewType={productsViewType}
-              />
+                />
               )}
             </div>
           </div>

@@ -24,30 +24,30 @@ export const Navbar = observer((): ReactElement => {
       </div>
       <ul className={styles.list}>
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#laptops"
+            href="/laptops"
           >
             Laptops
-          </a>
+          </Link>
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#desktopPCs"
+            href="/computers"
           >
-            Desktop PCs
-          </a>
+            Computers
+          </Link>
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#devices"
+            href="/monitors"
           >
-            Networking Devices
-          </a>
+            Monitors
+          </Link>
         </li>
 
         <li className={styles.listItem}>

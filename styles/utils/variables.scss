@@ -13,6 +13,7 @@
   $colorBlackHeaderBackground:#020202;
   $colorBlackFooterBackground: #020203;
   $colorBlack3: #212121;
+  $colorBlack4: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.14);
 /*#endregion */
 
 
@@ -26,6 +27,8 @@
   $colorGrey5: #4B4D4F;
   $colorGrey6: #EAE8EB;
   $colorGrey7: #828282;
+  $colorGrey8: #EBEBEB;
+  $colorGrey9: #A9A9A9;
 /*#endregion */
 
 
@@ -55,14 +58,15 @@
 /*#endregion */
 
 /*#region colorYellow */
-$colorYellow: #FFB800;
-$colorYellow1: #e3a405;
-$colorYellow2: #d69a03;
+  $colorYellow: #FFB800;
+  $colorYellow1: #e3a405;
+  $colorYellow2: #d69a03;
 /*#endregion */
 
 /*#region colorRed */
   $colorDanger: #ff3860;
   $colorRed2: #c94d3f;
+  $colorRed3: #DB0000;
 /*#endregion */
 
 /*#region colorPurple */

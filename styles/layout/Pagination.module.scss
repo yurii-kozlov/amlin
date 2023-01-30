@@ -1,0 +1,47 @@
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.button {
+  width: 3.6rem;
+  padding: 0;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid $colorGrey1;
+  border-radius: 5rem;
+  background-color: $colorWhite;
+  font-style: normal;
+  font-weight: $fontWeightSemiBold;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: $colorGrey1;
+  cursor: pointer;
+  margin-right: 1rem;
+
+  @extend %smooth-transition;
+
+  @include onDesktop {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+}
+
+.activeButton {
+  background-color: $colorGrey8;
+  color: $colorBlack;
+  border-color: transparent;
+}
+
+.listItem:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.button:hover {
+  background-color: $colorGrey6;
+}

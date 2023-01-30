@@ -5,7 +5,7 @@ import cn from 'classnames';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { formInputs } from 'types/formInputs';
-import { schema } from 'helpers/schema';
+import { schema } from 'constants/validationSchemas/schema';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faMobile, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Container } from 'components/Container';

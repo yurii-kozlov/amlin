@@ -7,7 +7,6 @@ import { Banner } from 'types/main/Banner';
 import { carouselMainSettings } from 'constants/carouselMainConstants';
 import styles from 'styles/layout/Carousel/CarouselMain.module.scss';
 
-
 type CarouselMainProps = {
   banners: Banner[]
 }

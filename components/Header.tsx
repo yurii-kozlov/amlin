@@ -7,6 +7,7 @@ import Link from 'next/link';
 import cn from 'classnames';
 import { Menu } from 'components/Menu';
 import { Container } from 'components/Container';
+import { NavigationMenu } from 'components/NavigationMenu';
 import faceBookIcon from 'images/icons/facebook.svg';
 import instagramIcon from 'images/icons/instagram.svg';
 import styles from 'styles/layout/Header.module.scss';
@@ -14,7 +15,9 @@ import styles from 'styles/layout/Header.module.scss';
 export const Header:React.FC = observer((): ReactElement => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
   const [isMinicartVisible, setIsMinicartVisible] = useState<boolean>(false);
+  const [isNavigationMenuVisible, setIsNavigationMenuVisible] = useState<boolean>(false);
 
+  const handleNavigationMenuVisibility = (): void => setIsNavigationMenuVisible(!isNavigationMenuVisible);
   const handleMenuVisibility = (): void => setIsMenuVisible(!isMenuVisible);
   const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
@@ -74,9 +77,13 @@ export const Header:React.FC = observer((): ReactElement => {
           <button
             aria-label="menu"
             className={styles.menuButton}
+            onClick={handleNavigationMenuVisibility}
             type="button"
           />
-
+          <NavigationMenu
+            isNavigationMenuVisible={isNavigationMenuVisible}
+            setIsNavigationMenuVisible={setIsNavigationMenuVisible}
+          />
         </div>
 
         <div className={styles.searchBlock}>

@@ -59,7 +59,7 @@ export const ProductListItem: React.FC<ProductListItemProps> = observer(({ produ
           </Link>
           <div className={styles.featuresAndDescriptionWrapper} >
             <p className={styles.description}>
-              {description.split(' ').slice(0, 25).join(' ')}
+              {description.split(' ').slice(0, 20).join(' ')}
             </p>
             <ul className={styles.list}>
               <li className={styles.listItem}>

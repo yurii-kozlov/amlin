@@ -24,12 +24,12 @@ export const Navbar = observer((): ReactElement => {
       </div>
       <ul className={styles.list}>
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
             href="/laptops"
           >
             Laptops
-          </a>
+          </Link>
         </li>
 
         <li className={styles.listItem}>

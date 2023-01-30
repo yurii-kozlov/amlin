@@ -26,10 +26,12 @@
 .image {
   max-width: 20rem;
   max-height: 13rem;
+  margin-right:2rem;
 
   @include onDesktop {
     max-width: 25rem;
     max-height: 18rem;
+    margin-right: 1rem;
   }
 }
 

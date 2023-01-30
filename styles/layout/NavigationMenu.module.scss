@@ -1,0 +1,72 @@
+.section {
+  background-color: $colorWhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 6;
+  width: 100vw;
+  overflow: hidden;
+  @extend %smooth-transition;
+  transform: translateX(-100%);
+}
+
+.sectionVisible {
+  transform: translateX(0);
+}
+
+.upperPart {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.9rem 0;
+  border-bottom: 0.1rem solid $colorGrey9;
+  margin-bottom: 1.5rem;
+}
+
+.buttonCloseMenu {
+  background-image: url(../../images/icons/cross.svg);
+
+  @extend %iconSizes;
+  border: none;
+  outline: transparent;
+  background-color: transparent;
+}
+
+.icon {
+  @include onMobile {
+    width: 2.7rem;
+    height: 3.3rem;
+  }
+}
+
+.navigationList {
+  list-style: none;
+  border-bottom: 0.1rem solid $colorGrey9;
+  padding-bottom: 1.5rem;
+}
+
+.navigationListItem:not(:last-child) {
+  margin-bottom: 1.5rem;
+
+  @include onTablet {
+    margin-bottom: 2rem;
+  }
+}
+
+.navigationLink {
+  font-style: normal;
+  font-weight: $fontWeightRegular;
+  font-size: 1.3rem;
+  line-height: 3.4rem;
+
+  @extend %smooth-transition;
+
+  @include onTablet {
+    font-size: 1.9rem;
+    line-height: 4rem;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

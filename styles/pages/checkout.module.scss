@@ -28,6 +28,7 @@
 .navigation {
   @extend %smallNavigation;
   margin-bottom: 1rem;
+  margin-top: 0;
 
   @include onMobile {
     padding-top: 0.4rem;
@@ -36,7 +37,7 @@
 
   @include onDesktop {
     margin-bottom: 1.9rem;
-    padding-top: 2.1rem
+    margin-top: 2.1rem;
   }
 }
 

@@ -17,7 +17,7 @@ export const Minicart: React.FC<MinicartProps> = observer (({ isMinicartVisible 
   <div className={cn(styles.block, {[styles.blockVisible]: isMinicartVisible})} >
     <div className={styles.upperPart} >
       <h5 className={styles.title}>My Cart</h5>
-      <span className={styles.itemsCount} >{personalAccount.cart.length} items in cart</span>
+      <span className={styles.itemsCount} >{personalAccount.totalCountOfAddedProducts} items in cart</span>
       <Link className={styles.buttonEditView} href="/shoppingCart">View or Edit Your Cart</Link>
     </div>
     <ul className={styles.list} >

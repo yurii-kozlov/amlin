@@ -98,7 +98,7 @@ export const Header:React.FC = observer((): ReactElement => {
         <div className={styles.minicart}>
           <Minicart isMinicartVisible={isMinicartVisible} />
           <div className={styles.minicartBlock}>
-            {personalAccount.cart.length}
+            {personalAccount.totalCountOfAddedProducts}
           </div>
           <button
             aria-label="minicart"

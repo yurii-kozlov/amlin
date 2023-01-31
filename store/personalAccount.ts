@@ -11,6 +11,9 @@ class PersonalAccount {
   productsQuantities: ProductsSumAndQuantity = {};
   productsSums: ProductsSumAndQuantity = {};
 
+  get totalCountOfAddedProducts(): number {
+    return Object.values(this.productsQuantities).reduce((acc, count) => Number(acc) + Number(count), 0);
+  }
 
   get totalOrderSum(): number {
     return this.cart.reduce(( sum, product) => sum + product.price * this.productsQuantities[product.slug], 0)

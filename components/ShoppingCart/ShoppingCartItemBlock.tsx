@@ -4,7 +4,10 @@ import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { Product } from 'types/main/Products';
 import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
 import styles from 'styles/layout/ShoppingCart/ShoppingCartItemBlock.module.scss';
+import Link from 'next/link';
 
 type ShoppingCartItemBlockProps = {
   product: Product
@@ -13,17 +16,25 @@ type ShoppingCartItemBlockProps = {
 export const ShoppingCartItemBlock: React.FC<ShoppingCartItemBlockProps> = observer (
   ({ product }): ReactElement => {
 
-  const {url, description, price, slug } = product;
+  const {url, description, price, slug, name } = product;
 
   return (
     <li className={styles.cartProductListItem}>
       <div className={styles.cartProductBlock}>
         <div className={styles.cartProductDescriptionAndImage}>
           <h3 className={cn(styles.subSectionTitle, styles.hiddenOnMobileAndTablet)}>Item</h3>
-          <img alt={slug} className={styles.cartProductImage} src={url} />
-          <p className={styles.cartProductDescription} >
+          <Link
+            className={styles.cartProductDescription}
+            href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
+          >
+            <img alt={slug} className={styles.cartProductImage} src={url} />
+          </Link>
+          <Link
+            className={styles.cartProductDescription}
+            href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
+          >
             {description.split(' ').slice(0, 25).join(' ')}
-          </p>
+          </Link>
         </div>
         <div className={styles.cartProductPriceBlock}>
           <h3 className={styles.subSectionTitle}>Price</h3>

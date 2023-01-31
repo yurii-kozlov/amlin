@@ -17,11 +17,16 @@ export const OrderItem: React.FC<OrderItemProps> = observer (({ product }): Reac
 
   return (
     <li className={styles.block} >
-      <img
-        alt={name}
-        className={styles.image}
-        src={url}
+      <Link
+        className={styles.name}
+        href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
+      >
+        <img
+          alt={name}
+          className={styles.image}
+          src={url}
        />
+      </Link>
       <div className={styles.detailedInfo}>
         <Link
           className={styles.name}

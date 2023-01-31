@@ -7,7 +7,6 @@ import cn from 'classnames';
 import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
 import styles from 'styles/layout/Minicart/MinicartItem.module.scss';
 
-
 type MinicartItemProps = {
   productItem: Product
 }

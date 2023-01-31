@@ -87,6 +87,11 @@
   }
 }
 
+.cartProductDescription:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .cartProductImage {
   max-width: 7rem;
   max-height: 7rem;

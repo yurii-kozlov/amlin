@@ -11,7 +11,6 @@ import arrowDown from 'images/icons/arrowDown.svg';
 import zipLogo from 'images/icons/zipLogo.svg';
 import styles from 'styles/layout/ShoppingCart/Summary.module.scss';
 
-
 export const Summary: React.FC = observer((): ReactElement => {
   const [isDestinationBlockVisible, setIsDestinationBlockVisible] = useState<boolean>(false);
   const [isDiscountBlockVisible, setIsDiscountBlockVisible] = useState<boolean>(false);

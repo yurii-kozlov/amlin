@@ -57,6 +57,7 @@ const Register: React.FC = ():ReactElement => {
                     <label className={styles.label} htmlFor='password'>
                       <h5 className={styles.inputTitle}>Your Password</h5>
                       <input
+                        autoComplete="on"
                         className={styles.formInput}
                         id='password'
                         {...register('password')}

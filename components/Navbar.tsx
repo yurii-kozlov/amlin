@@ -51,48 +51,48 @@ export const Navbar = observer((): ReactElement => {
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#printersScanners"
+            href="/personalAccount"
           >
-            Printers & Scanners
-          </a>
+            Account
+          </Link>
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#pcParts"
+            href="/aboutUs"
           >
-            PC Parts
-          </a>
+            About Us
+          </Link>
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#otherProducts"
+            href="/register"
           >
-            All Other Products
-          </a>
+            Registration
+          </Link>
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#repairs"
+            href="/contactUs"
           >
-            Repairs
-          </a>
+            Contact Us
+          </Link>
         </li>
 
         <li className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href="#deals"
+            href="/terms"
           >
-            Our Deals
-          </a>
+            Terms & Conditions
+          </Link>
         </li>
       </ul>
 

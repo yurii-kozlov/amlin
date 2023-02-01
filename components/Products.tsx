@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import cn from 'classnames';
 import { Product } from 'types/main/Products';
 import { ProductViewType } from 'enums/productsViewType';
@@ -17,7 +17,7 @@ export const Products: React.FC<ProductsProps> = ({ products, productsViewType }
     {[styles.block]: productsViewType === ProductViewType.catalog},
     {[styles.blockListView]: productsViewType === ProductViewType.list})} >
     {products.map((product) => productsViewType === ProductViewType.catalog
-      ? <ProductCard key={uuid()} product={product} />
-      : <ProductListItem key={uuid()} product={product} />)}
+      ? <ProductCard key={uuid_v4()} product={product} />
+      : <ProductListItem key={uuid_v4()} product={product} />)}
   </div>
   );

@@ -6,7 +6,7 @@ type ContainerProps = {
 }
 
 export const Container: React.FC<ContainerProps> = ({ children }): ReactElement => (
-  <div className={styles.container} >
+  <div className={styles.container}>
     {children}
   </div>
 );

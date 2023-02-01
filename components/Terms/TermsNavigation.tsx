@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from 'react';
 import Image from 'next/image';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import cn from 'classnames';
 import { Article } from 'types/terms/Article';
 import { Terms } from 'enums/term';
@@ -35,7 +35,7 @@ export const TermsNavigation: React.FC<TermsNavigationProps> = ({ articles }): R
       <nav className={cn(styles.nav, styles.navOnMobile, {[styles.navVisibleOnMobile]: isNavigationVisible})} >
         <ul className={styles.list}>
           {articles.map((article) => (
-            <li className={styles.listItem} key={uuid()}>
+            <li className={styles.listItem} key={uuid_v4()}>
               <a
                 className={cn(
                   styles.anchorLink,

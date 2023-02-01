@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import { GetStaticPropsResult } from 'next';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import cn from 'classnames';
 import { instance } from 'api/api';
 import { Terms as TermsAndConditions } from 'types/terms/Terms';
@@ -31,7 +31,7 @@ const Terms: React.FC<TermsProps> = ({ terms }): ReactElement => {
             <article className={styles.terms} >
               <h2 className={styles.title}>{title}</h2>
               {articles.map((article) => (
-                <TermsBlock article={article} key={uuid()}/>
+                <TermsBlock article={article} key={uuid_v4()}/>
               ))}
             </article>
             <div className={styles.termsNavigation}>

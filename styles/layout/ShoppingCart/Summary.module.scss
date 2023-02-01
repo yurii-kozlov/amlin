@@ -365,7 +365,7 @@
   font-size: 1.2rem;
   line-height: 2rem;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   color: $colorBlack;
 
   @extend %smooth-transition;

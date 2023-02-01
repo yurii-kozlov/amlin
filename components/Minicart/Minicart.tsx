@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import cn from 'classnames';
 import { Product } from 'types/main/Products';
 import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
@@ -22,7 +22,7 @@ export const Minicart: React.FC<MinicartProps> = observer (({ isMinicartVisible 
     </div>
     <ul className={styles.list} >
       {personalAccount.cart.map((productItem: Product) => (
-        <MinicartItem key={uuid()} productItem={productItem} />
+        <MinicartItem key={uuid_v4()} productItem={productItem} />
       ))}
     </ul>
     <div className={styles.lowerPart}>

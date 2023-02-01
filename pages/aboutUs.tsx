@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import { GetStaticPropsResult } from 'next';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import { Feature as FeatureBlock } from 'types/aboutUs/Feature';
 import { Main } from 'types/main/Main';
 import { instance } from 'api/api';
@@ -32,7 +32,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsFeatures, main }): ReactElemen
         <div className={styles.featuresSection} >
           <div className={styles.marginBottom} >
             {aboutUsFeatures.map((feature) => (
-              <Feature featureBlock={feature} key={uuid()} />
+              <Feature featureBlock={feature} key={uuid_v4()} />
             ))}
           </div>
           <Reviews reviews={reviews} />

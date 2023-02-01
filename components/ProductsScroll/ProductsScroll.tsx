@@ -2,7 +2,7 @@ import React, { ReactElement, useState } from 'react';
 import cn from 'classnames';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { AxiosResponse } from 'axios';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import { Product, Products } from 'types/main/Products';
 import { Goods } from 'enums/goods';
 import { instance } from 'api/api';
@@ -98,7 +98,7 @@ export const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): Rea
         >
           <div className={styles.block}>
             {visibleGoods.map((post: Product) => (
-              <ProductCard key={uuid()} product={post}/>
+              <ProductCard key={uuid_v4()} product={post}/>
             ))}
           </div>
         </InfiniteScroll>

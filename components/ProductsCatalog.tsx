@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import cn from 'classnames';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import { Product} from 'types/main/Products';
 import { Sorting } from 'enums/sorting';
 import { ProductViewType } from 'enums/productsViewType';
@@ -81,7 +81,12 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
     <MainContainer>
       <Container>
         <section className={cn(styles.section, styles.sectionMarginBottom)}>
-          <Image alt='banner' className={styles.banner} src={imageProducts} />
+          <Image
+            alt='banner'
+            className={styles.banner}
+            src={imageProducts}
+            priority
+          />
           <div className={styles.navigation}>
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href={router.pathname}>{router.pathname.slice(1)}</Link>
@@ -121,7 +126,7 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                 )}
                 >
                   {sortingWays.map((sortBy) =>(
-                    <li className={styles.sortingMenuListItem} key={uuid()} >
+                    <li className={styles.sortingMenuListItem} key={uuid_v4()} >
                       <button
                         className={styles.sortingMenuItemButton}
                         onClick={handleSorting}
@@ -153,7 +158,7 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                 )}
                 >
                   {perPageProductsQuantity.map((quantity) =>(
-                    <li className={styles.sortingMenuListItem} key={uuid()} >
+                    <li className={styles.sortingMenuListItem} key={uuid_v4()} >
                       <button
                         className={styles.sortingMenuItemButton}
                         onClick={handleProductsQuantityPerPage}
@@ -223,7 +228,7 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
                     const [min, max] = range;
 
                     return (
-                      <li className={styles.priceFilteringlistItem} key={uuid()}>
+                      <li className={styles.priceFilteringlistItem} key={uuid_v4()}>
                         <button
                           className={styles.priceFilteringButton}
                           onClick={(): void => {

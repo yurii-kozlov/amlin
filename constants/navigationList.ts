@@ -17,7 +17,7 @@ export const navigationList = [
   },
   {
     name: 'About Us',
-    route: 'aboutUs'
+    route: '/aboutUs'
   },
   {
     name: 'Terms And Conditions',

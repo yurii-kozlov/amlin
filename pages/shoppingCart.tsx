@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import cn from 'classnames';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
@@ -26,7 +26,7 @@ const ShoppingCart: React.FC = observer((): ReactElement => (
               <div className={styles.cart}>
                 <ul className={styles.cartProductList}>
                   {personalAccount.cart.map((product) => (
-                    <ShoppingCartItemBlock key={uuid()} product={product} />
+                    <ShoppingCartItemBlock key={uuid_v4()} product={product} />
                 ))}
                 </ul>
                 <div className={styles.cartButtons} >

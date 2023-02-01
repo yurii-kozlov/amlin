@@ -52,7 +52,8 @@ class PersonalAccount {
   }
 
   removeProductFromCart(slug: string):void {
-    this.cart = this.cart.filter((product) => product.slug !== slug)
+    this.cart = this.cart.filter((product) => product.slug !== slug);
+    delete this.productsQuantities[slug];
   }
 
   clearCart(): void {

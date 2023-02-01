@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import cn from 'classnames';
-import StarRatings from 'react-star-ratings';
+import dynamic from 'next/dynamic';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { Product } from 'types/main/Products';
@@ -29,6 +29,10 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
     inStock, slug, url, name, reviewsCount, previousPrice, rating, price
   } = product;
 
+  const StarRatings = dynamic(() => import('react-star-ratings'), {
+    ssr: false,
+  })
+
   const colorYellow = '#E9A426';
 
   return (
@@ -38,16 +42,20 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
         className={cn(styles.upperButtons, styles.addToWishListButton)}
         onClick={(): void => addToWishList(product)}
         type="button"
-      />
+        />
       <button aria-label='statistics' className={cn(styles.upperButtons, styles.statisticsButton)} type="button" />
       {inStock ? (
         <span className={cn(styles.stockStatusSuccess, styles.stockStatus)}>in stock</span>
-        ): (
-          <span className={cn(styles.stockStatusFailure, styles.stockStatus)}> check availability</span>
-        ) }
-
+          ): (
+            <span className={cn(styles.stockStatusFailure, styles.stockStatus)}> check availability</span>
+          ) }
       <div className={styles.imageContainer} >
-        <img alt={slug} className={styles.image} src={url} />
+        <Link
+          className={styles.productLinkOnImage}
+          href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
+        >
+          <img alt={slug} className={styles.image} src={url} />
+        </Link>
       </div>
       <div className={styles.reviewSection}>
         <div className={styles.starsWrapper} >
@@ -58,7 +66,7 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
             starDimension="12px"
             starRatedColor={colorYellow}
             starSpacing="0"
-          />
+            />
         </div>
         <p className={styles.reviewInfo}>
           Reviews ({reviewsCount})
@@ -67,7 +75,7 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
       <Link
         className={styles.productLink}
         href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
-      >
+        >
         <p className={styles.productName}>{name}</p>
       </Link>
       <p className={styles.previousPrice}>${getTheRightPriceFormat(previousPrice)}.00</p>
@@ -77,7 +85,7 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
           className={styles.buttonAddToCard}
           onClick={() : void => addToCart(product)}
           type="button"
-        >
+          >
           Add to Cart
         </button>
       </div>

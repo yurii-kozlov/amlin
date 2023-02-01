@@ -24,15 +24,18 @@ export const ProductListItem: React.FC<ProductListItemProps> = observer(({ produ
   const addToCart = (productBlock: Product): void =>personalAccount.addProductToCart(productBlock);
   const addToWishList = (productBlock: Product): void => personalAccount.addProductToWishList(productBlock);
 
-
   return(
     <div className={styles.block}>
       <div className={styles.imageAndReviewsWrapper}>
-        <img
-          alt="asasd"
-          className={styles.image}
-          src={url}
+        <Link className={styles.linkOnImage}
+          href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
+          >
+          <img
+            alt={name}
+            className={styles.image}
+            src={url}
       />
+        </Link>
         <div className={styles.reviewSection}>
           <div className={styles.starsWrapper} >
             <StarRatings

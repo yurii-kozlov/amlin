@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from 'react';
 import Image from 'next/image';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid'
 import cn from 'classnames';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
@@ -36,7 +36,7 @@ export const OrderSummary: React.FC = observer((): ReactElement => {
         <ul className={cn(styles.list, {[styles.listVisible]: isProductsListVisible})} >
           {personalAccount.cart.length > 0 ? (
             personalAccount.cart.map((product) => (
-              <OrderItem key={uuid()} product={product}/>
+              <OrderItem key={uuid_v4()} product={product}/>
             ))
           ) : (
             <p className={styles.emptyShoppingCartDescription}>Your Shopping Cart is Empty</p>

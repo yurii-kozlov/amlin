@@ -26,7 +26,11 @@ export const FooterSection:React.FC<FooterSectionProps> = ({ section }):ReactEle
         >
         <h5 className={styles.blockTitle}>{title}</h5>
         {areListsVisible ? (
-          <Image alt="arrowTop" className={styles.arrow} src={arrowTop} />
+          <Image
+            alt="arrowTop"
+            className={styles.arrow}
+            src={arrowTop}
+          />
         ): (
           <Image alt="arrowBottom" className={styles.arrow} src={arrowDown} />
         )}

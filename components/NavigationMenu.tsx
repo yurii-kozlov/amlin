@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
-import { uuid } from 'uuidv4';
+import { v4 as uuid_v4 } from 'uuid';
 import { Container } from 'components/Container';
 import { navigationList } from 'constants/navigationList';
 import arrowRight from 'images/icons/arrowRightBlack.svg';
@@ -34,7 +34,7 @@ export const NavigationMenu: React.FC<NavigationMenuProps> = ({
               const { name, route } = navItem;
 
               return (
-                <li className={styles.navigationListItem} key={uuid()} >
+                <li className={styles.navigationListItem} key={uuid_v4()} >
                   <Link className={styles.navigationLink} href={route}>
                     {name}
                     <Image alt='arrowRight' src={arrowRight} />

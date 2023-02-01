@@ -78,7 +78,7 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
   const router = useRouter();
 
   return (
-    <MainContainer>
+    <MainContainer title={router.pathname[1].toUpperCase() + router.pathname.slice(2)}>
       <Container>
         <section className={cn(styles.section, styles.sectionMarginBottom)}>
           <Image

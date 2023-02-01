@@ -27,7 +27,7 @@ const PersonalAccount: React.FC<PersonalAccountProps> = observer(({ profileInfo 
   const handleSubsectionsListVisibility = (): void => setIsSubsectionsListBlockVisible(!isSubsectionsListBlockVisible);
 
   return (
-    <MainContainer>
+    <MainContainer title='Account'>
       <Container>
         <section className={cn(styles.section, styles.pageSection)} >
           <nav className={styles.navigation} >

@@ -14,6 +14,7 @@ import { CarouselMain } from 'components/CarouselMain/CarouselMain';
 import { Reviews } from 'components/Reviews/Reviews';
 import { NewProducts } from 'components/NewProducts/NewProducts';
 import { ProductsScroll } from 'components/ProductsScroll/ProductsScroll';
+import Head from 'next/head';
 
 
 type HomeProps = {
@@ -27,6 +28,9 @@ export const Home: React.FC<HomeProps> = ({ mainData, products }): ReactElement 
 
   return (
     <>
+      <Head>
+        <title>Amlin</title>
+      </Head>
       <Header />
       <Navbar />
       <CarouselMain banners={banners}/>

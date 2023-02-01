@@ -24,7 +24,7 @@ const Laptop:React.FC<LaptopProps> = ({ laptops }): ReactElement => {
   }, [])
 
   return (
-    <MainContainer>
+    <MainContainer title='About Product'>
       <AboutProduct product={currentLaptop} productType={Goods.laptops}/>
     </MainContainer>
   )

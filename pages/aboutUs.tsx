@@ -20,7 +20,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsFeatures, main }): ReactElemen
   const {reviews} = main;
 
   return (
-    <MainContainer>
+    <MainContainer title='About Us'>
       <section className={styles.section} >
         <Container>
           <nav className={styles.navigation} >

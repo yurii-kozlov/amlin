@@ -25,8 +25,8 @@ export const OrderSummary: React.FC = observer((): ReactElement => {
           onClick={handleProductsListVisibility}
           type="button"
         >
-          {personalAccount.cart.length || 0}
-          {personalAccount.cart.length > 1 ? ' items' : ' item'} in Cart
+          {personalAccount.totalCountOfAddedProducts || 0}
+          {personalAccount.totalCountOfAddedProducts > 1 ? ' items' : ' item'} in Cart
           {isProductsListVisible ? (
             <Image alt="arrowTop" className={styles.arrow} src={arrowTop}/>
           ) : (

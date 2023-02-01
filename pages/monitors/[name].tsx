@@ -25,7 +25,7 @@ const Monitor:React.FC<MonitorProps> = ({ monitors }): ReactElement => {
   }, [])
 
   return (
-    <MainContainer title='About Product'>
+    <MainContainer title={currentMonitor?.name || 'About Product'}>
       <AboutProduct product={currentMonitor} productType={Goods.monitors}/>
     </MainContainer>
   )

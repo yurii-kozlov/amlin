@@ -19,7 +19,7 @@ const Terms: React.FC<TermsProps> = ({ terms }): ReactElement => {
   const { heading, title, articles } = terms;
 
   return (
-    <MainContainer>
+    <MainContainer title='Terms & Conditions'>
       <Container>
         <section className={cn(styles.section, styles.sectionMarginBottom)} >
           <nav className={styles.navigation} >

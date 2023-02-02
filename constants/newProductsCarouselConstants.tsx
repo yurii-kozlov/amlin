@@ -11,12 +11,20 @@ export const settings = {
   centerMode: true,
   responsive: [
     {
+      breakpoint: 340,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '40px',
+        arrows: false
+      }
+    },
+    {
       breakpoint: 500,
       settings: {
         slidesToShow: 2,
         centerPadding: '5px',
         arrows: false
-      },
+      }
     },
     {
       breakpoint: 750,
@@ -24,7 +32,7 @@ export const settings = {
         slidesToShow: 2,
         centerPadding: '30px',
         arrows: false
-      },
+      }
     },
     {
       breakpoint: 1090,
@@ -32,7 +40,7 @@ export const settings = {
         slidesToShow: 3,
         centerPadding: '50px',
         arrows: false
-      },
+      }
     }
   ],
   centerPadding: '50px',

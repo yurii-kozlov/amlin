@@ -16,6 +16,12 @@
     top: 1.5rem;
     right: 0.1rem;
   }
+
+  @include onExtraSmallMobile {
+    right: -6rem;
+    min-width: 28rem
+  }
+
   @extend %smooth-transition;
 }
 
@@ -155,4 +161,8 @@
   z-index: 11;
 
   @extend %smooth-transition;
+
+  @include onExtraSmallMobile {
+    right: 23.5%;
+  }
 }

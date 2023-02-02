@@ -1,15 +1,15 @@
 .block {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   justify-items: center;
 
   @include onTablet {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
     gap: 1rem 0;
   }
 
   @include onDesktop {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     gap: 2rem 0;
   }
 }

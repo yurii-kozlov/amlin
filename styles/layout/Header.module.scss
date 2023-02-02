@@ -38,16 +38,23 @@
   @include onMobile {
     gap: 2rem;
     justify-content: flex-end;
+    padding-right: 2rem;
   }
 
   @include onExtraSmallMobile {
     width: 100%;
     gap: 0;
+    padding-right: 1.5rem;
   }
 
 
+  @include onTablet {
+    padding-right: 2rem;
+  }
+
   @include onDesktop {
     min-height: 4.5rem;
+    padding-right: 0;
   }
 }
 

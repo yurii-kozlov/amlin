@@ -70,6 +70,10 @@
   min-width: 18rem;
   min-height: 4rem;
 
+  @include onExtraSmallMobile {
+    margin-right: 0;
+  }
+
   @include onDesktop {
     min-width: 35rem;
     min-height: 5rem;
@@ -111,6 +115,15 @@
 
   @include onDesktop {
     font-size: 1.4rem;
+  }
+}
+
+.subscription {
+  @include onExtraSmallMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 

@@ -33,6 +33,7 @@
     "mobx": "^6.7.0",
     "mobx-react": "^7.6.0",
     "next": "13.0.6",
+    "nextjs-progressbar": "0.0.16",
     "owl.carousel": "^2.3.4",
     "prettier": "^2.8.1",
     "react": "18.2.0",

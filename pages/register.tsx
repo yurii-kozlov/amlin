@@ -70,7 +70,7 @@ const Register: React.FC = ():ReactElement => {
                       ) : ''}
                     </label>
                   </div>
-                  <div className={styles.signInPart }>
+                  <div className={styles.signInPart}>
                     <button className={styles.buttonSignIn} type="submit">Sign in</button>
                     <Link className={styles.forgetPassword} href="#">Forgot Your Password?</Link>
                   </div>

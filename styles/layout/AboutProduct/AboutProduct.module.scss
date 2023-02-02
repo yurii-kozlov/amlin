@@ -24,6 +24,8 @@
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   @include onDesktop {

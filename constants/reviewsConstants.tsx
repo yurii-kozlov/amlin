@@ -12,6 +12,14 @@ export const reviewsSettings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   dotsClass: 'dotsBlock',
+  responsive: [
+    {
+      breakpoint: 281,
+      settings: {
+        dots: false
+      }
+    }
+  ],
   appendDots: (dots: any): ReactElement => (
     <div className={styles.dots}>
       <ul className={styles.dotsList}> {dots} </ul>

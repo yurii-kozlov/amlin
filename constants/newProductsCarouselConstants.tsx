@@ -1,6 +1,6 @@
 import { SampleNextArrow, SamplePrevArrow } from 'components/CarouselMain/Arrows';
 
-export const settingsOnDesktop = {
+export const settings = {
   dots: false,
   infinite: true,
   autoplay: true,
@@ -9,37 +9,33 @@ export const settingsOnDesktop = {
   slidesToShow: 4,
   slidesToScroll: 1,
   centerMode: true,
+  responsive: [
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+        centerPadding: '5px',
+        arrows: false
+      },
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 2,
+        centerPadding: '30px',
+        arrows: false
+      },
+    },
+    {
+      breakpoint: 1090,
+      settings: {
+        slidesToShow: 3,
+        centerPadding: '50px',
+        arrows: false
+      },
+    }
+  ],
   centerPadding: '50px',
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />
-};
-
-export const settingsOnTablet = {
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 10000,
-  speed: 1000,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: '30px',
-  arrows: false,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />
-};
-
-export const settingsOnMobile = {
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 10000,
-  speed: 1000,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: '5px',
-  arrows: false,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />
 };

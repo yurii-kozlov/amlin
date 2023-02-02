@@ -15,7 +15,6 @@
   }
 }
 
-
 .upperPart {
   display: flex;
   justify-content: space-between;
@@ -24,6 +23,8 @@
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   @include onDesktop {
@@ -512,8 +513,8 @@
   margin-bottom: 2rem;
 
   @include onDesktop {
-    max-width: 42rem;
-    max-height: 29rem;
+    max-width: 37rem;
+    max-height: 24rem;
     margin-bottom: 4rem;
   }
 }

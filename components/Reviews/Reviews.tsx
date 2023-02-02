@@ -5,7 +5,6 @@ import { reviewsSettings } from 'constants/reviewsConstants';
 import { ReviewBlock } from 'components/Reviews/ReviewBlock';
 import { Container } from 'components/Container';
 
-
 type ReviewsProps = {
   reviews: Review[]
 }

@@ -19,7 +19,6 @@
   }
 }
 
-
 .stars {
   margin-right: 1rem;
   display: flex;
@@ -44,31 +43,5 @@
 
   @include onDesktop {
     font-size: 1.3rem;
-  }
-}
-
-.onTablet {
-  @include onDesktop {
-    display: none;
-  }
-
-  @include onMobile {
-    display: none;
-  }
-}
-
-.onDesktop {
-  display: none;
-
-  @include onDesktop {
-    display: block;
-  }
-}
-
-.onMobile {
-  display: none;
-
-  @include onMobile {
-    display: block;
   }
 }

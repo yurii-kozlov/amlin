@@ -8,16 +8,19 @@
 }
 
 .filterSection {
+  flex-shrink: 0;
   @include onMobile {
     width: 100%;
   }
 
   @include onTablet {
     width: 30%;
+    min-width: 23rem;
   }
 
   @include onDesktop {
     width: 20%;
+    min-width: 23rem;
   }
 }
 
@@ -34,6 +37,7 @@
 .filteringSettingsSection {
   background-color: $colorWhite1;
   padding: 2rem 1.6rem;
+  flex-shrink: 0;
 }
 
 .sectionMarginBottom {

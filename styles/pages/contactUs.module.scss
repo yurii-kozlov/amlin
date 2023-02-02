@@ -7,8 +7,13 @@
 
   grid-template-columns: 1fr 1fr;
   color: $colorBlack;
+
+  @include onTablet {
+    gap: 2.5rem;
+  }
   @include onDesktop {
     justify-items: center;
+    gap: 3rem;
   }
 }
 .marginBottom {
@@ -26,13 +31,12 @@
 .form {
   display: flex;
   flex-direction: column;
-  min-width: 35rem;
   @include onMobile {
     margin-bottom: 2.4rem;
   }
 
   &Input {
-    min-width: 35rem;
+    width: 100%;
     min-height: 4rem;
     border: 0.1rem solid $colorGrey1;
     border-radius: 0.4rem;
@@ -72,7 +76,6 @@
   }
 
   @include onDesktop {
-    min-width: 70rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -80,12 +83,25 @@
   }
 }
 
-.textarea {
-  min-width: 35rem;
- font-family: $mainFontFamily;
+.inputsWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include onMobile {
+    flex-direction: column;
+  }
 
   @include onDesktop {
-    min-width: 73rem;
+    width: 100%;
+  }
+}
+
+.textarea {
+  font-family: $mainFontFamily;
+  min-width: 100%;
+
+  @include onDesktop {
     min-height: 22rem;
   }
   border: 0.1rem solid $colorGrey1;
@@ -131,17 +147,21 @@
 .inputBlock {
   display: inline-block;
   margin-bottom: 0.5rem;
+  width: 100%;
   @include onDesktop {
-    margin-right: 3rem;
     margin-bottom: 1rem;
+    width: 45%;
   }
 }
 
-.inputBlock:last-of-type{
-  margin-bottom: 1.2rem;
+.inputBlock:first-child {
   @include onDesktop {
-    margin-bottom: 1.6rem;
+    margin-right: 3rem;
   }
+}
+
+.textAreaBlock {
+  width: 100%;
 }
 
 .navigation {
@@ -253,13 +273,13 @@
   &Block {
     background-color: $colorWhite1;
     max-height: 33rem;
-    min-width: 31rem;
+    width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    padding-left: 6.5rem;
+    padding-left: 8rem;
 
     @include onTablet {
-      max-width: 33rem;
+      max-width: 37rem;
     }
 
     @include onDesktop {

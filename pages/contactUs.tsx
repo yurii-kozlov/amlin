@@ -47,55 +47,57 @@ const onSubmit = (data: formInputs): void => {
                   method="get"
                   onSubmit={handleSubmit(onSubmit)}
                 >
-                  <div className={styles.inputBlock} >
-                    <label htmlFor='name'>
-                      <h5 className={styles.inputTitle}>Your Name</h5>
-                      <input
-                        className={styles.formInput}
-                        id='name'
-                        {...register('name')}
-                        name='name'
-                        placeholder='Your Name'
-                        type="text"
-                      />
-                      {errors.name ? (
-                        <p className={styles.error}>{errors.name?.message}</p>
-                      ): ''}
-                    </label>
+                  <div className={styles.inputsWrapper} >
+                    <div className={styles.inputBlock} >
+                      <label htmlFor='name'>
+                        <h5 className={styles.inputTitle}>Your Name</h5>
+                        <input
+                          className={styles.formInput}
+                          id='name'
+                          {...register('name')}
+                          name='name'
+                          placeholder='Your Name'
+                          type="text"
+                        />
+                        {errors.name ? (
+                          <p className={styles.error}>{errors.name?.message}</p>
+                        ): ''}
+                      </label>
+                    </div>
+                    <div className={styles.inputBlock} >
+                      <label htmlFor='name'>
+                        <h5 className={styles.inputTitle}>Your Email</h5>
+                        <input
+                          className={styles.formInput}
+                          id='email'
+                          placeholder='Your Email'
+                          {...register('email')}
+                          name='email'
+                          type="email"
+                        />
+                        {errors.email? (
+                          <p className={styles.error}> {errors.email?.message} </p>
+                        ):''}
+                      </label>
+                    </div>
+                    <div className={styles.inputBlock} >
+                      <label htmlFor='name'>
+                        <h5 className={styles.inputTitle}>Your Phone Number</h5>
+                        <input
+                          className={styles.formInput}
+                          {...register('phoneNumber')}
+                          id='phoneNumber'
+                          name='phoneNumber'
+                          placeholder='Your Phone'
+                          type="tel"
+                        />
+                        {errors.phoneNumber ? (
+                          <p className={styles.error}>{errors.phoneNumber?.message}</p>
+                        ):''}
+                      </label>
+                    </div>
                   </div>
-                  <div className={styles.inputBlock} >
-                    <label htmlFor='name'>
-                      <h5 className={styles.inputTitle}>Your Email</h5>
-                      <input
-                        className={styles.formInput}
-                        id='email'
-                        placeholder='Your Email'
-                        {...register('email')}
-                        name='email'
-                        type="email"
-                      />
-                      {errors.email? (
-                        <p className={styles.error}> {errors.email?.message} </p>
-                      ):''}
-                    </label>
-                  </div>
-                  <div className={styles.inputBlock} >
-                    <label htmlFor='name'>
-                      <h5 className={styles.inputTitle}>Your Phone Number</h5>
-                      <input
-                        className={styles.formInput}
-                        {...register('phoneNumber')}
-                        id='phoneNumber'
-                        name='phoneNumber'
-                        placeholder='Your Phone'
-                        type="tel"
-                      />
-                      {errors.phoneNumber ? (
-                        <p className={styles.error}>{errors.phoneNumber?.message}</p>
-                      ):''}
-                    </label>
-                  </div>
-                  <div className={styles.inputBlock} >
+                  <div className={cn(styles.inputBlock, styles.textAreaBlock)} >
                     <label htmlFor='name'>
                       <h5 className={styles.inputTitle}>What&apos;s on your mind?</h5>
                       <textarea

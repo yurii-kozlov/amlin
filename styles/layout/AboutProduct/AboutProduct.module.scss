@@ -259,7 +259,6 @@
 .smallNavigation {
   margin-bottom: 2.5rem;
   @extend %smallNavigation;
-  min-width: 40rem;
   margin-top: 0;
 }
 
@@ -508,9 +507,15 @@
 }
 
 .image {
-  max-width: 29rem;
-  max-height: 18rem;
+  min-width: 21rem;
+  max-width: 100%;
+  max-height: auto;
   margin-bottom: 2rem;
+
+  @include onMobile {
+    max-width: 29rem;
+    max-height: 18rem;
+  }
 
   @include onDesktop {
     max-width: 37rem;

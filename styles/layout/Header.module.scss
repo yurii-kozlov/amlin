@@ -142,25 +142,28 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.3rem 2.9rem;
+  gap: 2rem;
 
   @include onMobile {
     padding: 1.3rem;
   }
 
-
   @include onDesktop {
     display: none;
+    gap: 0;
   }
 
   &Block {
     position: relative;
-  }
+    max-width: 50rem;
+    flex-grow: 2;
 
-  &Input {
-    min-width: 50rem;
     @include onMobile {
-      min-width: 22rem;
+      max-width: 20rem;
     }
+  }
+  &Input {
+    width: 100%;
 
     min-height: 4rem;
     border-radius: 2.5rem;

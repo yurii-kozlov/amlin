@@ -9,7 +9,7 @@ import { OrderStage } from 'components/Checkout/OrderStage';
 import styles from 'styles/pages/checkout.module.scss';
 
 const Checkout: React.FC = (): ReactElement => (
-  <MainContainer title='Checkout'>
+  <MainContainer pageDescription='checkout' title='Checkout'>
     <section className={cn(styles.section, styles.pageSection)}>
       <Container>
         <nav className={styles.navigation} >

@@ -24,7 +24,7 @@ export const FooterSection:React.FC<FooterSectionProps> = ({ section }):ReactEle
         href="#showList"
         onClick={showList}
         >
-        <h5 className={styles.blockTitle}>{title}</h5>
+        <h3 className={styles.blockTitle}>{title}</h3>
         {areListsVisible ? (
           <Image
             alt="arrowTop"
@@ -34,8 +34,6 @@ export const FooterSection:React.FC<FooterSectionProps> = ({ section }):ReactEle
         ): (
           <Image alt="arrowBottom" className={styles.arrow} src={arrowDown} />
         )}
-
-
       </a>
       <ul className={cn(styles.list, {[styles.listsVisible]: areListsVisible})} >
         {sections.map((sectionInfo) => (

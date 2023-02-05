@@ -11,9 +11,8 @@ export const Logos: React.FC = (): ReactElement => (
         <LogoBlock
           key={`logo-id-${image.id}`}
           logo={image}
-          />
+        />
      ))}
-
     </div>
   </Container>
 );

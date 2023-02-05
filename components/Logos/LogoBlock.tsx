@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { ReactElement } from 'react';
 import { logoBlock } from 'types/logo';
 
@@ -12,10 +13,12 @@ export const LogoBlock: React.FC<LogoBlockProps> = ({ logo }): ReactElement => {
     <div
      >
       <a href="#">
-        <img
+        <Image
           alt={alt}
+          height={80}
           src={link}
-    />
+          width={154}
+      />
       </a>
     </div>
   );

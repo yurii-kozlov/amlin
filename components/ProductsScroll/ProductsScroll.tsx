@@ -1,6 +1,5 @@
 import React, { ReactElement, useState } from 'react';
 import cn from 'classnames';
-import InfiniteScroll from 'react-infinite-scroll-component';
 import { AxiosResponse } from 'axios';
 import { v4 as uuid_v4 } from 'uuid';
 import { Product, Products } from 'types/main/Products';
@@ -11,12 +10,17 @@ import { Container } from 'components/Container';
 import { ProductCard } from 'components/ProductCard';
 import { Loader } from 'components/Loader';
 import styles from 'styles/layout/ProductsScroll.module.scss';
+import dynamic from 'next/dynamic';
+
+const DynamicInfiniteScroll = dynamic(
+  () => import ('react-infinite-scroll-component')
+)
 
 type ProductsScrollProps = {
   products: Product[]
 }
 
-export const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): ReactElement => {
+const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): ReactElement => {
   const [allGoods, setAllGoods] = useState<Product[]>(products);
   const [visibleProductType, setVisibleProductType] = useState<Goods>(Goods.laptops);
 
@@ -86,7 +90,7 @@ export const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): Rea
             </button>
           </li>
         </ul>
-        <InfiniteScroll
+        <DynamicInfiniteScroll
           className={styles.loaderBlock}
           dataLength={visibleGoods.length}
           endMessage={<p className={styles.endOfSectionText} >You&apos;ve watched all products in this section</p>}
@@ -101,8 +105,10 @@ export const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): Rea
               <ProductCard key={uuid_v4()} product={post}/>
             ))}
           </div>
-        </InfiniteScroll>
+        </DynamicInfiniteScroll>
       </section>
     </Container>
   )};
 
+
+  export default ProductsScroll;

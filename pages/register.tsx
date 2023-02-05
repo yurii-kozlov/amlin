@@ -28,7 +28,7 @@ const Register: React.FC = ():ReactElement => {
           <h1 className={styles.title}>Customer Login</h1>
           <div className={styles.mainBlock}>
             <div className={styles.signInBlock}>
-              <h4 className={styles.subtitle}>Registered Customers</h4>
+              <h2 className={styles.subtitle}>Registered Customers</h2>
               <p className={styles.additionalInfo}>If you have an account, sign in with your email address.</p>
               <div className={styles.formBlock}>
                 <form
@@ -39,7 +39,7 @@ const Register: React.FC = ():ReactElement => {
                 >
                   <div className={styles.inputBlock} >
                     <label className={styles.label} htmlFor='email'>
-                      <h5 className={styles.inputTitle}>Your Email</h5>
+                      <h3 className={styles.inputTitle}>Your Email</h3>
                       <input
                         className={styles.formInput}
                         id='email'
@@ -55,7 +55,7 @@ const Register: React.FC = ():ReactElement => {
                   </div>
                   <div className={styles.inputBlock} >
                     <label className={styles.label} htmlFor='password'>
-                      <h5 className={styles.inputTitle}>Your Password</h5>
+                      <h3 className={styles.inputTitle}>Your Password</h3>
                       <input
                         autoComplete="on"
                         className={styles.formInput}
@@ -78,8 +78,8 @@ const Register: React.FC = ():ReactElement => {
               </div>
             </div>
             <div className={styles.registerBlock}>
-              <h4 className={styles.subtitle}>New Customer?</h4>
-              <h6 className={styles.benefitsTitle}>Creating an account has many benefits:</h6>
+              <h2 className={styles.subtitle}>New Customer?</h2>
+              <p className={styles.benefitsTitle}>Creating an account has many benefits:</p>
               <ul className={styles.benefitsList}>
                 <li className={styles.benefitsListItem}>Check out faster</li>
                 <li className={styles.benefitsListItem}>Keep more than one address </li>

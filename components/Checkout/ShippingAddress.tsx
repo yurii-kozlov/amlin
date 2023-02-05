@@ -34,7 +34,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             className={styles.label}
             htmlFor="email"
           >
-            <h5 className={styles.inputTitle} >Email Address</h5>
+            <h3 className={styles.inputTitle} >Email Address</h3>
             <input
               className={cn(styles.input, styles.inputEmail)}
               id='email'
@@ -51,7 +51,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             className={styles.label}
             htmlFor="firstName"
           >
-            <h5 className={styles.inputTitle}>First Name</h5>
+            <h3 className={styles.inputTitle}>First Name</h3>
             <input
               className={styles.input}
               {...register('firstName')}
@@ -67,7 +67,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             className={styles.label}
             htmlFor="lastName"
           >
-            <h5 className={styles.inputTitle}>Last Name</h5>
+            <h3 className={styles.inputTitle}>Last Name</h3>
             <input
               className={styles.input}
               {...register('lastName')}
@@ -83,7 +83,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             className={styles.label}
             htmlFor="company"
           >
-            <h5 className={styles.inputTitle}>Company</h5>
+            <h3 className={styles.inputTitle}>Company</h3>
             <input
               className={styles.input}
               {...register('company')}
@@ -100,7 +100,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               className={styles.label}
               htmlFor="streetAddress1"
             >
-              <h5 className={styles.inputTitle}>Street Address</h5>
+              <h3 className={styles.inputTitle}>Street Address</h3>
               <input
                 className={cn(styles.input, styles.streetInput)}
                 {...register('street1')}
@@ -111,7 +111,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               {errors.street1 && <p className={styles.error} >{errors.street1.message}</p>}
             </label>
           </div>
-          <label htmlFor="streetAddress2">
+          <label aria-label='street-address' htmlFor="streetAddress2">
             <input
               className={styles.input}
               {...register('street2')}
@@ -127,7 +127,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             className={styles.label}
             htmlFor="city"
           >
-            <h5 className={styles.inputTitle}>City</h5>
+            <h3 className={styles.inputTitle}>City</h3>
             <input
               className={styles.input}
               {...register('city')}
@@ -143,7 +143,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             className={styles.label}
             htmlFor="state"
           >
-            <h5 className={styles.inputTitle}>State/Province</h5>
+            <h3 className={styles.inputTitle}>State/Province</h3>
             <input
               className={cn(styles.input, styles.stateInput)}
               {...register('region')}
@@ -159,7 +159,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             className={styles.label}
             htmlFor="zipCode"
           >
-            <h5 className={styles.inputTitle}>Zip/PostalCode</h5>
+            <h3 className={styles.inputTitle}>Zip/PostalCode</h3>
             <input
               className={styles.input}
               {...register('zipCode')}
@@ -182,7 +182,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             className={styles.label}
             htmlFor="phoneNumber"
           >
-            <h5 className={styles.inputTitle}>Phone Number</h5>
+            <h3 className={styles.inputTitle}>Phone Number</h3>
             <input
               className={styles.input}
               {...register('phoneNumber')}
@@ -194,7 +194,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
           </label>
         </div>
         <div className={styles.shippingRateInputs}>
-          <h5 className={styles.subtitleRate}>Standard rate</h5>
+          <h3 className={styles.subtitleRate}>Standard rate</h3>
           <div className={styles.shippingRateWrapper}>
             <div className={styles.shippingRateInputWrapper} >
               <label className={styles.deliveryDestinationRaddioButtonLabel} htmlFor="custom address">
@@ -213,7 +213,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             </div>
             <span className={styles.shippingPrice} >$21.00</span>
           </div>
-          <h5 className={styles.subtitleRate}>Pickup from store</h5>
+          <h3 className={styles.subtitleRate}>Pickup from store</h3>
           <div className={styles.shippingRateWrapper}>
             <div className={styles.shippingRateInputWrapper}>
               <label className={styles.deliveryDestinationRaddioButtonLabel} htmlFor="store address">

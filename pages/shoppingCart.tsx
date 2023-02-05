@@ -11,7 +11,7 @@ import { Summary } from 'components/ShoppingCart/Summary';
 import styles from 'styles/pages/shoppingCart.module.scss';
 
 const ShoppingCart: React.FC = observer((): ReactElement => (
-  <MainContainer title='Shopping Cart'>
+  <MainContainer pageDescription='shopping cart' title='Shopping Cart'>
     <section className={cn(styles.section, styles.sectionPage)} >
       <Container>
         <nav className={styles.navigation} >

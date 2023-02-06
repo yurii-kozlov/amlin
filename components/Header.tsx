@@ -24,7 +24,7 @@ export const Header:React.FC = observer((): ReactElement => {
   return (
     <header className={cn(styles.page, styles.pageMarginBottom)}>
       <div className={styles.menu}>
-        <Link className={styles.menuIcon1} href="/"/>
+        <Link aria-label='home' className={styles.menuIcon1} href="/"/>
       </div>
       <div className={styles.background_black}>
         <Container>

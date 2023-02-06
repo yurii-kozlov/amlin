@@ -2,6 +2,7 @@ import React, { ReactElement, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { GetServerSidePropsResult } from 'next';
 import { instance } from 'api/api';
+import { pagesDescriptions } from 'api/pagesDescriptions';
 import { Products, Product } from 'types/main/Products';
 import { Goods } from 'enums/goods';
 import { MainContainer } from 'components/MainContainer';
@@ -24,7 +25,7 @@ const Computer:React.FC<ComputerProps> = ({ computers }): ReactElement => {
   }, [])
 
   return (
-    <MainContainer title={currentComputer?.name || 'Acbout Product'}>
+    <MainContainer pageDescription={pagesDescriptions.computers} title={currentComputer?.name || 'Acbout Product'}>
       <AboutProduct product={currentComputer} productType={Goods.computers}/>
     </MainContainer>
   )

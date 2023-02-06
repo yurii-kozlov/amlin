@@ -2,6 +2,7 @@ import React, { ReactElement, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { GetServerSidePropsResult } from 'next';
 import { instance } from 'api/api';
+import { pagesDescriptions } from 'api/pagesDescriptions';
 import { Products, Product } from 'types/main/Products';
 import { Goods } from 'enums/goods';
 import { MainContainer } from 'components/MainContainer';
@@ -25,7 +26,7 @@ const Monitor:React.FC<MonitorProps> = ({ monitors }): ReactElement => {
   }, [])
 
   return (
-    <MainContainer title={currentMonitor?.name || 'About Product'}>
+    <MainContainer pageDescription={pagesDescriptions.monitors} title={currentMonitor?.name || 'About Product'}>
       <AboutProduct product={currentMonitor} productType={Goods.monitors}/>
     </MainContainer>
   )

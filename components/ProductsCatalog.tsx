@@ -78,7 +78,10 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
   const router = useRouter();
 
   return (
-    <MainContainer title={router.pathname[1].toUpperCase() + router.pathname.slice(2)}>
+    <MainContainer
+      pageDescription={router.pathname[1].toUpperCase() + router.pathname.slice(2)}
+      title={router.pathname[1].toUpperCase() + router.pathname.slice(2)}
+    >
       <Container>
         <section className={cn(styles.section, styles.sectionMarginBottom)}>
           <Image
@@ -196,7 +199,7 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
           <div className={styles.filteringAndCatalogWrapper}>
             <div className={cn(styles.filterSection, styles.filterSectionMarginBottom)}>
               <div className={cn(styles.filteringSettingsSection,styles.filteringSectionMarginBottom)}>
-                <h4 className={styles.filterSectionTitle}>Filters</h4>
+                <h2 className={styles.filterSectionTitle}>Filters</h2>
                 <button
                   className={styles.clearFilterButton}
                   onClick={(): void => {

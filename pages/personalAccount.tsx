@@ -6,6 +6,7 @@ import cn from 'classnames';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { instance } from 'api/api';
+import { pagesDescriptions } from 'api/pagesDescriptions';
 import { Profile } from 'types/profile/Profile';
 import { AccountSubsections } from 'enums/accountSubsections';
 import { MainContainer } from 'components/MainContainer';
@@ -27,7 +28,7 @@ const PersonalAccount: React.FC<PersonalAccountProps> = observer(({ profileInfo 
   const handleSubsectionsListVisibility = (): void => setIsSubsectionsListBlockVisible(!isSubsectionsListBlockVisible);
 
   return (
-    <MainContainer title='Account'>
+    <MainContainer pageDescription={pagesDescriptions.personalAccount} title='Account'>
       <Container>
         <section className={cn(styles.section, styles.pageSection)} >
           <nav className={styles.navigation} >

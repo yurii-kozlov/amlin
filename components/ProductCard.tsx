@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import cn from 'classnames';
 import dynamic from 'next/dynamic';
 import { observer } from 'mobx-react';
@@ -54,7 +55,13 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
           className={styles.productLinkOnImage}
           href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
         >
-          <img alt={slug} className={styles.image} src={url} />
+          <Image
+            alt={slug}
+            className={styles.image}
+            height={130}
+            src={url}
+            width={180}
+          />
         </Link>
       </div>
       <div className={styles.reviewSection}>

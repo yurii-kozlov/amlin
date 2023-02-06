@@ -4,6 +4,7 @@ import { GetStaticPropsResult } from 'next';
 import { v4 as uuid_v4 } from 'uuid';
 import cn from 'classnames';
 import { instance } from 'api/api';
+import { pagesDescriptions } from 'api/pagesDescriptions';
 import { Terms as TermsAndConditions } from 'types/terms/Terms';
 import { MainContainer } from 'components/MainContainer';
 import { Container } from 'components/Container';
@@ -19,7 +20,7 @@ const Terms: React.FC<TermsProps> = ({ terms }): ReactElement => {
   const { heading, title, articles } = terms;
 
   return (
-    <MainContainer title='Terms & Conditions'>
+    <MainContainer pageDescription={pagesDescriptions.terms} title='Terms & Conditions'>
       <Container>
         <section className={cn(styles.section, styles.sectionMarginBottom)} >
           <nav className={styles.navigation} >

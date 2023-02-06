@@ -1,5 +1,7 @@
 import React, { ReactElement } from 'react';
 import { GetStaticPropsResult } from 'next';
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import { instance } from 'api/api';
 import { Main } from 'types/main/Main';
 import { Products, Product } from 'types/main/Products';
@@ -13,9 +15,11 @@ import { BonusSection } from 'components/BonusSection';
 import { CarouselMain } from 'components/CarouselMain/CarouselMain';
 import { Reviews } from 'components/Reviews/Reviews';
 import { NewProducts } from 'components/NewProducts/NewProducts';
-import { ProductsScroll } from 'components/ProductsScroll/ProductsScroll';
-import Head from 'next/head';
+import { pagesDescriptions } from 'api/pagesDescriptions';
 
+const DynamicProductsScroll = dynamic(
+  () => import('components/ProductsScroll/ProductsScroll')
+)
 
 type HomeProps = {
   mainData: Main
@@ -30,12 +34,13 @@ export const Home: React.FC<HomeProps> = ({ mainData, products }): ReactElement 
     <>
       <Head>
         <title>Amlin</title>
+        <meta content={pagesDescriptions.home} name="description" />
       </Head>
       <Header />
       <Navbar />
       <CarouselMain banners={banners}/>
       <NewProducts newGoods={newProducts}/>
-      <ProductsScroll products={products}/>
+      <DynamicProductsScroll products={products}/>
       <BonusSection />
       <Logos />
       <News />

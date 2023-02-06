@@ -56,7 +56,7 @@ export const Footer: React.FC = (): ReactElement => {
         <div className={styles.upperPart} >
           <div className={styles.titles}>
             <h1 className={styles.titlesMain} >Sign Up To Our Newsletter.</h1>
-            <h4 className={styles.titlesSubtitle} >Be the first to hear about the latest offers.</h4>
+            <h2 className={styles.titlesSubtitle} >Be the first to hear about the latest offers.</h2>
           </div>
           <div className={styles.subscription}>
             <div className={styles.inputBlock}>
@@ -94,7 +94,7 @@ export const Footer: React.FC = (): ReactElement => {
               href="#showList"
               onClick={showList}
             >
-              <h5 className={footerSectionStyles.blockTitle}>Address</h5>
+              <h3 className={footerSectionStyles.blockTitle}>Address</h3>
               {areListsVisible ? (
                 <Image alt="arrowTop" className={footerSectionStyles.arrow} src={arrowTop} />
         ): (

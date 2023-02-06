@@ -7,13 +7,15 @@ import { Navbar } from 'components/Navbar';
 
 type MainContainerProps = {
   children: ReactNode,
-  title: string
+  title: string,
+  pageDescription: string
 }
 
-export const MainContainer:React.FC<MainContainerProps> = ({children, title}): ReactElement => (
+export const MainContainer:React.FC<MainContainerProps> = ({children, title, pageDescription}): ReactElement => (
   <>
     <Head>
       <title>{title}</title>
+      <meta content={pageDescription} name="description" />
     </Head>
     <Header />
     <Navbar />

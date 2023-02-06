@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { formInputs } from 'types/formInputs';
 import { schema } from 'constants/validationSchemas/schema';
+import { pagesDescriptions } from 'api/pagesDescriptions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faMobile, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Container } from 'components/Container';
@@ -26,7 +27,7 @@ const onSubmit = (data: formInputs): void => {
 }
 
   return (
-    <MainContainer title='Contact Us' >
+    <MainContainer pageDescription={pagesDescriptions.contactUs} title='Contact Us' >
       <Container>
         <section className={cn(styles.section, styles.marginBottom)}>
           <div className={styles.navigation} >

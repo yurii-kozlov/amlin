@@ -5,6 +5,7 @@ import { v4 as uuid_v4 } from 'uuid';
 import { Feature as FeatureBlock } from 'types/aboutUs/Feature';
 import { Main } from 'types/main/Main';
 import { instance } from 'api/api';
+import { pagesDescriptions } from 'api/pagesDescriptions';
 import { MainContainer } from 'components/MainContainer';
 import { Container } from 'components/Container';
 import { Feature } from 'components/Feature';
@@ -20,7 +21,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsFeatures, main }): ReactElemen
   const {reviews} = main;
 
   return (
-    <MainContainer title='About Us'>
+    <MainContainer pageDescription={pagesDescriptions.aboutUs} title='About Us'>
       <section className={styles.section} >
         <Container>
           <nav className={styles.navigation} >

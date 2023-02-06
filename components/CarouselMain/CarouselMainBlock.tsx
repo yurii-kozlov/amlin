@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import Image from 'next/image';
 import { Banner } from 'types/main/Banner';
 import styles from 'styles/layout/Carousel/CarouselMainBlock.module.scss';
 
@@ -11,7 +12,13 @@ export const CarouselMainBlock: React.FC<Props> = ({ banner }): ReactElement => 
 
   return (
     <div className={styles.imageContainer} >
-      <img alt={`banner-${id}`} className={styles.image} src={url}/>
+      <Image
+        alt={`banner-${id}`}
+        className={styles.image}
+        height={328}
+        src={url}
+        width={1398}
+      />
     </div>
   )
 };

@@ -16,6 +16,9 @@ export const MainContainer:React.FC<MainContainerProps> = ({children, title, pag
     <Head>
       <title>{title}</title>
       <meta content={pageDescription} name="description" />
+      <meta content="#4285f4" name="theme-color"/>
+      <meta content="#4285f4" name="msapplication-navbutton-color"/>
+      <meta content="#4285f4" name="apple-mobile-web-app-status-bar-style"/>
     </Head>
     <Header />
     <Navbar />

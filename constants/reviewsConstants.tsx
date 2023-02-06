@@ -26,6 +26,6 @@ export const reviewsSettings = {
     </div>
   ),
   customPaging: (i: number): ReactElement => (
-    <Link className={styles.dot} href={`/slider-${i}`} />
+    <Link aria-label={`review${i}`} className={styles.dot} href={`/slider-${i}`} />
   )
 };

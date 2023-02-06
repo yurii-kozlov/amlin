@@ -35,6 +35,9 @@ export const Home: React.FC<HomeProps> = ({ mainData, products }): ReactElement 
       <Head>
         <title>Amlin</title>
         <meta content={pagesDescriptions.home} name="description" />
+        <meta content="#4285f4" name="theme-color"/>
+        <meta content="#4285f4" name="msapplication-navbutton-color"/>
+        <meta content="#4285f4" name="apple-mobile-web-app-status-bar-style"/>
       </Head>
       <Header />
       <Navbar />

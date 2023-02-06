@@ -18,6 +18,8 @@ export const CarouselMainBlock: React.FC<Props> = ({ banner }): ReactElement => 
         height={328}
         src={url}
         width={1398}
+        priority
+        unoptimized
       />
     </div>
   )

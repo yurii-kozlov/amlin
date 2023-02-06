@@ -18,7 +18,7 @@ const Register: React.FC = ():ReactElement => {
   const onSubmit = (): void => reset();
 
   return (
-    <MainContainer title='Registration'>
+    <MainContainer pageDescription='Registration' title='Registration'>
       <Container>
         <section className={styles.section} >
           <div className={styles.navigation} >

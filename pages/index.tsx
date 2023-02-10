@@ -3,6 +3,7 @@ import { GetStaticPropsResult } from 'next';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { instance } from 'api/api';
+import { pagesDescriptions } from 'api/pagesDescriptions';
 import { Main } from 'types/main/Main';
 import { Products, Product } from 'types/main/Products';
 import { Header } from 'components/Header';
@@ -15,7 +16,6 @@ import { BonusSection } from 'components/BonusSection';
 import { CarouselMain } from 'components/CarouselMain/CarouselMain';
 import { Reviews } from 'components/Reviews/Reviews';
 import { NewProducts } from 'components/NewProducts/NewProducts';
-import { pagesDescriptions } from 'api/pagesDescriptions';
 
 const DynamicProductsScroll = dynamic(
   () => import('components/ProductsScroll/ProductsScroll')

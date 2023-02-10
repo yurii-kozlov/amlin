@@ -45,3 +45,16 @@
     font-size: 1.3rem;
   }
 }
+
+.sliderBlock {
+  overflow: hidden;
+
+  @include onTablet {
+    padding-left: 3rem;
+    margin: 0 auto;
+  }
+
+  @include onDesktop {
+    padding-left: 6rem;
+  }
+}

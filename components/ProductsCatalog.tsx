@@ -11,7 +11,7 @@ import { Sorting } from 'enums/sorting';
 import { ProductViewType } from 'enums/productsViewType';
 import { FilteringColors } from 'enums/filteringColors';
 import { priceRanges, filterByPriceRange, filterByName } from 'helpers/applyFilters';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
 import { sortProducts } from 'helpers/sortProducts';
 import { perPageProductsQuantity } from 'constants/perPageProductsQuantity';
 import { sortingWays } from 'constants/sortingWays';

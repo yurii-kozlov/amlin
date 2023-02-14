@@ -7,8 +7,8 @@ import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { Product } from 'types/main/Products';
 import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
-import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypeLink/getTheRightProductTypelink';
 import styles from 'styles/layout/ProductCard.module.scss';
 
 type addToCartProps = {

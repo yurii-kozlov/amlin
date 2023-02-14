@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { Product } from 'types/main/Products';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
 import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
-import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypeLink/getTheRightProductTypelink';
 import styles from 'styles/layout/Checkout/OrderItem.module.scss';
 
 type OrderItemProps = {

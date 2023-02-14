@@ -168,7 +168,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": []
+        "devDependencies": ["jest.setup.ts"]
       }
     ],
     "no-param-reassign": [

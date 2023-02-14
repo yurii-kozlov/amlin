@@ -7,7 +7,7 @@ import { Product } from 'types/main/Products';
 import { Goods } from 'enums/goods';
 import { Colors } from 'enums/colors';
 import { SectionsAboutProduct } from 'enums/sectionsAboutProduct';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
 import personalAccount from 'store/personalAccount';
 import { Details } from 'components/AboutProduct/Details';
 import { Specs } from 'components/AboutProduct/Specs';

@@ -5,7 +5,7 @@ import personalAccount from 'store/personalAccount'
 import { Product} from 'types/main/Products';
 import cn from 'classnames';
 import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
-import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypeLink/getTheRightProductTypelink';
 import styles from 'styles/layout/Minicart/MinicartItem.module.scss';
 
 type MinicartItemProps = {

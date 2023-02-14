@@ -4,7 +4,7 @@ import Link from 'next/link';
 import cn from 'classnames';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
 import { CountryPicker } from 'components/ShoppingCart/CountryPicker';
 import arrowTop from 'images/icons/arrowTop.svg';
 import arrowDown from 'images/icons/arrowDown.svg';

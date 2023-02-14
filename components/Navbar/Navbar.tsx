@@ -112,18 +112,20 @@ export const Navbar = observer((): ReactElement => {
           <button
             aria-label='minicart'
             className={styles.minicartButton}
+            data-testid="button-minicart"
             onClick={handleMinicartVisibility}
             type="button"
            />
         </div>
-        <div className={styles.profile} >
-          <Menu isMenuVisible={isMenuVisible} />
+        <div className={styles.profile}>
+          <Menu data-testid="menu" isMenuVisible={isMenuVisible} />
           <button
             aria-label='profile'
             className={styles.profileButton}
+            data-testid="button-profile"
             onClick={handleMenuVisibility}
             type="button"
-           />
+          />
         </div>
       </div>
     </nav>

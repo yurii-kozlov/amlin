@@ -55,7 +55,7 @@ export const Footer: React.FC = (): ReactElement => {
       <Container>
         <div className={styles.upperPart} >
           <div className={styles.titles}>
-            <h1 className={styles.titlesMain} >Sign Up To Our Newsletter.</h1>
+            <h1 className={styles.titlesMain}>Sign Up To Our Newsletter.</h1>
             <h2 className={styles.titlesSubtitle} >Be the first to hear about the latest offers.</h2>
           </div>
           <div className={styles.subscription}>

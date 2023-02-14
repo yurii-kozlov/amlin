@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { Product } from 'types/main/Products';
 import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
-import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink/getTheRightProductNameLink';
 import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypeLink/getTheRightProductTypelink';
 import styles from 'styles/layout/ShoppingCart/ShoppingCartItemBlock.module.scss';
 import Link from 'next/link';

@@ -14,7 +14,10 @@ type MinicartProps = {
 }
 
 export const Minicart: React.FC<MinicartProps> = observer (({ isMinicartVisible }): ReactElement => (
-  <div className={cn(styles.block, {[styles.blockVisible]: isMinicartVisible})} >
+  <div
+    className={cn(styles.block, {[styles.blockVisible]: isMinicartVisible})}
+    data-testid="minicart"
+  >
     <div className={styles.upperPart} >
       <h5 className={styles.title}>My Cart</h5>
       <span className={styles.itemsCount} >{personalAccount.totalCountOfAddedProducts} items in cart</span>

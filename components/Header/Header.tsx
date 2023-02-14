@@ -77,6 +77,7 @@ export const Header:React.FC = observer((): ReactElement => {
           <button
             aria-label="menu"
             className={styles.menuButton}
+            data-testid="button-navigation"
             onClick={handleNavigationMenuVisibility}
             type="button"
           />
@@ -103,6 +104,7 @@ export const Header:React.FC = observer((): ReactElement => {
           <button
             aria-label="minicart"
             className={styles.minicartButton}
+            data-testid="minicart-button"
             onClick={handleMinicartVisibility}
             type="button"
           />
@@ -113,6 +115,7 @@ export const Header:React.FC = observer((): ReactElement => {
           <button
             aria-label="profile"
             className={styles.profileButton}
+            data-testid="profile-button"
             onClick={handleMenuVisibility}
             type="button"
           />

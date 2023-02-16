@@ -18,8 +18,8 @@ describe('Minicart', () => {
   test('Minicart is rendered correctly with an added product', () => {
     render (<Minicart isMinicartVisible/>);
 
-    const product = screen.queryByTestId('minicart-item');
-    expect(product).toBe(null);
+    const minicartItem = screen.queryByTestId('minicart-item');
+    expect(minicartItem).toBe(null);
     act(() => {
       personalAccount.addProductToCart(laptop, 2);
     })

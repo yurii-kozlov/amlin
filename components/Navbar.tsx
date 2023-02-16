@@ -23,9 +23,10 @@ export const Navbar = observer((): ReactElement => {
         />
       </div>
       <ul className={styles.list}>
-        <li className={styles.listItem}>
+        <li className={styles.listItem} >
           <Link
             className={styles.listItemLink}
+            data-testid="link-laptops-page"
             href="/laptops"
           >
             Laptops

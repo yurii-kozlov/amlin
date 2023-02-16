@@ -1,8 +1,9 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { Navbar } from 'components/Navbar/Navbar';
+import { Navbar } from 'components/Navbar';
+import userEvent from '@testing-library/user-event';
 
 describe('Navbar', () => {
-  test('Click event profile menu', () => {
+  test('Click event with profile menu', () => {
     render(<Navbar />)
 
     const buttonProfile = screen.getByTestId('button-profile');
@@ -24,7 +25,8 @@ describe('Navbar', () => {
     expect(minicart).toHaveClass('block');
     fireEvent.click(buttonMinicart);
     expect(minicart).toHaveClass('block', 'blockVisible');
-    fireEvent.click(buttonMinicart);
+    userEvent.click(buttonMinicart);
     expect(minicart).toHaveClass('block');
-  })
+  });
+
 })

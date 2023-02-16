@@ -1,6 +1,6 @@
 import { screen, render, fireEvent } from '@testing-library/react';
 
-import { Header } from 'components/Header/Header';
+import { Header } from 'components/Header';
 
 describe('Header', () => {
   test('Click event with profile menu', () => {

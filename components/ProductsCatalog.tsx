@@ -83,7 +83,10 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
       title={router.pathname[1].toUpperCase() + router.pathname.slice(2)}
     >
       <Container>
-        <section className={cn(styles.section, styles.sectionMarginBottom)}>
+        <section
+          className={cn(styles.section, styles.sectionMarginBottom)}
+          data-testid="catalog"
+        >
           <Image
             alt='banner'
             className={styles.banner}
@@ -94,7 +97,7 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href={router.pathname}>{router.pathname.slice(1)}</Link>
           </div>
-          <h1 className={styles.title}>{router.pathname.slice(1)}</h1>
+          <h1 className={styles.title} data-testid="heading" >{router.pathname.slice(1)}</h1>
           <div className={styles.buttonsAndItemsPerPageWrapper}>
             <span className={styles.allItemsIndicator}>All items - {products.length}</span>
             <div className={styles.buttons}>

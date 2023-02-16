@@ -1,7 +1,7 @@
-import personalAccount from 'store/personalAccount';
-import { mockProducts } from '__mocks__/mockStoreData';
-import { Minicart } from 'components/Minicart/Minicart';
 import { act, fireEvent, render, screen } from '@testing-library/react';
+import personalAccount from 'store/personalAccount';
+import { Minicart } from 'components/Minicart/Minicart';
+import { mockProducts } from '__mocks__/mockStoreData';
 
 const { laptop, computer, monitor, computer2 } = mockProducts;
 
@@ -18,12 +18,12 @@ describe('Minicart', () => {
   test('Minicart is rendered correctly with an added product', () => {
     render (<Minicart isMinicartVisible/>);
 
-    const minicartItem = screen.queryByTestId('minicart-item');
+    const minicartItem = screen.queryByTestId(`minicart-item-${laptop.slug}`);
     expect(minicartItem).toBe(null);
     act(() => {
       personalAccount.addProductToCart(laptop, 2);
     })
-    expect(screen.getByTestId('minicart-item')).toBeInTheDocument();
+    expect(screen.getByTestId(`minicart-item-${laptop.slug}`)).toBeInTheDocument();
   });
 
   test('Minicart is rendered correctly with a few products', () => {
@@ -35,9 +35,11 @@ describe('Minicart', () => {
       personalAccount.addProductToCart(computer2, 2);
     })
 
-    const allAddedProducts = screen.getAllByTestId('minicart-item');
+    personalAccount.cart.forEach((product) => {
+      const minicartProductItem = screen.getByTestId(`minicart-item-${product.slug}`);
 
-    expect(allAddedProducts).toHaveLength(4);
+      expect(minicartProductItem).toHaveTextContent(String(personalAccount.productsQuantities[product.slug]))
+    })
   });
 
   test('Minicart is rendered correctly after deleting products from the cart', () => {
@@ -56,7 +58,11 @@ describe('Minicart', () => {
       fireEvent.click(buttonsDeleteProduct[1]);
     })
 
-    const allAddedProducts = screen.getAllByTestId('minicart-item');
+    const allAddedProducts = personalAccount.cart.map((product) => {
+      const addedProductInTheList = screen.getByTestId(`minicart-item-${product.slug}`);
+
+      return addedProductInTheList;
+    })
 
     expect(allAddedProducts).toHaveLength(2);
   })

@@ -16,7 +16,7 @@ export const MinicartItem: React.FC<MinicartItemProps> = observer(({ productItem
   const {url, name, slug} = productItemBlock;
 
   return (
-    <li className={styles.listItem} data-testid="minicart-item" >
+    <li className={styles.listItem} data-testid={`minicart-item-${slug}`} >
       <div className={styles.listItemBlock} >
         <button
           aria-label='removeProduct'

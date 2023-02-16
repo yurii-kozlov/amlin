@@ -3,7 +3,7 @@ import { mockProducts } from '__mocks__/mockStoreData';
 
 const { laptop, computer, monitor } = mockProducts;
 
-  test('Correct sum of the order', () => {
+test('Correct sum of the order', () => {
   personalAccount.addProductToCart(laptop, 3);
   personalAccount.addProductToCart(computer, 5);
   personalAccount.addProductToCart(monitor, 2);
@@ -19,4 +19,4 @@ const { laptop, computer, monitor } = mockProducts;
   personalAccount.removeProductFromCart(computer.slug);
 
   expect(personalAccount.totalOrderSum).toBe(8998);
-  });
+});

@@ -58,11 +58,7 @@ describe('OrderSummary', () => {
       personalAccount.addProductToCart(computer);
     });
 
-    const listItems = personalAccount.cart.map((productItem) => {
-      const listItem = screen.getByTestId(`order-item-${productItem.slug}`);
-
-      return listItem;
-    })
+    const listItems = personalAccount.cart.map((productItem) => screen.getByTestId(`order-item-${productItem.slug}`));
 
     expect(listItems).toHaveLength(2);
   });

@@ -16,7 +16,7 @@ export const OrderItem: React.FC<OrderItemProps> = observer (({ product }): Reac
   const { url, price, name, slug } = product;
 
   return (
-    <li className={styles.block} >
+    <li className={styles.block} data-testid={`order-item-${slug}`} >
       <Link
         className={styles.name}
         href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}

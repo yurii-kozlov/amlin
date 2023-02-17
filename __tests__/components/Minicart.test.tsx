@@ -26,7 +26,7 @@ describe('Minicart', () => {
     expect(screen.getByTestId(`minicart-item-${laptop.slug}`)).toBeInTheDocument();
   });
 
-  test('Minicart is rendered correctly with a few products', () => {
+  test('Minicart product quantities are rendered correctly with a few products', () => {
     render (<Minicart isMinicartVisible/>);
     act(() => {
       personalAccount.addProductToCart(laptop, 2);

@@ -26,7 +26,7 @@ type HomeProps = {
   products: Product[]
 }
 
-export const Home: React.FC<HomeProps> = ({ mainData, products }): ReactElement => {
+const Home: React.FC<HomeProps> = ({ mainData, products }): ReactElement => {
 
   const {banners, reviews, newProducts} = mainData;
 

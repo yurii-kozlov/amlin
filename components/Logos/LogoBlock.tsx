@@ -18,7 +18,7 @@ export const LogoBlock: React.FC<LogoBlockProps> = ({ logo }): ReactElement => {
           height={80}
           src={link}
           width={154}
-      />
+        />
       </a>
     </div>
   );

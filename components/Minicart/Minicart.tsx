@@ -14,11 +14,26 @@ type MinicartProps = {
 }
 
 export const Minicart: React.FC<MinicartProps> = observer (({ isMinicartVisible }): ReactElement => (
-  <div className={cn(styles.block, {[styles.blockVisible]: isMinicartVisible})} >
+  <div
+    className={cn(styles.block, {[styles.blockVisible]: isMinicartVisible})}
+    data-testid="minicart"
+    id="minicart"
+  >
     <div className={styles.upperPart} >
       <h5 className={styles.title}>My Cart</h5>
-      <span className={styles.itemsCount} >{personalAccount.totalCountOfAddedProducts} items in cart</span>
-      <Link className={styles.buttonEditView} href="/shoppingCart">View or Edit Your Cart</Link>
+      <span
+        className={styles.itemsCount}
+        data-testid="product-quantity"
+      >
+        {personalAccount.totalCountOfAddedProducts} items in cart
+      </span>
+      <Link
+        className={styles.buttonEditView}
+        data-testid="link-to-shoppingCart"
+        href="/shoppingCart"
+      >
+        View or Edit Your Cart
+      </Link>
     </div>
     <ul className={styles.list} >
       {personalAccount.cart.map((productItem: Product) => (

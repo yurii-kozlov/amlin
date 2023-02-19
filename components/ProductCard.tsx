@@ -37,7 +37,7 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
   const colorYellow = '#E9A426';
 
   return (
-    <div className={styles.section} >
+    <div className={styles.section} data-testid={`product-cart-${slug}`} >
       <button
         aria-label='wishList'
         className={cn(styles.upperButtons, styles.addToWishListButton)}
@@ -53,6 +53,7 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
       <div className={styles.imageContainer} >
         <Link
           className={styles.productLinkOnImage}
+          data-testid={`link-to-${slug}`}
           href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}
         >
           <Image
@@ -90,6 +91,7 @@ export const ProductCard:React.FC<addToCartProps> = observer (({ product}): Reac
       <div className={styles.buttonBlock} >
         <button
           className={styles.buttonAddToCard}
+          data-testid={`product-addToCard-${slug}`}
           onClick={() : void => addToCart(product)}
           type="button"
           >

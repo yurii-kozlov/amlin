@@ -16,11 +16,13 @@ export const MinicartItem: React.FC<MinicartItemProps> = observer(({ productItem
   const {url, name, slug} = productItemBlock;
 
   return (
-    <li className={styles.listItem}>
+    <li className={styles.listItem} data-testid={`minicart-item-${slug}`} >
       <div className={styles.listItemBlock} >
         <button
           aria-label='removeProduct'
           className={cn(styles.buttons, styles.buttonRemove)}
+          data-testid="button-delete"
+          id={`button-delete-${slug}`}
           onClick={(): void => personalAccount.removeProductFromCart(slug)}
           type="button"
         />
@@ -30,7 +32,12 @@ export const MinicartItem: React.FC<MinicartItemProps> = observer(({ productItem
           type="button"
         />
         <div className={styles.imageCountContainer}>
-          <p className={styles.countOfProduct}>{personalAccount.productsQuantities[slug]}</p>
+          <p
+            className={styles.countOfProduct}
+            data-testid={`minicart-item-quantity-${slug}`}
+          >
+            {personalAccount.productsQuantities[slug]}
+          </p>
           <span className={styles.symbol}>x</span>
           <Link
             className={styles.productName}

@@ -22,7 +22,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsFeatures, main }): ReactElemen
 
   return (
     <MainContainer pageDescription={pagesDescriptions.aboutUs} title='About Us'>
-      <section className={styles.section} >
+      <section className={styles.section} data-testid="aboutUs-page">
         <Container>
           <nav className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>

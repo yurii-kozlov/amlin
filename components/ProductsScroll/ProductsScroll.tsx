@@ -64,13 +64,18 @@ const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): ReactEleme
 
   return (
     <Container>
-      <section className={cn(styles.section, styles.sectionPage)} ref={ref}>
+      <section
+        className={cn(styles.section, styles.sectionPage)}
+        data-testid="products-scroll-section"
+        ref={ref}
+      >
         {onScreen && (
           <>
             <ul className={styles.buttonsList} >
               <li className={styles.buttonsListItem}>
                 <button
                   className={cn(styles.button, {[styles.buttonActive]: visibleProductType === Goods.laptops})}
+                  data-testid="laptops-filter"
                   onClick={handleLaptopsVisibility}
                   type="submit"
                 >
@@ -80,6 +85,7 @@ const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): ReactEleme
               <li className={styles.buttonsListItem}>
                 <button
                   className={cn(styles.button, {[styles.buttonActive]: visibleProductType === Goods.computers})}
+                  data-testid="computers-filter"
                   onClick={handleComputersVisibility}
                   type="submit"
                 >
@@ -89,6 +95,7 @@ const ProductsScroll: React.FC<ProductsScrollProps> = ({ products }): ReactEleme
               <li className={styles.buttonsListItem}>
                 <button
                   className={cn(styles.button, {[styles.buttonActive]: visibleProductType === Goods.monitors})}
+                  data-testid="monitors-filter"
                   onClick={handleMonitorsVisibility}
                   type="submit"
                 >

@@ -12,7 +12,7 @@ import styles from 'styles/pages/shoppingCart.module.scss';
 
 const ShoppingCart: React.FC = observer((): ReactElement => (
   <MainContainer pageDescription='shopping cart' title='Shopping Cart'>
-    <section className={cn(styles.section, styles.sectionPage)} >
+    <section className={cn(styles.section, styles.sectionPage)} data-testid="shoppingCart-page">
       <Container>
         <nav className={styles.navigation} >
           <Link className={styles.navigationLink} href="/">Home</Link>
@@ -34,6 +34,7 @@ const ShoppingCart: React.FC = observer((): ReactElement => (
                   <button
                     aria-label='clear-cart'
                     className={cn(styles.cartButton,styles.buttonClearShoppingCart)}
+                    data-testid="clear-cart-button"
                     onClick={(): void => personalAccount.clearCart()}
                     type='button'
                   >

@@ -11,7 +11,8 @@
     "lint": "next lint",
     "mock": "json-server -w db.json -p 3002 -d 450",
     "prettier": "prettier",
-    "eslint": "eslint"
+    "eslint": "eslint",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@cloudinary/url-gen": "^1.8.7",
@@ -54,12 +55,15 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^9.0.0",
     "@types/bootstrap": "^5.2.6",
     "@types/react-slick": "^0.23.10",
     "@types/react-star-ratings": "^2.3.0",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
+    "cypress": "^12.6.0",
     "eslint": "^8.29.0",
-    "eslint-config-prettier": "^8.5.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1"
   }
 }

@@ -168,7 +168,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": []
+        "devDependencies": ["/cypress/support/commands.ts", "cypress.config.ts"]
       }
     ],
     "no-param-reassign": [

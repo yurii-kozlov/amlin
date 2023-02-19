@@ -83,7 +83,10 @@ export const ProductsCatalog: React.FC<ProductsCatalogProps> = observer(({ produ
       title={router.pathname[1].toUpperCase() + router.pathname.slice(2)}
     >
       <Container>
-        <section className={cn(styles.section, styles.sectionMarginBottom)}>
+        <section
+          className={cn(styles.section, styles.sectionMarginBottom)}
+          data-testid={`${router.pathname.slice(1)}-page`}
+        >
           <Image
             alt='banner'
             className={styles.banner}

@@ -29,7 +29,7 @@ const onSubmit = (data: formInputs): void => {
   return (
     <MainContainer pageDescription={pagesDescriptions.contactUs} title='Contact Us' >
       <Container>
-        <section className={cn(styles.section, styles.marginBottom)}>
+        <section className={cn(styles.section, styles.marginBottom)} data-testid="contactUs-page">
           <div className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/contactUs">Contact Us</Link>

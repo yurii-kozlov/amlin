@@ -17,7 +17,10 @@ type NavigationMenuProps = {
 export const NavigationMenu: React.FC<NavigationMenuProps> = ({
     setIsNavigationMenuVisible, isNavigationMenuVisible
   }): ReactElement => (
-    <section className={cn(styles.section, {[styles.sectionVisible]: isNavigationMenuVisible})} >
+    <section
+      className={cn(styles.section, {[styles.sectionVisible]: isNavigationMenuVisible})}
+      data-testid="navigation-menu"
+    >
       <Container>
         <div className={styles.upperPart}>
           <Image alt='tecs icon' className={styles.icon} src={tecsIcon} />
@@ -35,7 +38,11 @@ export const NavigationMenu: React.FC<NavigationMenuProps> = ({
 
               return (
                 <li className={styles.navigationListItem} key={uuid_v4()} >
-                  <Link className={styles.navigationLink} href={route}>
+                  <Link
+                    className={styles.navigationLink}
+                    data-testid={`${name.toLowerCase()}-page-link`}
+                    href={route}
+                  >
                     {name}
                     <Image alt='arrowRight' src={arrowRight} />
                   </Link>

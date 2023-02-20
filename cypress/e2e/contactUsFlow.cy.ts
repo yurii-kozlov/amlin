@@ -2,7 +2,7 @@ export {}
 
 describe('<ContactUs />', () => {
   beforeEach(() => cy.viewport('macbook-16'))
-  it('renders', () => {
+  it('Form validation and submission work', () => {
     cy.visit('/contactUs');
     cy.findByTestId('input-name').type('a');
     cy.findByTestId('input-email').type('examp@1023');
@@ -24,10 +24,10 @@ describe('<ContactUs />', () => {
       'to anyone in the market for tech products - they offer great prices, excellent service,' +
       ' and a wide range of products to choose from. Overall, I had a fantastic experience and will' +
       'be a loyal customer for years to come.');
-    cy.findByTestId('input-name-error').should('not.exist')
-    cy.findByTestId('input-email-error').should('not.exist')
-    cy.findByTestId('input-phoneNumber-error').should('not.exist')
-    cy.findByTestId('textarea-message-error').should('not.exist')
+    cy.findByTestId('input-name-error').should('not.exist');
+    cy.findByTestId('input-email-error').should('not.exist');
+    cy.findByTestId('input-phoneNumber-error').should('not.exist');
+    cy.findByTestId('textarea-message-error').should('not.exist');
     cy.findByTestId('button-submit').click();
-  })
-})
+  });
+});

@@ -28,6 +28,7 @@
     "bootstrap": "^5.2.3",
     "classnames": "^2.3.2",
     "cloudinary-build-url": "^0.2.4",
+    "cypress-visual-regression": "^2.1.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "13.0.6",
     "gh-pages": "^4.0.0",

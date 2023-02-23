@@ -15,7 +15,7 @@ describe('Checkout Flow', () => {
     cy.get('#phoneNumber').type('hi this is me');
     cy.findByTestId('custom-address').click();
     cy.findByTestId('button-next').click();
-    cy.findByTestId('email-error').should('exist');
+    cy.findByTestId('email-error').should('exist')
     cy.findByTestId('firstName-error').should('exist');
     cy.findByTestId('lastName-error').should('exist');
     cy.findByTestId('company-error').should('exist');

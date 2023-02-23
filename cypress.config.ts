@@ -1,14 +1,19 @@
-import { defineConfig } from "cypress";
+import { defineConfig } from 'cypress';
+import getCompareSnapshotsPlugin from 'cypress-visual-regression/dist/plugin';
 
 export default defineConfig({
-  e2e: {
-    baseUrl: "http://localhost:3000",
+  env: {
+    screenshotsFolder: './cypress/snapshots/actual',
+    trashAssetsBeforeRuns: true,
+    video: false,
+    failSilently: false,
+    type: 'base'
   },
 
-  component: {
-    devServer: {
-      framework: "next",
-      bundler: "webpack",
-    },
+  e2e: {
+    baseUrl: 'http://localhost:3000',
+    setupNodeEvents(on, config) {
+      getCompareSnapshotsPlugin(on, config);
+    }
   },
 });

@@ -13,7 +13,7 @@ export const BonusSection: React.FC = (): ReactElement => {
 
   return (
     <Container >
-      <section className={styles.section} ref={ref} >
+      <section className={styles.section} data-testid="bonusSection" ref={ref}>
         {onScreen && (
           <>
             <Image

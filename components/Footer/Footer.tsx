@@ -55,7 +55,7 @@ export const Footer: React.FC = (): ReactElement => {
   const onScreen: boolean = useOnScreen<HTMLElement>(ref, '150px');
 
   return (
-    <section ref={ref} className={styles.section} >
+    <section className={styles.section} data-testid="footer" ref={ref} >
       {onScreen && (
         <Container>
           <div className={styles.upperPart} >

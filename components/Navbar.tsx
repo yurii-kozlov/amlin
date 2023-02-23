@@ -14,7 +14,7 @@ export const Navbar = observer((): ReactElement => {
   const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
   return (
-    <nav className={styles.block} >
+    <nav className={styles.block} data-testid="navbar">
       <div className={styles.menuIcon} >
         <Link
           aria-label='menu'

@@ -2,7 +2,7 @@ export {}
 
 describe('<ContactUs />', () => {
   beforeEach(() => cy.viewport('macbook-16'))
-  it('Form validation and submission work', () => {
+  it('Form validation works correctly', () => {
     cy.visit('/contactUs');
     cy.findByTestId('input-name').type('a');
     cy.findByTestId('input-email').type('examp@1023');
@@ -13,6 +13,10 @@ describe('<ContactUs />', () => {
     cy.findByTestId('input-email-error').should('exist');
     cy.findByTestId('input-phoneNumber-error').should('exist');
     cy.findByTestId('textarea-message-error').should('exist');
+  });
+
+  it('Form submsission works correctly', () => {
+    cy.visit('/contactUs');
     cy.findByTestId('input-name').clear().type('Jonathan Turner');
     cy.findByTestId('input-email').clear().type('jonathanBig@gmail.com');
     cy.findByTestId('input-phoneNumber').clear().type('18143008704');
@@ -29,5 +33,5 @@ describe('<ContactUs />', () => {
     cy.findByTestId('input-phoneNumber-error').should('not.exist');
     cy.findByTestId('textarea-message-error').should('not.exist');
     cy.findByTestId('button-submit').click();
-  });
+  })
 });

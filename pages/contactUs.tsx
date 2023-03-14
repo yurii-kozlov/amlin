@@ -61,11 +61,7 @@ const onSubmit = (data: formInputs): void => {
                           placeholder='Your Name'
                           type="text"
                         />
-                        {errors.name ? (
-                          <p className={styles.error} data-testid="input-name-error" >
-                            {errors.name?.message}
-                          </p>
-                        ): ''}
+                        {errors.name && <p className={styles.error} data-testid="input-name-error">{errors.name?.message}</p>}
                       </label>
                     </div>
                     <div className={styles.inputBlock} >
@@ -80,11 +76,7 @@ const onSubmit = (data: formInputs): void => {
                           name='email'
                           type="email"
                         />
-                        {errors.email? (
-                          <p className={styles.error} data-testid="input-email-error" >
-                            {errors.email?.message}
-                          </p>
-                        ) :''}
+                        {errors.email && <p className={styles.error} data-testid="input-email-error"> {errors.email?.message} </p>}
                       </label>
                     </div>
                     <div className={styles.inputBlock} >
@@ -99,11 +91,7 @@ const onSubmit = (data: formInputs): void => {
                           placeholder='Your Phone'
                           type="tel"
                         />
-                        {errors.phoneNumber ? (
-                          <p className={styles.error} data-testid="input-phoneNumber-error" >
-                            {errors.phoneNumber?.message}
-                          </p>
-                        ) :''}
+                        {errors.phoneNumber && <p className={styles.error} data-testid="input-phoneNumber-error">{errors.phoneNumber?.message}</p>}
                       </label>
                     </div>
                   </div>
@@ -120,11 +108,7 @@ const onSubmit = (data: formInputs): void => {
                         placeholder='Jot us a note and we’ll get back to you as quickly as possible'
                         rows={7}
                       />
-                      {errors.contactMessage ? (
-                        <p className={styles.error} data-testid="textarea-message-error">
-                          {errors.contactMessage?.message}
-                        </p>
-                      ) :''}
+                      {errors.contactMessage && <p className={styles.error} data-testid="textarea-message-error">{errors.contactMessage?.message}</p>}
                     </label>
                   </div>
                   <button

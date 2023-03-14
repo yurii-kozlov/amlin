@@ -7,7 +7,7 @@ import { Product } from 'types/main/Products';
 import { Goods } from 'enums/goods';
 import { Colors } from 'enums/colors';
 import { SectionsAboutProduct } from 'enums/sectionsAboutProduct';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
 import personalAccount from 'store/personalAccount';
 import { Details } from 'components/AboutProduct/Details';
 import { Specs } from 'components/AboutProduct/Specs';
@@ -391,18 +391,20 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
               <>
                 <p className={styles.descriptionText}>
                   {description}
-                </p><ul className={styles.colorsList}>
+                </p>
+                <ul className={styles.colorsList}>
                   <li className={styles.colorsListItem}>
                     <div className={cn(styles.buttonChooseColorContainer, {
                         [styles.buttonChosenColorActive]: chosenColor === Colors.darkGrey
                       }
                     )}
-                        >
+                    >
                       <button
                         aria-label="colorDarkGrey"
                         className={cn(styles.buttonChooseColor, styles.buttonDarkGreyColor)}
                         onClick={setDarkGreyColor}
-                        type="button" />
+                        type="button"
+                      />
                     </div>
                   </li>
                   <li className={styles.colorsListItem}>
@@ -415,7 +417,8 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                         aria-label="colorWhite"
                         className={cn(styles.buttonChooseColor, styles.buttonWhiteColor)}
                         onClick={setWhiteColor}
-                        type="button" />
+                        type="button"
+                      />
                     </div>
                   </li>
                   <li className={styles.colorsListItem}>
@@ -428,7 +431,8 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                         aria-label="colorGrey"
                         className={cn(styles.buttonChooseColor, styles.buttonGreyColor)}
                         onClick={setGreyColor}
-                        type="button" />
+                        type="button"
+                      />
                     </div>
                   </li>
                 </ul>
@@ -477,7 +481,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                 data-testid="add-to-cart-button"
                 onClick={(): void => addToCart(product!, quantityOfProducts)}
                 type="button"
-            >
+              >
                 Add to Card
               </button>
               <Link className={styles.buttonPayPal} href="#" />

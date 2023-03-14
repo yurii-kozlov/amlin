@@ -168,7 +168,15 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["/cypress/support/commands.ts", "cypress.config.ts"]
+        "devDependencies": [
+          "jest.setup.ts",
+          "test.{ts,tsx}", 
+          "test-*.{ts,tsx}",
+          "**/*{.,_}{test,spec}.{ts,tsx}", 
+          "**/jest.config.js",
+          "/cypress/support/commands.ts",
+          "cypress.config.ts"
+        ]
       }
     ],
     "no-param-reassign": [

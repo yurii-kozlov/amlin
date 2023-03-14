@@ -5,9 +5,9 @@ import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import cn from 'classnames';
 import { Product } from 'types/main/Products';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
-import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
-import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypeLink/getTheRightProductTypelink';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink/getTheRightProductNameLink';
 import styles from 'styles/layout/ProductListItem.module.scss'
 
 type ProductListItemProps = {

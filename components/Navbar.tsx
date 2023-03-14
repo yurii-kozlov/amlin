@@ -23,7 +23,7 @@ export const Navbar = observer((): ReactElement => {
         />
       </div>
       <ul className={styles.list}>
-        <li className={styles.listItem}>
+        <li className={styles.listItem} >
           <Link
             className={styles.listItemLink}
             data-testid="link-to-laptops-page"
@@ -125,14 +125,15 @@ export const Navbar = observer((): ReactElement => {
             type="button"
            />
         </div>
-        <div className={styles.profile} >
-          <Menu isMenuVisible={isMenuVisible} />
+        <div className={styles.profile}>
+          <Menu data-testid="menu" isMenuVisible={isMenuVisible} />
           <button
             aria-label='profile'
             className={styles.profileButton}
+            data-testid="button-profile"
             onClick={handleMenuVisibility}
             type="button"
-           />
+          />
         </div>
       </div>
     </nav>

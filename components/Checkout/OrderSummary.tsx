@@ -22,6 +22,7 @@ export const OrderSummary: React.FC = observer((): ReactElement => {
         </div>
         <button
           className={styles.itemsQuantity}
+          data-testid="button-show-summary"
           onClick={handleProductsListVisibility}
           type="button"
         >
@@ -33,13 +34,18 @@ export const OrderSummary: React.FC = observer((): ReactElement => {
             <Image alt="arrowDown" className={styles.arrow} src={arrowDown}/>
           )}
         </button>
-        <ul className={cn(styles.list, {[styles.listVisible]: isProductsListVisible})} >
+        <ul
+          className={cn(styles.list, {[styles.listVisible]: isProductsListVisible})}
+          data-testid="list-with-products"
+        >
           {personalAccount.cart.length > 0 ? (
             personalAccount.cart.map((product) => (
               <OrderItem key={uuid_v4()} product={product}/>
             ))
           ) : (
-            <p className={styles.emptyShoppingCartDescription}>Your Shopping Cart is Empty</p>
+            <p className={styles.emptyShoppingCartDescription} data-testid="empty-cart-description" >
+              Your Shopping Cart is Empty
+            </p>
           )}
         </ul>
       </div>

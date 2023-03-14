@@ -5,7 +5,7 @@ import personalAccount from 'store/personalAccount';
 import { v4 as uuid_v4 } from 'uuid';
 import cn from 'classnames';
 import { Product } from 'types/main/Products';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
 import { MinicartItem } from 'components/Minicart/MinicartItem';
 import styles from 'styles/layout/Minicart/Minicart.module.scss';
 

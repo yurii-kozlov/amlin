@@ -17,6 +17,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "constants/reviewsConstants.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "constants/reviewsConstants.tsx", "jest.setup.ts"],
   "exclude": ["node_modules"]
 }

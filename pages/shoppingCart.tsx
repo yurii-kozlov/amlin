@@ -21,9 +21,9 @@ const ShoppingCart: React.FC = observer((): ReactElement => (
         <h1 className={styles.title}>Shopping Cart</h1>
         <div className={styles.cartAndSummeryWrapper}>
           {personalAccount.cart.length === 0 ? (
-            <h2 className={styles.emptyCartTitle} >Your Shopping Cart is empty</h2>
+            <h2 className={styles.emptyCartTitle} data-testid="empty-cart-title" >Your Shopping Cart is empty</h2>
             ) : (
-              <div className={styles.cart}>
+              <div className={styles.cart} data-testid="shopping-cart-product-list">
                 <ul className={styles.cartProductList}>
                   {personalAccount.cart.map((product) => (
                     <ShoppingCartItemBlock key={uuid_v4()} product={product} />

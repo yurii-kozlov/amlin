@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Monitors page getStaticProps returns the correct data from api 1`] = `
+{
+  "props": {
+    "monitors": {
+      "firms": [
+        {
+          "id": 9,
+          "name": "Hunter",
+        },
+        {
+          "id": 10,
+          "name": "Razen",
+        },
+      ],
+      "id": "monitors",
+      "list": [
+        {
+          "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio
+Powerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)
+AMD Radeon Vega 8 discrete graphics with Windows 10 Home
+8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD
+Ergonomic backlit keyboard with fingerprint sensor activated via Windows Hello
+Exclusive ErgoLift design for improved typing position",
+          "firm": "Mi",
+          "inStock": false,
+          "name": "Monitor Xiaomi Mi Display 34",
+          "previousPrice": 14933,
+          "price": 12499,
+          "rating": 4.7,
+          "reviewsCount": 74,
+          "slug": "mi34",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/13_qzykzl.jpg",
+        },
+        {
+          "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio
+Powerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)
+AMD Radeon Vega 8 discrete graphics with Windows 10 Home
+8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD
+Ergonomic backlit keyboard with fingerprint sensor activated via Windows Hello
+Exclusive ErgoLift design for improved typing position",
+          "firm": "Samsung",
+          "inStock": true,
+          "name": "Monitor 23.8 "Samsung S24R350F (LS24R350FHIXCI) Black",
+          "previousPrice": 5933,
+          "price": 4499,
+          "rating": 2.8,
+          "reviewsCount": 11,
+          "slug": "LS24R350FHIXCI2",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/14_dhc9d6.jpg",
+        },
+        {
+          "description": "15.6 inch FHD 4 way NanoEdge bezel display with a stunning 88% screen-to-body ratio
+Powerful AMD Quad Core Ryzen 5 3500U Processor (2M Cache, up to 3.6 GHz)
+AMD Radeon Vega 8 discrete graphics with Windows 10 Home
+8GB DDR4 RAM and 256GB PCIe NVMe M.2 SSD
+Ergonomic backlit keyboard with fingerprint sensor activated via Windows Hello
+Exclusive ErgoLift design for improved typing position",
+          "firm": "LG",
+          "inStock": true,
+          "name": "Monitor 25 "LG 25UM58-P Black",
+          "previousPrice": 6933,
+          "price": 4499,
+          "rating": 5,
+          "reviewsCount": 3,
+          "slug": "25UM58",
+          "url": "https://res.cloudinary.com/dqdonqby4/image/upload/v1612528867/new-products/15_kjcc9d.jpg",
+        },
+      ],
+    },
+  },
+}
+`;

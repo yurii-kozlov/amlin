@@ -57,6 +57,9 @@ class PersonalAccount {
   }
 
   clearCart(): void {
+    this.cart.forEach((product) => {
+      this.productsQuantities[product.slug] = 0
+    });
     this.cart = [];
   }
 

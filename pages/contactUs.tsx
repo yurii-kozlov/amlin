@@ -29,7 +29,7 @@ const onSubmit = (data: formInputs): void => {
   return (
     <MainContainer pageDescription={pagesDescriptions.contactUs} title='Contact Us' >
       <Container>
-        <section className={cn(styles.section, styles.marginBottom)}>
+        <section className={cn(styles.section, styles.marginBottom)} data-testid="contactUs-page">
           <div className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/contactUs">Contact Us</Link>
@@ -54,13 +54,14 @@ const onSubmit = (data: formInputs): void => {
                         <h5 className={styles.inputTitle}>Your Name</h5>
                         <input
                           className={styles.formInput}
+                          data-testid="input-name"
                           id='name'
                           {...register('name')}
                           name='name'
                           placeholder='Your Name'
                           type="text"
                         />
-                        {errors.name && <p className={styles.error}>{errors.name?.message}</p>}
+                        {errors.name && <p className={styles.error} data-testid="input-name-error">{errors.name?.message}</p>}
                       </label>
                     </div>
                     <div className={styles.inputBlock} >
@@ -68,13 +69,14 @@ const onSubmit = (data: formInputs): void => {
                         <h5 className={styles.inputTitle}>Your Email</h5>
                         <input
                           className={styles.formInput}
+                          data-testid="input-email"
                           id='email'
                           placeholder='Your Email'
                           {...register('email')}
                           name='email'
                           type="email"
                         />
-                        {errors.email && <p className={styles.error}> {errors.email?.message} </p>}
+                        {errors.email && <p className={styles.error} data-testid="input-email-error"> {errors.email?.message} </p>}
                       </label>
                     </div>
                     <div className={styles.inputBlock} >
@@ -82,13 +84,14 @@ const onSubmit = (data: formInputs): void => {
                         <h5 className={styles.inputTitle}>Your Phone Number</h5>
                         <input
                           className={styles.formInput}
+                          data-testid="input-phoneNumber"
                           {...register('phoneNumber')}
                           id='phoneNumber'
                           name='phoneNumber'
                           placeholder='Your Phone'
                           type="tel"
                         />
-                        {errors.phoneNumber && <p className={styles.error}>{errors.phoneNumber?.message}</p>}
+                        {errors.phoneNumber && <p className={styles.error} data-testid="input-phoneNumber-error">{errors.phoneNumber?.message}</p>}
                       </label>
                     </div>
                   </div>
@@ -98,16 +101,23 @@ const onSubmit = (data: formInputs): void => {
                       <textarea
                         className={styles.textarea}
                         cols={30}
+                        data-testid="textarea-message"
                         id="contactMessage"
                         {...register('contactMessage')}
                         name="contactMessage"
                         placeholder='Jot us a note and we’ll get back to you as quickly as possible'
                         rows={7}
                       />
-                      {errors.contactMessage && <p className={styles.error}>{errors.contactMessage?.message}</p>}
+                      {errors.contactMessage && <p className={styles.error} data-testid="textarea-message-error">{errors.contactMessage?.message}</p>}
                     </label>
                   </div>
-                  <button className={styles.buttonSubmit} type="submit">Submit</button>
+                  <button
+                    className={styles.buttonSubmit}
+                    data-testid="button-submit"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>

@@ -20,7 +20,7 @@ const Register: React.FC = ():ReactElement => {
   return (
     <MainContainer pageDescription='Registration' title='Registration'>
       <Container>
-        <section className={styles.section} >
+        <section className={styles.section} data-testid="register-page">
           <div className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/register">Login</Link>

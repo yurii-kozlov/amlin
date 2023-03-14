@@ -82,7 +82,7 @@ export const NewProducts: React.FC<NewProductsProps> = ({ newGoods }): ReactElem
 
   return (
     <Container >
-      <div className={styles.upperPart} >
+      <div className={styles.upperPart}  data-testid="new-products" >
         <h1 className={styles.title} >New Products</h1>
         <Link className={styles.allProductsLink} href="#">See All New Products</Link>
       </div>

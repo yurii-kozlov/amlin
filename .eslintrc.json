@@ -173,8 +173,10 @@
           "test.{ts,tsx}", 
           "test-*.{ts,tsx}",
           "**/*{.,_}{test,spec}.{ts,tsx}", 
-          "**/jest.config.js"
-      ]
+          "**/jest.config.js",
+          "/cypress/support/commands.ts",
+          "cypress.config.ts"
+        ]
       }
     ],
     "no-param-reassign": [

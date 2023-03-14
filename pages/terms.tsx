@@ -22,7 +22,7 @@ const Terms: React.FC<TermsProps> = ({ terms }): ReactElement => {
   return (
     <MainContainer pageDescription={pagesDescriptions.terms} title='Terms & Conditions'>
       <Container>
-        <section className={cn(styles.section, styles.sectionMarginBottom)} >
+        <section className={cn(styles.section, styles.sectionMarginBottom)} data-testid="terms-page" >
           <nav className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/terms">Terms And Conditions</Link>

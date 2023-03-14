@@ -19,7 +19,7 @@ export const ShoppingCartItemBlock: React.FC<ShoppingCartItemBlockProps> = obser
   const {url, description, price, slug, name } = product;
 
   return (
-    <li className={styles.cartProductListItem} data-testid="shopping-cart-item">
+    <li className={styles.cartProductListItem} data-testid="shoppingCart-item">
       <div className={styles.cartProductBlock}>
         <div className={styles.cartProductDescriptionAndImage}>
           <h3 className={cn(styles.subSectionTitle, styles.hiddenOnMobileAndTablet)}>Item</h3>
@@ -53,12 +53,14 @@ export const ShoppingCartItemBlock: React.FC<ShoppingCartItemBlockProps> = obser
               <button
                 aria-label="quantity-up"
                 className={cn(styles.arrow, styles.arrowUp)}
+                data-testid={`button-ad-product-quantity-${slug}`}
                 onClick={(): void => personalAccount.addProductQuantity(slug, price)}
                 type="button"
               />
               <button
                 aria-label="quantity-down"
                 className={cn(styles.arrow, styles.arrowDown)}
+                data-testid={`button-subtract-product-quantity-${slug}`}
                 onClick={(): void => personalAccount.subtractProductQuantity(slug, price)}
                 type="button"
               />
@@ -73,6 +75,7 @@ export const ShoppingCartItemBlock: React.FC<ShoppingCartItemBlockProps> = obser
           <button
             aria-label='button-remove'
             className={cn(styles.buttons, styles.buttonRemove)}
+            data-testid={`button-remove-product-${slug}`}
             onClick={(): void => personalAccount.removeProductFromCart(slug)}
             type="button"
           />

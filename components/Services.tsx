@@ -9,7 +9,12 @@ export const Services: React.FC = (): ReactElement => {
   const onScreen: boolean = useOnScreen<HTMLElement>(ref, '150px');
 
   return (
-    <section className={styles.backgroundColor} ref={ref} >
+    <section
+      className={styles.backgroundColor}
+      data-testid="services"
+      id="services"
+      ref={ref}
+    >
       {onScreen && (
         <Container>
           <div className={styles.section}>

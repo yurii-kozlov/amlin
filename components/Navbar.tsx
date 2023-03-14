@@ -14,7 +14,7 @@ export const Navbar = observer((): ReactElement => {
   const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
   return (
-    <nav className={styles.block} >
+    <nav className={styles.block} data-testid="navbar">
       <div className={styles.menuIcon} >
         <Link
           aria-label='menu'
@@ -26,7 +26,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem} >
           <Link
             className={styles.listItemLink}
-            data-testid="link-laptops-page"
+            data-testid="link-to-laptops-page"
             href="/laptops"
           >
             Laptops
@@ -36,6 +36,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <Link
             className={styles.listItemLink}
+            data-testid="link-to-computers-page"
             href="/computers"
           >
             Computers
@@ -45,6 +46,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <Link
             className={styles.listItemLink}
+            data-testid="link-to-monitors-page"
             href="/monitors"
           >
             Monitors
@@ -54,6 +56,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <Link
             className={styles.listItemLink}
+            data-testid="link-to-personalAccount-page"
             href="/personalAccount"
           >
             Account
@@ -63,6 +66,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <Link
             className={styles.listItemLink}
+            data-testid="link-to-aboutUs-page"
             href="/aboutUs"
           >
             About Us
@@ -72,6 +76,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <Link
             className={styles.listItemLink}
+            data-testid="link-to-register-page"
             href="/register"
           >
             Registration
@@ -81,6 +86,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <Link
             className={styles.listItemLink}
+            data-testid="link-to-contactUs-page"
             href="/contactUs"
           >
             Contact Us
@@ -90,6 +96,7 @@ export const Navbar = observer((): ReactElement => {
         <li className={styles.listItem}>
           <Link
             className={styles.listItemLink}
+            data-testid="link-to-terms-page"
             href="/terms"
           >
             Terms & Conditions
@@ -107,7 +114,7 @@ export const Navbar = observer((): ReactElement => {
         </div>
         <div className={styles.minicart} >
           <Minicart isMinicartVisible={isMinicartVisible} />
-          <div className={styles.minicartBlock}>
+          <div className={styles.minicartBlock} data-testid="all-products-quantity">
             {personalAccount.totalCountOfAddedProducts}
           </div>
           <button

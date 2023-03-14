@@ -30,7 +30,7 @@ const PersonalAccount: React.FC<PersonalAccountProps> = observer(({ profileInfo 
   return (
     <MainContainer pageDescription={pagesDescriptions.personalAccount} title='Account'>
       <Container>
-        <section className={cn(styles.section, styles.pageSection)} >
+        <section className={cn(styles.section, styles.pageSection)} data-testid="personalAccount-page" >
           <nav className={styles.navigation} >
             <Link className={styles.navigationLink} href="/">Home</Link>
             <Link className={styles.navigationLink} href="/personalAccount">My Dashboard</Link>

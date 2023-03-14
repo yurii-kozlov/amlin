@@ -38,7 +38,11 @@ export const NavigationMenu: React.FC<NavigationMenuProps> = ({
 
               return (
                 <li className={styles.navigationListItem} key={uuid_v4()} >
-                  <Link className={styles.navigationLink} href={route}>
+                  <Link
+                    className={styles.navigationLink}
+                    data-testid={`${name.toLowerCase()}-page-link`}
+                    href={route}
+                  >
                     {name}
                     <Image alt='arrowRight' src={arrowRight} />
                   </Link>

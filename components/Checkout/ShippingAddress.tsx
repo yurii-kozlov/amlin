@@ -42,7 +42,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               name='email'
               type="text"
             />
-            {errors.email && <p className={styles.error} >{errors.email.message}</p>}
+            {errors.email && <p className={styles.error} data-testid="email-error">{errors.email.message}</p>}
           </label>
           <p className={styles.createAccountHint}>You can create an account after checkout.</p>
         </div>
@@ -59,7 +59,11 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               name='firstName'
               type="text"
             />
-            {errors.firstName && <p className={styles.error} >{errors.firstName.message}</p>}
+            {errors.firstName &&
+              <p className={styles.error} data-testid="firstName-error">
+                {errors.firstName.message}
+              </p>
+            }
           </label>
         </div>
         <div className={styles.inputWrapper}>
@@ -75,7 +79,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               name='lastName'
               type="text"
             />
-            {errors.lastName && <p className={styles.error} >{errors.lastName.message}</p>}
+            {errors.lastName && <p className={styles.error} data-testid="lastName-error">{errors.lastName.message}</p>}
           </label>
         </div>
         <div className={styles.inputWrapper}>
@@ -91,35 +95,35 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               name='company'
               type="text"
             />
-            {errors.company && <p className={styles.error} >{errors.company.message}</p>}
+            {errors.company && <p className={styles.error} data-testid="company-error">{errors.company.message}</p>}
           </label>
         </div>
         <div className={styles.inputWrapper}>
           <div className={styles.streetInputWrapper} >
             <label
               className={styles.label}
-              htmlFor="streetAddress1"
+              htmlFor="street1"
             >
               <h3 className={styles.inputTitle}>Street Address</h3>
               <input
                 className={cn(styles.input, styles.streetInput)}
                 {...register('street1')}
-                id='streetAddress1'
-                name='streetAddress1'
+                id='street1'
+                name='street1'
                 type="text"
               />
-              {errors.street1 && <p className={styles.error} >{errors.street1.message}</p>}
+              {errors.street1 && <p className={styles.error} data-testid="street1-error">{errors.street1.message}</p>}
             </label>
           </div>
-          <label aria-label='street-address' htmlFor="streetAddress2">
+          <label aria-label='street-address' htmlFor="street2">
             <input
               className={styles.input}
               {...register('street2')}
-              id='streetAddress2'
-              name='streetAddress2'
+              id='street2'
+              name='street2'
               type="text"
             />
-            {errors.street2 && <p className={styles.error} >{errors.street2.message}</p>}
+            {errors.street2 && <p className={styles.error} data-testid="street2-error">{errors.street2.message}</p>}
           </label>
         </div>
         <div className={styles.inputWrapper}>
@@ -135,7 +139,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               name='city'
               type="text"
             />
-            {errors.city && <p className={styles.error} >{errors.city.message}</p>}
+            {errors.city && <p className={styles.error} data-testid="city-error">{errors.city.message}</p>}
           </label>
         </div>
         <div className={styles.inputWrapper}>
@@ -148,10 +152,10 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               className={cn(styles.input, styles.stateInput)}
               {...register('region')}
               id='region'
-              name='region/province'
+              name='region'
               type="text"
             />
-            {errors.region && <p className={styles.error} >{errors.region.message}</p>}
+            {errors.region && <p className={styles.error} data-testid="region-error">{errors.region.message}</p>}
           </label>
         </div>
         <div className={styles.inputWrapper}>
@@ -167,7 +171,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               name='zipCode'
               type="text"
             />
-            {errors.zipCode && <p className={styles.error} >{errors.zipCode.message}</p>}
+            {errors.zipCode && <p className={styles.error} data-testid="zipCode-error">{errors.zipCode.message}</p>}
           </label>
         </div>
         <div className={styles.inputWrapper}>
@@ -190,7 +194,10 @@ export const ShippingAddress: React.FC = (): ReactElement => {
               name='phoneNumber'
               type="text"
             />
-            {errors.phoneNumber && <p className={styles.error} >{errors.phoneNumber.message}</p>}
+            {errors.phoneNumber &&
+              <p className={styles.error} data-testid="phoneNumber-error">
+                {errors.phoneNumber.message}
+              </p>}
           </label>
         </div>
         <div className={styles.shippingRateInputs}>
@@ -201,6 +208,7 @@ export const ShippingAddress: React.FC = (): ReactElement => {
                 <input
                   checked={shippingAddress === 'custom address'}
                   className={styles.deliveryDestination}
+                  data-testid="custom-address"
                   id='custom address'
                   {...register('shippingAddress')}
                   name='address'
@@ -234,7 +242,9 @@ export const ShippingAddress: React.FC = (): ReactElement => {
             <span className={styles.shippingPrice} >$0.00</span>
           </div>
         </div>
-        <button className={styles.buttonNext} type="submit">Next</button>
+        <button className={styles.buttonNext} data-testid="button-next" type="submit" >
+          Next
+        </button>
       </form>
     </div>
   );

@@ -22,7 +22,7 @@ export const Header:React.FC = observer((): ReactElement => {
   const handleMinicartVisibility = (): void => setIsMinicartVisible(!isMinicartVisible);
 
   return (
-    <header className={cn(styles.page, styles.pageMarginBottom)}>
+    <header className={cn(styles.page, styles.pageMarginBottom)} data-testid="header">
       <div className={styles.menu}>
         <Link aria-label='home' className={styles.menuIcon1} href="/"/>
       </div>

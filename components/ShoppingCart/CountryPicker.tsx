@@ -48,6 +48,7 @@ export const CountryPicker: React.FC<CountryPickerProps> = (
           >
             <button
               className={styles.buttonChooseCountry}
+              data-testid="button-choose-country"
               onClick={(): void => {
                 setSelectedCountry(country);
                 handleCountryPickerVisibility();

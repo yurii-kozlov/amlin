@@ -353,9 +353,10 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                   className={cn(styles.button, {
                     [styles.buttonActive]: visibleAboutProductSection === SectionsAboutProduct.aboutProduct
                   })}
+                  data-testid="aboutProduct-button"
                   onClick={handleAboutProductInfoVisibility}
                   type="button"
-                  >
+                >
                   About Product
                 </button>
               </li>
@@ -364,6 +365,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                   className={cn(styles.button, {
                     [styles.buttonActive]: visibleAboutProductSection === SectionsAboutProduct.details
                   })}
+                  data-testid="details-button"
                   onClick={handleDetailsVisibility}
                   type="button"
                 >
@@ -375,6 +377,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                   className={cn(styles.button, {
                     [styles.buttonActive]: visibleAboutProductSection === SectionsAboutProduct.specs
                   })}
+                  data-testid="specs-button"
                   onClick={handleSpecsVisibility}
                   type="button"
                 >
@@ -460,12 +463,14 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
                   <button
                     aria-label="count-up"
                     className={cn(styles.arrow, styles.arrowUp)}
+                    data-testid="add-quantity-button"
                     onClick={addProductCount}
                     type="button"
                   />
                   <button
                     aria-label="count-down"
                     className={cn(styles.arrow, styles.arrowDown)}
+                    data-testid="subtract-quantity-button"
                     onClick={subtractProductCount}
                     type="button"
                   />
@@ -473,6 +478,7 @@ export const AboutProduct: React.FC<AboutProductProps> = observer(({ product, pr
               </div>
               <button
                 className={styles.buttonAddToCart}
+                data-testid="add-to-cart-button"
                 onClick={(): void => addToCart(product!, quantityOfProducts)}
                 type="button"
               >

@@ -2,13 +2,15 @@ import { SampleNextArrow, SamplePrevArrow } from 'components/CarouselMain/Arrows
 
 export const settings = {
   dots: false,
-  infinite: true,
+  infinite: false,
   autoplay: true,
-  autoplaySpeed: 10000,
+  autoplaySpeed: 5000,
   speed: 1000,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  centerMode: true,
+  slidesToShow: 5,
+  lazyload: true,
+  slidesToScroll: 2,
+  className: styles.sliderBlock,
+  centerMode: false,
   responsive: [
     {
       breakpoint: 340,
@@ -27,19 +29,35 @@ export const settings = {
       }
     },
     {
+      breakpoint: 545,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+        variableWidth: true
+      }
+    },
+    {
       breakpoint: 750,
       settings: {
         slidesToShow: 2,
         centerPadding: '30px',
-        arrows: false
+        arrows: false,
+        slidesToScroll: 2,
       }
     },
     {
       breakpoint: 1090,
       settings: {
         slidesToShow: 3,
-        centerPadding: '50px',
-        arrows: false
+        centerPadding: '10px',
+        arrows: false,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 1360,
+      settings: {
+        slidesToShow: 4,
       }
     }
   ],

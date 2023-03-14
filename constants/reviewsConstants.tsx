@@ -5,7 +5,7 @@ import styles from 'styles/layout/Reviews/ReviewsDots.module.scss';
 export const reviewsSettings = {
   arrows: false,
   dots: true,
-  infinite: true,
+  infinite: false,
   autoplay: true,
   autoplaySpeed: 10000,
   speed: 1000,

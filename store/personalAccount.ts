@@ -81,7 +81,7 @@ class PersonalAccount {
   }
 
   removeProductFromWishList(slug: string): void {
-    this.wishList.filter((wishListProduct) => wishListProduct.slug !== slug);
+    this.wishList = this.wishList.filter((wishListProduct) => wishListProduct.slug !== slug);
   }
 
   clearWishList(): void {

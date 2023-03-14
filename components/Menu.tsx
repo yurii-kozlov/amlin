@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
 import { observer } from 'mobx-react';
+import cn from 'classnames';
 import personalAccount from 'store/personalAccount';
 import styles from 'styles/layout/Menu.module.scss';
 
@@ -9,7 +10,7 @@ type MenuProps = {
 }
 
 export const Menu: React.FC<MenuProps> = observer(({ isMenuVisible }): ReactElement => (
-  <div className={`${styles.section} ${isMenuVisible && styles.visible}`} >
+  <div className={cn(styles.section, {[styles.visible]: isMenuVisible})} data-testid="menu" >
     <ul className={styles.list} >
       <li className={styles.listItem} >
         <Link className={styles.menuLink} href="/personalAccount" >

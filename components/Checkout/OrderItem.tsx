@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { Product } from 'types/main/Products';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
-import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
-import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink/getTheRightProductNameLink';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypeLink/getTheRightProductTypelink';
 import styles from 'styles/layout/Checkout/OrderItem.module.scss';
 
 type OrderItemProps = {
@@ -16,7 +16,7 @@ export const OrderItem: React.FC<OrderItemProps> = observer (({ product }): Reac
   const { url, price, name, slug } = product;
 
   return (
-    <li className={styles.block} >
+    <li className={styles.block} data-testid={`order-item-${slug}`} >
       <Link
         className={styles.name}
         href={`/${getTheRightProductTypelink(name)}/${getTheRightProductNameLink(name)}`}

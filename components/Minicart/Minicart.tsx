@@ -5,7 +5,7 @@ import personalAccount from 'store/personalAccount';
 import { v4 as uuid_v4 } from 'uuid';
 import cn from 'classnames';
 import { Product } from 'types/main/Products';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
 import { MinicartItem } from 'components/Minicart/MinicartItem';
 import styles from 'styles/layout/Minicart/Minicart.module.scss';
 
@@ -14,7 +14,10 @@ type MinicartProps = {
 }
 
 export const Minicart: React.FC<MinicartProps> = observer (({ isMinicartVisible }): ReactElement => (
-  <div className={cn(styles.block, {[styles.blockVisible]: isMinicartVisible})} >
+  <div
+    className={cn(styles.block, {[styles.blockVisible]: isMinicartVisible})}
+    data-testid="minicart"
+  >
     <div className={styles.upperPart} >
       <h5 className={styles.title}>My Cart</h5>
       <span className={styles.itemsCount} >{personalAccount.totalCountOfAddedProducts} items in cart</span>

@@ -4,8 +4,8 @@ import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount'
 import { Product} from 'types/main/Products';
 import cn from 'classnames';
-import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
-import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink/getTheRightProductNameLink';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypeLink/getTheRightProductTypelink';
 import styles from 'styles/layout/Minicart/MinicartItem.module.scss';
 
 type MinicartItemProps = {
@@ -16,11 +16,12 @@ export const MinicartItem: React.FC<MinicartItemProps> = observer(({ productItem
   const {url, name, slug} = productItemBlock;
 
   return (
-    <li className={styles.listItem}>
+    <li className={styles.listItem} data-testid={`minicart-item-${slug}`} >
       <div className={styles.listItemBlock} >
         <button
           aria-label='removeProduct'
           className={cn(styles.buttons, styles.buttonRemove)}
+          data-testid="button-delete"
           onClick={(): void => personalAccount.removeProductFromCart(slug)}
           type="button"
         />

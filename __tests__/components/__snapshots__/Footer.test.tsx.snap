@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Renders a header 1`] = `
+<h1
+  class="titlesMain"
+>
+  Sign Up To Our Newsletter.
+</h1>
+`;

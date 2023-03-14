@@ -3,9 +3,9 @@ import cn from 'classnames';
 import { observer } from 'mobx-react';
 import personalAccount from 'store/personalAccount';
 import { Product } from 'types/main/Products';
-import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat';
-import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink';
-import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypelink';
+import { getTheRightPriceFormat } from 'helpers/getTheRightPriceFormat/getTheRightPriceFormat';
+import { getTheRightProductNameLink } from 'helpers/getTheRightProductNameLink/getTheRightProductNameLink';
+import { getTheRightProductTypelink } from 'helpers/getTheRightProductTypeLink/getTheRightProductTypelink';
 import styles from 'styles/layout/ShoppingCart/ShoppingCartItemBlock.module.scss';
 import Link from 'next/link';
 
@@ -19,7 +19,7 @@ export const ShoppingCartItemBlock: React.FC<ShoppingCartItemBlockProps> = obser
   const {url, description, price, slug, name } = product;
 
   return (
-    <li className={styles.cartProductListItem}>
+    <li className={styles.cartProductListItem} data-testid="shopping-cart-item">
       <div className={styles.cartProductBlock}>
         <div className={styles.cartProductDescriptionAndImage}>
           <h3 className={cn(styles.subSectionTitle, styles.hiddenOnMobileAndTablet)}>Item</h3>
@@ -43,7 +43,12 @@ export const ShoppingCartItemBlock: React.FC<ShoppingCartItemBlockProps> = obser
         <div className={styles.quantityBlockWrapper}>
           <h3 className={styles.subSectionTitle}>Qty</h3>
           <div className={styles.quantityBlock}>
-            <span className={styles.quantity}>{personalAccount.productsQuantities[slug]}</span>
+            <span
+              className={styles.quantity}
+              data-testid={`product-item-${slug}`}
+            >
+              {personalAccount.productsQuantities[slug]}
+            </span>
             <div className={styles.arrows}>
               <button
                 aria-label="quantity-up"
